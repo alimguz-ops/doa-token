@@ -1,0 +1,15 @@
+name: Build DOA icons
+on:
+  push:
+    paths:
+      - "apps/web/public/brand/doa/*.svg"
+
+jobs:
+  render-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g sharp-cli
+      - run: |
+          npx sharp-cli apps/web/public/brand/doa/doa.svg --resize 256 --output apps/web/public/brand/doa/doa-256.png
+          npx sharp-cli apps/web/public/brand/doa/doa.svg --resize 128 --output apps/web/public/brand/doa/doa-128.png

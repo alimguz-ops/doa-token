@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": 1765776440948,
+    "network": "polygonAmoy",
+    "token": "0x8cA0cF57270e048Fc99C3CbFC59Aae1AE03AD1f1",
+    "pair": "0x0000000000000000000000000000000000000000",
+    "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+    "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+    "reservePercent": 35,
+    "liquidity": {
+      "token": "1000000",
+      "base": "5"
+    }
+  },
+  {
+    "timestamp": 1765777777515,
+    "network": "polygonAmoy",
+    "token": "0xE75eade474F512D63f07f8112FF8929c4a672A48",
+    "pair": "0x0000000000000000000000000000000000000000",
+    "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+    "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+    "reservePercent": 35,
+    "liquidity": {
+      "token": "1000000",
+      "base": "5"
+    }
+  },
+  {
+    "timestamp": 1765777931370,
+    "network": "polygonAmoy",
+    "token": "0xA906B9eFCb72A723F5765204f222B2eC1092D38a",
+    "pair": "0x0000000000000000000000000000000000000000",
+    "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+    "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+    "reservePercent": 35,
+    "liquidity": {
+      "token": "1000000",
+      "base": "5"
+    }
+  },
+  {
+    "timestamp": 1765778213090,
+    "network": "polygonAmoy",
+    "token": "0xeF1315eDfEc58356e57986f29884cD431541B15B",
+    "pair": "0x0000000000000000000000000000000000000000",
+    "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+    "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+    "reservePercent": 35,
+    "liquidity": {
+      "token": "1000000",
+      "base": "5"
+    }
+  },
+  {
+    "timestamp": 1765813850254,
+    "network": "polygonAmoy",
+    "token": "0xB4608970ab2dc50aA4E74Fa55b1f3775a740aC40",
+    "pair": "0x0000000000000000000000000000000000000000",
+    "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+    "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+    "reservePercent": 35,
+    "liquidity": {
+      "token": "1000000",
+      "base": "5"
+    }
+  }
+]

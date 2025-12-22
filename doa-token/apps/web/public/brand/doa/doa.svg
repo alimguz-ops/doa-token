@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE085"/>
+      <stop offset="50%" stop-color="#FFC84D"/>
+      <stop offset="100%" stop-color="#D69C2F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12,12)">
+    <path d="M 10 8 L 10 66 C 10 80 23 88 40 88 C 57 88 70 80 70 66 C 70 53 58 46 41 46 L 32 46 C 49 46 64 36 64 23 C 64 11 51 8 35 8 Z" fill="url(#gold)"/>
+    <circle cx="38" cy="34" r="12" fill="url(#gold)"/>
+    <path d="M 54 12 L 72 66 L 64 66 L 57 49 L 49 66 L 41 66 L 54 12 Z" fill="url(#gold)"/>
+  </g>
+  <text x="50" y="95" font-family="sans-serif" font-size="9" text-anchor="middle" fill="url(#gold)">DOA</text>
+</svg>

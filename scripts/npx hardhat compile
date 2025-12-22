@@ -1,0 +1,43 @@
+const { ethers } = require("hardhat");
+
+// Ajusta estas direcciones según tu despliegue en Amoy
+const PAIR_ADDRESS = "0x...";       // Dirección del par Token/MATIC
+const TOKEN_ADDRESS = "0x...";      // Dirección de tu token
+const WETH_ADDRESS = "0x...";       // Dirección de WMATIC en Amoy
+
+async function main() {
+  const [signer] = await ethers.getSigners();
+
+  console.log("\n🔎 Validando reservas del par en QuickSwap Amoy...\n");
+
+  // Conectar al contrato del par
+  const pair = await ethers.getContractAt("IUniswapV2Pair", PAIR_ADDRESS, signer);
+
+  // Obtener reservas
+  const [reserve0, reserve1] = await pair.getReserves();
+  const token0 = await pair.token0();
+  const token1 = await pair.token1();
+
+  // Identificar cuál es tu token y cuál es WMATIC
+  let tokenReserve, maticReserve;
+  if (token0.toLowerCase() === TOKEN_ADDRESS.toLowerCase()) {
+    tokenReserve = reserve0;
+    maticReserve = reserve1;
+  } else {
+    tokenReserve = reserve1;
+    maticReserve = reserve0;
+  }
+
+  console.log("✅ Reservas actuales:");
+  console.log("   Token:", ethers.utils.formatUnits(tokenReserve, 18));
+  console.log("   WMATIC:", ethers.utils.formatUnits(maticReserve, 18));
+
+  // Validación simple
+  if (tokenReserve.gt(0) && maticReserve.gt(0)) {
+    console.log("\n📊 Liquidez disponible: ✅ El par está operativo.\n");
+  } else {
+    console.log("\n⚠️ Liquidez insuficiente: ❌ No se puede operar correctamente.\n");
+  }
+}
+
+main();

@@ -1,0 +1,46 @@
+
+---
+
+## 🎨 Archivos de marca / Brand Assets
+
+- **doa.svg** → Logo principal dorado con fondo transparente.  
+  **doa.svg** → Main golden logo with transparent background.  
+
+- **doa-dark.svg** → Versión con fondo oscuro.  
+  **doa-dark.svg** → Version with dark background.  
+
+- **doa-flat.svg** → Versión dorada plana (sin gradiente).  
+  **doa-flat.svg** → Flat golden version (no gradient).  
+
+- **doa-mask.svg** → Versión en negro, para usar como máscara en CSS.  
+  **doa-mask.svg** → Black version, used as a CSS mask.  
+
+---
+
+## ⚙️ Workflow CI/CD
+
+Archivo / File: `.github/workflows/brand.yml`
+
+- Convierte automáticamente los SVG en PNG de distintos tamaños (256px, 128px) cada vez que se actualizan.  
+- Automatically converts SVG files into PNGs of different sizes (256px, 128px) whenever updated.  
+
+---
+
+## 💻 Uso en frontend / Frontend Usage
+
+Ejemplo en React/Next.js:  
+Example in React/Next.js:
+
+```tsx
+import Image from "next/image";
+
+export function TokenLogo() {
+  return (
+    <Image
+      src="/brand/doa/doa.svg"
+      width={64}
+      height={64}
+      alt="DOA token"
+    />
+  );
+}

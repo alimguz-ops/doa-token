@@ -1,0 +1,28 @@
+{
+  "network": "polygon-amoy",
+  "rpcUrl": "https://rpc-amoy.polygon.technology",
+  "privateKey": "2231c3100a1e142017b5a3feee7f45d8a3caa937ed995ed09d9b2bb90a917f39",
+  "polygonscanApiKey": "4UYIK5GR3CTGXRWTR1X4NCPXDWEY3SPKWS",
+  "token": {
+    "name": "DoaToken",
+    "symbol": "DOA",
+    "supply": "1000000",
+    "decimals": 18,
+    "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "address": "0xffe10D03DFbC63a92086ed11872961e30942B068"
+  },
+  "multisigSafe": "0xcfaf9706a96bf75b2d40b600cda0605a77671bcb",
+  "localReset": false,
+  "liquidity": {
+    "router": "0xfDEcf179aCdd8aA346174e7D3dE7069221eE4573",
+    "factory": "0xf72aAC3EEf6564EbD0Bc4d8A66d29698739C4c34",
+    "baseIsNative": true,
+    "baseToken": "0x67cE77D1caf5840311448150D41Efb2ec684F12F",
+    "pairAddress": "0x0000000000000000000000000000000000000001",
+    "liqTokenAmount": "1000000",
+    "liqBaseAmount": "5",
+    "slippageBps": "50",
+    "deadlineSeconds": "1800",
+    "reservePercent": "35"
+  }
+}

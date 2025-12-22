@@ -1,0 +1,56 @@
+name: Deploy & Report
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run deploy script
+        run: npx hardhat run --network polygonAmoy scripts/deployTokenWithLiquidity.cjs
+
+      - name: Generate full report
+        run: npx hardhat run scripts/deploymentsFullReport.cjs
+
+      - name: Commit reports
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add reports
+          git commit -m "Auto-report $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+          git push
+
+                # 7. Notificación en Slack
+      - name: Notify Slack
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "🚀 Nuevo despliegue registrado en *polygonAmoy*",
+              "attachments": [
+                {
+                  "color": "#36a64f",
+                  "fields": [
+                    { "title": "Token", "value": "${{ github.sha }}", "short": true },
+                    { "title": "Reporte", "value": "reports/report-${{ github.run_id }}/", "short": true }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -1,0 +1,31 @@
+const { ethers } = require("hardhat");
+
+async function main() {
+  const FACTORY_ADDRESS = process.env.FACTORY_ADDRESS; // o la que uses en config
+  const tokenA = process.env.TOKEN_A;
+  const tokenB = process.env.TOKEN_B;
+
+  console.log("Factory address:", FACTORY_ADDRESS);
+
+  // ABI mínimo para UniswapV2Factory
+  const factoryAbi = [
+    "function getPair(address tokenA, address tokenB) external view returns (address pair)"
+  ];
+
+  console.log("Factory ABI:", factoryAbi);
+
+  // Instancia del contrato
+  const factory = new ethers.Contract(FACTORY_ADDRESS, factoryAbi, ethers.provider);
+
+  try {
+    const pairAddress = await factory.getPair(tokenA, tokenB);
+    console.log("Pair address:", pairAddress);
+  } catch (err) {
+    console.error("Error calling getPair:", err);
+  }
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

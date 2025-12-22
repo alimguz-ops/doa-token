@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": 0,
+    "network": "polygonAmoy",
+    "token": "",
+    "pair": "",
+    "router": "",
+    "factory": "",
+    "reservePercent": 0,
+    "liquidity": {
+      "token": "",
+      "base": ""
+    }
+  }
+]
