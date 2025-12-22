@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm/
+npx/
+package-lock.json
+
+# Hardhat / Ignition / OpenZeppelin
+.cache/
+artifacts/
+cache/
+coverage/
+coverage.json
+typechain/
+.openzeppelin/
+
+# Logs y temporales
+*.log
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+Thumbs.db
+
+# Deploy / Liquidez
+.last_deploy
+liquidity-events.log
+liquidityChart.png
+liquidityAccumulatedChart.png
+
+# Configuración local
+.env
+.env.*
+config/local.json
+
+# Reports
+reports/
