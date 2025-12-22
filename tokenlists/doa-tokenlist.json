@@ -1,0 +1,15 @@
+{
+  "name": "DOA Token List",
+  "logoURI": "https://raw.githubusercontent.com/Alimguz-Ops/main/assets/doa-logo.png",
+  "timestamp": "2025-12-22T00:00:00Z",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x72851c1b53f1b369d476c1d406b65a855022f876",
+      "name": "DoaToken",
+      "symbol": "DOA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/USUARIO/REPO/main/assets/doa-logo.png"
+    }
+  ]
+}
