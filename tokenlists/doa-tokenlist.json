@@ -1,6 +1,6 @@
 {
   "name": "DOA Token List",
-  "logoURI": "https://raw.githubusercontent.com/Alimguz-Ops/main/assets/doa-logo.png",
+  "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png",
   "timestamp": "2025-12-22T00:00:00Z",
   "tokens": [
     {
@@ -9,7 +9,7 @@
       "name": "DoaToken",
       "symbol": "DOA",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/USUARIO/REPO/main/assets/doa-logo.png"
+      "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png"
     }
   ]
 }
