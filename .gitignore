@@ -15,3 +15,8 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+PRIVATE_KEY=2231c3100a1e142017b5a3feee7f45d8a3caa937ed995ed09d9b2bb90a917f39
+TOKEN_ADDRESS=0x72851c1b53f1b369d476c1d406b65a855022f876
+CHAIN_ID=137
+DECIMALS=18
