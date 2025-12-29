@@ -1,0 +1,48 @@
+# =========================
+# Archivos sensibles
+# =========================
+.env
+*.env
+.env.local
+.env.*.local
+
+# =========================
+# Llaves privadas y secretos
+# =========================
+*.pem
+*.key
+*.crt
+*.p12
+*.keystore
+
+# =========================
+# Archivos de auditoría temporales
+# =========================
+balances.json
+balances.csv
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Compilados de Hardhat
+# =========================
+artifacts/
+cache/
+
+# =========================
+# Configuración del sistema
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/

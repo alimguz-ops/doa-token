@@ -1,0 +1,44 @@
+echo "🔍 Ejecutando verificación pre-push..."
+
+STAGED=$(git diff --cached --name-only)
+
+# Bloquear si alguien intenta subir .env
+if echo "$STAGED" | grep -q ".env"; then
+  echo "❌ ERROR: Intentas subir un archivo .env al remoto. Bloqueado."
+  exit 1
+fi
+
+# Bloquear si hay claves privadas en los archivos staged
+for FILE in $STAGED; do
+  # Saltar si el archivo no existe en el working tree
+  if [ ! -f "$FILE" ]; then
+    continue
+  fi
+
+  # Leer contenido del archivo directamente
+  CONTENT=$(cat "$FILE")
+
+  # Detectar claves privadas reales (64 hexadecimales)
+  if echo "$CONTENT" | grep -Eiq "0x[a-fA-F0-9]{64}"; then
+    echo "❌ ERROR: El archivo $FILE contiene una clave privada real. Push bloqueado."
+    exit 1
+  fi
+done
+
+# --- Verificación especial del archivo .env ---
+SECRET_PHRASE="micieloOmg16"   # <-- Tu frase personal
+
+if [ -f ".env" ]; then
+  echo "⚠️ Archivo .env detectado localmente."
+  echo "👉 Ingresa tu frase personal para verificar:"
+  read -r INPUT
+  if [ "$INPUT" != "$SECRET_PHRASE" ]; then
+    echo "❌ Frase incorrecta. No tienes permiso para verificar el archivo .env."
+    exit 1
+  else
+    echo "✅ Verificación correcta. Tú eres el propietario autorizado."
+  fi
+fi
+
+echo "✅ Pre-push check passed. No secretos encontrados."
+exit 0

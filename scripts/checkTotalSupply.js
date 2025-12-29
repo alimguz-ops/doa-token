@@ -1,29 +1,32 @@
 // scripts/checkTotalSupply.js
-import hardhat from "hardhat";
-import { formatUnits } from "ethers";   // Importar directamente la función en v6
+import { ethers } from "ethers";
+import dotenv from "dotenv";
 
-const { ethers } = hardhat;
+dotenv.config();
+
+// RPC de Polygon
+const provider = new ethers.JsonRpcProvider(process.env.POLYGON_RPC || "https://polygon-rpc.com");
+
+// Dirección del contrato DOA (proxy)
+const doaAddress = process.env.CONTRACT_ADDRESS || "0x692d951163df3f7D9Fe071413F92c319D9B7369E";
+
+// ABI mínimo ERC20
+const erc20Abi = [
+  "function totalSupply() view returns (uint256)",
+  "function decimals() view returns (uint8)"
+];
 
 async function main() {
-  const contractAddress = "0xf2513BF6187edc9EAf26d802bA1a1d9Cf6CA0448";
+  const doaToken = new ethers.Contract(doaAddress, erc20Abi, provider);
 
-  const abi = [
-    "function totalSupply() view returns (uint256)",
-    "function decimals() view returns (uint8)"
-  ];
-
-  const doaToken = await ethers.getContractAt(abi, contractAddress);
-
-  const totalSupplyRaw = await doaToken.totalSupply();
   const decimals = await doaToken.decimals();
+  const supply = await doaToken.totalSupply();
 
-  // Usamos formatUnits directamente
-  const totalSupplyHuman = formatUnits(totalSupplyRaw, decimals);
-
-  console.log(`Total Supply de DOA: ${totalSupplyHuman} tokens`);
+  console.log("📊 Supply total actual de DOA V2:");
+  console.log(`${ethers.formatUnits(supply, decimals)} DOA`);
 }
 
-main().catch((error) => {
-  console.error(error);
+main().catch((err) => {
+  console.error("❌ Error al consultar supply total:", err);
   process.exitCode = 1;
 });

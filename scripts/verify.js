@@ -1,25 +1,22 @@
 // scripts/verify.js
 import hardhat from "hardhat";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const { run } = hardhat;
 
 async function main() {
-  const address = process.env.CONTRACT_ADDRESS;
-  if (!address) {
-    throw new Error("❌ CONTRACT_ADDRESS no está definido en .env");
-  }
+  const contractAddress = process.env.CONTRACT_ADDRESS;
+  const contractName = process.env.CONTRACT_NAME || "DoaToken";
 
-  console.log("Verificando contrato en Polygonscan:", address);
+  console.log("🔍 Verificando contrato en Polygonscan Amoy...");
+  console.log("Dirección:", contractAddress);
 
   await run("verify:verify", {
-    address,
-    constructorArguments: [], // upgradeable: sin constructor
+    address: contractAddress,
+    constructorArguments: [],
+    contract: `contracts/${contractName}.sol:${contractName}`,
   });
 
-  console.log("✅ Verificación completada en Polygonscan");
+  console.log("✅ Verificación completada en Polygonscan Amoy");
 }
 
 main().catch((error) => {

@@ -22,13 +22,14 @@ contract DoaToken is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         address initialOwner
     ) public initializer {
         __ERC20_init(name, symbol);
-        __Ownable_init(initialOwner);
+        __Ownable_init(initialOwner); // ✅ ahora con argumento obligatorio en OZ v5
 
         // Guardar decimales personalizados
         _customDecimals = decimals_;
 
-        // Mint supply inicial al owner
-        _mint(initialOwner, initialSupply * (10 ** decimals_));
+        // Mint supply inicial al owner (ajustado con decimales)
+        uint256 supplyWithDecimals = initialSupply * (10 ** uint256(decimals_));
+        _mint(initialOwner, supplyWithDecimals);
     }
 
     /// @notice Override de decimales para personalizar
@@ -36,6 +37,7 @@ contract DoaToken is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         return _customDecimals == 0 ? 18 : _customDecimals;
     }
 
+    /// @notice Permite al owner ajustar los decimales
     function setDecimals(uint8 newDecimals) external onlyOwner {
         _customDecimals = newDecimals;
     }

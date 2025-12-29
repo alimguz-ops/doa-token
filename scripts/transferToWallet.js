@@ -10,7 +10,7 @@ async function main() {
   const [sender] = await ethers.getSigners();
 
   // Wallet MetaMask destino
-  const recipient = "0x2CC2eB354fba2f84E26a9D1c7ecfa7c2AeB841f8";
+  const recipient = "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5";
 
   // Cantidad total de DOA a transferir
   const amount = ethers.parseUnits("1000000", 18);

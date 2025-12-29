@@ -1,0 +1,39 @@
+name: Update Contract Address
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-address:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Configurar Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # 3. Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Ejecutar script de actualización
+      - name: Update contract address
+        run: |
+          node scripts/update-address.js ${{ secrets.CONTRACT_ADDRESS }}
+
+      # 5. Commit y push automático
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add tokenlists/doa-tokenlist.json deployments.json README.md
+          git commit -m "Auto-update contract address via GitHub Actions" || echo "No changes to commit"
+          git push

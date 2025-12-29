@@ -1,0 +1,31 @@
+{
+  "network": "Polygon Mainnet",
+  "contract": "DOA Token",
+  "address": "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305", 
+  "proxy": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+  "deploymentDate": "2025-12-27T01:30:00Z",
+  "status": "success",
+  "logs": [
+    {
+      "step": "deploy_contract",
+      "result": "completed",
+      "timestamp": "2025-12-27T01:30:05Z",
+      "tx_hash": "0xc90ba1f6657e49d40a38b5d4d614d58d405834fbe530458dda6ae8e47e195543"
+    },
+    {
+      "step": "create_pair_dex",
+      "result": "completed",
+      "timestamp": "2025-12-27T01:30:10Z"
+    },
+    {
+      "step": "add_liquidity",
+      "result": "completed",
+      "timestamp": "2025-12-27T01:30:15Z"
+    },
+    {
+      "step": "register_proxy",
+      "result": "completed",
+      "timestamp": "2025-12-27T01:30:20Z"
+    }
+  ]
+}

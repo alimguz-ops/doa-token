@@ -1,5 +1,12 @@
 {
-  "network": "polygon-mainnet",
-  "tokenProxy": "0x126DE20f68F025948feefD0BbB451eCf370Eb5f1",
-  "pairs": {}
+  "deployments": [
+    {
+      "date": "2025-12-27",
+      "network": "Ethereum Mainnet",
+      "contract": "DOA.sol",
+      "proxy": "Proxy.sol",
+      "txHash": "0x...",
+      "status": "success"
+    }
+  ]
 }

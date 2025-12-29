@@ -1,0 +1,325 @@
+# DOA Token – Hardhat Project
+
+## ⚠️ Dirección comprometida
+La dirección **0x2CC2eB354fba2f84E26a9D1c7ecfa7c2AeB841f8** está comprometida:
+- No debe usarse para recibir POL/MATIC ni ejecutar despliegues.
+- Todos los depósitos enviados a esta dirección son reenviados automáticamente a otra cuenta.
+- La nueva dirección oficial para operaciones es: **0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5**.
+
+---
+
+Este proyecto contiene la configuración y scripts necesarios para desplegar y verificar el **DOA Token** en Polygon (mainnet) y Amoy (testnet).
+
+## 🚀 Instalación limpia
+1. Elimina dependencias rotas:
+   ```powershell
+   rd /s /q node_modules
+   del package-lock.json
+
+# DOA Token
+
+DOA Token es un activo digital orientado a liquidez automatizada, gobernanza transparente y visibilidad completa en DEX. Este repositorio centraliza el contrato verificado, tokenlist, logo oficial y guías de integración.
+
+---
+
+## Contratos y verificación
+
+- **Red:** Polygon (chainId 137)
+- **Proxy (principal):** 0x692d951163df3f7D9Fe071413F92c319D9B7369E  
+  https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E#code
+- **Implementación:** 0xD6426Da6D01233Efe48dab6aD96cf3238f02c305  
+  https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305#code
+- **ProxyAdmin:** 0x1c1Fcb9A6dD76b8a041766e9330D92c6C4779794  
+  https://polygonscan.com/address/0x1c1Fcb9A6dD76b8a041766e9330D92c6C4779794
+
+> Ownership de la dirección del proxy verificado en PolygonScan.
+
+---
+
+## Tokenlist oficial
+
+- **Tokenlist:** https://raw.githubusercontent.com/alimguz-ops/doa-token/main/tokenlist.json
+- **LogoURI:** https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png
+
+Ejemplo mínimo del tokenlist:
+```json
+{
+  "name": "DOA Token List",
+  "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png",
+  "timestamp": "2025-12-22T00:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "keywords": ["defi", "dao", "utility", "governance"],
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+      "name": "DOA Token",
+      "symbol": "DOA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png"
+    }
+  ]
+}
+
+DOA Token Auditoría y Plan de Quema
+
+📊 Supply Inicial y Distribución
+
+Owner (0x6377…): 1,000,000 DOA
+
+Admin (0xF224…): 200,000 DOA
+
+Reserva (0xFE75…): 250,000 DOA
+
+Comunidad (0xD1F7…): 100,000 DOA
+
+Colaborador (0xE3BA…): 250,000 DOA
+
+Supply total inicial: 1,800,000 DOA
+
+🔥 Quema Inicial
+
+Fecha: Diciembre 2025
+
+Cuenta: Owner (0x6377…)
+
+Cantidad: 100,000 DOA
+
+Método: Transferencia al Dead Address (0x000000000000000000000000000000000000dEaD)
+
+Hash de transacción: 0xc90ba1f6657e49d40a38b5d4d614d58d405834fbe530458dda6ae8e47e195543
+
+Supply total después de quema inicial: 1,800,000 DOA
+
+📅 Plan de Quema Trimestral
+
+Periodicidad: Cada trimestre (cada 3 meses)
+
+Porcentaje: 2% del balance del Owner
+
+Método: Transferencia al Dead Address
+
+Ejemplo: Con 900,000 DOA en Owner, se queman 18,000 DOA en el trimestre.
+
+🛠 Scripts de Auditoría
+
+checkAllBalances.js → Consulta balances de Owner, Admin, Reserva, Comunidad y Colaboradores.
+
+checkTotalSupply.js → Consulta supply total actual del token.
+
+mintTokens.js → Mint de tokens al Owner.
+
+burnByTransferOwner.js → Quema inicial desde Owner.
+
+burnByPercentage.js → Quema programada por porcentaje.
+
+✅ Flujo de Auditoría
+
+Ejecutar checkTotalSupply.js y checkAllBalances.js antes de cada burn.
+
+Ejecutar burnByPercentage.js para quemar el % definido.
+
+Confirmar supply y balances después del burn.
+
+Documentar resultados en este README con fecha, cantidad y hash de transacción.
+
+🎯 Beneficios del Plan
+
+Transparencia y confianza en la comunidad.
+
+Supply deflacionario controlado.
+
+Evidencia auditable en Polygonscan.
+
+Marketing positivo en cada hito trimestral.
+
+## 📅 Cronograma de Quema Trimestral 2026
+
+**Estrategia:** 2% del balance del Owner cada trimestre, transferido al Dead Address  
+**Balance inicial del Owner (enero 2026):** 900,000 DOA
+
+| Trimestre | Fecha estimada | % Burn | Cantidad (DOA) | Supply total esperado |
+|-----------|----------------|--------|----------------|-----------------------|
+| Q1 2026   | 31 marzo 2026  | 2%     | 18,000 DOA     | 1,782,000 DOA         |
+| Q2 2026   | 30 junio 2026  | 2%     | 17,640 DOA     | 1,764,360 DOA         |
+| Q3 2026   | 30 septiembre 2026 | 2% | 17,287 DOA     | 1,747,073 DOA         |
+| Q4 2026   | 31 diciembre 2026 | 2% | 16,941 DOA     | 1,730,132 DOA         |
+
+**Notas:**
+- Las cantidades se calculan sobre el balance restante del Owner después de cada burn.  
+- El supply total esperado se ajusta automáticamente tras cada quema.  
+- Cada burn debe documentarse en este README con **fecha, cantidad exacta y hash de transacción**.  
+- El cronograma puede ajustarse según liquidez y adopción, pero este plan sirve como guía inicial transparente.
+
+---
+
+## 📒 Bitácora de Burns Trimestrales 2026
+
+Este registro documenta cada quema trimestral del DOA Token durante 2026.  
+Cada entrada debe incluir **fecha, cantidad exacta quemada, supply total resultante y hash de transacción en Polygonscan**.
+
+| Trimestre | Fecha | Cantidad quemada (DOA) | Supply total resultante | Hash de transacción |
+|-----------|-------|-------------------------|-------------------------|---------------------|
+| Q1 2026   | 31 marzo 2026 | 18,000 DOA | 1,782,000 DOA | `0x...` |
+| Q2 2026   | 30 junio 2026 | 17,640 DOA | 1,764,360 DOA | `0x...` |
+| Q3 2026   | 30 septiembre 2026 | 17,287 DOA | 1,747,073 DOA | `0x...` |
+| Q4 2026   | 31 diciembre 2026 | 16,941 DOA | 1,730,132 DOA | `0x...` |
+
+**Notas:**
+- Los valores de cantidad quemada son estimados (2% del balance del Owner).  
+- Sustituye cada `0x...` con el hash real de la transacción en Polygonscan.  
+- Este registro debe actualizarse inmediatamente después de cada burn para mantener la transparencia.  
+- El supply total resultante debe confirmarse con `checkTotalSupply.js` y documentarse aquí.
+
+---
+
+## 📒 Bitácora de Burns
+
+Este registro documenta cada quema del DOA Token.  
+Cada entrada incluye **fecha, cantidad exacta quemada, supply total resultante y hash de transacción en Polygonscan**.
+
+### 🔹 Ejemplo: Quema inicial (Q4 2025)
+| Trimestre | Fecha | Cantidad quemada (DOA) | Supply total resultante | Hash de transacción |
+|-----------|-------|-------------------------|-------------------------|---------------------|
+| Q4 2025   | 24 diciembre 2025 | 100,000 DOA | 1,800,000 DOA | `0xc90ba1f6657e49d40a38b5d4d614d58d405834fbe530458dda6ae8e47e195543` |
+
+---
+
+### 🔹 Burns programados 2026
+| Trimestre | Fecha | Cantidad quemada (DOA) | Supply total resultante | Hash de transacción |
+|-----------|-------|-------------------------|-------------------------|---------------------|
+| Q1 2026   | 31 marzo 2026 | 18,000 DOA | 1,782,000 DOA | `0x...` |
+| Q2 2026   | 30 junio 2026 | 17,640 DOA | 1,764,360 DOA | `0x...` |
+| Q3 2026   | 30 septiembre 2026 | 17,287 DOA | 1,747,073 DOA | `0x...` |
+| Q4 2026   | 31 diciembre 2026 | 16,941 DOA | 1,730,132 DOA | `0x...` |
+
+**Notas:**
+- Sustituye cada `0x...` con el hash real de la transacción en Polygonscan.  
+- El supply total resultante debe confirmarse con `checkTotalSupply.js` después de cada burn.  
+- Este registro debe actualizarse inmediatamente después de cada quema para mantener la transparencia y la auditoría pública.
+
+Guía README para DOA Tokenlists
+
+Este repositorio contiene la lista oficial de tokens de DOA Token para su inclusión en DEX como Uniswap y QuickSwap.
+
+📋 Contenido
+
+Archivo principal: lists/community/doa.tokenlist.json
+
+Logo oficial: assets/doa-logo.png
+
+Contratos:
+
+Implementación: 0x692d951163df3f7D9Fe071413F92c319D9B7369E
+
+Proxy: 0xD6426Da6D01233Efe48dab6aD96cf3238f02c305
+
+Owner: 0x6377cd174b35f3630b6d0db695f175d5f0dc5541
+
+Admin: 0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5
+
+🚀 Pasos para enviar Pull Request
+
+1. Preparar el archivo
+
+El archivo doa.tokenlist.json ya está listo y cumple con el schema oficial de Uniswap.
+
+2. Fork de repositorios
+
+Ir a Uniswap/token-lists y hacer Fork.
+
+Ir a QuickSwap/token-lists y hacer Fork.
+
+3. Subir archivo
+
+En tu fork, crear la carpeta lists/community/.
+
+Subir el archivo doa.tokenlist.json dentro de esa carpeta.
+
+4. Crear Pull Request
+
+Desde tu fork, abrir Contribute → Open pull request.
+
+Título: Add DOA Token list (Polygon 137)
+
+Descripción:
+
+Request to add DOA Token list for Polygon (chainId 137).
+
+Implementation: 0x692d951163df3f7D9Fe071413F92c319D9B7369E
+Proxy:          0xD6426Da6D01233Efe48dab6aD96cf3238f02c305
+Owner:          0x6377cd174b35f3630b6d0db695f175d5f0dc5541
+Admin:          0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5
+
+Logo: https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png
+
+Notes:
+- Contract verified on PolygonScan.
+- JSON follows Uniswap token list schema.
+- Goal: enable DOA visibility in DEX UI for Polygon.
+
+5. Repetir en QuickSwap
+
+Haz el mismo proceso en tu fork de QuickSwap.
+
+✅ Validaciones
+
+Dirección en formato checksum (copiada de PolygonScan).
+
+Logo accesible públicamente.
+
+JSON válido según el schema de Uniswap.
+
+📌 Resultado esperado
+
+Una vez aceptados los PRs, DOA Token aparecerá automáticamente en las interfaces de Uniswap y QuickSwap, con su logo y metadata oficial.
+
+✅ Checklist de Onboarding (para nuevos colaboradores)
+Este flujo asegura que cualquier persona pueda integrarse al proyecto DOA en minutos:
+- Clonar el repositorio
+git clone <URL-del-repo>
+cd doa-token
+- Crear archivo .env a partir de la plantilla
+cp .env.example .env
+- Rellenar variables:
+- TOKEN_NAME, TOKEN_SYMBOL, TOKEN_DECIMALS, TOKEN_SUPPLY, INITIAL_OWNER
+- MIN_RESERVES
+- Instalar dependencias
+npm install
+- Compilar contratos
+npx hardhat compile
+- Ejecutar el deploy
+npx hardhat run scripts/deploy.js --network mainnet
+- Se mostrará la dirección del contrato proxy en consola.
+- Se registrará automáticamente en deployments/deployments.json.
+- Verificar logs de liquidez
+node scripts/monitor-liquidez.js
+- Los eventos se guardan en deployments/liquidity.log.
+- Confirmar auditoría y legal
+- Revisar carpeta audit/ y legal/ para asegurar que están completos.
+
+🎯 Checklist Final de Pasos del Proyecto DOA
+Este es el plan de acción global para llevar el token desde deploy hasta listado oficial:
+- Deploy técnico
+- Desplegar DoaTokenV2 con proxy.
+- Registrar dirección en deployments/deployments.json.
+- Monitorear liquidez con monitor-liquidez.js.
+- Auditoría externa
+- Completar audit/audit-report.md.
+- Registrar avances en audit/audit-log.md.
+- Obtener certificación de seguridad.
+- Documentación legal
+- Finalizar legal/AML-KYC.md y legal/certification.md.
+- Consolidar en legal/README.md.
+- Aplicación a CEX
+- Completar cex-application/application.md con dirección real del contrato.
+- Adjuntar requirements.md y métricas de comunidad (docs/community-metrics.md).
+- Registrar envíos en listing-log.md.
+- Anuncio oficial
+- Publicar comunicado en redes sociales y canales oficiales.
+- Incluir enlaces al contrato verificado, pares en DEX y auditoría.
+- Actualizar docs/project-overview.md con roadmap y estado del listado.
+
+📌 Con estos dos checklists tienes:
+- Onboarding rápido para cualquier colaborador.
+- Ruta clara y marcada para llevar el token DOA desde deploy hasta listado oficial en CEX.

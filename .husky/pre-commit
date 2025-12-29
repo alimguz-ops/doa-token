@@ -1,0 +1,41 @@
+#!/bin/sh
+
+echo "🔍 Ejecutando verificación pre-commit..."
+
+STAGED=$(git diff --cached --name-only)
+
+# Bloquear si alguien intenta commitear .env
+if echo "$STAGED" | grep -q ".env"; then
+  echo "❌ ERROR: Intentas commitear un archivo .env. Bloqueado."
+  exit 1
+fi
+
+# Bloquear si alguien intenta commitear archivos de OpenZeppelin (contienen claves de despliegue)
+if echo "$STAGED" | grep -q ".openzeppelin"; then
+  echo "❌ ERROR: Intentas commitear archivos de .openzeppelin. Bloqueado."
+  exit 1
+fi
+
+# Bloquear si hay claves privadas reales en los archivos staged (excepto .gitignore)
+for FILE in $STAGED; do
+  if [ "$FILE" = ".gitignore" ]; then
+    continue
+  fi
+
+  CONTENT=$(git show :$FILE)
+
+  # Detectar claves privadas reales (64 hexadecimales)
+  if echo "$CONTENT" | grep -Eiq "0x[a-fA-F0-9]{64}"; then
+    echo "❌ ERROR: El archivo $FILE contiene una clave privada real. Commit bloqueado."
+    exit 1
+  fi
+done
+
+# Agregar balances.csv automáticamente si existe
+if [ -f balances.csv ]; then
+  git add balances.csv
+  echo "📊 balances.csv agregado al commit automáticamente."
+fi
+
+echo "✅ Pre-commit check passed. No secretos encontrados."
+exit 0

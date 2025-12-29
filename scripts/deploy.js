@@ -1,40 +1,68 @@
 // scripts/deploy.js
-import hardhat from "hardhat";
-
-const { ethers, upgrades } = hardhat;
+import { ethers, upgrades } from "hardhat";
+import fs from "fs";
 
 async function main() {
-  const DoaToken = await ethers.getContractFactory("DoaToken");
+  // Parámetros del inicializador
+  const name = process.env.TOKEN_NAME || "DoaToken";
+  const symbol = process.env.TOKEN_SYMBOL || "DOA";
+  const decimals = parseInt(process.env.TOKEN_DECIMALS || "18", 10);
+  const supply = BigInt(process.env.TOKEN_SUPPLY || "1000000");
+  const owner =
+    process.env.INITIAL_OWNER ||
+    "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5";
 
-  const name = "DOA Token";
-  const symbol = "DOA";
-  const decimals = 18;
-  const initialSupply = 1_000_000;
+  console.log("🚀 Deploying DOA Token proxy...");
+  console.log("Owner inicial:", owner);
 
-  const [deployer] = await ethers.getSigners();
-  const owner = deployer.address;
+  // Obtener la fábrica del contrato
+  const DoaFactory = await ethers.getContractFactory("DoaToken");
 
-  console.log("🚀 Deploying DOA Token proxy with account:", deployer.address);
-
-  const doaToken = await upgrades.deployProxy(
-    DoaToken,
-    [name, symbol, decimals, initialSupply, owner],
+  // Desplegar proxy con inicializador
+  const doa = await upgrades.deployProxy(
+    DoaFactory,
+    [name, symbol, decimals, supply, owner],
     {
       initializer: "initialize",
-      gasLimit: 6000000,
-      maxFeePerGas: ethers.parseUnits("80", "gwei"),
-      maxPriorityFeePerGas: ethers.parseUnits("2", "gwei"),
     }
   );
 
-  await doaToken.waitForDeployment();
+  await doa.waitForDeployment();
 
-  // 🔑 imprime hash y dirección del contrato
-  console.log("📄 Transaction hash:", doaToken.deployTransaction.hash);
-  console.log("✅ DOA Token proxy deployed to:", await doaToken.getAddress());
+  const proxyAddress = await doa.getAddress();
+  console.log("✅ DOA Token (proxy) desplegado en:", proxyAddress);
+
+  // Registrar en deployments/deployments.json
+  const deploymentData = {
+    network: "mainnet",
+    contract: "DOA Token",
+    address: proxyAddress,
+    proxy: proxyAddress,
+    deploymentDate: new Date().toISOString(),
+    status: "success",
+    parameters: {
+      name,
+      symbol,
+      decimals,
+      supply: supply.toString(),
+      owner,
+    },
+  };
+
+  // Crear carpeta deployments si no existe
+  if (!fs.existsSync("./deployments")) {
+    fs.mkdirSync("./deployments");
+  }
+
+  fs.writeFileSync(
+    "./deployments/deployments.json",
+    JSON.stringify(deploymentData, null, 2)
+  );
+
+  console.log("📄 Registro actualizado en deployments/deployments.json");
 }
 
 main().catch((error) => {
-  console.error("❌ Deployment failed:", error);
+  console.error(error);
   process.exitCode = 1;
 });

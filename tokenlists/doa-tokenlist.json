@@ -5,8 +5,8 @@
   "tokens": [
     {
       "chainId": 137,
-      "address": "0x72851c1b53f1b369d476c1d406b65a855022f876",
-      "name": "DoaToken",
+      "address": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+      "name": "DOA Token",
       "symbol": "DOA",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png"

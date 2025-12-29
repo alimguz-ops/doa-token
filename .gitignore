@@ -1,22 +1,58 @@
-node_modules
+# =========================
+# Archivos sensibles
+# =========================
 .env
+*.env
+.env.local
+.env.*.local
 
-# Hardhat files
-/cache
-/artifacts
+# Bloquear despliegues locales de OpenZeppelin (contienen claves)
+.openzeppelin/
 
-# TypeChain files
-/typechain
-/typechain-types
+# Auditorías locales
+balances.json
+burn-log.json
+ownership-signature.txt
 
-# solidity-coverage files
-/coverage
-/coverage.json
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# =========================
+# Hardhat
+# =========================
+cache/
+artifacts/
 
-PRIVATE_KEY=2231c3100a1e142017b5a3feee7f45d8a3caa937ed995ed09d9b2bb90a917f39
-TOKEN_ADDRESS=0x72851c1b53f1b369d476c1d406b65a855022f876
-CHAIN_ID=137
-DECIMALS=18
+# =========================
+# TypeChain
+# =========================
+typechain/
+typechain-types/
+
+# =========================
+# solidity-coverage
+# =========================
+coverage/
+coverage.json
+
+# =========================
+# Hardhat Ignition
+# =========================
+ignition/deployments/chain-31337/
+
+# =========================
+# Sistema
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/

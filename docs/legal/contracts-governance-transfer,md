@@ -1,0 +1,59 @@
+# DOA Token – Contracts Governance Transfer
+
+Este documento registra los procesos de transferencia de contratos bajo gobernanza del DOA Token.  
+Su objetivo es garantizar transparencia, trazabilidad y seguridad en cada transferencia de propiedad o control de contratos inteligentes.
+
+---
+
+## 🏛 Principios de Transferencia
+
+1. **Transparencia:** Cada transferencia debe estar documentada y accesible a la comunidad.  
+2. **Legitimidad:** Las transferencias deben basarse en decisiones comunitarias registradas en `contracts-governance-decision.md`.  
+3. **Seguridad:** Ninguna transferencia puede comprometer la integridad técnica o legal de los contratos.  
+4. **Trazabilidad:** Cada transferencia debe reflejarse en `contracts-governance-versioning.md` y `contracts-changelog.md`.  
+5. **Prevención:** Las transferencias deben anticipar riesgos documentados en `contracts-risk.md`.  
+
+---
+
+## 📋 Formato de Registro
+
+- **Fecha:** YYYY-MM-DD  
+- **Versión:** vX.Y.Z (ej. v1.6.0)  
+- **Contrato Transferido:** Nombre y dirección del contrato  
+- **Entidad de Origen:** Dirección o rol que tenía el control previo  
+- **Entidad de Destino:** Dirección o rol que recibe el control  
+- **Descripción de la Transferencia:** Breve explicación del motivo y alcance de la transferencia  
+- **Motivo de la Transferencia:** propuesta | decisión | auditoría | incidente | cumplimiento  
+- **Impacto:** técnico | legal | comunitario | operativo  
+- **Estado:** `transferred` | `pending` | `deprecated`  
+- **Implementación:** Registro en `contracts-deploy.md` y `contracts-migration.md`  
+- **Notas:** Observaciones relevantes  
+- **Enlaces:** URLs a auditorías, transacciones en PolygonScan o documentos legales  
+
+---
+
+## 📒 Ejemplo de Entrada
+
+- **Fecha:** 2026-06-30  
+- **Versión:** v1.6.0  
+- **Contrato Transferido:** Governance Proxy – `0x789...ghi`  
+- **Entidad de Origen:** Dirección multisig del equipo inicial  
+- **Entidad de Destino:** Dirección multisig del comité comunitario  
+- **Descripción de la Transferencia:** Transferencia de control del contrato proxy hacia el comité comunitario para mayor descentralización.  
+- **Motivo de la Transferencia:** decisión comunitaria (P-032).  
+- **Impacto:** técnico y comunitario.  
+- **Estado:** transferred  
+- **Implementación:** Documentado en `contracts-migration.md` y `contracts-changelog.md`.  
+- **Notas:** La transferencia fortaleció la descentralización y legitimidad del sistema de gobernanza.  
+- **Enlaces:**  
+  - `contracts-governance-decision.md`  
+  - `contracts-audit.md`  
+  - `contracts-risk.md`  
+
+---
+
+## 📌 Notas
+
+- Cada transferencia debe registrarse inmediatamente después de ser ejecutada.  
+- Este archivo complementa `contracts-governance-versioning.md`, `contracts-governance-decision.md`, `contracts-audit.md` y `contracts-risk.md`.  
+- La trazabilidad en transferencias fortalece la confianza de la comunidad y exchanges.
