@@ -4,12 +4,12 @@
  * y registra los eventos en deployments/liquidity.log
  */
 
-import fs from "fs";
-import dotenv from "dotenv";
+const fs = require("fs");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
-const MIN_RESERVES = parseInt(process.env.MIN_RESERVES || "1000", 10);
+const MIN_RESERVES = Number(process.env.MIN_RESERVES || 1000);
 const LOG_FILE = "./deployments/liquidity.log";
 
 function logEvent(message) {
@@ -19,7 +19,7 @@ function logEvent(message) {
 
   // Crear carpeta deployments si no existe
   if (!fs.existsSync("./deployments")) {
-    fs.mkdirSync("./deployments");
+    fs.mkdirSync("./deployments", { recursive: true });
   }
 
   // Registrar en liquidity.log

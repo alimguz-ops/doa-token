@@ -1,0 +1,50 @@
+# Generating vesting schedule table for DOATokenV2 and saving as PDF
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+import os
+
+# Define total supply and allocations
+total_supply = 100_000_000
+allocations = {
+    "Founder": {"percent": 20, "schedule": [("Q4 2026", 50), ("Q4 2027", 50)]},
+    "Comunidad": {"percent": 40, "schedule": [("Q1 2026", 25), ("Q2 2026", 25), ("Q3 2026", 25), ("Q4 2026", 25)]},
+    "Liquidez": {"percent": 30, "schedule": [("Q2 2026", 50), ("Q4 2026", 50)]},
+    "Reserva": {"percent": 10, "schedule": [("Q4 2026", 100)]}
+}
+
+# Build the vesting schedule table
+rows = []
+for dest, data in allocations.items():
+    total_tokens = total_supply * data["percent"] / 100
+    for period, pct in data["schedule"]:
+        tokens = total_tokens * pct / 100
+        rows.append({
+            "Periodo": period,
+            "Tokens liberados": f"{int(tokens):,}",
+            "% del total": f"{tokens / total_supply * 100:.2f}%",
+            "Destino": dest
+        })
+
+# Create DataFrame and sort by period
+df = pd.DataFrame(rows)
+df["Periodo_order"] = df["Periodo"].apply(lambda x: int(x[1]) * 10 + int(x[-4]))
+df = df.sort_values(by="Periodo_order").drop(columns="Periodo_order")
+
+# Save as PDF
+output_path = "/mnt/data/Calendario_Adquisicion_DOATokenV2.pdf"
+fig, ax = plt.subplots(figsize=(10, 4))
+fig.patch.set_visible(False)
+ax.axis('off')
+ax.axis('tight')
+table = ax.table(cellText=df.values, colLabels=df.columns, cellLoc='center', loc='center')
+table.auto_set_font_size(False)
+table.set_fontsize(10)
+table.scale(1.2, 1.5)
+plt.tight_layout()
+
+with PdfPages(output_path) as pdf:
+    pdf.savefig(fig)
+
+print("Calendario de adquisición generado y guardado como Calendario_Adquisicion_DOATokenV2.pdf")

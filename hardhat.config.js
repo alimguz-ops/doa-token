@@ -1,6 +1,9 @@
+// hardhat.config.js
 require("@nomiclabs/hardhat-ethers");
 require("@openzeppelin/hardhat-upgrades");
 require("dotenv").config();
+
+const { POLYGON_RPC_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: {
@@ -14,8 +17,8 @@ module.exports = {
   },
   networks: {
     polygon: {
-      url: process.env.POLYGON_RPC_URL || "",
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      url: POLYGON_RPC_URL || "",
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
     hardhat: {
       chainId: 1337,

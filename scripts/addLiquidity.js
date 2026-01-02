@@ -1,90 +1,56 @@
 // scripts/addLiquidity.js
-import hardhat from "hardhat";
-import dotenv from "dotenv";
+require("dotenv").config();
+const { ethers } = require("ethers");
 
-dotenv.config();
-const { ethers } = hardhat;
+const provider = new ethers.providers.JsonRpcProvider(process.env.POLYGON_RPC);
+const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+
+// Router QuickSwap V2
+const routerAddr = "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff";
+const routerAbi = [
+  "function addLiquidity(address tokenA, address tokenB, uint amountADesired, uint amountBDesired, uint amountAMin, uint amountBMin, address to, uint deadline) returns (uint amountA, uint amountB, uint liquidity)"
+];
+const erc20Abi = [
+  "function approve(address spender, uint256 amount) external returns (bool)",
+  "function decimals() view returns (uint8)"
+];
+
+// Tokens
+const doa = "0x692d951163df3f7D9Fe071413F92c319D9B7369E"; // DOA V2
+const wpol = "0x0d500B1d8E8eF31E21C99d1Db9A6444d3Adf1270"; // WPOL
 
 async function main() {
-  const provider = new ethers.JsonRpcProvider(process.env.POLYGON_RPC);
+  const router = new ethers.Contract(routerAddr, routerAbi, wallet);
 
-  // Selección dinámica de signer: usa OWNER por defecto
-  const useAdmin = process.env.USE_ADMIN === "true";
-  const privateKey = useAdmin ? process.env.PRIVATE_KEY_ADMIN : process.env.PRIVATE_KEY_OWNER;
-  const signer = new ethers.Wallet(privateKey, provider);
+  // Montos iniciales DOA/WPOL
+  const doaAmount = ethers.utils.parseUnits("500000", 18); // 500k DOA
+  const wpolAmount = ethers.utils.parseUnits("100", 18);   // 100 WPOL
 
-  console.log("🚀 Añadiendo liquidez con la cuenta:", await signer.getAddress());
+  const doaContract = new ethers.Contract(doa, erc20Abi, wallet);
+  const wpolContract = new ethers.Contract(wpol, erc20Abi, wallet);
 
-  const tokenAddress = process.env.CONTRACT_ADDRESS;
-  const routerAddress = process.env.ROUTER_ADDRESS;
-  const baseTokenAddress = process.env.BASE_TOKEN_ADDRESS;
+  console.log("🔑 Aprobando DOA...");
+  await (await doaContract.approve(routerAddr, doaAmount)).wait();
 
-  if (!tokenAddress || !routerAddress || !baseTokenAddress) {
-    throw new Error("❌ Faltan variables en .env");
-  }
+  console.log("🔑 Aprobando WPOL...");
+  await (await wpolContract.approve(routerAddr, wpolAmount)).wait();
 
-  const tokenDecimals = Number(process.env.TOKEN_DECIMALS || "18");
-  const amountToken = ethers.parseUnits(process.env.LIQ_TOKEN_AMOUNT || "0", tokenDecimals);
-  const amountBase = ethers.parseUnits(process.env.LIQ_BASE_AMOUNT || "0", 18);
-  const deadline = Math.floor(Date.now() / 1000) + parseInt(process.env.DEADLINE_SECONDS || "600");
+  console.log("🚀 Añadiendo liquidez DOA/WPOL...");
+  const deadline = Math.floor(Date.now() / 1000) + 60 * 10;
 
-  const routerAbi = [
-    "function addLiquidity(address tokenA, address tokenB, uint amountADesired, uint amountBDesired, uint amountAMin, uint amountBMin, address to, uint deadline) returns (uint amountA, uint amountB, uint liquidity)"
-  ];
-  const router = new ethers.Contract(routerAddress, routerAbi, signer);
-
-  const erc20Abi = [
-    "function approve(address spender, uint256 amount) public returns (bool)",
-    "function balanceOf(address account) public view returns (uint256)",
-    "function allowance(address owner, address spender) public view returns (uint256)"
-  ];
-  const doaToken = new ethers.Contract(tokenAddress, erc20Abi, signer);
-  const baseToken = new ethers.Contract(baseTokenAddress, erc20Abi, signer);
-
-  // Verificar balances
-  const doaBalance = await doaToken.balanceOf(await signer.getAddress());
-  const wmaticBalance = await baseToken.balanceOf(await signer.getAddress());
-  console.log("💰 Balance DOA:", ethers.formatUnits(doaBalance, tokenDecimals));
-  console.log("💰 Balance WMATIC:", ethers.formatUnits(wmaticBalance, 18));
-
-  if (doaBalance < amountToken || wmaticBalance < amountBase) {
-    throw new Error("❌ Balance insuficiente para añadir liquidez");
-  }
-
-  // Verificar allowances
-  const doaAllowance = await doaToken.allowance(await signer.getAddress(), routerAddress);
-  const wmaticAllowance = await baseToken.allowance(await signer.getAddress(), routerAddress);
-  console.log("🔎 Allowance DOA:", ethers.formatUnits(doaAllowance, tokenDecimals));
-  console.log("🔎 Allowance WMATIC:", ethers.formatUnits(wmaticAllowance, 18));
-
-  if (doaAllowance < amountToken) {
-    console.log("✅ Aprobando DOA Token...");
-    await (await doaToken.approve(routerAddress, amountToken)).wait();
-  }
-
-  if (wmaticAllowance < amountBase) {
-    console.log("✅ Aprobando WMATIC...");
-    await (await baseToken.approve(routerAddress, amountBase)).wait();
-  }
-
-  console.log("💧 Añadiendo liquidez DOA/WMATIC...");
   const tx = await router.addLiquidity(
-    tokenAddress,
-    baseTokenAddress,
-    amountToken,
-    amountBase,
-    0,
-    0,
-    await signer.getAddress(),
+    doa,
+    wpol,
+    doaAmount,
+    wpolAmount,
+    doaAmount.mul(99).div(100), // 1% slippage
+    wpolAmount.mul(99).div(100),
+    wallet.address,             // LP tokens vuelven a tu wallet owner
     deadline
   );
 
-  console.log("📄 Hash de transacción:", tx.hash);
-  await tx.wait();
-  console.log("✅ Liquidez añadida correctamente en QuickSwap V2");
+  const receipt = await tx.wait();
+  console.log("✅ Liquidez DOA/WPOL añadida. TX:", receipt.transactionHash);
 }
 
-main().catch((error) => {
-  console.error("❌ Error al añadir liquidez:", error);
-  process.exitCode = 1;
-});
+main().catch(console.error);

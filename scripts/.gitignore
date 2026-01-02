@@ -20,6 +20,10 @@
 # =========================
 balances.json
 balances.csv
+*.bak
+*.tmp
+*.swp
+*.old
 
 # =========================
 # Node.js
@@ -46,3 +50,15 @@ Thumbs.db
 # =========================
 *.log
 logs/
+
+# =========================
+# Compliance y auditoría interna
+# =========================
+compliance/private/
+audit/internal/
+
+# =========================
+# Scripts locales de prueba
+# =========================
+scripts/test-*.js
+scripts/dev-*.js
