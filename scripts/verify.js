@@ -1,25 +1,28 @@
 // scripts/verify.js
-import hardhat from "hardhat";
-
-const { run } = hardhat;
+require("dotenv").config();
+const hre = require("hardhat");
 
 async function main() {
-  const contractAddress = process.env.CONTRACT_ADDRESS;
-  const contractName = process.env.CONTRACT_NAME || "DoaToken";
+  // Dirección del contrato proxy que quieres verificar
+  const contractAddress =
+    process.env.CONTRACT_ADDRESS ||
+    "0x692d951163df3f7D9Fe071413F92c319D9B7369E";
 
-  console.log("🔍 Verificando contrato en Polygonscan Amoy...");
+  console.log("🔎 Verificando contrato DOA en Polygonscan...");
   console.log("Dirección:", contractAddress);
 
-  await run("verify:verify", {
+  // Usa el nombre totalmente calificado si tienes duplicados
+  // Ejemplo: "contracts/DoaToken.sol:DoaToken"
+  await hre.run("verify:verify", {
     address: contractAddress,
     constructorArguments: [],
-    contract: `contracts/${contractName}.sol:${contractName}`,
+    contract: "contracts/DoaToken.sol:DoaToken",
   });
 
-  console.log("✅ Verificación completada en Polygonscan Amoy");
+  console.log("✅ Verificación completada en Polygonscan");
 }
 
 main().catch((error) => {
-  console.error(error);
+  console.error("❌ Error en verify.js:", error);
   process.exitCode = 1;
 });

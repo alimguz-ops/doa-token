@@ -38,31 +38,3 @@ async function main() {
     contract: "DOA Token",
     address: proxyAddress,
     proxy: proxyAddress,
-    deploymentDate: new Date().toISOString(),
-    status: "success",
-    parameters: {
-      name,
-      symbol,
-      decimals,
-      supply: supply.toString(),
-      owner,
-    },
-  };
-
-  // Crear carpeta deployments si no existe
-  if (!fs.existsSync("./deployments")) {
-    fs.mkdirSync("./deployments");
-  }
-
-  fs.writeFileSync(
-    "./deployments/deployments.json",
-    JSON.stringify(deploymentData, null, 2)
-  );
-
-  console.log("📄 Registro actualizado en deployments/deployments.json");
-}
-
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});

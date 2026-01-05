@@ -1,14 +1,16 @@
 // scripts/checkTotalSupply.js
-import { ethers } from "ethers";
-import dotenv from "dotenv";
-
-dotenv.config();
+require("dotenv").config();
+const { ethers } = require("ethers");
 
 // RPC de Polygon
-const provider = new ethers.JsonRpcProvider(process.env.POLYGON_RPC || "https://polygon-rpc.com");
+const provider = new ethers.providers.JsonRpcProvider(
+  process.env.POLYGON_RPC || "https://polygon-rpc.com"
+);
 
 // Dirección del contrato DOA (proxy)
-const doaAddress = process.env.CONTRACT_ADDRESS || "0x692d951163df3f7D9Fe071413F92c319D9B7369E";
+const doaAddress =
+  process.env.CONTRACT_ADDRESS ||
+  "0x692d951163df3f7D9Fe071413F92c319D9B7369E";
 
 // ABI mínimo ERC20
 const erc20Abi = [
@@ -23,7 +25,7 @@ async function main() {
   const supply = await doaToken.totalSupply();
 
   console.log("📊 Supply total actual de DOA V2:");
-  console.log(`${ethers.formatUnits(supply, decimals)} DOA`);
+  console.log(`${ethers.utils.formatUnits(supply, decimals)} DOA`);
 }
 
 main().catch((err) => {

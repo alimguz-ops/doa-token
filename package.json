@@ -17,7 +17,10 @@
     "upgrade:polygon": "hardhat run scripts/upgrade.js --network polygon",
     "wrap:polygon": "hardhat run scripts/wrapMatic.js --network polygon",
     "prepare": "husky",
-    "precommit-check": "node scripts/precommit-check.js"
+    "precommit-check": "node scripts/precommit-check.js",
+    "supply": "node scripts/checkTotalSupply.js",
+    "pools": "node scripts/checkPools.js",
+    "pools:all": "node scripts/checkPoolsAll.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",

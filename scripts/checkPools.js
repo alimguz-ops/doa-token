@@ -1,38 +1,37 @@
-import { ethers } from "ethers";
-import fs from "fs";
+// scripts/checkPools.js
+require("dotenv").config();
+const { ethers } = require("ethers");
+const fs = require("fs");
+const path = require("path");
 
-const configPath = new URL("../config/polygon-mainnet.json", import.meta.url);
+// Ruta al archivo de configuración
+const configPath = path.join(__dirname, "../config/polygon-mainnet.json");
 const cfg = JSON.parse(fs.readFileSync(configPath, "utf-8"));
 
-async function main() {
-  const provider = new ethers.JsonRpcProvider(cfg.POLYGON_RPC);
+// ✅ Provider Polygon
+const provider = new ethers.providers.JsonRpcProvider(
+  cfg.POLYGON_RPC || process.env.POLYGON_RPC || "https://polygon-rpc.com"
+);
 
-  const pairAbi = [
-    "function token0() view returns (address)",
-    "function token1() view returns (address)",
-    "function getReserves() view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
-    "function totalSupply() view returns (uint256)"
-  ];
-  const erc20Abi = [
-    "function decimals() view returns (uint8)",
-    "function symbol() view returns (string)"
-  ];
+// ABI de los contratos de pares y tokens ERC20
+const pairAbi = [
+  "function token0() view returns (address)",
+  "function token1() view returns (address)",
+  "function getReserves() view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
+  "function totalSupply() view returns (uint256)"
+];
+const erc20Abi = [
+  "function decimals() view returns (uint8)",
+  "function symbol() view returns (string)"
+];
 
-  console.log("\n🔎 Monitorización de pools DOA en Polygon mainnet\n");
+async function checkPool(symbol, pairAddress) {
+  if (!pairAddress || pairAddress === "") {
+    console.log(`⚠️ Pool DOA/${symbol} aún no creado.`);
+    return;
+  }
 
-  const pools = {
-    WMATIC: cfg.PAIR_ADDRESS_WMATIC,
-    USDC: cfg.PAIR_ADDRESS_USDC,
-    DAI: cfg.PAIR_ADDRESS_DAI,
-    USDT: cfg.PAIR_ADDRESS_USDT
-  };
-
-  for (const [symbol, pairAddress] of Object.entries(pools)) {
-    if (!pairAddress || pairAddress === "") {
-      console.log(`⚠️ Pool DOA/${symbol} aún no creado.`);
-      continue;
-    }
-
+  try {
     const pair = new ethers.Contract(pairAddress, pairAbi, provider);
     const [t0, t1] = await Promise.all([pair.token0(), pair.token1()]);
     const { reserve0, reserve1 } = await pair.getReserves();
@@ -47,12 +46,29 @@ async function main() {
       token1.decimals()
     ]);
 
-    const r0 = Number(ethers.formatUnits(reserve0, dec0));
-    const r1 = Number(ethers.formatUnits(reserve1, dec1));
+    const r0 = Number(ethers.utils.formatUnits(reserve0, dec0));
+    const r1 = Number(ethers.utils.formatUnits(reserve1, dec1));
 
     console.log(`✅ Pool DOA/${symbol} (${pairAddress})`);
     console.log(`   - ${sym0}: ${r0}`);
     console.log(`   - ${sym1}: ${r1}\n`);
+  } catch (err) {
+    console.error(`❌ Error en pool DOA/${symbol}: ${err.message}`);
+  }
+}
+
+async function main() {
+  console.log("\n🔎 Monitorización de pools DOA en Polygon mainnet\n");
+
+  const pools = {
+    WMATIC: cfg.PAIR_ADDRESS_WMATIC,
+    USDC: cfg.PAIR_ADDRESS_USDC,
+    DAI: cfg.PAIR_ADDRESS_DAI,
+    USDT: cfg.PAIR_ADDRESS_USDT
+  };
+
+  for (const [symbol, pairAddress] of Object.entries(pools)) {
+    await checkPool(symbol, pairAddress);
   }
 
   console.log("🚀 Monitorización completa.\n");

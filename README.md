@@ -18,3 +18,14 @@ DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones
 - `legal/` → compliance.
 - `app/` → módulos de utilidad.
 - `cex-application/` → aplicación a exchanges.lo hice dime explicame como abrirlos donde y como reescribirlos
+# Documentación DOA
+
+## Índice
+
+- [Liquidez en Uniswap v3](liquidez-uniswap-v3.md)
+- [Cumplimiento legal](legal/compliance.md)
+- [Auditoría externa](legal/audit-report.md)
+- [Gobernanza](governance.md)
+- [Roadmap](roadmap.md)
+
+

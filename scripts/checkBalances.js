@@ -14,7 +14,7 @@ const erc20Abi = [
 const tokens = {
   MATIC: null, // nativo
   USDC: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-  WETH: "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619", // ETH envuelto en Polygon
+  WETH: "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
   USDT: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
   DAI:  "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
   WPOL: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
@@ -23,12 +23,17 @@ const tokens = {
 
 // Lista de direcciones públicas a revisar
 const addresses = {
-  COLLABORATOR: "0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1", // 250k DOA
-  RESERVE:      "0xfe7522c992ab5193ba66195ccbef65e3b0b76f95", // 250k DOA
-  COMMUNITY:    "0xD1f7a79CE44b267Dfe51B6F84008208550a30562", // 100k DOA
-  ADMIN:        "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5", // 200k DOA
-  OWNER:        "0x6377cd174b35f3630b6d0db695f175d5f0dc5541", // 1,000,000 DOA
-  BINANCE:      "0xb27df745fc43ca79f8250e52639594ae96315ef5"  // Binance wallet
+  COLLABORATOR: "0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1",
+  RESERVE:      "0xfe7522c992ab5193ba66195ccbef65e3b0b76f95",
+  COMMUNITY:    "0xD1f7a79CE44b267Dfe51B6F84008208550a30562",
+  ADMIN:        "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5",
+  OWNER:        "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
+  BINANCE:      "0xb27df745fc43ca79f8250e52639594ae96315ef5"
+};
+
+// LP tokens (solo el contrato que me diste)
+const lpTokens = {
+  DOA_USDC: "0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799"
 };
 
 async function checkBalance(address, tokenAddr, name) {
@@ -49,10 +54,21 @@ async function checkBalance(address, tokenAddr, name) {
   console.log(`🔎 ${symbol} balance: ${balanceFormatted}`);
 }
 
+async function checkLPBalance(address, lpAddr, name) {
+  const lp = new ethers.Contract(lpAddr, erc20Abi, provider);
+  const decimals = await lp.decimals();
+  const symbol = await lp.symbol();
+  const balance = await lp.balanceOf(address);
+
+  const balanceFormatted = ethers.utils.formatUnits(balance, decimals);
+  console.log(`💧 LP ${name} balance: ${balanceFormatted} ${symbol}`);
+}
+
 async function main() {
   for (const [label, addr] of Object.entries(addresses)) {
     console.log(`👤 Checking balances for ${label}: ${addr}\n`);
 
+    // Tokens normales
     for (const [name, tokenAddr] of Object.entries(tokens)) {
       try {
         await checkBalance(addr, tokenAddr, name);
@@ -61,6 +77,19 @@ async function main() {
       }
       console.log("----");
     }
+
+    // Solo LP balance para OWNER
+    if (label === "OWNER") {
+      for (const [name, lpAddr] of Object.entries(lpTokens)) {
+        try {
+          await checkLPBalance(addr, lpAddr, name);
+        } catch (err) {
+          console.log(`❌ Error checking LP ${name}: ${err.message}`);
+        }
+        console.log("----");
+      }
+    }
+
     console.log("\n============================\n");
   }
 }

@@ -46,3 +46,4 @@ Su objetivo es ofrecer una visión clara y transparente del desarrollo y crecimi
 - Este documento debe actualizarse trimestralmente junto con `project-overview.md`.  
 - La transparencia en roadmap y estado fortalece la confianza de la comunidad y exchanges.  
 - Cada actualización debe incluir enlaces verificables (PolygonScan, auditorías, PRs en DEX).  
+

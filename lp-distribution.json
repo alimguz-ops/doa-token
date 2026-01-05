@@ -1,0 +1,32 @@
+{
+  "lpDistribution": {
+    "owner": {
+      "address": "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
+      "percentage": 40,
+      "notes": "Retención inicial por fundador único para control y estabilidad."
+    },
+    "vesting": {
+      "contract": "0xVESTING_CONTRACT_ADDRESS",
+      "percentage": 30,
+      "lockPeriodMonths": 18,
+      "notes": "Bloqueo en timelock/vesting para demostrar compromiso de estabilidad."
+    },
+    "community": {
+      "distributionFile": "community.csv",
+      "percentage": 20,
+      "notes": "Recompensas de staking, gobernanza y participación comunitaria."
+    },
+    "cexReserve": {
+      "exchange": "Binance",
+      "percentage": 10,
+      "notes": "Liquidez inicial para listing en CEX y cumplimiento de requisitos."
+    }
+  },
+  "auditTrail": {
+    "deploymentsLog": "deployments.json",
+    "balancesLog": "balances.csv",
+    "signatures": "ownership-signature.txt",
+    "complianceDocs": "compliance/"
+  },
+  "timestamp": "2026-01-02T23:02:00Z"
+}
