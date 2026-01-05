@@ -1,2 +1,6 @@
 #!/bin/sh
-powershell.exe -ExecutionPolicy Bypass -File ./scripts/pre-push.ps1
+# Si estamos en CI (GitHub Actions), saltar el hook
+[ "$CI" = "true" ] && exit 0
+
+# En entorno local, ejecutar el script de PowerShell
+powershell.exe -ExecutionPolicy Bypass -File ./scripts/pre-commit.ps1
