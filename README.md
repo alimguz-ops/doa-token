@@ -28,4 +28,4 @@ DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones
 - [Gobernanza](governance.md)
 - [Roadmap](roadmap.md)
 
-
+Contrato (Polygon): 0x692d951163df3f7D9Fe071413F92c319D9B7369E
