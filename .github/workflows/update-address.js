@@ -30,7 +30,7 @@ jobs:
           CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
         run: |
           echo "🔧 Updating contract address to $CONTRACT_ADDRESS"
-          node scripts/update-address.js
+          node scripts/update-address.js $CONTRACT_ADDRESS
 
       - name: Verificar cambios antes del commit
         run: |
