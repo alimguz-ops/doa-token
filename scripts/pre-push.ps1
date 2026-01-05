@@ -1,16 +1,18 @@
 Write-Host "Ejecutando verificación pre-push..."
 
-if (Test-Path ".env") {
-    $actualHash = (Get-FileHash ".env" -Algorithm SHA256).Hash.ToLower()
+# Leer el candado desde .env.lock
+if (Test-Path ".env.lock") {
     $lockHash = (Get-Content ".env.lock" | ForEach-Object { ($_ -split "=")[1] }).ToLower()
 
-    if ($actualHash -ne $lockHash) {
-        Write-Host "El archivo .env no coincide con el candado. Push bloqueado."
+    # Validar que la variable de entorno LOCK coincida con el candado
+    if ($env:LOCK -ne $lockHash) {
+        Write-Host "Candado no coincide con variable de entorno. Push bloqueado."
         exit 1
     }
 
+    # Validar frase personal
     $secretPhrase = "micieloOmg16"
-    if ($env:DOA_SECRET_PHRASE -ne $secretPhrase) {
+    if ($env:PHRASE -ne $secretPhrase) {
         Write-Host "Frase personal incorrecta o no configurada. Push bloqueado."
         exit 1
     } else {
