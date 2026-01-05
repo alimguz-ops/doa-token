@@ -1,0 +1,31 @@
+# ✅ DOATokenV2 – Checklist de Aplicación / Application Checklist
+
+Este documento confirma el cumplimiento de los criterios requeridos por Binance para listado de tokens.  
+This document confirms compliance with the criteria required by Binance for token listing.
+
+---
+
+## 📋 Checklist
+
+| Requisito / Requirement | Estado / Status | Evidencia / Evidence |
+|-------------------------|-----------------|----------------------|
+| Documentación legal completa / Complete legal documentation | ✔ Cumplido / ✔ Met | `05_Legal/` – Certificaciones legales |
+| AML/KYC entregado / AML/KYC provided | ✔ Cumplido / ✔ Met | `04_AML_KYC/` – Documentos AML/KYC |
+| Auditoría técnica / Technical audit | ✔ Cumplido / ✔ Met | `06_Technical/` – Auditoría externa del contrato |
+| Tokenomics transparente / Transparent tokenomics | ✔ Cumplido / ✔ Met | `tokenomics.json`, `docs/project-status.md` |
+| Distribución de supply / Supply distribution | ✔ Cumplido / ✔ Met | Tabla y gráfico de holders |
+| Comunidad activa / Active community | ✔ Cumplido / ✔ Met | `07_Community/` – Métricas y redes sociales |
+| Liquidez demostrada / Demonstrated liquidity | ✔ Cumplido / ✔ Met | `08_Liquidity/` – Pares en DEX y volumen |
+| Resumen ejecutivo / Executive summary | ✔ Cumplido / ✔ Met | `02_ExecutiveSummary/` – PDF bilingüe |
+| Carta de presentación / Cover letter | ✔ Cumplido / ✔ Met | `01_CoverLetter/` – Español e inglés |
+| Paquete final / Final package | ✔ Cumplido / ✔ Met | `09_FinalPackage/DOATokenV2 binance.rar` |
+
+---
+
+## ✅ Estado general / Overall Status
+
+- ✔ Todos los requisitos han sido cumplidos / All requirements have been met  
+- ✔ Documentación bilingüe lista para revisión / Bilingual documentation ready for review  
+- ✔ Paquete final preparado para envío / Final package prepared for submission  
+
+---
