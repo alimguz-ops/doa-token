@@ -1,38 +1,48 @@
-// scripts/update-address.js
-const fs = require("fs");
-const path = require("path");
+name: Update Contract Address
 
-// Dirección del contrato (se pasa como argumento al script)
-const contractAddress = process.argv[2];
-if (!contractAddress) {
-  console.error("❌ Debes pasar la dirección del contrato como argumento.");
-  console.error("Ejemplo: node scripts/update-address.js 0x1234...");
-  process.exit(1);
-}
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-// Rutas de archivos
-const tokenlistPath = path.join(__dirname, "../tokenlists/doa-tokenlist.json");
-const deploymentsPath = path.join(__dirname, "../deployments.json");
-const readmePath = path.join(__dirname, "../README.md");
+permissions:
+  contents: write
 
-// 1. Actualizar tokenlist.json
-let tokenlist = JSON.parse(fs.readFileSync(tokenlistPath, "utf8"));
-tokenlist.tokens[0].address = contractAddress;
-fs.writeFileSync(tokenlistPath, JSON.stringify(tokenlist, null, 2));
-console.log("✅ Tokenlist actualizado con nueva dirección:", contractAddress);
+jobs:
+  update-address:
+    runs-on: ubuntu-latest
 
-// 2. Actualizar deployments.json
-let deployments = {};
-if (fs.existsSync(deploymentsPath)) {
-  deployments = JSON.parse(fs.readFileSync(deploymentsPath, "utf8"));
-}
-deployments.address = contractAddress;
-deployments.updatedAt = new Date().toISOString();
-fs.writeFileSync(deploymentsPath, JSON.stringify(deployments, null, 2));
-console.log("✅ deployments.json actualizado");
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-// 3. Actualizar README.md
-let readme = fs.readFileSync(readmePath, "utf8");
-readme = readme.replace(/Contrato \(Polygon\): .*/g, `Contrato (Polygon): ${contractAddress}`);
-fs.writeFileSync(readmePath, readme);
-console.log("✅ README.md actualizado");
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (resolviendo conflictos)
+        run: npm install --legacy-peer-deps
+
+      - name: Update contract address
+        env:
+          CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
+        run: |
+          echo "🔧 Updating contract address to $CONTRACT_ADDRESS"
+          node scripts/update-address.js $CONTRACT_ADDRESS
+
+      - name: Verificar cambios antes del commit
+        run: |
+          if git diff --quiet; then
+            echo "✅ No hay cambios que subir. Todo está sincronizado."
+            exit 0
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add tokenlists/doa-tokenlist.json deployments.json README.md || echo "No files to add"
+          git commit -m "Auto-update contract address via GitHub Actions" || echo "No changes to commit"
+          git push origin HEAD:main
