@@ -1,5 +1,5 @@
 # update-flow.ps1
-# Script para automatizar el flujo de actualización con candado y hooks Husky
+# Script para automatizar el flujo completo de actualización
 
 Write-Host "🔐 Configurando frase personal..."
 $env:DOA_SECRET_PHRASE = "micieloOmg16"
@@ -7,9 +7,9 @@ $env:DOA_SECRET_PHRASE = "micieloOmg16"
 Write-Host "🔄 Regenerando candado..."
 ./lock-env.ps1
 
-Write-Host "📦 Preparando commit..."
-git add .env.lock
-git commit -m "Update candado .env.lock"
+Write-Host "📦 Preparando commit con TODOS los cambios..."
+git add -A
+git commit -m "Actualización completa: candado y scripts"
 
 Write-Host "🚀 Subiendo cambios..."
 git push origin main
