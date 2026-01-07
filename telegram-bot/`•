@@ -1,0 +1,1 @@
+  const links = Object.entries(info.links).map(([k, v]) = ${k}: ${v}`).join('\n');

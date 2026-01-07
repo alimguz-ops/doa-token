@@ -1,4 +1,4 @@
-# DOA Token – Audit Log
+# 🔍 DOA Token – Audit Log
 
 Este documento registra cronológicamente todas las auditorías realizadas al contrato inteligente, scripts y documentación del DOA Token.  
 Sirve como bitácora oficial para auditores, comunidad y exchanges.
@@ -8,11 +8,11 @@ Sirve como bitácora oficial para auditores, comunidad y exchanges.
 ## 📋 Formato de Registro
 
 - **Fecha:** YYYY-MM-DD  
-- **Auditor:** Nombre de la firma o entidad  
+- **Auditor:** Firma o entidad responsable  
 - **Alcance:** Contrato | Scripts | Documentación | Seguridad Operacional  
 - **Resultados:** Breve resumen de hallazgos  
 - **Estado:** `passed` | `issues-found` | `pending`  
-- **Acciones Correctivas:** Descripción de medidas tomadas  
+- **Acciones Correctivas:** Medidas aplicadas para resolver hallazgos  
 - **Enlaces:** URLs a reportes completos, repositorio o transacciones relevantes  
 
 ---
@@ -21,11 +21,11 @@ Sirve como bitácora oficial para auditores, comunidad y exchanges.
 
 - **Fecha:** 2025-12-20  
 - **Auditor:** CertiK  
-- **Alcance:** Contrato inteligente DOA Token  
+- **Alcance:** Contrato inteligente DOATokenV2  
 - **Resultados:**  
   - No se encontraron vulnerabilidades críticas.  
   - Se identificaron 2 advertencias menores relacionadas con optimización de gas.  
-- **Estado:** issues-found  
+- **Estado:** `issues-found`  
 - **Acciones Correctivas:**  
   - Optimización aplicada en funciones de transferencia.  
   - Documentación actualizada en `audit/audit-report.md`.  
@@ -40,3 +40,4 @@ Sirve como bitácora oficial para auditores, comunidad y exchanges.
 - Cada auditoría debe registrarse inmediatamente después de completarse.  
 - Este archivo complementa `audit-report.md` y `audit-checklist.md`.  
 - La transparencia en auditorías fortalece la confianza de la comunidad y exchanges.  
+- Los registros deben mantenerse en orden cronológico y con enlaces verificables.
