@@ -1,3 +1,7 @@
+---
+layout: default
+title: README
+---
 # 📚 Documentación DOA
 
 Bienvenido al repositorio de documentación del proyecto DOA. Aquí encontrarás todos los archivos organizados por categoría: liquidez, gobernanza, auditoría, cumplimiento legal, roadmap y más.

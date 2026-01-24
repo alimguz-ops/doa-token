@@ -1,3 +1,7 @@
+---
+layout: default
+title: TOKENOMICS
+---
 # 📊 TOKENOMICS – DOATokenV2 (DOA)
 
 ## 1. Información general

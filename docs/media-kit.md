@@ -1,3 +1,7 @@
+---
+layout: default
+title: media-kit
+---
 # DOA Token – Media Kit
 
 Este documento centraliza todos los recursos gráficos y visuales oficiales del proyecto DOA Token.  

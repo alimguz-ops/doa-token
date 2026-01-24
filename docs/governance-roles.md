@@ -1,3 +1,7 @@
+---
+layout: default
+title: governance-roles
+---
 # DOA Token – Governance Roles
 
 Este documento define las responsabilidades específicas de cada actor dentro del sistema de gobernanza del DOA Token.  

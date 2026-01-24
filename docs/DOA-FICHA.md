@@ -1,3 +1,7 @@
+---
+layout: default
+title: DOA-FICHA
+---
 # 🧾 Ficha técnica oficial – DOATokenV2 (DOA)
 
 ## 1. Información general

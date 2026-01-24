@@ -1,3 +1,7 @@
+---
+layout: default
+title: releases
+---
 # DOA Token – Releases
 
 Este documento registra cada release oficial del proyecto DOA Token.  

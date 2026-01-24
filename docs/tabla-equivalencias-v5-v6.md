@@ -1,3 +1,7 @@
+---
+layout: default
+title: tabla-equivalencias-v5-v6
+---
 Función / Objeto v5	Equivalente en v6	Nota práctica
 ethers.providers.JsonRpcProvider	ethers.JsonRpcProvider	Se eliminó el namespace providers.
 ethers.utils.formatUnits(value, d)	ethers.formatUnits(value, d)	utils ya no existe, todo está en la raíz.

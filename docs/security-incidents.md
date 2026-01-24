@@ -1,3 +1,7 @@
+---
+layout: default
+title: security-incidents
+---
 # DOA Token – Security Incidents Log
 
 Este documento registra cronológicamente todos los incidentes de seguridad relacionados con el ecosistema DOA Token.  

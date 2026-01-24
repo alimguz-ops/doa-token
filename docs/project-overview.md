@@ -1,3 +1,7 @@
+---
+layout: default
+title: project-overview
+---
 # DOA Token – Project Roadmap
 
 Este documento presenta el roadmap detallado del proyecto DOA Token, con hitos técnicos, legales y de comunidad.  

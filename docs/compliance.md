@@ -1,3 +1,7 @@
+---
+layout: default
+title: compliance
+---
 # DOA Token – Compliance Framework
 
 Este documento define las políticas y certificaciones de cumplimiento regulatorio del DOA Token.  

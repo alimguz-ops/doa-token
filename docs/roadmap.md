@@ -1,3 +1,7 @@
+---
+layout: default
+title: roadmap
+---
 # 🗺️ ROADMAP – DOATokenV2 (DOA)
 
 ## Q1 2026 – Lanzamiento y Base Técnica

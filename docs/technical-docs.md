@@ -1,3 +1,7 @@
+---
+layout: default
+title: technical-docs
+---
 # Documentación Técnica
 
 ## Contratos

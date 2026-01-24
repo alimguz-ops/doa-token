@@ -1,3 +1,7 @@
+---
+layout: default
+title: community-metrics
+---
 # DOA Token – Community Metrics
 
 Este documento consolida las métricas de adopción, liquidez y comunidad del DOA Token.  

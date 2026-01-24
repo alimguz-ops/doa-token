@@ -1,3 +1,7 @@
+---
+layout: default
+title: audit-log
+---
 # 🔍 DOA Token – Audit Log
 
 Este documento registra cronológicamente todas las auditorías realizadas al contrato inteligente, scripts y documentación del DOA Token.  

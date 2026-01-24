@@ -1,3 +1,7 @@
+---
+layout: default
+title: proposals
+---
 # DOA Token – Governance Proposals
 
 Este documento registra todas las propuestas creadas por la comunidad y el equipo relacionadas con la gobernanza del DOA Token.  

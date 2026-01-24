@@ -1,3 +1,7 @@
+---
+layout: default
+title: branding-guidelines
+---
 # DOA Token – Branding Guidelines
 
 Este documento define las reglas oficiales de uso de la marca DOA Token.  

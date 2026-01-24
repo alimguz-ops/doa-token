@@ -1,3 +1,7 @@
+---
+layout: default
+title: audit-checklist
+---
 # DOA Token – Audit Checklist
 
 Este documento define los puntos clave que deben revisarse en cada auditoría del DOA Token.  

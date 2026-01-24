@@ -1,3 +1,7 @@
+---
+layout: default
+title: governance-log
+---
 # DOA Token – Governance Log (Extended)
 
 Este documento registra los resultados de cada votación en formato tabular, facilitando la auditoría y comparación entre propuestas.

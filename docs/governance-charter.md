@@ -1,3 +1,7 @@
+---
+layout: default
+title: governance-charter
+---
 # DOA Token – Governance Charter
 
 Este documento actúa como la “constitución” del sistema de gobernanza del DOA Token.  

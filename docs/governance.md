@@ -1,3 +1,8 @@
+---
+layout: default
+title: DOA Token – Governance Framework
+---
+
 # DOA Token – Governance Framework
 
 Este documento define la estructura de gobernanza del ecosistema DOA Token.  
@@ -53,4 +58,4 @@ Su objetivo es garantizar transparencia, participación comunitaria y procesos c
 
 - Este archivo debe actualizarse con cada cambio en la estructura de gobernanza.  
 - Forma parte del paquete oficial junto con `proposals.md` y `governance-log.md`.  
-- La gobernanza descentralizada fortalece la confianza de la comunidad y exchanges.
+- La gobernanza descentralizada fortalece la confianza de la comunidad y exchanges.  

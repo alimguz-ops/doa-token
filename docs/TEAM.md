@@ -1,3 +1,7 @@
+---
+layout: default
+title: TEAM
+---
 # 👥 TEAM – DOATokenV2 (DOA)
 
 ## 1. Fundador / CEO

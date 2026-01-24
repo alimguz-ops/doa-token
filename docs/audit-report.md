@@ -1,3 +1,7 @@
+---
+layout: default
+title: audit-report
+---
 # DOA Token – Audit Report
 
 Este documento presenta el informe completo de cada auditoría realizada al contrato inteligente, scripts y documentación del DOA Token.  

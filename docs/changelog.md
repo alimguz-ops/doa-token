@@ -1,3 +1,7 @@
+---
+layout: default
+title: changelog
+---
 # DOA Token – Changelog
 
 Este documento registra todas las versiones y cambios técnicos realizados en el repositorio del DOA Token.  

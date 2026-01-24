@@ -1,3 +1,7 @@
+---
+layout: default
+title: roadmap-log
+---
 # DOA Token – Roadmap Log
 
 Este archivo registra cronológicamente cada actualización o ajuste realizado al roadmap del proyecto DOA Token.  

@@ -1,3 +1,7 @@
+---
+layout: default
+title: governance-process
+---
 # DOA Token – Governance Process
 
 Este documento describe paso a paso cómo se inicia, vota y ejecuta una propuesta dentro del sistema de gobernanza del DOA Token.  

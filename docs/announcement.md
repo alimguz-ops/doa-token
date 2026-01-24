@@ -1,3 +1,7 @@
+---
+layout: default
+title: announcement
+---
 # DOA Token – Official Announcements
 
 Este documento centraliza todos los comunicados oficiales relacionados con el DOA Token.  

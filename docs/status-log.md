@@ -1,3 +1,7 @@
+---
+layout: default
+title: status-log
+---
 # DOA Token – Status Log
 
 Este archivo registra cronológicamente cada actualización de estado del proyecto DOA Token.  
