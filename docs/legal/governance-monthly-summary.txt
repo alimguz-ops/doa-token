@@ -1,2 +1,0 @@
-Auditorias=0
-Incidentes=0
