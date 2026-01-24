@@ -1,6 +1,6 @@
-- **Fecha:** 2025-12-27  
+ï»¿- **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xDEF...456  
@@ -8,49 +8,49 @@
 - **Estado:** resolved
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Propiedad:** Migración Proxy v1.5  
+- **Propiedad:** MigraciÃ³n Proxy v1.5  
 - **Estado:** migrated

@@ -1,30 +1,30 @@
-# DOA Token – Contracts Governance Audit
+﻿# DOA Token â€“ Contracts Governance Audit
 
-Este documento registra auditorías técnicas y legales realizadas sobre contratos bajo gobernanza del DOA Token.  
-Su objetivo es garantizar transparencia, trazabilidad y seguridad en la validación de contratos inteligentes y procesos legales asociados.
-
----
-
-## 🏛 Principios de Auditoría
-
-1. **Transparencia:** Cada auditoría debe estar documentada y accesible a la comunidad.  
-2. **Legitimidad:** Las auditorías deben ser realizadas por entidades reconocidas o comités imparciales.  
-3. **Seguridad:** Ninguna auditoría puede comprometer la integridad técnica o legal de los contratos.  
-4. **Trazabilidad:** Cada auditoría debe reflejarse en `contracts-governance-risk.md`, `contracts-governance-incidents.md` y `contracts-changelog.md`.  
-5. **Prevención:** Las auditorías deben servir como base para mitigar riesgos y fortalecer la gobernanza.  
+Este documento registra auditorÃ­as tÃ©cnicas y legales realizadas sobre contratos bajo gobernanza del DOA Token.  
+Su objetivo es garantizar transparencia, trazabilidad y seguridad en la validaciÃ³n de contratos inteligentes y procesos legales asociados.
 
 ---
 
-## 📋 Formato de Registro
+## ðŸ› Principios de AuditorÃ­a
+
+1. **Transparencia:** Cada auditorÃ­a debe estar documentada y accesible a la comunidad.  
+2. **Legitimidad:** Las auditorÃ­as deben ser realizadas por entidades reconocidas o comitÃ©s imparciales.  
+3. **Seguridad:** Ninguna auditorÃ­a puede comprometer la integridad tÃ©cnica o legal de los contratos.  
+4. **Trazabilidad:** Cada auditorÃ­a debe reflejarse en `contracts-governance-risk.md`, `contracts-governance-incidents.md` y `contracts-changelog.md`.  
+5. **PrevenciÃ³n:** Las auditorÃ­as deben servir como base para mitigar riesgos y fortalecer la gobernanza.  
+
+---
+
+## ðŸ“‹ Formato de Registro
 
 - **Fecha:** YYYY-MM-DD  
-- **ID de Auditoría:** AUD-XXX (ej. AUD-001)  
-- **Contrato Auditado:** Nombre y dirección del contrato  
-- **Entidad Auditora:** Nombre de la firma o comité responsable  
-- **Tipo de Auditoría:** técnica | legal | comunitaria | mixta  
-- **Descripción:** Breve explicación del alcance y resultados de la auditoría  
+- **ID de AuditorÃ­a:** AUD-XXX (ej. AUD-001)  
+- **Contrato Auditado:** Nombre y direcciÃ³n del contrato  
+- **Entidad Auditora:** Nombre de la firma o comitÃ© responsable  
+- **Tipo de AuditorÃ­a:** tÃ©cnica | legal | comunitaria | mixta  
+- **DescripciÃ³n:** Breve explicaciÃ³n del alcance y resultados de la auditorÃ­a  
 - **Hallazgos:** listado de vulnerabilidades, riesgos o incumplimientos detectados  
-- **Impacto:** bajo | medio | alto | crítico  
+- **Impacto:** bajo | medio | alto | crÃ­tico  
 - **Estado:** `completed` | `pending` | `mitigation`  
 - **Acciones Tomadas:** Registro en `contracts-governance-decision.md`, `contracts-migration.md` o `contracts-transfer.md`  
 - **Notas:** Observaciones relevantes  
@@ -32,19 +32,19 @@ Su objetivo es garantizar transparencia, trazabilidad y seguridad en la validaci
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
 - **Fecha:** 2026-07-20  
-- **ID de Auditoría:** AUD-003  
-- **Contrato Auditado:** Governance Proxy – `0xABC...123`  
+- **ID de AuditorÃ­a:** AUD-003  
+- **Contrato Auditado:** Governance Proxy â€“ `0xABC...123`  
 - **Entidad Auditora:** CertiK  
-- **Tipo de Auditoría:** técnica  
-- **Descripción:** Validación de seguridad en migración de contrato proxy.  
-- **Hallazgos:** 0 vulnerabilidades críticas, 1 vulnerabilidad media mitigada.  
+- **Tipo de AuditorÃ­a:** tÃ©cnica  
+- **DescripciÃ³n:** ValidaciÃ³n de seguridad en migraciÃ³n de contrato proxy.  
+- **Hallazgos:** 0 vulnerabilidades crÃ­ticas, 1 vulnerabilidad media mitigada.  
 - **Impacto:** medio  
 - **Estado:** completed  
 - **Acciones Tomadas:** Ajuste documentado en `contracts-governance-decision.md` y `contracts-changelog.md`.  
-- **Notas:** Auditoría fortaleció confianza comunitaria en procesos de migración.  
+- **Notas:** AuditorÃ­a fortaleciÃ³ confianza comunitaria en procesos de migraciÃ³n.  
 - **Enlaces:**  
   - `contracts-governance-risk.md`  
   - `contracts-governance-incidents.md`  
@@ -52,14 +52,14 @@ Su objetivo es garantizar transparencia, trazabilidad y seguridad en la validaci
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
-- Cada auditoría debe registrarse inmediatamente después de ser completada.  
+- Cada auditorÃ­a debe registrarse inmediatamente despuÃ©s de ser completada.  
 - Este archivo complementa `contracts-governance-risk.md`, `contracts-governance-incidents.md`, `contracts-governance-decision.md` y `contracts-changelog.md`.  
-- La trazabilidad en auditorías fortalece la confianza de la comunidad y exchanges.- **Fecha:** 2025-12-27  
+- La trazabilidad en auditorÃ­as fortalece la confianza de la comunidad y exchanges.- **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xDEF...456  
@@ -68,61 +68,61 @@ Su objetivo es garantizar transparencia, trazabilidad y seguridad en la validaci
 - **Estado:** resolved
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated
 - **Fecha:** 2025-12-27  
 - **Contrato Auditado:** 0xABC...123  
-- **Hallazgo:** Migraci�n Proxy v1.5  
-- **Impacto:** t�cnico  
+- **Hallazgo:** Migración Proxy v1.5  
+- **Impacto:** técnico  
 - **Estado:** migrated

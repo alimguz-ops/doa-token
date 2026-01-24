@@ -1,84 +1,84 @@
-- **Fecha:** 2025-12-27  
+﻿- **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xDEF...456  
-- **Descripción de la Decisión:** Ajuste de Liquidez  
+- **DescripciÃ³n de la DecisiÃ³n:** Ajuste de Liquidez  
 - **Impacto Esperado:** medio  
 - **Estado:** resolved  
 - **Enlaces:** https://polygonscan.com/tx/456
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123
 - **Fecha:** 2025-12-27  
 - **Contrato Afectado:** 0xABC...123  
-- **Descripción de la Decisión:** Migraci�n Proxy v1.5  
-- **Impacto Esperado:** t�cnico  
+- **DescripciÃ³n de la DecisiÃ³n:** Migración Proxy v1.5  
+- **Impacto Esperado:** técnico  
 - **Estado:** migrated  
 - **Enlaces:** https://polygonscan.com/tx/123

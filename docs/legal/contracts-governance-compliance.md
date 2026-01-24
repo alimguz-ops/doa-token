@@ -1,54 +1,54 @@
-# DOA Token – Contracts Governance Compliance
+﻿# DOA Token â€“ Contracts Governance Compliance
 
 Este documento establece el cumplimiento regulatorio y legal en la gobernanza aplicada a contratos inteligentes y legales del DOA Token.  
-Su objetivo es garantizar que cada decisión comunitaria y cada implementación técnica cumpla con las normativas aplicables y las mejores prácticas legales.
+Su objetivo es garantizar que cada decisiÃ³n comunitaria y cada implementaciÃ³n tÃ©cnica cumpla con las normativas aplicables y las mejores prÃ¡cticas legales.
 
 ---
 
-## 🏛 Principios de Cumplimiento
+## ðŸ› Principios de Cumplimiento
 
 1. **Legalidad:** Todas las decisiones deben respetar las leyes locales e internacionales aplicables.  
 2. **Transparencia:** El cumplimiento debe estar documentado y accesible a la comunidad y auditores.  
-3. **Seguridad:** Ningún proceso de gobernanza puede comprometer la integridad legal del proyecto.  
-4. **Prevención:** El cumplimiento debe anticipar riesgos regulatorios y financieros.  
-5. **Trazabilidad:** Cada certificación o validación debe reflejarse en `contracts-changelog.md` y `contracts-versioning.md`.  
+3. **Seguridad:** NingÃºn proceso de gobernanza puede comprometer la integridad legal del proyecto.  
+4. **PrevenciÃ³n:** El cumplimiento debe anticipar riesgos regulatorios y financieros.  
+5. **Trazabilidad:** Cada certificaciÃ³n o validaciÃ³n debe reflejarse en `contracts-changelog.md` y `contracts-versioning.md`.  
 
 ---
 
-## 📋 Áreas de Cumplimiento
+## ðŸ“‹ Ãreas de Cumplimiento
 
 - **AML/KYC:**  
-  - Certificaciones de cumplimiento contra lavado de dinero y verificación de identidad.  
+  - Certificaciones de cumplimiento contra lavado de dinero y verificaciÃ³n de identidad.  
   - Registro en `contracts-compliance.md`.  
 
 - **No-Valor:**  
-  - Certificación de que el token no constituye un valor regulado.  
-  - Documentación en `contracts-legal.md`.  
+  - CertificaciÃ³n de que el token no constituye un valor regulado.  
+  - DocumentaciÃ³n en `contracts-legal.md`.  
 
-- **Auditorías Legales:**  
+- **AuditorÃ­as Legales:**  
   - Validaciones externas en `contracts-audit.md`.  
   - Riesgos legales en `contracts-risk.md`.  
 
-- **Regulación Internacional:**  
+- **RegulaciÃ³n Internacional:**  
   - Cumplimiento con normativas de exchanges (CEX/DEX).  
-  - Documentación en `contracts-governance-decision.md`.  
+  - DocumentaciÃ³n en `contracts-governance-decision.md`.  
 
 - **Transparencia Comunitaria:**  
-  - Publicación de certificaciones en `announcement.md`.  
+  - PublicaciÃ³n de certificaciones en `announcement.md`.  
   - Registro en `contracts-governance-transparency.md`.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
 - **Fecha:** 2026-05-30  
-- **Propuesta/Decisión:** P-025 – Ajuste de parámetros de liquidez mínima  
-- **Contrato Afectado:** Liquidity Pool – `0x123...abc`  
+- **Propuesta/DecisiÃ³n:** P-025 â€“ Ajuste de parÃ¡metros de liquidez mÃ­nima  
+- **Contrato Afectado:** Liquidity Pool â€“ `0x123...abc`  
 - **Cumplimiento Registrado:**  
-  - Certificación AML/KYC actualizada.  
-  - Validación externa de No-Valor confirmada.  
-  - Auditoría legal sin hallazgos críticos.  
-- **Notas:** El cumplimiento fortaleció la confianza comunitaria y la legitimidad frente a exchanges.  
+  - CertificaciÃ³n AML/KYC actualizada.  
+  - ValidaciÃ³n externa de No-Valor confirmada.  
+  - AuditorÃ­a legal sin hallazgos crÃ­ticos.  
+- **Notas:** El cumplimiento fortaleciÃ³ la confianza comunitaria y la legitimidad frente a exchanges.  
 - **Enlaces:**  
   - `contracts-audit.md`  
   - `contracts-risk.md`  
@@ -56,8 +56,8 @@ Su objetivo es garantizar que cada decisión comunitaria y cada implementación 
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
-- Cada certificación o validación debe registrarse inmediatamente después de emitirse.  
+- Cada certificaciÃ³n o validaciÃ³n debe registrarse inmediatamente despuÃ©s de emitirse.  
 - Este archivo complementa `contracts-audit.md`, `contracts-risk.md`, `contracts-governance-decision.md` y `contracts-legal.md`.  
 - La trazabilidad en cumplimiento fortalece la confianza de la comunidad y exchanges.

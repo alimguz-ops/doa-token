@@ -1,63 +1,63 @@
-# DOA Token – Contracts Deployment Guide
+﻿# DOA Token â€“ Contracts Deployment Guide
 
 Este documento describe paso a paso el proceso de despliegue de cada contrato inteligente del DOA Token.  
-Su objetivo es garantizar reproducibilidad, transparencia y trazabilidad en cada implementación.
+Su objetivo es garantizar reproducibilidad, transparencia y trazabilidad en cada implementaciÃ³n.
 
 ---
 
-## 📝 Preparación
+## ðŸ“ PreparaciÃ³n
 
-1. **Revisión de Código:**  
-   - Validar funciones críticas (`transfer`, `burn`, `mint`).  
-   - Confirmar cumplimiento de estándares ERC-20.  
+1. **RevisiÃ³n de CÃ³digo:**  
+   - Validar funciones crÃ­ticas (`transfer`, `burn`, `mint`).  
+   - Confirmar cumplimiento de estÃ¡ndares ERC-20.  
 
-2. **Configuración de Entorno:**  
+2. **ConfiguraciÃ³n de Entorno:**  
    - Variables sensibles en `.env`.  
    - Uso de `gitignore` para proteger credenciales.  
-   - Activación de pre-commit hooks para validaciones de seguridad.  
+   - ActivaciÃ³n de pre-commit hooks para validaciones de seguridad.  
 
-3. **Auditoría Previa:**  
-   - Validación inicial documentada en `contracts-audit.md`.  
+3. **AuditorÃ­a Previa:**  
+   - ValidaciÃ³n inicial documentada en `contracts-audit.md`.  
    - Checklist completado en `audit-checklist.md`.  
 
 ---
 
-## ⚙️ Proceso de Deploy
+## âš™ï¸ Proceso de Deploy
 
-1. **Compilación:**  
+1. **CompilaciÃ³n:**  
    - Ejecutar `npx hardhat compile`.  
-   - Confirmar que no existan errores ni advertencias críticas.  
+   - Confirmar que no existan errores ni advertencias crÃ­ticas.  
 
 2. **Deploy Inicial:**  
    - Ejecutar script `deploy.js`.  
-   - Registrar dirección del contrato en `contracts.md`.  
+   - Registrar direcciÃ³n del contrato en `contracts.md`.  
 
-3. **Proxy e Implementación:**  
+3. **Proxy e ImplementaciÃ³n:**  
    - Registrar proxy en `deployments.json`.  
-   - Documentar implementación en `contracts-log.md`.  
+   - Documentar implementaciÃ³n en `contracts-log.md`.  
 
-4. **Verificación en Blockchain:**  
+4. **VerificaciÃ³n en Blockchain:**  
    - Verificar contrato en PolygonScan.  
    - Adjuntar enlace en `contracts-log.md`.  
 
 ---
 
-## 📋 Post-Deploy
+## ðŸ“‹ Post-Deploy
 
-- **Auditoría Externa:** Documentar resultados en `contracts-audit.md`.  
+- **AuditorÃ­a Externa:** Documentar resultados en `contracts-audit.md`.  
 - **Registro:** Actualizar `contracts-log.md` y `audit-log.md`.  
-- **Comunicación:** Publicar anuncio oficial en `announcement.md`.  
+- **ComunicaciÃ³n:** Publicar anuncio oficial en `announcement.md`.  
 - **Gobernanza:** Vincular cambios a propuesta en `governance-log.md`.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
 - **Contrato:** DOA Token ERC-20  
 - **Fecha de Deploy:** 2025-12-20  
-- **Dirección:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
+- **DirecciÃ³n:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
 - **Proxy:** registrado en `deployments.json`  
-- **Auditoría:** CertiK – issues-found (optimización de gas)  
+- **AuditorÃ­a:** CertiK â€“ issues-found (optimizaciÃ³n de gas)  
 - **Registro:**  
   - `contracts.md`  
   - `contracts-log.md`  
@@ -65,7 +65,7 @@ Su objetivo es garantizar reproducibilidad, transparencia y trazabilidad en cada
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
 - Este archivo complementa `contracts.md`, `contracts-log.md`, `contracts-audit.md` y `contracts-governance.md`.  
 - Debe actualizarse cada vez que se despliegue un nuevo contrato.  

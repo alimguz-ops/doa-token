@@ -1,50 +1,50 @@
-# DOA Token – Contracts Governance Summary
+﻿# DOA Token â€“ Contracts Governance Summary
 
 Este documento presenta un resumen ejecutivo de cada periodo de gobernanza aplicado a contratos inteligentes y legales del DOA Token.  
-Su objetivo es ofrecer una visión clara, concisa y trazable de las propuestas, votaciones, decisiones, implementaciones y auditorías realizadas.
+Su objetivo es ofrecer una visiÃ³n clara, concisa y trazable de las propuestas, votaciones, decisiones, implementaciones y auditorÃ­as realizadas.
 
 ---
 
-## 🏛 Principios del Resumen
+## ðŸ› Principios del Resumen
 
-1. **Claridad:** El resumen debe ser breve pero completo, destacando los puntos más relevantes.  
+1. **Claridad:** El resumen debe ser breve pero completo, destacando los puntos mÃ¡s relevantes.  
 2. **Transparencia:** Cada periodo debe estar documentado y accesible a la comunidad.  
 3. **Legitimidad:** El resumen debe basarse en registros verificables (`governance-log.md`, `contracts-governance-decision.md`).  
-4. **Seguridad:** Debe reflejar riesgos y auditorías en `contracts-risk.md` y `contracts-audit.md`.  
+4. **Seguridad:** Debe reflejar riesgos y auditorÃ­as en `contracts-risk.md` y `contracts-audit.md`.  
 5. **Trazabilidad:** Cada hallazgo debe vincularse a `contracts-changelog.md` y `contracts-versioning.md`.  
 
 ---
 
-## 📋 Áreas del Resumen
+## ðŸ“‹ Ãreas del Resumen
 
-- **Propuestas:** Número y estado (`approved`, `rejected`, `pending`).  
-- **Votaciones:** Nivel de participación comunitaria y resultados.  
-- **Decisiones:** Impacto técnico y legal documentado.  
+- **Propuestas:** NÃºmero y estado (`approved`, `rejected`, `pending`).  
+- **Votaciones:** Nivel de participaciÃ³n comunitaria y resultados.  
+- **Decisiones:** Impacto tÃ©cnico y legal documentado.  
 - **Implementaciones:** Ejecuciones registradas en contratos (`contracts-deploy.md`, `contracts-migration.md`, `contracts-transfer.md`).  
-- **Auditorías:** Validaciones externas y hallazgos.  
+- **AuditorÃ­as:** Validaciones externas y hallazgos.  
 - **Riesgos/Incidentes:** Documentados en `contracts-risk.md` y `contracts-incidents.md`.  
 - **Cumplimiento:** Certificaciones AML/KYC y No-Valor.  
 - **Transparencia:** Publicaciones en `contracts-governance-transparency.md` y `announcement.md`.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
-- **Periodo Evaluado:** 2026-04-01 → 2026-06-30  
+- **Periodo Evaluado:** 2026-04-01 â†’ 2026-06-30  
 - **Propuestas:** 7 presentadas, 5 aprobadas, 2 rechazadas.  
-- **Votaciones:** Participación comunitaria del 73%.  
-- **Decisiones:** Ajuste de parámetros de liquidez y migración de contrato proxy.  
-- **Implementaciones:** Cambios ejecutados en menos de 48 horas tras aprobación.  
-- **Auditorías:** CertiK validó migración sin hallazgos críticos.  
+- **Votaciones:** ParticipaciÃ³n comunitaria del 73%.  
+- **Decisiones:** Ajuste de parÃ¡metros de liquidez y migraciÃ³n de contrato proxy.  
+- **Implementaciones:** Cambios ejecutados en menos de 48 horas tras aprobaciÃ³n.  
+- **AuditorÃ­as:** CertiK validÃ³ migraciÃ³n sin hallazgos crÃ­ticos.  
 - **Riesgos/Incidentes:** 1 riesgo documentado (nivel medio), 0 incidentes.  
-- **Cumplimiento:** Certificación AML/KYC actualizada y validación de No-Valor confirmada.  
+- **Cumplimiento:** CertificaciÃ³n AML/KYC actualizada y validaciÃ³n de No-Valor confirmada.  
 - **Transparencia:** Propuestas y resultados publicados en repositorios comunitarios.  
-- **Conclusión:** Gobernanza mostró legitimidad y eficiencia, con oportunidad de mejorar documentación técnica.  
+- **ConclusiÃ³n:** Gobernanza mostrÃ³ legitimidad y eficiencia, con oportunidad de mejorar documentaciÃ³n tÃ©cnica.  
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
 - Cada resumen debe realizarse al cierre de un periodo definido (mensual, trimestral, anual).  
 - Este archivo complementa `contracts-governance-report.md`, `contracts-governance-analysis.md`, `contracts-governance-metrics.md` y `contracts-audit.md`.  
-- La trazabilidad en resúmenes fortalece la confianza de la comunidad y exchanges.
+- La trazabilidad en resÃºmenes fortalece la confianza de la comunidad y exchanges.

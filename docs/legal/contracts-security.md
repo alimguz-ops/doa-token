@@ -1,25 +1,25 @@
-# DOA Token – Contracts Security Register
+﻿# DOA Token â€“ Contracts Security Register
 
 Este documento define y registra las medidas de seguridad aplicadas a cada contrato inteligente y contrato legal del DOA Token.  
-Su objetivo es garantizar protección, trazabilidad y confianza frente a auditores, comunidad y exchanges.
+Su objetivo es garantizar protecciÃ³n, trazabilidad y confianza frente a auditores, comunidad y exchanges.
 
 ---
 
-## 🛡 Principios de Seguridad
+## ðŸ›¡ Principios de Seguridad
 
-1. **Defensa en Profundidad:** Cada contrato debe contar con múltiples capas de protección.  
-2. **Auditoría Continua:** Validación periódica en `contracts-audit.md`.  
-3. **Gobernanza Segura:** Cambios críticos deben estar vinculados a propuestas en `governance-log.md`.  
+1. **Defensa en Profundidad:** Cada contrato debe contar con mÃºltiples capas de protecciÃ³n.  
+2. **AuditorÃ­a Continua:** ValidaciÃ³n periÃ³dica en `contracts-audit.md`.  
+3. **Gobernanza Segura:** Cambios crÃ­ticos deben estar vinculados a propuestas en `governance-log.md`.  
 4. **Transparencia:** Todas las medidas deben documentarse y ser verificables por la comunidad.  
 
 ---
 
-## 📋 Áreas de Seguridad
+## ðŸ“‹ Ãreas de Seguridad
 
-- **Código:**  
-  - Uso de librerías seguras y estándares ERC-20.  
-  - Validación de funciones críticas (`transfer`, `burn`, `mint`).  
-  - Pruebas unitarias y de integración documentadas en `tests/`.  
+- **CÃ³digo:**  
+  - Uso de librerÃ­as seguras y estÃ¡ndares ERC-20.  
+  - ValidaciÃ³n de funciones crÃ­ticas (`transfer`, `burn`, `mint`).  
+  - Pruebas unitarias y de integraciÃ³n documentadas en `tests/`.  
 
 - **Deploy:**  
   - Variables sensibles en `.env`.  
@@ -29,16 +29,16 @@ Su objetivo es garantizar protección, trazabilidad y confianza frente a auditor
 - **Propiedad y Permisos:**  
   - Registro en `contracts-ownership.md`.  
   - Transferencias documentadas en `contracts-transfer.md`.  
-  - Multisig comunitario para funciones críticas.  
+  - Multisig comunitario para funciones crÃ­ticas.  
 
-- **Auditoría y Riesgos:**  
-  - Validación externa en `contracts-audit.md`.  
+- **AuditorÃ­a y Riesgos:**  
+  - ValidaciÃ³n externa en `contracts-audit.md`.  
   - Riesgos documentados en `contracts-risk.md`.  
   - Incidentes registrados en `contracts-incidents.md`.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
 - **Contrato:** DOA Token ERC-20  
-- **Dirección:** `0x692d951163df3f7D9Fe071413F
+- **DirecciÃ³n:** `0x692d951163df3f7D9Fe071413F

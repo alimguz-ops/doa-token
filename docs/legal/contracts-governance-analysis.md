@@ -1,32 +1,32 @@
-# DOA Token – Contracts Governance Analysis
+﻿# DOA Token â€“ Contracts Governance Analysis
 
-Este documento presenta análisis detallados del desempeño y tendencias en la gobernanza aplicada a contratos inteligentes y legales del DOA Token.  
+Este documento presenta anÃ¡lisis detallados del desempeÃ±o y tendencias en la gobernanza aplicada a contratos inteligentes y legales del DOA Token.  
 Su objetivo es identificar patrones, fortalezas, debilidades y oportunidades de mejora en los procesos comunitarios que afectan contratos.
 
 ---
 
-## 🏛 Principios del Análisis
+## ðŸ› Principios del AnÃ¡lisis
 
-1. **Integralidad:** El análisis debe considerar aspectos técnicos, legales, comunitarios y de seguridad.  
-2. **Transparencia:** Cada análisis debe estar documentado y accesible a la comunidad.  
-3. **Legitimidad:** El análisis debe basarse en registros verificables (`governance-log.md`, `contracts-governance-decision.md`).  
-4. **Seguridad:** Debe reflejar riesgos y auditorías en `contracts-risk.md` y `contracts-audit.md`.  
+1. **Integralidad:** El anÃ¡lisis debe considerar aspectos tÃ©cnicos, legales, comunitarios y de seguridad.  
+2. **Transparencia:** Cada anÃ¡lisis debe estar documentado y accesible a la comunidad.  
+3. **Legitimidad:** El anÃ¡lisis debe basarse en registros verificables (`governance-log.md`, `contracts-governance-decision.md`).  
+4. **Seguridad:** Debe reflejar riesgos y auditorÃ­as en `contracts-risk.md` y `contracts-audit.md`.  
 5. **Trazabilidad:** Cada hallazgo debe vincularse a `contracts-changelog.md` y `contracts-versioning.md`.  
 
 ---
 
-## 📋 Áreas de Análisis
+## ðŸ“‹ Ãreas de AnÃ¡lisis
 
-- **Participación Comunitaria:**  
+- **ParticipaciÃ³n Comunitaria:**  
   - Nivel de involucramiento en propuestas y votaciones.  
-  - Métricas en `contracts-governance-metrics.md`.  
+  - MÃ©tricas en `contracts-governance-metrics.md`.  
 
 - **Eficiencia:**  
-  - Tiempo promedio entre propuesta, votación y ejecución.  
-  - Comparación con periodos anteriores.  
+  - Tiempo promedio entre propuesta, votaciÃ³n y ejecuciÃ³n.  
+  - ComparaciÃ³n con periodos anteriores.  
 
 - **Seguridad:**  
-  - Auditorías en `contracts-audit.md`.  
+  - AuditorÃ­as en `contracts-audit.md`.  
   - Riesgos en `contracts-risk.md`.  
   - Incidentes en `contracts-incidents.md`.  
 
@@ -35,31 +35,31 @@ Su objetivo es identificar patrones, fortalezas, debilidades y oportunidades de 
   - Validaciones AML/KYC y No-Valor.  
 
 - **Transparencia:**  
-  - Documentación en `contracts-governance-transparency.md`.  
-  - Comunicación en `announcement.md`.  
+  - DocumentaciÃ³n en `contracts-governance-transparency.md`.  
+  - ComunicaciÃ³n en `announcement.md`.  
 
 - **Tendencias:**  
-  - Evolución de participación comunitaria.  
-  - Cambios en eficiencia de ejecución.  
-  - Patrones en riesgos y auditorías.  
+  - EvoluciÃ³n de participaciÃ³n comunitaria.  
+  - Cambios en eficiencia de ejecuciÃ³n.  
+  - Patrones en riesgos y auditorÃ­as.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
-- **Periodo Analizado:** 2026-04-01 → 2026-06-30  
-- **Participación Comunitaria:** 73% de holders participaron en votaciones, tendencia estable respecto al trimestre anterior.  
-- **Eficiencia:** Tiempo promedio de ejecución: 52 horas tras aprobación, mejora del 10% respecto al periodo anterior.  
-- **Seguridad:** Auditoría externa validó migración sin hallazgos críticos; se identificó un riesgo medio en concentración de liquidez.  
-- **Cumplimiento Legal:** Certificación AML/KYC actualizada y validación de No-Valor confirmada.  
+- **Periodo Analizado:** 2026-04-01 â†’ 2026-06-30  
+- **ParticipaciÃ³n Comunitaria:** 73% de holders participaron en votaciones, tendencia estable respecto al trimestre anterior.  
+- **Eficiencia:** Tiempo promedio de ejecuciÃ³n: 52 horas tras aprobaciÃ³n, mejora del 10% respecto al periodo anterior.  
+- **Seguridad:** AuditorÃ­a externa validÃ³ migraciÃ³n sin hallazgos crÃ­ticos; se identificÃ³ un riesgo medio en concentraciÃ³n de liquidez.  
+- **Cumplimiento Legal:** CertificaciÃ³n AML/KYC actualizada y validaciÃ³n de No-Valor confirmada.  
 - **Transparencia:** Todas las propuestas y decisiones publicadas en repositorios comunitarios.  
-- **Tendencias:** La gobernanza muestra mayor eficiencia en ejecución y estabilidad en participación comunitaria.  
-- **Conclusión:** Gobernanza sólida, con oportunidad de mejorar mitigación de riesgos comunitarios.  
+- **Tendencias:** La gobernanza muestra mayor eficiencia en ejecuciÃ³n y estabilidad en participaciÃ³n comunitaria.  
+- **ConclusiÃ³n:** Gobernanza sÃ³lida, con oportunidad de mejorar mitigaciÃ³n de riesgos comunitarios.  
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
-- Cada análisis debe realizarse al cierre de un periodo definido (mensual, trimestral, anual).  
+- Cada anÃ¡lisis debe realizarse al cierre de un periodo definido (mensual, trimestral, anual).  
 - Este archivo complementa `contracts-governance-report.md`, `contracts-governance-summary.md`, `contracts-governance-metrics.md` y `contracts-audit.md`.  
-- La trazabilidad en análisis fortalece la confianza de la comunidad y exchanges.
+- La trazabilidad en anÃ¡lisis fortalece la confianza de la comunidad y exchanges.

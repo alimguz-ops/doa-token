@@ -1,26 +1,26 @@
-# DOA Token – Jurisdictions Compliance Register
+﻿# DOA Token â€“ Jurisdictions Compliance Register
 
-Este documento registra el estado de cumplimiento regulatorio del DOA Token en cada país clave.  
+Este documento registra el estado de cumplimiento regulatorio del DOA Token en cada paÃ­s clave.  
 Su objetivo es proporcionar trazabilidad legal y confianza frente a exchanges, auditores y comunidad.
 
 ---
 
-## 📋 Formato de Registro
+## ðŸ“‹ Formato de Registro
 
-- **País / Jurisdicción:** Nombre oficial del país  
+- **PaÃ­s / JurisdicciÃ³n:** Nombre oficial del paÃ­s  
 - **Estado de Cumplimiento:** `compliant` | `pending` | `restricted`  
-- **Autoridad Reguladora:** Entidad responsable de supervisión financiera  
-- **Documentación Asociada:** Certificación, AML/KYC, licencias o permisos  
-- **Notas:** Observaciones relevantes sobre la regulación local  
+- **Autoridad Reguladora:** Entidad responsable de supervisiÃ³n financiera  
+- **DocumentaciÃ³n Asociada:** CertificaciÃ³n, AML/KYC, licencias o permisos  
+- **Notas:** Observaciones relevantes sobre la regulaciÃ³n local  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
-- **País / Jurisdicción:** Estados Unidos  
+- **PaÃ­s / JurisdicciÃ³n:** Estados Unidos  
 - **Estado de Cumplimiento:** compliant  
 - **Autoridad Reguladora:** SEC (Securities and Exchange Commission)  
-- **Documentación Asociada:**  
+- **DocumentaciÃ³n Asociada:**  
   - `legal/certification.md`  
   - `legal/AML-KYC.md`  
 - **Notas:**  
@@ -28,29 +28,29 @@ Su objetivo es proporcionar trazabilidad legal y confianza frente a exchanges, a
 
 ---
 
-- **País / Jurisdicción:** Unión Europea  
+- **PaÃ­s / JurisdicciÃ³n:** UniÃ³n Europea  
 - **Estado de Cumplimiento:** pending  
 - **Autoridad Reguladora:** ESMA (European Securities and Markets Authority)  
-- **Documentación Asociada:**  
+- **DocumentaciÃ³n Asociada:**  
   - `legal/certification.md`  
   - `legal/AML-KYC.md`  
 - **Notas:**  
-  Se encuentra en proceso de revisión conforme al reglamento MiCA.  
+  Se encuentra en proceso de revisiÃ³n conforme al reglamento MiCA.  
 
 ---
 
-- **País / Jurisdicción:** Venezuela  
+- **PaÃ­s / JurisdicciÃ³n:** Venezuela  
 - **Estado de Cumplimiento:** restricted  
 - **Autoridad Reguladora:** SUNACRIP (Superintendencia Nacional de Criptoactivos)  
-- **Documentación Asociada:**  
+- **DocumentaciÃ³n Asociada:**  
   - `legal/certification.md`  
 - **Notas:**  
-  Restricciones vigentes para listados en exchanges locales, pendiente de actualización normativa.  
+  Restricciones vigentes para listados en exchanges locales, pendiente de actualizaciÃ³n normativa.  
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
 - Este archivo complementa `compliance.md`, `certification.md` y `AML-KYC.md`.  
 - Debe revisarse y actualizarse cada seis meses o tras cualquier cambio regulatorio relevante.  
-- La trazabilidad por jurisdicción fortalece la confianza de la comunidad y exchanges.
+- La trazabilidad por jurisdicciÃ³n fortalece la confianza de la comunidad y exchanges.

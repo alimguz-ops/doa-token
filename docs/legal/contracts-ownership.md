@@ -1,20 +1,20 @@
-# DOA Token – Contracts Ownership & Permissions
+﻿# DOA Token â€“ Contracts Ownership & Permissions
 
-Este documento define la gestión de propiedad, permisos y roles asociados a cada contrato inteligente del DOA Token.  
-Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administración de contratos.
+Este documento define la gestiÃ³n de propiedad, permisos y roles asociados a cada contrato inteligente del DOA Token.  
+Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administraciÃ³n de contratos.
 
 ---
 
-## 🏛 Principios de Propiedad
+## ðŸ› Principios de Propiedad
 
 1. **Transparencia:** La propiedad de cada contrato debe estar documentada y verificable en blockchain.  
 2. **Seguridad:** Los permisos deben limitarse estrictamente a funciones necesarias.  
 3. **Responsabilidad:** Los cambios de propiedad o permisos deben registrarse en `contracts-log.md`.  
-4. **Gobernanza:** Toda modificación debe estar vinculada a propuestas y votaciones en `governance-log.md`.  
+4. **Gobernanza:** Toda modificaciÃ³n debe estar vinculada a propuestas y votaciones en `governance-log.md`.  
 
 ---
 
-## 📋 Roles y Permisos
+## ðŸ“‹ Roles y Permisos
 
 - **Owner (Propietario):**  
   - Control inicial del contrato.  
@@ -22,11 +22,11 @@ Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administ
   - Documentado en `contracts.md`.  
 
 - **Admin (Administrador):**  
-  - Gestiona parámetros operativos (ej. supply, quema, liquidez).  
+  - Gestiona parÃ¡metros operativos (ej. supply, quema, liquidez).  
   - Limitado por votaciones en `governance.md`.  
 
 - **Community (Comunidad):**  
-  - Participa en votaciones que afectan permisos y funciones críticas.  
+  - Participa en votaciones que afectan permisos y funciones crÃ­ticas.  
   - Registro en `governance-log.md`.  
 
 - **Auditors (Auditores):**  
@@ -35,35 +35,35 @@ Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administ
 
 ---
 
-## 📋 Procedimientos de Gestión
+## ðŸ“‹ Procedimientos de GestiÃ³n
 
-1. **Asignación de Propiedad:**  
-   - Registrar dirección del Owner en `contracts.md`.  
+1. **AsignaciÃ³n de Propiedad:**  
+   - Registrar direcciÃ³n del Owner en `contracts.md`.  
    - Confirmar en PolygonScan.  
 
 2. **Transferencia de Propiedad:**  
    - Propuesta en `proposals.md`.  
-   - Votación en `governance-log.md`.  
+   - VotaciÃ³n en `governance-log.md`.  
    - Registro en `contracts-log.md`.  
 
-3. **Actualización de Permisos:**  
-   - Validación técnica en `contracts-audit.md`.  
-   - Publicación en `announcement.md`.  
+3. **ActualizaciÃ³n de Permisos:**  
+   - ValidaciÃ³n tÃ©cnica en `contracts-audit.md`.  
+   - PublicaciÃ³n en `announcement.md`.  
 
 ---
 
-## 📒 Ejemplo de Entrada
+## ðŸ“’ Ejemplo de Entrada
 
 - **Contrato:** DOA Token ERC-20  
-- **Owner:** Dirección `0x123...abc`  
-- **Admin:** Dirección `0x456...def`  
-- **Community:** Gobernanza activa vía Snapshot  
-- **Auditors:** CertiK – validación 2025-12-20  
-- **Notas:** Propiedad transferida a multisig comunitario tras votación P-002.  
+- **Owner:** DirecciÃ³n `0x123...abc`  
+- **Admin:** DirecciÃ³n `0x456...def`  
+- **Community:** Gobernanza activa vÃ­a Snapshot  
+- **Auditors:** CertiK â€“ validaciÃ³n 2025-12-20  
+- **Notas:** Propiedad transferida a multisig comunitario tras votaciÃ³n P-002.  
 
 ---
 
-## 📌 Notas
+## ðŸ“Œ Notas
 
 - Este archivo complementa `contracts.md`, `contracts-log.md`, `contracts-audit.md` y `contracts-governance.md`.  
 - Debe actualizarse cada vez que se modifique la propiedad o permisos de un contrato.  
