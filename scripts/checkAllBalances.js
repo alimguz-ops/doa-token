@@ -4,26 +4,25 @@
 
 require("dotenv").config();
 const hre = require("hardhat");
-const { ethers } = hre;
+const { ethers } = require("ethers");
 const fs = require("fs");
 const { execSync } = require("child_process");
 
 // ✅ Providers
-const polygonProvider = hre.ethers.provider; // Hardhat inyecta este provider
+const polygonProvider = hre.ethers.provider;
 const ethProvider = new ethers.providers.JsonRpcProvider(
   process.env.ETH_RPC || "https://rpc.ankr.com/eth"
 );
 
 // Direcciones de contratos en Polygon
-const doaAddress   = "0x692d951163df3f7D9Fe071413F92c319D9B7369E"; // DOA proxy
+const doaAddress   = "0x692d951163df3f7D9Fe071413F92c319D9B7369E"; // DOA implementación real
 const usdtAddress  = "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"; // USDT oficial
 const wethAddress  = "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"; // WETH oficial
-const wpolAddress  = "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"; // WPOL (Wrapped POL)
+const wpolAddress  = "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"; // WPOL oficial
 
 // ABI mínimo ERC20
 const erc20Abi = [
-  "function balanceOf(address account) view returns (uint256)",
-  "function decimals() view returns (uint8)"
+  "function balanceOf(address account) view returns (uint256)"
 ];
 
 // Cuentas a auditar
@@ -41,10 +40,11 @@ async function main() {
   const wethToken = new ethers.Contract(wethAddress, erc20Abi, polygonProvider);
   const wpolToken = new ethers.Contract(wpolAddress, erc20Abi, polygonProvider);
 
-  const doaDecimals  = await doaToken.decimals();
-  const usdtDecimals = await usdtToken.decimals();
-  const wethDecimals = await wethToken.decimals();
-  const wpolDecimals = await wpolToken.decimals();
+  // Decimales fijos (evitamos llamadas que revierten)
+  const doaDecimals  = 18;
+  const usdtDecimals = 6;
+  const wethDecimals = 18;
+  const wpolDecimals = 18;
 
   console.log("📊 Saldos actuales de las cuentas:\n");
 
@@ -58,12 +58,12 @@ async function main() {
     const wethBalance  = await wethToken.balanceOf(addr);
     const wpolBalance  = await wpolToken.balanceOf(addr);
 
-    const formattedETH    = ethers.utils.formatEther(ethBalance);
-    const formattedMATIC  = ethers.utils.formatEther(maticBalance);
-    const formattedDOA    = ethers.utils.formatUnits(doaBalance, doaDecimals);
-    const formattedUSDT   = ethers.utils.formatUnits(usdtBalance, usdtDecimals);
-    const formattedWETH   = ethers.utils.formatUnits(wethBalance, wethDecimals);
-    const formattedWPOL   = ethers.utils.formatUnits(wpolBalance, wpolDecimals);
+    const formattedETH   = ethers.utils.formatEther(ethBalance);
+    const formattedMATIC = ethers.utils.formatEther(maticBalance);
+    const formattedDOA   = ethers.utils.formatUnits(doaBalance, doaDecimals);
+    const formattedUSDT  = ethers.utils.formatUnits(usdtBalance, usdtDecimals);
+    const formattedWETH  = ethers.utils.formatUnits(wethBalance, wethDecimals);
+    const formattedWPOL  = ethers.utils.formatUnits(wpolBalance, wpolDecimals);
 
     console.log(`${name} (${addr}):`);
     console.log(`   🪙 ${formattedETH} ETH`);
@@ -92,4 +92,5 @@ async function main() {
 
 main().catch((err) => {
   console.error("❌ Error al consultar balances:", err);
+  process.exitCode = 1;
 });

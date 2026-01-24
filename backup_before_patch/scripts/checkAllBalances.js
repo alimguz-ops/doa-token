@@ -1,0 +1,96 @@
+// scripts/checkAllBalances.js
+// Verifica balances de MATIC, DOA, USDT, WETH, WPOL en Polygon
+// y ETH en mainnet, en todas las cuentas principales
+
+require("dotenv").config();
+const hre = require("hardhat");
+const { JsonRpcProvider, Contract, formatEther, formatUnits } = require("ethers");
+const fs = require("fs");
+const { execSync } = require("child_process");
+
+// ✅ Providers
+const polygonProvider = hre.ethers.provider; // Hardhat inyecta este provider
+const ethProvider = new JsonRpcProvider(
+  process.env.ETH_RPC || "https://rpc.ankr.com/eth"
+);
+
+// Direcciones de contratos en Polygon
+const doaAddress   = "0x692d951163df3f7D9Fe071413F92c319D9B7369E"; // DOA proxy
+const usdtAddress  = "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"; // USDT oficial
+const wethAddress  = "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"; // WETH oficial
+const wpolAddress  = "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"; // WPOL (Wrapped POL)
+
+// ABI mínimo ERC20
+const erc20Abi = [
+  "function balanceOf(address account) view returns (uint256)",
+  "function decimals() view returns (uint8)"
+];
+
+// Cuentas a auditar
+const addresses = {
+  Owner: "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
+  Admin: "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5",
+  Reserva: "0xfe7522c992ab5193ba66195ccbef65e3b0b76f95",
+  Comunidad: "0xD1f7a79CE44b267Dfe51B6F84008208550a30562",
+  Colaborador: "0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1"
+};
+
+async function main() {
+  const doaToken  = new Contract(doaAddress, erc20Abi, polygonProvider);
+  const usdtToken = new Contract(usdtAddress, erc20Abi, polygonProvider);
+  const wethToken = new Contract(wethAddress, erc20Abi, polygonProvider);
+  const wpolToken = new Contract(wpolAddress, erc20Abi, polygonProvider);
+
+  const doaDecimals  = await doaToken.decimals();
+  const usdtDecimals = await usdtToken.decimals();
+  const wethDecimals = await wethToken.decimals();
+  const wpolDecimals = await wpolToken.decimals();
+
+  console.log("📊 Saldos actuales de las cuentas:\n");
+
+  let csvContent = "Cuenta,Dirección,ETH,MATIC,DOA,USDT,WETH,WPOL\n";
+
+  for (const [name, addr] of Object.entries(addresses)) {
+    const ethBalance   = await ethProvider.getBalance(addr);
+    const maticBalance = await polygonProvider.getBalance(addr);
+    const doaBalance   = await doaToken.balanceOf(addr);
+    const usdtBalance  = await usdtToken.balanceOf(addr);
+    const wethBalance  = await wethToken.balanceOf(addr);
+    const wpolBalance  = await wpolToken.balanceOf(addr);
+
+    const formattedETH    = formatEther(ethBalance);
+    const formattedMATIC  = formatEther(maticBalance);
+    const formattedDOA    = formatUnits(doaBalance, doaDecimals);
+    const formattedUSDT   = formatUnits(usdtBalance, usdtDecimals);
+    const formattedWETH   = formatUnits(wethBalance, wethDecimals);
+    const formattedWPOL   = formatUnits(wpolBalance, wpolDecimals);
+
+    console.log(`${name} (${addr}):`);
+    console.log(`   🪙 ${formattedETH} ETH`);
+    console.log(`   💰 ${formattedMATIC} MATIC`);
+    console.log(`   🔹 ${formattedDOA} DOA`);
+    console.log(`   💵 ${formattedUSDT} USDT`);
+    console.log(`   🌐 ${formattedWETH} WETH`);
+    console.log(`   🌀 ${formattedWPOL} WPOL`);
+    console.log("");
+
+    csvContent += `${name},${addr},${formattedETH},${formattedMATIC},${formattedDOA},${formattedUSDT},${formattedWETH},${formattedWPOL}\n`;
+  }
+
+  fs.writeFileSync("balances.csv", csvContent);
+  console.log("✅ Resultados guardados en balances.csv");
+
+  try {
+    execSync("git add balances.csv");
+    execSync(`git commit -m "Auditoría automática de balances generales" --no-verify`);
+    execSync("git push");
+    console.log("📤 Archivo balances.csv subido y registrado en el repositorio Git (sin husky)");
+  } catch (err) {
+    console.error("⚠️ Error al subir a Git:", err.message);
+  }
+}
+
+main().catch((err) => {
+  console.error("❌ Error al consultar balances:", err);
+  process.exitCode = 1;
+});

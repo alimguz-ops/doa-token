@@ -1,28 +1,34 @@
-// scripts/verify.js
-require("dotenv").config();
-const hre = require("hardhat");
+// scripts/verify-proxy.js
+import { run, ethers } from "hardhat";
 
 async function main() {
-  // Dirección del contrato proxy que quieres verificar
-  const contractAddress =
-    process.env.CONTRACT_ADDRESS ||
-    "0x692d951163df3f7D9Fe071413F92c319D9B7369E";
+  const proxyAddress = process.env.CONTRACT_ADDRESS;
+  if (!proxyAddress) {
+    throw new Error("❌ Debes definir CONTRACT_ADDRESS en tu .env con la dirección del proxy");
+  }
+  if (!ethers.utils.isAddress(proxyAddress) || proxyAddress === "0x0000000000000000000000000000000000000000") {
+    throw new Error(`❌ Dirección inválida: ${proxyAddress}`);
+  }
 
-  console.log("🔎 Verificando contrato DOA en Polygonscan...");
-  console.log("Dirección:", contractAddress);
+  console.log(`⚙️ Verificando proxy en el explorador: ${proxyAddress}`);
 
-  // Usa el nombre totalmente calificado si tienes duplicados
-  // Ejemplo: "contracts/DoaToken.sol:DoaToken"
-  await hre.run("verify:verify", {
-    address: contractAddress,
-    constructorArguments: [],
-    contract: "contracts/DoaToken.sol:DoaToken",
+  let args = [];
+  try {
+    args = process.env.CONSTRUCTOR_ARGS ? JSON.parse(process.env.CONSTRUCTOR_ARGS) : [];
+  } catch (err) {
+    console.warn("⚠️ Error parseando CONSTRUCTOR_ARGS, usando []");
+    args = [];
+  }
+
+  await run("verify:verify", {
+    address: proxyAddress,
+    constructorArguments: args,
   });
 
-  console.log("✅ Verificación completada en Polygonscan");
+  console.log("✅ Verificación completada:", proxyAddress);
 }
 
-main().catch((error) => {
-  console.error("❌ Error en verify.js:", error);
+main().catch((e) => {
+  console.error("❌ Error en verify-proxy:", e);
   process.exitCode = 1;
 });

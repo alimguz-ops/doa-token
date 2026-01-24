@@ -1,0 +1,4 @@
+Wallet,Tipo,Porcentaje,Notas
+0x6377cd174b35f3630b6d0db695f175d5f0dc5541,Staking,10,"Recompensas periódicas para holders que bloqueen DOA en staking."
+0x692d951163df3f7D9Fe071413F92c319D9B7369E,Gobernanza,5,"Bonos de participación por votar en propuestas DAO."
+0x6377cd174b35f3630b6d0db695f175d5f0dc5541,NFT,5,"NFTs de fidelidad y participación entregados a usuarios activos."

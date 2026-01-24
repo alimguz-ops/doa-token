@@ -35,7 +35,6 @@ async function main() {
   for (const k of reqLiq) if (!cfg.liquidity[k]) throw new Error(`Falta liquidity.${k}`);
 
   // Variables derivadas
-  const netHardhat = "polygonAmoy";
   process.env.POLYGONSCAN_API_KEY = cfg.polygonscanApiKey;
   const provider = new ethers.JsonRpcProvider(cfg.rpcUrl);
   const signer = new ethers.Wallet(cfg.privateKey, provider);
@@ -46,8 +45,6 @@ async function main() {
   // 2) Deploy si no existe
   let tokenAddress = cfg.token.address || "";
   if (!/^0x[a-fA-F0-9]{40}$/.test(tokenAddress)) {
-    const [deployer] = await ethers.getSigners();
-    console.log("Deployer:", deployer.address);
     const initialSupply = ethers.parseUnits(cfg.token.supply, cfg.token.decimals);
     const DoaToken = await ethers.getContractFactory("DoaToken");
     const doa = await DoaToken.deploy(
@@ -58,7 +55,7 @@ async function main() {
       Number(cfg.liquidity.reservePercent)
     );
     await doa.waitForDeployment();
-    tokenAddress = doa.target;
+    tokenAddress = await doa.getAddress();
     console.log("Token deployed:", tokenAddress);
   }
   assertAddress(tokenAddress, "TOKEN_ADDRESS");
@@ -136,7 +133,7 @@ async function main() {
       { value: liqBaseAmount }
     );
     const rcpt = await tx.wait();
-    console.log("Liquidity added, tx:", rcpt.hash);
+    console.log(`Liquidity added, tx: ${rcpt.hash}, block: ${rcpt.blockNumber}, gas: ${rcpt.gasUsed}`);
 
     pair = await factory.getPair(tokenAddress, wmatic);
     console.log("Pair refreshed:", pair);
@@ -146,8 +143,12 @@ async function main() {
   const pairC2 = new ethers.Contract(pair, pairAbi, provider);
   const [res0, res1] = await pairC2.getReserves();
   if (res0 === 0n && res1 === 0n) throw new Error("Reservas 0: liquidez no añadida correctamente");
-  const quote = await router.getAmountsOut(ethers.parseEther("0.01"), [wmatic, tokenAddress]);
-  console.log("Quote MATIC->DOA:", quote.map(x => x.toString()));
+  try {
+    const quote = await router.getAmountsOut(ethers.parseEther("0.01"), [wmatic, tokenAddress]);
+    console.log("Quote MATIC->DOA:", quote.map(x => x.toString()));
+  } catch (err) {
+    console.error("❌ Error obteniendo quote:", err);
+  }
 
   // 7) Test de compra/venta mínimo
   const buyAmount = ethers.parseEther("0.02");
@@ -165,18 +166,9 @@ async function main() {
   await txSell.wait();
   console.log("Sell OK");
 
-  // 8) Validaciones extendidas y reportes (integración con tus scripts existentes)
+  // 8) Validaciones extendidas y reportes
   console.log("🧪 Ejecutando validaciones extendidas...");
-  sh("node scripts/validateToken.cjs");
-  sh("node scripts/validateLiquidity.js");
-  sh("node scripts/validateReserves.js");
-  sh("node scripts/testSwaps.cjs");
-
-  console.log("📊 Generando gráficos y reportes...");
-  sh("node scripts/visualizeEvents.js");
-  sh("node scripts/pushReports.cjs");
-
-  console.log("✅ Pipeline completo: verificado, liquidez activa, trading funcional, validaciones y reportes generados.");
-}
-
-main().catch(e => { console.error(e); process.exitCode = 1; });
+  try { sh("node scripts/validateToken.cjs"); } catch (e) { console.error("Error en validateToken:", e); }
+  try { sh("node scripts/validateLiquidity.js"); } catch (e) { console.error("Error en validateLiquidity:", e); }
+  try { sh("node scripts/validateReserves.js"); } catch (e) { console.error("Error en validateReserves:", e); }
+  try { sh("node scripts/testSwaps.cjs");

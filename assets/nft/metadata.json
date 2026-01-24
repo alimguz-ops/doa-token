@@ -1,0 +1,11 @@
+{
+  "name": "DOA NFT #1",
+  "description": "Primer NFT oficial de la colección DOA en Polygon.",
+  "image": "ipfs://bafybeifpm5pf5r3eevydwxo5epndpqiqjv4v3krscckdl5d2mbbrbgqstq",
+  "attributes": [
+    { "trait_type": "Tipo", "value": "Mascota" },
+    { "trait_type": "Rareza", "value": "Único" },
+    { "trait_type": "Colección", "value": "DOA V2" },
+    { "trait_type": "Fecha de creación", "value": "2026-01-16" }
+  ]
+}

@@ -1,5 +1,6 @@
 import { run } from "hardhat";
 import dotenv from "dotenv";
+import { ethers } from "ethers";
 
 dotenv.config();
 
@@ -10,14 +11,28 @@ dotenv.config();
  */
 export async function verifyContract(contractAddress, constructorArgs = "") {
   try {
-    console.log("📄 Iniciando verificación en PolygonScan...");
+    if (!contractAddress || !ethers.isAddress(contractAddress) || contractAddress === ethers.ZeroAddress) {
+      throw new Error(`❌ Dirección inválida: ${contractAddress}`);
+    }
+
+    let args = [];
+    if (constructorArgs) {
+      try {
+        args = require(constructorArgs);
+      } catch (err) {
+        console.warn("⚠️ No se pudo cargar argumentos, usando []");
+        args = [];
+      }
+    }
+
+    console.log(`📄 Iniciando verificación en PolygonScan para contrato en: ${contractAddress}`);
     await run("verify:verify", {
       address: contractAddress,
-      constructorArguments: constructorArgs ? require(constructorArgs) : [],
+      constructorArguments: args,
     });
     console.log("✅ Contrato verificado correctamente en PolygonScan");
   } catch (error) {
-    console.error("❌ Error en la verificación:", error);
+    console.error("❌ Error en la verificación:", error.message);
   }
 }
 
@@ -28,6 +43,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(error);
+  console.error("❌ Error general:", error.message);
   process.exitCode = 1;
 });

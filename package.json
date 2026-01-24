@@ -1,6 +1,7 @@
 {
   "name": "doa-token",
   "version": "1.0.0",
+  "description": "DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones descentralizadas.",
   "type": "commonjs",
   "scripts": {
     "compile": "hardhat compile",
@@ -8,8 +9,10 @@
     "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
     "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
     "deploy-proxy:polygon": "hardhat run scripts/deployProxy.js --network polygon",
+    "deploy:sepolia": "hardhat run scripts/deployProxyDoaTokenV2.js --network sepolia",
     "verify:amoy": "hardhat run scripts/verify.js --network amoy",
     "verify:polygon": "hardhat run scripts/verify.js --network polygon",
+    "verify:sepolia": "hardhat run scripts/verify.js --network sepolia",
     "verify-impl:polygon": "hardhat run scripts/verify-impl.js --network polygon",
     "verify-proxy:polygon": "hardhat run scripts/verify-proxy.js --network polygon",
     "add-liquidity:polygon": "hardhat run scripts/addLiquidity.js --network polygon",
@@ -20,48 +23,47 @@
     "precommit-check": "node scripts/precommit-check.js",
     "supply": "node scripts/checkTotalSupply.js",
     "pools": "node scripts/checkPools.js",
-    "pools:all": "node scripts/checkPoolsAll.js"
+    "pools:all": "node scripts/checkPoolsAll.js",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write .",
+    "validate:tokenlist": "node scripts/validateTokenList.js"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
-    "@nomiclabs/hardhat-ethers": "^2.2.2",
-    "@openzeppelin/contracts-upgradeable": "^5.0.0",
-    "@openzeppelin/hardhat-upgrades": "^1.26.0",
-    "@typechain/ethers-v6": "^0.4.0",
-    "@typechain/hardhat": "^8.0.0",
-    "@types/chai": "^4.2.0",
-    "@types/mocha": "^10.0.0",
-    "chai": "^4.2.0",
-    "dotenv": "^16.6.1",
-    "ethers": "^5.8.0",
-    "hardhat": "^2.28.0",
-    "hardhat-gas-reporter": "^1.0.8",
-    "husky": "^9.1.7",
-    "solidity-coverage": "^0.8.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.16",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.14",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "@nomicfoundation/ignition-core": "^0.15.15",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@openzeppelin/contracts": "5.0.0",
+    "@openzeppelin/contracts-upgradeable": "5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "@typechain/ethers-v5": "10.2.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "7.0.0",
+    "@types/chai": "4.3.10",
+    "@types/mocha": "10.0.0",
+    "@uniswap/token-lists": "^1.0.0-beta.35",
+    "chai": "4.3.10",
+    "dotenv": "^17.2.3",
+    "eslint": "8.56.0",
+    "ethers": "^6.16.0",
+    "hardhat": "^2.22.0",
+    "hardhat-contract-sizer": "2.10.1",
+    "hardhat-gas-reporter": "1.0.10",
+    "husky": "9.1.7",
+    "mocha": "10.2.0",
+    "prettier": "3.2.5",
+    "solidity-coverage": "0.8.17",
     "ts-node": "^10.9.2",
-    "typechain": "^8.2.0",
+    "tsx": "^4.21.0",
+    "typechain": "8.1.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.0",
     "ajv": "^8.17.1"
-  },
-  "description": "DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones descentralizadas.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "lib": "lib",
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alimguz-ops/doa-token.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alimguz-ops/doa-token/issues"
-  },
-  "homepage": "https://github.com/alimguz-ops/doa-token#readme"
+  }
 }

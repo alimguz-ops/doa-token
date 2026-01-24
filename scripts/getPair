@@ -1,27 +1,39 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const FACTORY_ADDRESS = process.env.FACTORY_ADDRESS; // o la que uses en config
+  const FACTORY_ADDRESS = process.env.FACTORY_ADDRESS;
   const tokenA = process.env.TOKEN_A;
   const tokenB = process.env.TOKEN_B;
 
-  console.log("Factory address:", FACTORY_ADDRESS);
+  if (!FACTORY_ADDRESS || !ethers.isAddress(FACTORY_ADDRESS)) {
+    throw new Error(`❌ FACTORY_ADDRESS inválido: ${FACTORY_ADDRESS}`);
+  }
+  if (!tokenA || !ethers.isAddress(tokenA)) {
+    throw new Error(`❌ TOKEN_A inválido: ${tokenA}`);
+  }
+  if (!tokenB || !ethers.isAddress(tokenB)) {
+    throw new Error(`❌ TOKEN_B inválido: ${tokenB}`);
+  }
+
+  console.log("🏭 Factory address:", FACTORY_ADDRESS);
 
   // ABI mínimo para UniswapV2Factory
   const factoryAbi = [
     "function getPair(address tokenA, address tokenB) external view returns (address pair)"
   ];
 
-  console.log("Factory ABI:", factoryAbi);
-
-  // Instancia del contrato
-  const factory = new ethers.Contract(FACTORY_ADDRESS, factoryAbi, ethers.provider);
+  const provider = ethers.provider;
+  const factory = new ethers.Contract(FACTORY_ADDRESS, factoryAbi, provider);
 
   try {
     const pairAddress = await factory.getPair(tokenA, tokenB);
-    console.log("Pair address:", pairAddress);
+    if (pairAddress === ethers.ZeroAddress) {
+      console.log("⚠️ No existe par para esos tokens.");
+    } else {
+      console.log("✅ Par encontrado:", pairAddress);
+    }
   } catch (err) {
-    console.error("Error calling getPair:", err);
+    console.error("❌ Error al llamar getPair:", err);
   }
 }
 

@@ -1,31 +1,31 @@
-import hardhat from "hardhat";
-const { ethers } = hardhat;
+// scripts/distribute.js
+import { ethers } from "hardhat";
+import fs from "fs";
 
 async function main() {
   const proxyAddress = process.env.CONTRACT_ADDRESS;
-  if (!proxyAddress) throw new Error("❌ Falta CONTRACT_ADDRESS en .env");
+  if (!proxyAddress || !ethers.utils.isAddress(proxyAddress)) {
+    throw new Error(`❌ CONTRACT_ADDRESS inválido: ${proxyAddress}`);
+  }
 
   const doa = await ethers.getContractAt("DoaTokenV2", proxyAddress);
 
-  // Normalizar direcciones
-  const recipients = [
-    ethers.getAddress(process.env.COLLABORATOR_ADDRESS),
-    ethers.getAddress(process.env.RESERVE_ADDRESS),
-    ethers.getAddress(process.env.COMMUNITY_ADDRESS),
-    ethers.getAddress(process.env.ADMIN_ADDRESS),
-  ];
+  // Leer lista de distribución desde distribution.json
+  const distribution = JSON.parse(fs.readFileSync("distribution.json"));
 
-  const amounts = [
-    ethers.parseUnits("250000", 18), // Colaborador
-    ethers.parseUnits("250000", 18), // Reserva
-    ethers.parseUnits("100000", 18), // Comunidad
-    ethers.parseUnits("200000", 18), // Admin
-  ];
+  for (const entry of distribution) {
+    const { address, amount } = entry;
 
-  console.log("⚙️ Ejecutando distribución inicial...");
-  const tx = await doa.distributeInitial(recipients, amounts);
-  console.log("📄 Hash de distribución:", tx.hash);
-  await tx.wait();
+    if (!ethers.utils.isAddress(address)) {
+      console.warn(`⚠️ Dirección inválida omitida: ${address}`);
+      continue;
+    }
+
+    const tx = await doa.transfer(address, ethers.utils.parseUnits(amount, 18));
+    console.log(`📤 Transferencia enviada: ${amount} DOA → ${address}, tx: ${tx.hash}`);
+    await tx.wait();
+  }
+
   console.log("✅ Distribución completada.");
 }
 

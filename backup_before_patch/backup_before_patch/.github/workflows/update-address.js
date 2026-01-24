@@ -1,0 +1,48 @@
+name: Update Contract Address
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-address:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (resolviendo conflictos)
+        run: npm install --legacy-peer-deps
+
+      - name: Update contract address
+        env:
+          CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
+        run: |
+          echo "🔧 Updating contract address to $CONTRACT_ADDRESS"
+          node scripts/update-address.js $CONTRACT_ADDRESS
+
+      - name: Verificar cambios antes del commit
+        run: |
+          if git diff --quiet; then
+            echo "✅ No hay cambios que subir. Todo está sincronizado."
+            exit 0
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add tokenlists/doa-tokenlist.json deployments.json README.md || echo "No files to add"
+          git commit -m "Auto-update contract address via GitHub Actions" || echo "No changes to commit"
+          git push origin HEAD:main

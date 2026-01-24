@@ -1,8 +1,20 @@
 [
   {
     "tokenA": "0x692d951163df3f7d9fe071413f92c319d9b7369e", 
-    "tokenB": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-    "amountA": "99000.000000000000000000",
-    "amountB": "90.000000000000000000"
+    "tokenB": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", 
+    "amountA": "100",
+    "amountB": "50"
+  },
+  {
+    "tokenA": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", 
+    "tokenB": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", 
+    "amountA": "200",
+    "amountB": "100"
+  },
+  {
+    "tokenA": "0x692d951163df3f7d9fe071413f92c319d9b7369e", 
+    "tokenB": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", 
+    "amountA": "150",
+    "amountB": "150"
   }
 ]
