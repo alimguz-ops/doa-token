@@ -23,7 +23,7 @@ module.exports = {
     },
 
     sepolia: {
-      url: process.env.SEPOLIA_RPC,
+      url: process.env.SEPOLIA_URL,
       accounts: [process.env.PRIVATE_KEY_OWNER].filter(Boolean)
     },
 
