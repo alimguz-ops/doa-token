@@ -80,6 +80,21 @@ The documentation is organized by categories: liquidity, governance, audit, lega
 
 ---
 
+## 🌐 Comunidad Oficial / Official Community
+<p align="center">
+  <a href="https://discord.gg/TCXB69cm" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&style=for-the-badge" alt="Discord"/>
+  </a>
+  <a href="https://t.me/DoaTokenV2" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&style=for-the-badge" alt="Telegram"/>
+  </a>
+  <a href="https://x.com/DoaV270493" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/>
+  </a>
+</p>
+
+---
+
 ## 📌 Notas / Notes
 - Todos los documentos están diseñados para ser auditables, modulares y listos para onboarding de colaboradores, exchanges y comunidad.  
 - All documents are designed to be auditable, modular, and ready for onboarding collaborators, exchanges, and the community.  

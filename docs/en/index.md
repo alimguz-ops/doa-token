@@ -74,7 +74,7 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 
 ## 📘 Documentation
 - [Token technical sheet](../DOA-FICHA.md)  
-- [Tokenomics](../TOKENOMICS.md)  
+- [Tokenomics](../tokenomics.md)  
 - [Project team](../TEAM.md)  
 - [Official announcement](../announcement.md)  
 - [Branding guidelines](../branding-guidelines.md)  

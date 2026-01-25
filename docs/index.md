@@ -68,7 +68,7 @@ Seleccione su idioma / Select your language:
   <a href="https://discord.gg/TCXB69cm" target="_blank">
     <img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&style=for-the-badge" alt="Discord"/>
   </a>
-  <a href="https://t.me/doatokenv2" target="_blank">
+  <a href="https://t.me/DoaTokenV2" target="_blank">
     <img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&style=for-the-badge" alt="Telegram"/>
   </a>
   <a href="https://x.com/DoaV270493" target="_blank">
@@ -83,41 +83,41 @@ Seleccione su idioma / Select your language:
 - **Roles:** Arquitectura técnica, Cumplimiento, Comunidad, Operaciones / Technical architecture, Compliance, Community, Operations  
 
 <p align="center">
-  <img src="assets/organigrama_doatokenv2.png" alt="Organigrama DOA Token V2" width="600"/>
+  <img src="assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600"/>
 </p>
 
 ---
 
 ## 📘 Documentación / Documentation
-- [Ficha técnica del token / Token technical sheet](doa-ficha.md)  
-- [Tokenomics](tokenomics.md)  
-- [Equipo del proyecto / Project team](team.md)  
-- [Anuncio oficial / Official announcement](announcement.md)  
-- [Guías de marca / Branding guidelines](branding-guidelines.md)  
-- [Changelog](changelog.md)  
+- [Ficha técnica del token / Token technical sheet](docs/doa-ficha.md)  
+- [Tokenomics](docs/tokenomics.md)  
+- [Equipo del proyecto / Project team](docs/team.md)  
+- [Anuncio oficial / Official announcement](docs/announcement.md)  
+- [Guías de marca / Branding guidelines](docs/branding-guidelines.md)  
+- [Changelog](docs/changelog.md)  
 
 ---
 
 ## 🏛 Gobernanza DAO / DAO Governance
-- [Marco de gobernanza / Governance framework](governance.md)  
-- [Roles y procesos / Roles & processes](governance-roles.md)  
-- [Registro de votaciones / Voting log](governance-log.md)  
-- [Propuestas activas / Active proposals](proposals.md)  
-- [Carta de gobernanza / Governance charter](governance-charter.md)  
-- [Proceso de gobernanza / Governance process](governance-process.md)  
+- [Marco de gobernanza / Governance framework](docs/governance.md)  
+- [Roles y procesos / Roles & processes](docs/governance-roles.md)  
+- [Registro de votaciones / Voting log](docs/governance-log.md)  
+- [Propuestas activas / Active proposals](docs/proposals.md)  
+- [Carta de gobernanza / Governance charter](docs/governance-charter.md)  
+- [Proceso de gobernanza / Governance process](docs/governance-process.md)  
 
 ---
 
 ## 🔒 Auditoría y Cumplimiento / Audit & Compliance
-- [Índice de auditoría / Audit index](audit.md)  
-- [Checklist de auditoría / Audit checklist](audit-checklist.md)  
-- [Informe de auditoría / Audit report](audit-report.md)  
-- [Resumen de auditoría / Audit summary](audit-summary.md)  
-- [Registro de auditoría / Audit log](audit-log.md)  
-- [Políticas AML/KYC](legal/aml-kyc.md)  
-- [Certificación legal / Legal certification](legal/certification.md)  
-- [Contratos y decisiones / Contracts & decisions](legal/contracts-governance-decision.md)  
-- [Registro maestro de gobernanza / Governance master log](legal/governance-master-log.md)  
+- [Índice de auditoría / Audit index](docs/audit.md)  
+- [Checklist de auditoría / Audit checklist](docs/legal/audit-checklist.md)  
+- [Informe de auditoría / Audit report](docs/legal/audit-report.md)  
+- [Resumen de auditoría / Audit summary](docs/legal/audit-summary.md)  
+- [Registro de auditoría / Audit log](docs/legal/audit-log.md)  
+- [Políticas AML/KYC](docs/legal/aml-kyc.md)  
+- [Certificación legal / Legal certification](docs/legal/certification.md)  
+- [Contratos y decisiones / Contracts & decisions](docs/legal/contracts-governance-decision.md)  
+- [Registro maestro de gobernanza / Governance master log](docs/legal/governance-master-log.md)  
 
 ---
 

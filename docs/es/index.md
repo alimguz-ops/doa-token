@@ -40,7 +40,7 @@ Este es el sitio oficial del ecosistema **DOA Token V2**, un proyecto descentral
 
 ## 📘 Documentación
 - [Ficha técnica del token](../DOA-FICHA.md)  
-- [Tokenomics](../TOKENOMICS.md)  
+- [Tokenomics](../tokenomics.md)  
 - [Equipo del proyecto](../TEAM.md)  
 - [Anuncio oficial](../announcement.md)  
 - [Guías de marca](../branding-guidelines.md)  
