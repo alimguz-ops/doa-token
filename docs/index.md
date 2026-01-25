@@ -4,7 +4,7 @@ title: DOA Token V2
 ---
 
 <p align="center">
-  <img src="assets/logo.png" alt="DOA Token Logo" width="200"/>
+  <img src="assets/DoaTokenV2.png" alt="DOA Token Logo" width="200"/>
 </p>
 
 # DOA Token V2
@@ -13,8 +13,12 @@ Bienvenido al sitio oficial del proyecto.
 Seleccione su idioma / Select your language:
 
 <p align="center">
-  <a href="{{ site.baseurl }}/es/"><img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/></a>
-  <a href="{{ site.baseurl }}/en/"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/></a>
+  <a href="{{ site.baseurl }}/es/">
+    <img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/>
+  </a>
+  <a href="{{ site.baseurl }}/en/">
+    <img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/>
+  </a>
 </p>
 
 ---
@@ -32,3 +36,7 @@ Seleccione su idioma / Select your language:
     <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/>
   </a>
 </p>
+
+---
+
+<p align="center"><strong>Last update:</strong> January 2026</p>

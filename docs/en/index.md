@@ -5,7 +5,7 @@ permalink: /en/
 ---
 
 <p align="center">
-  <img src="../assets/logo.png" alt="DOA Token Logo" width="200"/>
+  <img src="assets/DoaTokenV2.png" alt="DOA Token Logo" width="200"/>
 </p>
 
 # Welcome to DOA Token V2
