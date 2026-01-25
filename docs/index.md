@@ -13,8 +13,8 @@ Bienvenido al sitio oficial del proyecto.
 Seleccione su idioma / Select your language:
 
 <p align="center">
-  <a href="es/index.html"><img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/></a>
-  <a href="en/index.html"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/></a>
+  <a href="{{ site.baseurl }}/es/"><img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/></a>
+  <a href="{{ site.baseurl }}/en/"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/></a>
 </p>
 
 ---
