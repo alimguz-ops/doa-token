@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DOA Token V2 - Español
+title: Inicio en Español
 permalink: /es/
 ---
 

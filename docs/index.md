@@ -1,6 +1,7 @@
 ---
 layout: default
-title: doa token v2
+title: DOA Token V2
+permalink: /
 ---
 
 <!-- Banner Institucional DOA Token V2 -->

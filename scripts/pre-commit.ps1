@@ -1,4 +1,4 @@
-Write-Host "🔒 Ejecutando verificación pre-commit..."
+Write-Host "Ejecutando verificacion pre-commit..."
 
 if (-not (Test-Path ".env.lock")) {
     Write-Host "❌ Falta archivo .env.lock. Commit bloqueado."

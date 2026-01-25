@@ -1,7 +1,7 @@
 ---
 layout: default
-title: DOA Token V2 - English
-permalink: /
+title: English Home
+permalink: /en/
 ---
 
 <p align="center">
