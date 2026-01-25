@@ -1,45 +1,61 @@
-﻿# DOA Token â€“ Contracts Termination Register
+﻿---
+layout: default
+title: contracts-termination
+---
 
-Este documento registra la finalizaciÃ³n, desactivaciÃ³n o migraciÃ³n de contratos inteligentes y legales asociados al DOA Token.  
-Su objetivo es garantizar trazabilidad, transparencia y confianza frente a auditores, comunidad y exchanges.
+# 🛑 DOA Token – Contracts Termination Register  
+# 🛑 DOA Token – Registro de Terminación de Contratos
+
+Este documento registra la finalización, desactivación o migración de contratos inteligentes y legales asociados al DOA Token.  
+Su objetivo es garantizar trazabilidad, transparencia y confianza frente a auditores, comunidad y exchanges.  
+This document records the termination, deactivation, or migration of DOA Token smart and legal contracts.  
+Its purpose is to ensure traceability, transparency, and trust for auditors, the community, and exchanges.  
 
 ---
 
-## ðŸ“‹ Formato de Registro
+## 📋 Formato de Registro / Log Format
 
-- **Fecha:** YYYY-MM-DD  
-- **Tipo de Contrato:** Smart Contract | Legal Contract  
-- **Nombre / DescripciÃ³n:** Breve tÃ­tulo del contrato  
-- **DirecciÃ³n / UbicaciÃ³n:** DirecciÃ³n en blockchain o ruta de archivo legal  
-- **Motivo de TerminaciÃ³n:** Breve explicaciÃ³n (ej. migraciÃ³n, obsolescencia, decisiÃ³n de gobernanza)  
-- **Estado:** `terminated` | `migrated` | `deprecated`  
-- **VinculaciÃ³n Gobernanza:** Propuesta y votaciÃ³n registrada en `governance-log.md`  
-- **AuditorÃ­a:** ValidaciÃ³n en `contracts-audit.md`  
-- **Notas:** Observaciones relevantes  
-- **Enlaces:** URLs a transacciones en PolygonScan, repositorio o documentos legales  
+- **Fecha / Date:** YYYY-MM-DD  
+- **Tipo de Contrato / Contract Type:** Smart Contract | Legal Contract  
+- **Nombre / Descripción / Name / Description:** Breve título del contrato / Brief contract title  
+- **Dirección / Ubicación / Address / Location:** Dirección en blockchain o ruta de archivo legal / Blockchain address or legal file path  
+- **Motivo de Terminación / Termination Reason:** Breve explicación (ej. migración, obsolescencia, decisión de gobernanza) / Brief explanation (e.g., migration, obsolescence, governance decision)  
+- **Estado / Status:** `terminated` | `migrated` | `deprecated`  
+- **Vinculación Gobernanza / Governance Link:** Propuesta y votación registrada en `governance-log.md` / Linked proposal and vote in `governance-log.md`  
+- **Auditoría / Audit:** Validación en `contracts-audit.md` / Validation in `contracts-audit.md`  
+- **Notas / Notes:** Observaciones relevantes / Relevant observations  
+- **Enlaces / Links:** URLs a transacciones en PolygonScan, repositorio o documentos legales / URLs to PolygonScan transactions, repository, or legal documents  
 
 ---
 
-## ðŸ“’ Ejemplo de Entrada
+## 📑 Ejemplo de Entrada / Example Entry
 
-- **Fecha:** 2026-03-01  
-- **Tipo de Contrato:** Smart Contract  
-- **Nombre / DescripciÃ³n:** DOA Token ERC-20 (versiÃ³n inicial)  
-- **DirecciÃ³n / UbicaciÃ³n:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
-- **Motivo de TerminaciÃ³n:** MigraciÃ³n a nueva versiÃ³n con mejoras de seguridad y gobernanza  
-- **Estado:** migrated  
-- **VinculaciÃ³n Gobernanza:** Propuesta P-003 â€“ Aprobada por comunidad  
-- **AuditorÃ­a:** CertiK â€“ validaciÃ³n de migraciÃ³n sin hallazgos crÃ­ticos  
-- **Notas:** Contrato inicial desactivado, nueva versiÃ³n registrada en `contracts-log.md`.  
-- **Enlaces:**  
+- **Fecha / Date:** 2026-03-01  
+- **Tipo de Contrato / Contract Type:** Smart Contract  
+- **Nombre / Descripción / Name / Description:** DOA Token ERC-20 (versión inicial / initial version)  
+- **Dirección / Address:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
+- **Motivo de Terminación / Termination Reason:** Migración a nueva versión con mejoras de seguridad y gobernanza / Migration to new version with security and governance improvements  
+- **Estado / Status:** migrated  
+- **Vinculación Gobernanza / Governance Link:** Propuesta P-003 – Aprobada por comunidad / Proposal P-003 – Approved by community  
+- **Auditoría / Audit:** CertiK – validación de migración sin hallazgos críticos / migration validation with no critical findings  
+- **Notas / Notes:** Contrato inicial desactivado, nueva versión registrada en `contracts-log.md`. / Initial contract deactivated, new version recorded in `contracts-log.md`.  
+- **Enlaces / Links:**  
   - [PolygonScan Transaction](https://polygonscan.com/tx/example)  
   - `contracts-log.md`  
   - `contracts-audit.md`  
 
 ---
 
-## ðŸ“Œ Notas
+## 📌 Notas / Notes
+- Cada terminación o migración debe registrarse inmediatamente después de completarse.  
+- Each termination or migration must be recorded immediately after completion.  
 
-- Cada terminaciÃ³n o migraciÃ³n debe registrarse inmediatamente despuÃ©s de completarse.  
 - Este archivo complementa `contracts-log.md`, `contracts-audit.md`, `contracts-ownership.md` y `contracts-governance.md`.  
-- La trazabilidad en terminaciones fortalece la confianza de la comunidad y exchanges.
+- This file complements `contracts-log.md`, `contracts-audit.md`, `contracts-ownership.md`, and `contracts-governance.md`.  
+
+- La trazabilidad en terminaciones fortalece la confianza de la comunidad y exchanges.  
+- Traceability in terminations strengthens community and exchange trust.  
+
+---
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>

@@ -1,56 +1,75 @@
-﻿# DOA Token â€“ Jurisdictions Compliance Register
+﻿---
+layout: default
+title: jurisdictions
+---
 
-Este documento registra el estado de cumplimiento regulatorio del DOA Token en cada paÃ­s clave.  
-Su objetivo es proporcionar trazabilidad legal y confianza frente a exchanges, auditores y comunidad.
+# 🌍 DOA Token – Jurisdictions Compliance Register  
+# 🌍 DOA Token – Registro de Cumplimiento por Jurisdicciones
+
+Este documento registra el estado de cumplimiento regulatorio del DOA Token en cada país clave.  
+Su objetivo es proporcionar trazabilidad legal y confianza frente a exchanges, auditores y comunidad.  
+This document records the regulatory compliance status of the DOA Token in each key country.  
+Its purpose is to provide legal traceability and trust for exchanges, auditors, and the community.  
 
 ---
 
-## ðŸ“‹ Formato de Registro
+## 📋 Formato de Registro / Log Format
 
-- **PaÃ­s / JurisdicciÃ³n:** Nombre oficial del paÃ­s  
-- **Estado de Cumplimiento:** `compliant` | `pending` | `restricted`  
-- **Autoridad Reguladora:** Entidad responsable de supervisiÃ³n financiera  
-- **DocumentaciÃ³n Asociada:** CertificaciÃ³n, AML/KYC, licencias o permisos  
-- **Notas:** Observaciones relevantes sobre la regulaciÃ³n local  
+- **País / Jurisdicción / Country / Jurisdiction:** Nombre oficial del país / Official country name  
+- **Estado de Cumplimiento / Compliance Status:** `compliant` | `pending` | `restricted`  
+- **Autoridad Reguladora / Regulatory Authority:** Entidad responsable de supervisión financiera / Financial supervisory authority  
+- **Documentación Asociada / Associated Documentation:** Certificación, AML/KYC, licencias o permisos / Certification, AML/KYC, licenses or permits  
+- **Notas / Notes:** Observaciones relevantes sobre la regulación local / Relevant observations about local regulation  
 
 ---
 
-## ðŸ“’ Ejemplo de Entrada
+## 📑 Ejemplo de Entrada / Example Entry
 
-- **PaÃ­s / JurisdicciÃ³n:** Estados Unidos  
-- **Estado de Cumplimiento:** compliant  
-- **Autoridad Reguladora:** SEC (Securities and Exchange Commission)  
-- **DocumentaciÃ³n Asociada:**  
+- **País / Jurisdicción / Country / Jurisdiction:** Estados Unidos / United States  
+- **Estado de Cumplimiento / Compliance Status:** compliant  
+- **Autoridad Reguladora / Regulatory Authority:** SEC (Securities and Exchange Commission)  
+- **Documentación Asociada / Associated Documentation:**  
   - `legal/certification.md`  
   - `legal/AML-KYC.md`  
-- **Notas:**  
+- **Notas / Notes:**  
   El DOA Token ha sido certificado como utility token y no constituye un valor financiero.  
+  DOA Token has been certified as a utility token and does not constitute a financial security.  
 
 ---
 
-- **PaÃ­s / JurisdicciÃ³n:** UniÃ³n Europea  
-- **Estado de Cumplimiento:** pending  
-- **Autoridad Reguladora:** ESMA (European Securities and Markets Authority)  
-- **DocumentaciÃ³n Asociada:**  
+- **País / Jurisdicción / Country / Jurisdiction:** Unión Europea / European Union  
+- **Estado de Cumplimiento / Compliance Status:** pending  
+- **Autoridad Reguladora / Regulatory Authority:** ESMA (European Securities and Markets Authority)  
+- **Documentación Asociada / Associated Documentation:**  
   - `legal/certification.md`  
   - `legal/AML-KYC.md`  
-- **Notas:**  
-  Se encuentra en proceso de revisiÃ³n conforme al reglamento MiCA.  
+- **Notas / Notes:**  
+  Se encuentra en proceso de revisión conforme al reglamento MiCA.  
+  Currently under review in accordance with the MiCA regulation.  
 
 ---
 
-- **PaÃ­s / JurisdicciÃ³n:** Venezuela  
-- **Estado de Cumplimiento:** restricted  
-- **Autoridad Reguladora:** SUNACRIP (Superintendencia Nacional de Criptoactivos)  
-- **DocumentaciÃ³n Asociada:**  
+- **País / Jurisdicción / Country / Jurisdiction:** Venezuela  
+- **Estado de Cumplimiento / Compliance Status:** restricted  
+- **Autoridad Reguladora / Regulatory Authority:** SUNACRIP (Superintendencia Nacional de Criptoactivos)  
+- **Documentación Asociada / Associated Documentation:**  
   - `legal/certification.md`  
-- **Notas:**  
-  Restricciones vigentes para listados en exchanges locales, pendiente de actualizaciÃ³n normativa.  
+- **Notas / Notes:**  
+  Restricciones vigentes para listados en exchanges locales, pendiente de actualización normativa.  
+  Current restrictions for listings on local exchanges, pending regulatory update.  
 
 ---
 
-## ðŸ“Œ Notas
-
+## 📌 Notas / Notes
 - Este archivo complementa `compliance.md`, `certification.md` y `AML-KYC.md`.  
+- This file complements `compliance.md`, `certification.md`, and `AML-KYC.md`.  
+
 - Debe revisarse y actualizarse cada seis meses o tras cualquier cambio regulatorio relevante.  
-- La trazabilidad por jurisdicciÃ³n fortalece la confianza de la comunidad y exchanges.
+- It must be reviewed and updated every six months or after any relevant regulatory change.  
+
+- La trazabilidad por jurisdicción fortalece la confianza de la comunidad y exchanges.  
+- Jurisdictional traceability strengthens community and exchange trust.  
+
+---
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>

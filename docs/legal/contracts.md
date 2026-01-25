@@ -1,58 +1,74 @@
-﻿# DOA Token â€“ Contracts Register
+﻿---
+layout: default
+title: contracts
+---
+
+# 📜 DOA Token – Contracts Register  
+# 📜 DOA Token – Registro de Contratos
 
 Este documento centraliza y describe todos los contratos asociados al ecosistema DOA Token.  
-Incluye contratos inteligentes desplegados en blockchain y contratos legales vinculados al proyecto.
+Incluye contratos inteligentes desplegados en blockchain y contratos legales vinculados al proyecto.  
+This document centralizes and describes all contracts associated with the DOA Token ecosystem.  
+It includes smart contracts deployed on blockchain and legal contracts linked to the project.  
 
 ---
 
-## ðŸ“‹ Contratos Inteligentes
+## 📋 Contratos Inteligentes / Smart Contracts
 
 - **Token Contract (ERC-20):**  
-  - DirecciÃ³n: `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
-  - Funciones principales: `transfer`, `burn`, `mint`, `approve`.  
-  - Proxy: registrado en `deployments.json`.  
-  - AuditorÃ­a: documentada en `audit-report.md`.  
+  - Dirección / Address: `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
+  - Funciones principales / Main functions: `transfer`, `burn`, `mint`, `approve`.  
+  - Proxy: registrado en `deployments.json`. / registered in `deployments.json`.  
+  - Auditoría / Audit: documentada en `audit-report.md`.  
 
 - **Liquidity Pool Contract:**  
-  - DirecciÃ³n: [por definir tras deploy]  
-  - Funciones principales: aÃ±adir/remover liquidez, gestiÃ³n de reservas.  
-  - Monitoreo: `monitor-liquidez.js`.  
+  - Dirección / Address: [por definir tras deploy / to be defined after deploy]  
+  - Funciones principales / Main functions: añadir/remover liquidez, gestión de reservas. / add/remove liquidity, reserve management.  
+  - Monitoreo / Monitoring: `monitor-liquidez.js`.  
 
 - **Governance Contract:**  
-  - DirecciÃ³n: [por definir tras deploy]  
-  - Funciones principales: creaciÃ³n de propuestas, votaciÃ³n, ejecuciÃ³n de decisiones.  
-  - DocumentaciÃ³n: `governance.md`, `proposals.md`, `governance-log.md`.  
+  - Dirección / Address: [por definir tras deploy / to be defined after deploy]  
+  - Funciones principales / Main functions: creación de propuestas, votación, ejecución de decisiones. / proposal creation, voting, decision execution.  
+  - Documentación / Documentation: `governance.md`, `proposals.md`, `governance-log.md`.  
 
 ---
 
-## ðŸ“‹ Contratos Legales
+## 📋 Contratos Legales / Legal Contracts
 
-- **CertificaciÃ³n de No-Valor:**  
-  - Documento: `legal/certification.md`.  
-  - Alcance: confirma que el DOA Token no constituye un valor financiero.  
+- **Certificación de No-Valor / Non-Security Certification:**  
+  - Documento / Document: `legal/certification.md`.  
+  - Alcance / Scope: confirma que el DOA Token no constituye un valor financiero. / confirms that DOA Token does not constitute a financial security.  
 
-- **PolÃ­ticas AML/KYC:**  
-  - Documento: `legal/AML-KYC.md`.  
-  - Alcance: define procedimientos de prevenciÃ³n de lavado de dinero y verificaciÃ³n de identidad.  
+- **Políticas AML/KYC / AML/KYC Policies:**  
+  - Documento / Document: `legal/AML-KYC.md`.  
+  - Alcance / Scope: define procedimientos de prevención de lavado de dinero y verificación de identidad. / defines anti-money laundering and identity verification procedures.  
 
-- **Jurisdicciones:**  
-  - Documento: `legal/jurisdictions.md`.  
-  - Alcance: registro de cumplimiento regulatorio por paÃ­s.  
-
----
-
-## ðŸ“’ Ejemplo de Entrada
-
-- **Contrato:** Token Contract (ERC-20)  
-- **DirecciÃ³n:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
-- **Estado:** activo  
-- **AuditorÃ­a:** CertiK â€“ 2025-12-20  
-- **Notas:** OptimizaciÃ³n aplicada en funciÃ³n `transfer` tras hallazgos menores.  
+- **Jurisdicciones / Jurisdictions:**  
+  - Documento / Document: `legal/jurisdictions.md`.  
+  - Alcance / Scope: registro de cumplimiento regulatorio por país. / record of regulatory compliance by country.  
 
 ---
 
-## ðŸ“Œ Notas
+## 📑 Ejemplo de Entrada / Example Entry
 
+- **Contrato / Contract:** Token Contract (ERC-20)  
+- **Dirección / Address:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
+- **Estado / Status:** activo / active  
+- **Auditoría / Audit:** CertiK – 2025-12-20  
+- **Notas / Notes:** Optimización aplicada en función `transfer` tras hallazgos menores. / Optimization applied in `transfer` function after minor findings.  
+
+---
+
+## 📌 Notas / Notes
 - Este archivo debe actualizarse cada vez que se despliegue un nuevo contrato o se firme un contrato legal.  
+- This file must be updated each time a new contract is deployed or a legal contract is signed.  
+
 - Complementa `audit-report.md`, `compliance.md` y `governance.md`.  
-- La transparencia en contratos fortalece la confianza de la comunidad y exchanges.
+- This file complements `audit-report.md`, `compliance.md`, and `governance.md`.  
+
+- La transparencia en contratos fortalece la confianza de la comunidad y exchanges.  
+- Transparency in contracts strengthens community and exchange trust.  
+
+---
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>

@@ -1,66 +1,90 @@
 ---
 layout: default
-title: branding-guidelines
----
-# DOA Token – Branding Guidelines
-
-Este documento define las reglas oficiales de uso de la marca DOA Token.  
-Su objetivo es garantizar consistencia visual y proteger la identidad del proyecto en todas las plataformas.
-
+title: Brand Guidelines – DOA Token V2
 ---
 
-## 🎨 Logo
+# 🎨 Brand Guidelines – DOA Token V2  
+# 🎨 Guías de Marca – DOA Token V2
 
-- **Uso correcto:**  
-  - Siempre utilizar el logo oficial en formato PNG o SVG.  
-  - Mantener proporciones originales, sin distorsión ni recortes.  
-  - Fondo transparente en aplicaciones técnicas (exchanges, wallets).  
-
-- **Uso incorrecto:**  
-  - Alterar colores o tipografía.  
-  - Añadir efectos no oficiales (sombras, degradados).  
-  - Usar versiones no verificadas del logo.  
+Este documento define los lineamientos oficiales de identidad visual para el ecosistema DOA Token V2.  
+This document defines the official visual identity guidelines for the DOA Token V2 ecosystem.  
 
 ---
 
-## 🌈 Paleta de Colores
+## 🖼 Archivos de Marca / Brand Assets
 
-- **Primario:** #2D2D2D (gris oscuro)  
-- **Secundario:** #FFCC00 (amarillo dorado)  
-- **Fondo:** #FFFFFF (blanco)  
-- **Acento:** #0066FF (azul)  
-
-> Todos los materiales deben respetar esta paleta para mantener coherencia visual.
+- **doa.svg** → Logo principal dorado con fondo transparente.  
+- **doa-dark.svg** → Versión con fondo oscuro.  
+- **doa-flat.svg** → Versión dorada plana (sin gradiente).  
+- **doa-mask.svg** → Versión en negro, para usar como máscara en CSS.  
 
 ---
 
-## ✍️ Tipografía
+## 🎨 Paleta de Colores / Color Palette
 
-- **Títulos:** Montserrat Bold  
-- **Texto:** Open Sans Regular  
-- **Uso:**  
-  - Títulos y encabezados → Montserrat.  
-  - Texto de cuerpo y documentación → Open Sans.  
+- **Dorado / Gold:** `#FFD700`  
+- **Negro / Black:** `#000000`  
+- **Blanco / White:** `#FFFFFF`  
+- **Gris neutro / Neutral Gray:** `#808080`  
 
----
-
-## 📣 Aplicaciones de Marca
-
-- **Redes sociales:**  
-  - Usar banners oficiales (`assets/banner-twitter.png`, `assets/banner-community.png`).  
-  - Íconos circulares para perfiles.  
-
-- **Exchanges y wallets:**  
-  - Logo cuadrado oficial (`assets/doa-icon.png`).  
-  - Fondo transparente obligatorio.  
-
-- **Documentación:**  
-  - Portadas y comunicados deben incluir logo oficial y colores de marca.  
+Uso recomendado:  
+- Dorado → Identidad principal, títulos, íconos.  
+- Negro → Fondos oscuros, tipografía.  
+- Blanco → Fondos claros, contraste.  
+- Gris → Elementos secundarios, bordes, fondos neutros.  
 
 ---
 
-## 📌 Notas
+## ✍️ Tipografía / Typography
 
-- Este archivo debe actualizarse cada vez que se añadan nuevos recursos gráficos.  
-- Forma parte del paquete oficial junto con `media-kit.md` y `announcement.md`.  
-- La consistencia en branding fortalece la identidad del proyecto y la confianza de la comunidad.
+- **Primaria / Primary:** `Roboto` (Sans-serif)  
+- **Secundaria / Secondary:** `Montserrat` (Sans-serif, títulos destacados)  
+
+Uso recomendado:  
+- Roboto → Texto corrido, documentación, interfaces.  
+- Montserrat → Encabezados, títulos, material promocional.  
+
+---
+
+## ✅ Usos Correctos / Correct Usage
+
+- Mantener proporciones originales del logo.  
+- Usar fondo transparente o colores oficiales.  
+- Respetar la paleta de colores definida.  
+- Incluir margen mínimo de 16px alrededor del logo.  
+
+---
+
+## ❌ Usos Incorrectos / Incorrect Usage
+
+- No distorsionar ni estirar el logo.  
+- No cambiar colores fuera de la paleta oficial.  
+- No usar sombras, efectos 3D o gradientes no oficiales.  
+- No colocar el logo sobre fondos que dificulten su legibilidad.  
+
+---
+
+## ⚙️ Workflow CI/CD
+
+Archivo / File: `.github/workflows/brand.yml`  
+- Convierte automáticamente los SVG en PNG de distintos tamaños (256px, 128px) cada vez que se actualizan.  
+- Automatically converts SVG files into PNGs of different sizes (256px, 128px) whenever updated.  
+
+---
+
+## 💻 Uso en Frontend / Frontend Usage
+
+Ejemplo en React/Next.js:  
+```tsx
+import Image from "next/image";
+
+export function TokenLogo() {
+  return (
+    <Image
+      src="/brand/doa/doa.svg"
+      width={64}
+      height={64}
+      alt="DOA token"
+    />
+  );
+}

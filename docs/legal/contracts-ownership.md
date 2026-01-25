@@ -1,70 +1,86 @@
-﻿# DOA Token â€“ Contracts Ownership & Permissions
+﻿---
+layout: default
+title: contracts-ownership
+---
 
-Este documento define la gestiÃ³n de propiedad, permisos y roles asociados a cada contrato inteligente del DOA Token.  
-Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administraciÃ³n de contratos.
+# 🔐 DOA Token – Contracts Ownership & Permissions  
+# 🔐 DOA Token – Propiedad y Permisos de Contratos
+
+Este documento define la gestión de propiedad, permisos y roles asociados a cada contrato inteligente del DOA Token.  
+Su objetivo es garantizar transparencia, seguridad y trazabilidad en la administración de contratos.  
+This document defines the management of ownership, permissions, and roles associated with each DOA Token smart contract.  
+Its purpose is to ensure transparency, security, and traceability in contract administration.  
 
 ---
 
-## ðŸ› Principios de Propiedad
+## 🏛 Principios de Propiedad / Ownership Principles
 
-1. **Transparencia:** La propiedad de cada contrato debe estar documentada y verificable en blockchain.  
-2. **Seguridad:** Los permisos deben limitarse estrictamente a funciones necesarias.  
-3. **Responsabilidad:** Los cambios de propiedad o permisos deben registrarse en `contracts-log.md`.  
-4. **Gobernanza:** Toda modificaciÃ³n debe estar vinculada a propuestas y votaciones en `governance-log.md`.  
+1. **Transparencia / Transparency:** La propiedad de cada contrato debe estar documentada y verificable en blockchain. / Ownership of each contract must be documented and verifiable on blockchain.  
+2. **Seguridad / Security:** Los permisos deben limitarse estrictamente a funciones necesarias. / Permissions must be strictly limited to necessary functions.  
+3. **Responsabilidad / Responsibility:** Los cambios de propiedad o permisos deben registrarse en `contracts-log.md`. / Ownership or permission changes must be recorded in `contracts-log.md`.  
+4. **Gobernanza / Governance:** Toda modificación debe estar vinculada a propuestas y votaciones en `governance-log.md`. / All modifications must be linked to proposals and votes in `governance-log.md`.  
 
 ---
 
-## ðŸ“‹ Roles y Permisos
+## 📋 Roles y Permisos / Roles and Permissions
 
 - **Owner (Propietario):**  
-  - Control inicial del contrato.  
-  - Puede transferir propiedad a la gobernanza comunitaria.  
-  - Documentado en `contracts.md`.  
+  - Control inicial del contrato. / Initial control of the contract.  
+  - Puede transferir propiedad a la gobernanza comunitaria. / Can transfer ownership to community governance.  
+  - Documentado en `contracts.md`. / Documented in `contracts.md`.  
 
 - **Admin (Administrador):**  
-  - Gestiona parÃ¡metros operativos (ej. supply, quema, liquidez).  
-  - Limitado por votaciones en `governance.md`.  
+  - Gestiona parámetros operativos (ej. supply, quema, liquidez). / Manages operational parameters (e.g., supply, burn, liquidity).  
+  - Limitado por votaciones en `governance.md`. / Limited by votes in `governance.md`.  
 
 - **Community (Comunidad):**  
-  - Participa en votaciones que afectan permisos y funciones crÃ­ticas.  
-  - Registro en `governance-log.md`.  
+  - Participa en votaciones que afectan permisos y funciones críticas. / Participates in votes affecting permissions and critical functions.  
+  - Registro en `governance-log.md`. / Recorded in `governance-log.md`.  
 
 - **Auditors (Auditores):**  
-  - Validan que los permisos coincidan con lo aprobado.  
-  - Documentan hallazgos en `contracts-audit.md`.  
+  - Validan que los permisos coincidan con lo aprobado. / Validate that permissions match what was approved.  
+  - Documentan hallazgos en `contracts-audit.md`. / Document findings in `contracts-audit.md`.  
 
 ---
 
-## ðŸ“‹ Procedimientos de GestiÃ³n
+## 📋 Procedimientos de Gestión / Management Procedures
 
-1. **AsignaciÃ³n de Propiedad:**  
-   - Registrar direcciÃ³n del Owner en `contracts.md`.  
-   - Confirmar en PolygonScan.  
+1. **Asignación de Propiedad / Ownership Assignment:**  
+   - Registrar dirección del Owner en `contracts.md`. / Record Owner address in `contracts.md`.  
+   - Confirmar en PolygonScan. / Confirm on PolygonScan.  
 
-2. **Transferencia de Propiedad:**  
-   - Propuesta en `proposals.md`.  
-   - VotaciÃ³n en `governance-log.md`.  
-   - Registro en `contracts-log.md`.  
+2. **Transferencia de Propiedad / Ownership Transfer:**  
+   - Propuesta en `proposals.md`. / Proposal in `proposals.md`.  
+   - Votación en `governance-log.md`. / Voting in `governance-log.md`.  
+   - Registro en `contracts-log.md`. / Record in `contracts-log.md`.  
 
-3. **ActualizaciÃ³n de Permisos:**  
-   - ValidaciÃ³n tÃ©cnica en `contracts-audit.md`.  
-   - PublicaciÃ³n en `announcement.md`.  
-
----
-
-## ðŸ“’ Ejemplo de Entrada
-
-- **Contrato:** DOA Token ERC-20  
-- **Owner:** DirecciÃ³n `0x123...abc`  
-- **Admin:** DirecciÃ³n `0x456...def`  
-- **Community:** Gobernanza activa vÃ­a Snapshot  
-- **Auditors:** CertiK â€“ validaciÃ³n 2025-12-20  
-- **Notas:** Propiedad transferida a multisig comunitario tras votaciÃ³n P-002.  
+3. **Actualización de Permisos / Permissions Update:**  
+   - Validación técnica en `contracts-audit.md`. / Technical validation in `contracts-audit.md`.  
+   - Publicación en `announcement.md`. / Publication in `announcement.md`.  
 
 ---
 
-## ðŸ“Œ Notas
+## 📑 Ejemplo de Entrada / Example Entry
 
+- **Contrato / Contract:** DOA Token ERC-20  
+- **Owner:** Dirección `0x123...abc`  
+- **Admin:** Dirección `0x456...def`  
+- **Community:** Gobernanza activa vía Snapshot / Active governance via Snapshot  
+- **Auditors:** CertiK – validación 2025-12-20 / validation 2025-12-20  
+- **Notas / Notes:** Propiedad transferida a multisig comunitario tras votación P-002. / Ownership transferred to community multisig after Proposal P-002 vote.  
+
+---
+
+## 📌 Notas / Notes
 - Este archivo complementa `contracts.md`, `contracts-log.md`, `contracts-audit.md` y `contracts-governance.md`.  
+- This file complements `contracts.md`, `contracts-log.md`, `contracts-audit.md`, and `contracts-governance.md`.  
+
 - Debe actualizarse cada vez que se modifique la propiedad o permisos de un contrato.  
-- La trazabilidad en propiedad fortalece la confianza de la comunidad y exchanges.
+- It must be updated each time ownership or permissions of a contract are modified.  
+
+- La trazabilidad en propiedad fortalece la confianza de la comunidad y exchanges.  
+- Traceability in ownership strengthens community and exchange trust.  
+
+---
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>

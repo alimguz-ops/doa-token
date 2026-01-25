@@ -1,38 +1,34 @@
 ---
 layout: default
 title: DOA Token V2 - English
-permalink: /en/
+permalink: /
 ---
 
 <p align="center">
   <img src="assets/DoaTokenV2.png" alt="DOA Token Logo" width="200"/>
 </p>
 
-# Welcome to DOA Token V2
-
+# Welcome to DOA Token V2  
 **Transparency, security, and community.**  
-This is the official site of the **DOA Token V2** ecosystem, a decentralized project with DAO governance, public audit, and automatic rewards.
+This is the official site of the **DOA Token V2** ecosystem, a decentralized project with DAO governance, public audit, and automatic rewards.  
 
 ---
 
 ## 🔗 Official Contracts
-
-- **Ethereum main contract:** [0x6F52809EfdDF5826956EeF9C289A661624afb0cE](https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE)  
-- **Ethereum proxy:** [0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411](https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411)  
-- **Polygon main contract:** [0x692d951163df3f7D9Fe071413F92c319D9B7369E](https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E)  
-- **Polygon proxy:** [0xD6426Da6D01233Efe48dab6aD96cf3238f02c305](https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305)  
+- **Main contract on Ethereum:** [0x6F52809EfdDF5826956EeF9C289A661624afb0cE](https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE)  
+- **Proxy on Ethereum:** [0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411](https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411)  
+- **Main contract on Polygon:** [0x692d951163df3f7D9Fe071413F92c319D9B7369E](https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E)  
+- **Proxy on Polygon:** [0xD6426Da6D01233Efe48dab6aD96cf3238f02c305](https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305)  
 
 ---
 
 ## 💱 Liquidity Pairs
-
 - **QuickSwap (Polygon):** [0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799](https://quickswap.exchange/#/swap?outputCurrency=0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799)  
 - **Uniswap (Polygon):** [0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0](https://app.uniswap.org/#/swap?outputCurrency=0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0)  
 
 ---
 
 ## 🖼 Official NFT
-
 - **NFT_DOA:** [0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65](https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65)  
 
 ---
@@ -53,7 +49,7 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 
 ---
 
-## 📡 Discord Live Widget
+## 📡 Live Discord Widget
 
 <iframe src="https://discord.com/widget?id=1456801553817276497&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
@@ -76,19 +72,17 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 
 ---
 
-## 📘 Main Documentation
-
+## 📘 Documentation
 - [Token technical sheet](../DOA-FICHA.md)  
 - [Tokenomics](../TOKENOMICS.md)  
 - [Project team](../TEAM.md)  
 - [Official announcement](../announcement.md)  
-- [Brand guidelines](../branding-guidelines.md)  
+- [Branding guidelines](../branding-guidelines.md)  
 - [Changelog](../changelog.md)  
 
 ---
 
-## 🏛 Decentralized Governance
-
+## 🏛 DAO Governance
 - [Governance framework](../governance.md)  
 - [Roles and processes](../governance-roles.md)  
 - [Voting log](../governance-log.md)  
@@ -98,19 +92,17 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 
 ---
 
-## 🔒 Audit and Compliance
-
+## 🔒 Audit & Compliance
 - [Audit checklist](../audit-checklist.md)  
 - [Audit report](../audit-report.md)  
 - [AML/KYC policies](../legal/AML-KYC.md)  
 - [Legal certification](../legal/certification.md)  
-- [Contracts and decisions](../legal/contracts-governance-decision.md)  
+- [Contracts and governance decisions](../legal/contracts-governance-decision.md)  
 - [Governance master log](../legal/governance-master-log.md)  
 
 ---
 
-## 📊 Metrics and Community
-
+## 📊 Metrics & Community
 - [Adoption metrics](../community-metrics.md)  
 - [Audit log](../audit-log.md)  
 - [Incidents and migrations](../legal/contracts-governance-incidents.md)  
@@ -119,18 +111,16 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 ---
 
 ## 🗺 Roadmap
-
-- ✅ Deploy contracts (Ethereum + Polygon)  
+- ✅ Contract deployment (Ethereum + Polygon)  
 - ✅ Official NFT  
 - 🔜 Listing on CEX  
-- 🔜 DAO community expansion  
+- 🔜 Expansion of DAO community  
 - 🔜 Integration with more DEX and NFT platforms  
 
 ---
 
 ## 💡 Note
-
-This site is designed to be a trusted hub where the community can check contracts, liquidity pairs, official NFTs, and participate in DAO governance.
+This site is designed as a reliable hub where the community can consult contracts, liquidity pairs, official NFTs, and participate in DAO governance.  
 
 ---
 
