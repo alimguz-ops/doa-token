@@ -108,3 +108,5 @@ For full technical, audit, and governance details, see:
 ---
 
 <p align="center"><strong>Última actualización / Last update:</strong> Enero 2026 / January 2026</p>
+
+Contrato (Polygon): 0x692d951163df3f7D9Fe071413F92c319D9B7369E
