@@ -1,0 +1,51 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout del repositorio
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Configurar Ruby (Jekyll necesita Ruby)
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      # 3. Instalar dependencias de Jekyll
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      # 4. Compilar el sitio con Jekyll
+      - name: Build site
+        run: bundle exec jekyll build --destination ./_site
+
+      # 5. Subir artefacto único para Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      # 6. Desplegar en GitHub Pages
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v4
