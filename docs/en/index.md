@@ -5,13 +5,31 @@ permalink: /en/
 ---
 
 <section class="hero">
-  <img src="{{ "/assets/DoaTokenV2.png" | relative_url }}" alt="DOA Token Logo" class="watermark-logo-bottom">
+  <!-- Logo reducido y en esquina -->
+  <img src="{{ "/assets/DoaTokenV2.png" | relative_url }}" alt="DOA Token Logo" class="logo-corner">
   <div>
     <h1>Welcome to DOA Token V2</h1>
     <p><strong>Transparency, security, and community.</strong></p>
     <p>This is the official site of the <strong>DOA Token V2</strong> ecosystem, a decentralized project with DAO governance, public audit, and automatic rewards.</p>
   </div>
 </section>
+
+<style>
+  .logo-corner {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;   /* tamaño reducido */
+    opacity: 0.7;  /* más discreto */
+    z-index: 1;
+  }
+  @media (max-width: 768px) {
+    .logo-corner {
+      width: 40px;
+      opacity: 0.6;
+    }
+  }
+</style>
 
 ---
 

