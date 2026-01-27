@@ -4,13 +4,14 @@ title: English Home
 permalink: /en/
 ---
 
-<p align="center">
-  <img src="assets/DoaTokenV2.png" alt="DOA Token Logo" width="200"/>
-</p>
-
-# Welcome to DOA Token V2  
-**Transparency, security, and community.**  
-This is the official site of the **DOA Token V2** ecosystem, a decentralized project with DAO governance, public audit, and automatic rewards.  
+<section class="hero">
+  <img src="{{ "/assets/DoaTokenV2.png" | relative_url }}" alt="DOA Token Logo" class="watermark-logo-bottom">
+  <div>
+    <h1>Welcome to DOA Token V2</h1>
+    <p><strong>Transparency, security, and community.</strong></p>
+    <p>This is the official site of the <strong>DOA Token V2</strong> ecosystem, a decentralized project with DAO governance, public audit, and automatic rewards.</p>
+  </div>
+</section>
 
 ---
 
@@ -34,8 +35,7 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 ---
 
 ## 🌐 Official Community
-
-<p align="center">
+<div class="community-badges">
   <a href="https://discord.gg/TCXB69cm" target="_blank">
     <img src="https://img.shields.io/badge/Discord-Community-blue?logo=discord&style=for-the-badge" alt="Discord"/>
   </a>
@@ -45,23 +45,18 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
   <a href="https://x.com/DoaV270493" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/>
   </a>
-</p>
+</div>
 
 ---
 
 ## 📡 Live Discord Widget
-
 <iframe src="https://discord.com/widget?id=1456801553817276497&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 ---
 
 ## 💬 Special Telegram Block
-
 <div style="text-align:center; margin: 20px 0;">
-  <a href="https://t.me/DoaTokenV2bot" target="_blank" 
-     style="display:inline-flex; align-items:center; background-color:#0088cc; color:#fff; 
-            padding:12px 24px; border-radius:6px; text-decoration:none; 
-            font-weight:bold; font-size:16px;">
+  <a href="https://t.me/DoaTokenV2bot" target="_blank" class="telegram-button">
     <!-- Telegram SVG Icon -->
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="margin-right:8px;">
       <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.387 7.594 11.05.556.102.76-.242.76-.537 0-.265-.01-1.144-.015-2.076-3.09.672-3.74-1.49-3.74-1.49-.506-1.287-1.236-1.63-1.236-1.63-1.01-.69.077-.676.077-.676 1.118.079 1.707 1.148 1.707 1.148.993 1.7 2.606 1.209 3.242.924.101-.719.389-1.209.707-1.487-2.466-.28-5.06-1.233-5.06-5.486 0-1.212.433-2.203 1.144-2.978-.115-.28-.496-1.408.108-2.936 0 0 .933-.298 3.06 1.137a10.68 10.68 0 0 1 2.787-.375c.946.004 1.9.128 2.787.375 2.126-1.435 3.058-1.137 3.058-1.137.606 1.528.225 2.656.11 2.936.712.775 1.143 1.766 1.143 2.978 0 4.265-2.598 5.203-5.07 5.478.401.345.759 1.024.759 2.064 0 1.49-.014 2.688-.014 3.055 0 .297.202.644.767.534C20.84 21.383 24 17.08 24 12c0-6.627-5.373-12-12-12z"/>
@@ -116,11 +111,6 @@ This is the official site of the **DOA Token V2** ecosystem, a decentralized pro
 - 🔜 Listing on CEX  
 - 🔜 Expansion of DAO community  
 - 🔜 Integration with more DEX and NFT platforms  
-
----
-
-## 💡 Note
-This site is designed as a reliable hub where the community can consult contracts, liquidity pairs, official NFTs, and participate in DAO governance.  
 
 ---
 

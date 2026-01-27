@@ -4,13 +4,14 @@ title: Inicio en Español
 permalink: /es/
 ---
 
-<p align="center">
-  <img src="assets/DoaTokenV2.png" alt="DOA Token Logo" width="200"/>
-</p>
-
-# Bienvenido a DOA Token V2  
-**Transparencia, seguridad y comunidad.**  
-Este es el sitio oficial del ecosistema **DOA Token V2**, un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.
+<section class="hero">
+  <img src="{{ "/assets/DoaTokenV2.png" | relative_url }}" alt="DOA Token Logo" class="watermark-logo-bottom">
+  <div>
+    <h1>Bienvenido a DOA Token V2</h1>
+    <p><strong>Transparencia, seguridad y comunidad.</strong></p>
+    <p>Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>, un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.</p>
+  </div>
+</section>
 
 ---
 
@@ -34,7 +35,17 @@ Este es el sitio oficial del ecosistema **DOA Token V2**, un proyecto descentral
 ---
 
 ## 🌐 Comunidad Oficial
-*(Discord, Telegram, Twitter con badges y widget en vivo, igual que tu versión actual)*
+<div class="community-badges">
+  <a href="https://discord.gg/TCXB69cm" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&style=for-the-badge" alt="Discord"/>
+  </a>
+  <a href="https://t.me/DoaTokenV2" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&style=for-the-badge" alt="Telegram"/>
+  </a>
+  <a href="https://x.com/DoaV270493" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/>
+  </a>
+</div>
 
 ---
 

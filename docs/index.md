@@ -4,31 +4,36 @@ title: DOA Token V2
 permalink: /
 ---
 
-<!-- Banner Institucional DOA Token V2 -->
-<div style="
-  background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
-  color: #FFD700;
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-">
-  <!-- Logo -->
-  <img src="assets/doatokenv2.png" alt="DOA Token Logo" width="200" style="margin-bottom: 20px;"/>
+<!-- Hero Institucional DOA Token V2 -->
+<section style="padding:64px 16px;text-align:center;position:relative;
+                background:linear-gradient(180deg,#000000 0%,#1a1a1a 100%);
+                color:#FFD700;font-family:'Montserrat',sans-serif;overflow:hidden">
 
-  <!-- Tagline -->
-  <h1 style="margin: 0; font-size: 2em; font-weight: 700;">
-    DOA Token V2
-  </h1>
-  <p style="margin: 10px 0 0; font-size: 1.2em; font-weight: 400; color: #FFD700;">
-    Verified • Transparent • Community Driven
-  </p>
-</div>
+  <!-- Marca de agua del logo -->
+  <img src="{{ "/assets/doatokenv2.png" | relative_url }}" alt="DOA Token Logo"
+       class="watermark-logo">
+
+  <div style="position:relative;z-index:1">
+    <h1 style="margin:0 0 12px;font-size:2.4em;font-weight:800;letter-spacing:-0.02em">
+      DOA Token V2
+    </h1>
+    <p style="margin:10px 0 24px;font-size:1.2em;font-weight:500;color:#FFD700">
+      Verified • Transparent • Community Driven
+    </p>
+
+    <!-- CTA dual -->
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:32px">
+      <a href="/docs/" style="background:#FFD700;color:#000;padding:12px 18px;border-radius:10px;
+                              font-weight:700;text-decoration:none">Ver documentación</a>
+      <a href="/community/" style="background:#333;color:#FFD700;padding:12px 18px;border-radius:10px;
+                                  font-weight:700;text-decoration:none">Entrar a la comunidad</a>
+    </div>
+  </div>
+</section>
 
 ---
 
 # 🪙 DOA Token V2  
-# 🪙 DOA Token V2
 
 Bienvenido al sitio oficial del proyecto.  
 Seleccione su idioma / Select your language:
@@ -79,63 +84,47 @@ Seleccione su idioma / Select your language:
 
 ---
 
-## 🏛 Gobernanza y Organigrama / Governance & Organigram
-- **Fundador / Founder:** Angel R. Linares  
-- **Roles:** Arquitectura técnica, Cumplimiento, Comunidad, Operaciones / Technical architecture, Compliance, Community, Operations  
-
-<p align="center">
-  <img src="assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600"/>
-</p>
-
----
-
-## 📘 Documentación / Documentation
-- [Ficha técnica del token / Token technical sheet](docs/doa-ficha.md)  
-- [Tokenomics](docs/tokenomics.md)  
-- [Equipo del proyecto / Project team](docs/team.md)  
-- [Anuncio oficial / Official announcement](docs/announcement.md)  
-- [Guías de marca / Branding guidelines](docs/branding-guidelines.md)  
-- [Changelog](docs/changelog.md)  
-
----
-
-## 🏛 Gobernanza DAO / DAO Governance
-- [Marco de gobernanza / Governance framework](docs/governance.md)  
-- [Roles y procesos / Roles & processes](docs/governance-roles.md)  
-- [Registro de votaciones / Voting log](docs/governance-log.md)  
-- [Propuestas activas / Active proposals](docs/proposals.md)  
-- [Carta de gobernanza / Governance charter](docs/governance-charter.md)  
-- [Proceso de gobernanza / Governance process](docs/governance-process.md)  
-
----
-
-## 🔒 Auditoría y Cumplimiento / Audit & Compliance
-- [Índice de auditoría / Audit index](docs/audit.md)  
-- [Checklist de auditoría / Audit checklist](docs/legal/audit-checklist.md)  
-- [Informe de auditoría / Audit report](docs/legal/audit-report.md)  
-- [Resumen de auditoría / Audit summary](docs/legal/audit-summary.md)  
-- [Registro de auditoría / Audit log](docs/legal/audit-log.md)  
-- [Políticas AML/KYC](docs/legal/aml-kyc.md)  
-- [Certificación legal / Legal certification](docs/legal/certification.md)  
-- [Contratos y decisiones / Contracts & decisions](docs/legal/contracts-governance-decision.md)  
-- [Registro maestro de gobernanza / Governance master log](docs/legal/governance-master-log.md)  
-
----
-
-## 📊 Métricas y Comunidad / Metrics & Community
-- [Métricas de adopción / Adoption metrics](community-metrics.md)  
-- [Incidentes y migraciones / Incidents & migrations](legal/contracts-governance-incidents.md)  
-- [Transparencia y propiedad / Transparency & ownership](legal/contracts-governance-transparency.md)  
-
----
-
-## 🗺 Roadmap
-- ✅ Deploy de contratos (Ethereum + Polygon)  
-- ✅ NFT oficial  
-- 🔜 Listado en CEX  
-- 🔜 Expansión de la comunidad DAO  
-- 🔜 Integración con más DEX y plataformas NFT  
-
----
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;color:#94a3b8;font-size:14px">
+  <span>SSL activo</span>
+  <span>Repositorio público</span>
+  <span>Auditoría en curso</span>
+  <span>Política de privacidad</span>
+</div>
 
 <p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+
+---
+
+<!-- Bloque PopAds (script original) -->
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+(function(){var k=window,m="d30821c03f80282ac46bbccfd6ee5e68",v=[["siteId",595*305-843-24+5091385],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],q=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9oaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvUnAvcXNwbGl0Lm1pbi5qcw=="],d=-1,y,c,g=function(){clearTimeout(c);d++;if(q[d]&&!(1795402065000<(new Date).getTime()&&1<d)){y=k.document.createElement("script");y.type="text/javascript";y.async=!0;var b=k.document.getElementsByTagName("script")[0];y.src="https://"+atob(q[d]);y.crossOrigin="anonymous";y.onerror=g;y.onload=function(){clearTimeout(c);k[m.slice(0,16)+m.slice(0,16)]||g()};c=setTimeout(g,5E3);b.parentNode.insertBefore(y,b)}};if(!k[m]){try{Object.freeze(k[m]=v)}catch(e){}g()}})();
+/*]]>/* */
+</script>
+
+<!-- CSS adicional para responsividad del logo -->
+<style>
+  .watermark-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    width: 70%;
+    max-width: 900px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  @media (max-width: 768px) {
+    .watermark-logo {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+  @media (max-width: 480px) {
+    .watermark-logo {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>

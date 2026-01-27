@@ -33,10 +33,12 @@ $twitterBearer = $env:TWITTER_BEARER_TOKEN
 $telegramToken = $env:TELEGRAM_BOT_TOKEN
 $telegramChat  = $env:TELEGRAM_CHAT_ID
 $discordHook   = $env:DISCORD_WEBHOOK_URL
+$siteUrl       = $env:SITE_URL
 
 if (-not $twitterBearer) { throw 'Falta TWITTER_BEARER_TOKEN en .env' }
 if (-not $telegramToken -or -not $telegramChat) { throw 'Faltan TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID en .env' }
 if (-not $discordHook) { throw 'Falta DISCORD_WEBHOOK_URL en .env' }
+if (-not $siteUrl) { throw 'Falta SITE_URL en .env' }
 
 # --- Validar calendario ---
 if (-not (Test-Path $JsonPath)) {
@@ -55,9 +57,10 @@ if (-not (Test-Path $LogOut)) {
 # --- Funciones de publicación ---
 function Publicar-Twitter($mensaje) {
     try {
+        $contenido = $mensaje + "`n" + $siteUrl
         $url = 'https://api.twitter.com/2/tweets'
         $headers = @{ Authorization = ('Bearer ' + $twitterBearer) }
-        $body = @{ text = $mensaje } | ConvertTo-Json -Compress
+        $body = @{ text = $contenido } | ConvertTo-Json -Compress
         $res = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body -ContentType 'application/json'
         if ($null -ne $res.data.id) { return $res.data.id } else { return 'ERROR: Respuesta inesperada de Twitter' }
     } catch { return ('ERROR: ' + $_.Exception.Message) }
@@ -65,15 +68,17 @@ function Publicar-Twitter($mensaje) {
 
 function Publicar-Telegram($mensaje) {
     try {
+        $contenido = $mensaje + "`n" + $siteUrl
         $url = ('https://api.telegram.org/bot' + $telegramToken + '/sendMessage')
-        $res = Invoke-RestMethod -Uri $url -Method Post -Body @{ chat_id = $telegramChat; text = $mensaje }
+        $res = Invoke-RestMethod -Uri $url -Method Post -Body @{ chat_id = $telegramChat; text = $contenido }
         return $res.result.message_id
     } catch { return ('ERROR: ' + $_.Exception.Message) }
 }
 
 function Publicar-Discord($mensaje) {
     try {
-        $body = @{ content = $mensaje } | ConvertTo-Json
+        $contenido = $mensaje + "`n" + $siteUrl
+        $body = @{ content = $contenido } | ConvertTo-Json
         Invoke-RestMethod -Uri $discordHook -Method Post -Body $body -ContentType 'application/json'
         return 'OK'
     } catch { return ('ERROR: ' + $_.Exception.Message) }
