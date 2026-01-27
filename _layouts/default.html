@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang_default }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Título y descripción dinámicos -->
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- SEO automático de Jekyll -->
+  {% seo %}
+
+  <!-- Meta tags SEO adicionales -->
+  <meta name="keywords" content="DOA Token, DAO, Polygon, Ethereum, gobernanza, auditoría, liquidez, cripto, blockchain, comunidad, recompensas automáticas">
+  <meta name="author" content="DOA Token V2 Team">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DOA Token V2 | Gobernanza DAO y Recompensas Automáticas">
+  <meta property="og:description" content="Únete a la comunidad DOA Token V2: liquidez en DEX, auditoría pública y recompensas automáticas.">
+  <meta property="og:url" content="https://doatoken.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://doatoken.org/assets/logo.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DOA Token V2 | Gobernanza DAO y Recompensas Automáticas">
+  <meta name="twitter:description" content="Proyecto descentralizado en Polygon con liquidez, auditoría y recompensas automáticas.">
+  <meta name="twitter:image" content="https://doatoken.org/assets/logo.png">
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="vsr-7RGKnUsaJxE-EbSDbZvuCpnrA6DF0W8iB-01yyE">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQC4R8HV2R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RQC4R8HV2R');
+  </script>
+
+  <!-- Google AdSense (Auto Ads) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802989521678619"
+          crossorigin="anonymous"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+  <link rel="icon" href="{{ "/assets/favicon.ico" | relative_url }}">
+</head>
+<body>
+  <!-- Contenido dinámico -->
+  {{ content }}
+
+  <!-- Bloque manual de AdSense -->
+  {% include ads.html %}
+
+  <!-- PopAds SIEMPRE activo -->
+  <script type="text/javascript" data-cfasync="false">
+  (function(){
+    var k=window,
+        m="d30821c03f80282ac46bbccfd6ee5e68",
+        v=[["siteId",5271993],["minBid",0],["popundersPerIP","0"],
+           ["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
+        q=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9oaW1naXgtY29yZS1qcy5jc3M=",
+           "ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvUnAvcXNwbGl0Lm1pbi5qcw=="],
+        d=-1,y,c,g=function(){
+          clearTimeout(c);d++;
+          if(q[d]&&!(1795402065000<(new Date).getTime()&&1<d)){
+            y=k.document.createElement("script");
+            y.type="text/javascript";y.async=!0;
+            var b=k.document.getElementsByTagName("script")[0];
+            y.src="https://"+atob(q[d]);y.crossOrigin="anonymous";
+            y.onerror=g;y.onload=function(){
+              clearTimeout(c);
+              k[m.slice(0,16)+m.slice(0,16)]||g()
+            };
+            c=setTimeout(g,5E3);
+            b.parentNode.insertBefore(y,b)
+          }
+        };
+    if(!k[m]){try{Object.freeze(k[m]=v)}catch(e){}g()}
+  })();
+  </script>
+
+  <!-- Banner de consentimiento -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Usamos cookies, Google Analytics y Google Ads (AdSense) para mejorar la experiencia, medir el tráfico y monetizar el sitio. 
+      <button id="accept-cookies" class="btn-accept">Aceptar</button>
+      <button id="reject-cookies" class="btn-reject">Rechazar</button>
+    </p>
+  </div>
+
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+      font-size: 14px;
+    }
+    .cookie-banner p { margin: 0; }
+    .btn-accept, .btn-reject {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-accept { background: #4CAF50; color: #fff; }
+    .btn-reject { background: #f44336; color: #fff; }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const rejectBtn = document.getElementById("reject-cookies");
+
+      if (localStorage.getItem("cookies-consent")) {
+        banner.style.display = "none";
+        if (localStorage.getItem("cookies-consent") === "accepted") {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RQC4R8HV2R');
+        }
+      }
+
+      acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookies-consent", "accepted");
+        banner.style.display = "none";
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RQC4R8HV2R');
+      });
+
+      rejectBtn.addEventListener("click", function() {
+        localStorage.setItem("cookies-consent", "rejected");
+        banner.style.display = "none";
+      });
+    });
+  </script>
+
+  <!-- CSS global para marca de agua -->
+  <style>
+    .watermark-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.05;
+      width: 70%;
+      max-width: 900px;
+      z-index: 0;
+      pointer-events: none;
+    }
+    @media (max-width: 768px) {
+      .watermark-logo {
+        width: 90%;
+        max-width: 500px;
+      }
+    }
+    @media (max-width: 480px) {
+      .watermark-logo {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</body>
+</html>
