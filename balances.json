@@ -498,5 +498,105 @@
       }
     },
     "timestamp": "2026-01-28T23:03:59.652Z"
+  },
+  {
+    "account": "Owner",
+    "address": "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
+    "balances": {
+      "ETH": "0.000301688808603295",
+      "MATIC": "57.22857444012759863",
+      "Polygon": {
+        "DOA": "401427.752453374068728167",
+        "USDT": "0.0",
+        "WETH": "0.0",
+        "WPOL": "0.0"
+      },
+      "Ethereum": {
+        "DOA": "998000.0",
+        "USDT": "0.0",
+        "WETH": "0.0"
+      }
+    },
+    "timestamp": "2026-01-28T23:25:26.186Z"
+  },
+  {
+    "account": "Admin",
+    "address": "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5",
+    "balances": {
+      "ETH": "0.0",
+      "MATIC": "0.0",
+      "Polygon": {
+        "DOA": "200000.0",
+        "USDT": "0.0",
+        "WETH": "0.0",
+        "WPOL": "0.0"
+      },
+      "Ethereum": {
+        "DOA": "200000.0",
+        "USDT": "0.0",
+        "WETH": "0.0"
+      }
+    },
+    "timestamp": "2026-01-28T23:25:26.976Z"
+  },
+  {
+    "account": "Reserva",
+    "address": "0xfe7522c992ab5193ba66195ccbef65e3b0b76f95",
+    "balances": {
+      "ETH": "0.000000463354794",
+      "MATIC": "0.0",
+      "Polygon": {
+        "DOA": "250000.0",
+        "USDT": "0.0",
+        "WETH": "0.0",
+        "WPOL": "0.0"
+      },
+      "Ethereum": {
+        "DOA": "250000.0",
+        "USDT": "0.0",
+        "WETH": "0.0"
+      }
+    },
+    "timestamp": "2026-01-28T23:25:27.797Z"
+  },
+  {
+    "account": "Comunidad",
+    "address": "0xD1f7a79CE44b267Dfe51B6F84008208550a30562",
+    "balances": {
+      "ETH": "0.000020870804121911",
+      "MATIC": "0.004230194350662",
+      "Polygon": {
+        "DOA": "100000.0",
+        "USDT": "0.0",
+        "WETH": "0.0",
+        "WPOL": "0.0"
+      },
+      "Ethereum": {
+        "DOA": "100000.0",
+        "USDT": "4.413289",
+        "WETH": "0.0"
+      }
+    },
+    "timestamp": "2026-01-28T23:25:28.574Z"
+  },
+  {
+    "account": "Colaborador",
+    "address": "0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1",
+    "balances": {
+      "ETH": "0.0",
+      "MATIC": "0.0",
+      "Polygon": {
+        "DOA": "250000.0",
+        "USDT": "0.0",
+        "WETH": "0.0",
+        "WPOL": "0.0"
+      },
+      "Ethereum": {
+        "DOA": "250000.0",
+        "USDT": "0.0",
+        "WETH": "0.0"
+      }
+    },
+    "timestamp": "2026-01-28T23:25:29.328Z"
   }
 ]
