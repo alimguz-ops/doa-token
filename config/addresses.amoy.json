@@ -1,8 +1,8 @@
 {
   "networkName": "polygon-amoy",
   "rpcUrl": "https://rpc-amoy.polygon.technology",
-  "privateKey": "4UYIK5GR3CTGXRWTR1X4NCPXDWEY3SPKWS", 
-  "polygonscanApiKey": "4UYIK5GR3CTGXRWTR1X4NCPXDWEY3SPKWS",
+  "privateKey": "", 
+  "polygonscanApiKey": "",
 
   "rollback": {
     "tokenAddress": "0xffe10D03DFbC63a92086ed11872961e30942B068",

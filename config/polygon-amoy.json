@@ -1,8 +1,8 @@
 {
   "network": "polygon-amoy",
   "rpcUrl": "https://rpc-amoy.polygon.technology",
-  "privateKey": "2231c3100a1e142017b5a3feee7f45d8a3caa937ed995ed09d9b2bb90a917f39",
-  "polygonscanApiKey": "4UYIK5GR3CTGXRWTR1X4NCPXDWEY3SPKWS",
+  "privateKey": "",
+  "polygonscanApiKey": "",
   "token": {
     "name": "DoaToken",
     "symbol": "DOA",

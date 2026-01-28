@@ -1,4 +1,5 @@
 // scripts/createPool.js (ESM + ethers v6)
+// Flujo completo: crear/validar pool DOA/baseToken + añadir liquidez
 import { ethers } from "ethers";
 import dotenv from "dotenv";
 
@@ -12,7 +13,7 @@ async function main() {
   }
 
   const baseMap = {
-    WMATIC: process.env.BASE_TOKEN_ADDRESS,
+    WMATIC: process.env.WMATIC_ADDRESS,
     USDC: process.env.USDC_POLYGON_ADDRESS,
     DAI: process.env.DAI_POLYGON_ADDRESS,
     USDT: process.env.USDT_POLYGON_ADDRESS
@@ -38,8 +39,7 @@ async function main() {
   ];
   const erc20Abi = [
     "function approve(address spender,uint amount) returns (bool)",
-    "function decimals() view returns (uint8)",
-    "function symbol() view returns (string)"
+    "function decimals() view returns (uint8)"
   ];
 
   const factory = new ethers.Contract(process.env.FACTORY_ADDRESS, factoryAbi, wallet);
@@ -49,18 +49,11 @@ async function main() {
 
   console.log(`\n🔧 Crear/validar pool DOA/${baseSymbol} + añadir liquidez`);
 
+  // 1. Verificar/crear par
   let pairAddress = await factory.getPair(process.env.CONTRACT_ADDRESS, baseAddress);
   if (pairAddress === ethers.ZeroAddress) {
     console.log("⚠️ Par no existe, creando...");
-    const txCreate = await factory.createPair(
-      process.env.CONTRACT_ADDRESS,
-      baseAddress,
-      {
-        gasLimit: 300000n,
-        maxFeePerGas: ethers.parseUnits("200", "gwei"),
-        maxPriorityFeePerGas: ethers.parseUnits("50", "gwei")
-      }
-    );
+    const txCreate = await factory.createPair(process.env.CONTRACT_ADDRESS, baseAddress);
     await txCreate.wait();
     pairAddress = await factory.getPair(process.env.CONTRACT_ADDRESS, baseAddress);
     console.log("✅ Par creado:", pairAddress);
@@ -68,10 +61,40 @@ async function main() {
     console.log("✅ Par ya existe:", pairAddress);
   }
 
-  // … resto del script igual que antes …
+  // 2. Obtener decimales
+  const doaDecimals = await doa.decimals();
+  const baseDecimals = await base.decimals();
+
+  // 3. Montos de liquidez desde .env
+  const amountDOA = ethers.parseUnits(process.env.LIQ_TOKEN_AMOUNT, doaDecimals);
+  const amountBase = ethers.parseUnits(process.env.LIQ_BASE_AMOUNT, baseDecimals);
+  const deadline = Math.floor(Date.now() / 1000) + parseInt(process.env.DEADLINE_SECONDS || "1200");
+
+  // 4. Aprobar tokens
+  console.log("🔄 Aprobando tokens...");
+  await doa.approve(process.env.ROUTER_ADDRESS, amountDOA);
+  await base.approve(process.env.ROUTER_ADDRESS, amountBase);
+  console.log("✅ Tokens aprobados");
+
+  // 5. Añadir liquidez
+  console.log("🔄 Añadiendo liquidez...");
+  const txLiquidity = await router.addLiquidity(
+    process.env.CONTRACT_ADDRESS,
+    baseAddress,
+    amountDOA,
+    amountBase,
+    0,
+    0,
+    process.env.TOKEN_OWNER,
+    deadline
+  );
+  await txLiquidity.wait();
+  console.log("✅ Liquidez añadida. TX:", txLiquidity.hash);
+
+  console.log("\n🚀 Flujo completo terminado.\n");
 }
 
 main().catch((err) => {
-  console.error("Error en createPool.js:", err);
+  console.error("❌ Error en createPool.js:", err);
   process.exitCode = 1;
 });

@@ -2,7 +2,7 @@
   "name": "doa-token",
   "version": "1.0.0",
   "description": "DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones descentralizadas.",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
@@ -34,7 +34,11 @@
 
     "monitor": "node monitor-liquidez.cjs",
     "monitor:polygon": "node monitor-liquidez.cjs",
-    "monitor:eth": "MONITOR_ENABLED=true node monitor-liquidez.cjs"
+    "monitor:eth": "MONITOR_ENABLED=true node monitor-liquidez.cjs",
+
+    "audit": "node scripts/auditoriaDiaria.js",
+    "plots": "node scripts/plotAllBalances.js",
+    "clean:logs": "node scripts/cleanLogs.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
@@ -72,6 +76,9 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "ajv": "^8.17.1"
+    "ajv": "^8.17.1",
+    "chart.js": "^4.4.0",
+    "chartjs-node-canvas": "^4.1.6",
+    "fs-extra": "^11.2.0"
   }
 }

@@ -17,31 +17,60 @@ module.exports = {
   networks: {
     hardhat: { chainId: 1337 },
 
+    // Ethereum mainnet
     mainnet: {
       url: process.env.ETH_RPC,
       accounts: [process.env.PRIVATE_KEY_OWNER, process.env.PRIVATE_KEY_ADMIN].filter(Boolean)
     },
 
+    // Alias para usar --network ethereum
+    ethereum: {
+      url: process.env.ETH_RPC,
+      accounts: [process.env.PRIVATE_KEY_OWNER, process.env.PRIVATE_KEY_ADMIN].filter(Boolean)
+    },
+
+    // Ethereum testnet
     sepolia: {
       url: process.env.SEPOLIA_URL,
       accounts: [process.env.PRIVATE_KEY_OWNER].filter(Boolean)
     },
 
+    // Polygon mainnet
     polygon: {
       url: process.env.POLYGON_RPC,
       accounts: [process.env.PRIVATE_KEY_OWNER, process.env.PRIVATE_KEY_ADMIN].filter(Boolean)
     },
 
+    // Polygon Amoy testnet
     amoy: {
       url: process.env.AMOY_RPC,
-      accounts: [process.env.PRIVATE_KEY_OWNER, process.env.PRIVATE_KEY_ADMIN, process.env.AMOY_PRIVATE_KEY].filter(Boolean)
+      accounts: [
+        process.env.PRIVATE_KEY_OWNER,
+        process.env.PRIVATE_KEY_ADMIN,
+        process.env.AMOY_PRIVATE_KEY
+      ].filter(Boolean)
     }
   },
 
-  // ✅ Migración a Etherscan API V2 con una sola clave
   etherscan: {
-    apiKey: process.env.POLYGONSCAN_API_KEY,
+    apiKey: process.env.ETHERSCAN_API_KEY || process.env.POLYGONSCAN_API_KEY,
     customChains: [
+      {
+        network: "ethereum",
+        chainId: 1,
+        urls: {
+          apiURL: "https://api.etherscan.io/api",
+          browserURL: "https://etherscan.io"
+        }
+      },
+      {
+        network: "sepolia",
+        chainId: 11155111,
+        urls: {
+          apiURL: "https://api-sepolia.etherscan.io/api",
+          browserURL: "https://sepolia.etherscan.io"
+        }
+      },
       {
         network: "polygon",
         chainId: 137,

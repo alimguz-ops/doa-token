@@ -27,7 +27,6 @@ title: doa token v2
 ---
 
 # 🪙 DOA Token V2  
-# 🪙 DOA Token V2
 
 Bienvenido al sitio oficial del proyecto.  
 Seleccione su idioma / Select your language:
@@ -53,7 +52,7 @@ Seleccione su idioma / Select your language:
 
 ## 💱 Pares de Liquidez / Liquidity Pairs
 - **QuickSwap (Polygon):** [0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799](https://quickswap.exchange/#/swap?outputCurrency=0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799)  
-- **Uniswap (Polygon):** [0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0](https://app.uniswap.org/#/swap?outputCurrency=0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0)  
+- **Uniswap (Ethereum):** [0xF526487FE9518a2D7bfB2199445d4fE5D6cF02F1](https://app.uniswap.org/#/swap?outputCurrency=0xF526487FE9518a2D7bfB2199445d4fE5D6cF02F1)  
 
 ---
 
@@ -83,7 +82,7 @@ Seleccione su idioma / Select your language:
 - **Roles:** Arquitectura técnica, Cumplimiento, Comunidad, Operaciones / Technical architecture, Compliance, Community, Operations  
 
 <p align="center">
-  <img src="docs/assts/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600"/>
+  <img src="docs/assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600"/>
 </p>
 
 ---
@@ -134,6 +133,20 @@ Seleccione su idioma / Select your language:
 - 🔜 Listado en CEX  
 - 🔜 Expansión de la comunidad DAO  
 - 🔜 Integración con más DEX y plataformas NFT  
+
+---
+
+## 📊 Resultados de Auditoría Automática
+
+Todos los archivos se guardan en la carpeta `logs/`:
+
+- **balances.csv** → datos crudos en formato tabla.  
+- **balances.json** → histórico completo de balances en formato JSON.  
+- **balances_<Cuenta>.png** → evolución detallada de cada cuenta (Owner, Admin, Reserva, Comunidad, Colaborador).  
+- **balances_comparativo.png** → comparativo global Polygon vs Ethereum.  
+- **balances_comparativo_<Cuenta>.png** → comparativo Polygon vs Ethereum por cada cuenta individual.  
+
+Estos resultados se actualizan automáticamente con el script `auditoriaDiaria.js` y permiten auditar la evolución de liquidez y balances en ambas redes.
 
 ---
 
