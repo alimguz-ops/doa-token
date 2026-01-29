@@ -1,29 +1,41 @@
 [
   {
     "network": "Polygon",
+    "pair": "0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799",
     "tokenA": "0x692d951163df3f7d9fe071413f92c319d9b7369e", 
     "tokenB": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", 
+    "symbolA": "DOA",
+    "symbolB": "WMATIC",
     "amountA": "100",
     "amountB": "50"
   },
   {
     "network": "Polygon",
+    "pair": "0x6e7a5FAFcec6BB1e78bAE2A1F0B612012BF14827",
     "tokenA": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", 
     "tokenB": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", 
+    "symbolA": "USDT",
+    "symbolB": "WMATIC",
     "amountA": "200",
     "amountB": "100"
   },
   {
     "network": "Polygon",
+    "pair": "0xNOEXISTE", 
     "tokenA": "0x692d951163df3f7d9fe071413f92c319d9b7369e", 
     "tokenB": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", 
+    "symbolA": "DOA",
+    "symbolB": "USDT",
     "amountA": "150",
     "amountB": "150"
   },
   {
     "network": "Ethereum",
+    "pair": "0xF526487FE9518a2D7bfB2199445d4fE5D6cF02F1",
     "tokenA": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE", 
     "tokenB": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", 
+    "symbolA": "DOA",
+    "symbolB": "WETH",
     "amountA": "1000",
     "amountB": "0.5"
   }

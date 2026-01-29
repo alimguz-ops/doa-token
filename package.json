@@ -32,7 +32,9 @@
     "monitor:eth": "MONITOR_ENABLED=true node monitor-liquidez.cjs",
     "audit": "node scripts/auditoriaDiaria.js",
     "plots": "node scripts/plotAllBalances.js",
-    "clean:logs": "node scripts/cleanLogs.js"
+    "audit:plots": "node scripts/auditAndPlots.js",   
+    "clean:logs": "node scripts/cleanLogs.js",
+    "verify:logs": "node scripts/verifyLogs.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",

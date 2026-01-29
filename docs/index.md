@@ -64,6 +64,25 @@ permalink: /
       max-width: 320px;
     }
   }
+  .institutional-message {
+    background:#000000;
+    color:#FFD700;
+    padding:24px;
+    margin:32px auto;
+    border-radius:8px;
+    max-width:900px;
+    text-align:center;
+    font-family:'Montserrat',sans-serif;
+    font-size:1.05em;
+    line-height:1.6em;
+    font-weight:500;
+  }
+  .institutional-message h2 {
+    font-size:1.6em;
+    margin-bottom:12px;
+    font-weight:800;
+    color:#FFD700;
+  }
 </style>
 
 ---
@@ -81,6 +100,21 @@ Seleccione su idioma / Select your language:
     <img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/>
   </a>
 </p>
+
+---
+
+<!-- Mensaje Institucional -->
+<div class="institutional-message">
+  <h2>Confianza y Seguridad</h2>
+  🚀 DOA Token V2 llegó para quedarse. Nuestro compromiso es ofrecer un ecosistema sólido, transparente y en constante evolución.  
+  Al añadir liquidez o hacer staking, fortaleces el proyecto y recibes recompensas automáticas cada día.  
+
+  🔹 El proxy es temporal y garantiza actualizaciones seguras y auditadas.  
+  🔹 La visión es clara: consolidar un token confiable que crezca junto a su comunidad.  
+  🔹 Cada inversión se respalda con auditorías diarias y reportes públicos.  
+
+  💎 DOA V2 no es solo un token, es una comunidad que recompensa tu confianza y tu compromiso.  
+</div>
 
 ---
 
@@ -132,12 +166,3 @@ Seleccione su idioma / Select your language:
 </div>
 
 <p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
-
----
-
-<!-- Bloque PopAds (script original) -->
-<script type="text/javascript" data-cfasync="false">
-/*<![CDATA[/* */
-(function(){var k=window,m="d30821c03f80282ac46bbccfd6ee5e68",v=[["siteId",595*305-843-24+5091385],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],q=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9oaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvUnAvcXNwbGl0Lm1pbi5qcw=="],d=-1,y,c,g=function(){clearTimeout(c);d++;if(q[d]&&!(1795402065000<(new Date).getTime()&&1<d)){y=k.document.createElement("script");y.type="text/javascript";y.async=!0;var b=k.document.getElementsByTagName("script")[0];y.src="https://"+atob(q[d]);y.crossOrigin="anonymous";y.onerror=g;y.onload=function(){clearTimeout(c);k[m.slice(0,16)+m.slice(0,16)]||g()};c=setTimeout(g,5E3);b.parentNode.insertBefore(y,b)}};if(!k[m]){try{Object.freeze(k[m]=v)}catch(e){}g()}})();
-/*]]>/* */
-</script>
