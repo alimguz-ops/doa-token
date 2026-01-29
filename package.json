@@ -6,23 +6,19 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
-
     "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
     "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
     "deploy-proxy:polygon": "hardhat run scripts/deployProxy.js --network polygon",
     "deploy:sepolia": "hardhat run scripts/deployProxyDoaTokenV2.js --network sepolia",
-
     "verify:amoy": "hardhat run scripts/verify.js --network amoy",
     "verify:polygon": "hardhat run scripts/verify.js --network polygon",
     "verify:sepolia": "hardhat run scripts/verify.js --network sepolia",
     "verify-impl:polygon": "hardhat run scripts/verify-impl.js --network polygon",
     "verify-proxy:polygon": "hardhat run scripts/verify-proxy.js --network polygon",
-
     "add-liquidity:polygon": "hardhat run scripts/addLiquidity.js --network polygon",
     "distribute:polygon": "hardhat run scripts/distribute.js --network polygon",
     "upgrade:polygon": "hardhat run scripts/upgrade.js --network polygon",
     "wrap:polygon": "hardhat run scripts/wrapMatic.js --network polygon",
-
     "prepare": "husky",
     "precommit-check": "node scripts/precommit-check.js",
     "supply": "node scripts/checkTotalSupply.js",
@@ -31,11 +27,9 @@
     "lint": "eslint . --ext .js,.ts",
     "format": "prettier --write .",
     "validate:tokenlist": "node scripts/validateTokenList.js",
-
     "monitor": "node monitor-liquidez.cjs",
     "monitor:polygon": "node monitor-liquidez.cjs",
     "monitor:eth": "MONITOR_ENABLED=true node monitor-liquidez.cjs",
-
     "audit": "node scripts/auditoriaDiaria.js",
     "plots": "node scripts/plotAllBalances.js",
     "clean:logs": "node scripts/cleanLogs.js"
@@ -77,8 +71,8 @@
   },
   "dependencies": {
     "ajv": "^8.17.1",
-    "chart.js": "^4.4.0",
-    "chartjs-node-canvas": "^4.1.6",
+    "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0",
     "fs-extra": "^11.2.0"
   }
 }
