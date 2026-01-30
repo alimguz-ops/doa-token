@@ -1,9 +1,9 @@
 ---
 layout: default
-title: doa token v2
+title: DOA Token V2
 ---
 
-<!-- Banner Institucional DOA Token V2 -->
+<!-- Banner Institucional -->
 <div style="
   background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
   color: #FFD700;
@@ -12,13 +12,8 @@ title: doa token v2
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
 ">
-  <!-- Logo -->
   <img src="assets/doatokenv2.png" alt="DOA Token Logo" width="200" style="margin-bottom: 20px;"/>
-
-  <!-- Tagline -->
-  <h1 style="margin: 0; font-size: 2em; font-weight: 700;">
-    DOA Token V2
-  </h1>
+  <h1 style="margin: 0; font-size: 2em; font-weight: 700;">DOA Token V2</h1>
   <p style="margin: 10px 0 0; font-size: 1.2em; font-weight: 400; color: #FFD700;">
     Verified • Transparent • Community Driven
   </p>
@@ -29,16 +24,24 @@ title: doa token v2
 # 🪙 DOA Token V2  
 
 Bienvenido al sitio oficial del proyecto.  
+Welcome to the official project site.  
+
 Seleccione su idioma / Select your language:
 
 <p align="center">
-  <a href="{{ site.baseurl }}/es/">
-    <img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/>
-  </a>
-  <a href="{{ site.baseurl }}/en/">
-    <img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/>
-  </a>
+  <a href="{{ site.baseurl }}/es/"><img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/></a>
+  <a href="{{ site.baseurl }}/en/"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/></a>
 </p>
+
+---
+
+## 📌 Introducción / Introduction
+DOA Token V2 es un proyecto descentralizado en **Ethereum y Polygon**, diseñado para ser:  
+DOA Token V2 is a decentralized project on **Ethereum and Polygon**, designed to be:  
+
+- **Verificado / Verified** → Contratos auditables en Etherscan/Polygonscan.  
+- **Transparente / Transparent** → Auditorías y métricas públicas en tiempo real.  
+- **Impulsado por la comunidad / Community Driven** → Gobernanza DAO con recompensas automáticas.  
 
 ---
 
@@ -47,6 +50,8 @@ Seleccione su idioma / Select your language:
 - **Ethereum – Proxy:** [0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411](https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411)  
 - **Polygon – Main contract:** [0x692d951163df3f7D9Fe071413F92c319D9B7369E](https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E)  
 - **Polygon – Proxy:** [0xD6426Da6D01233Efe48dab6aD96cf3238f02c305](https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305)  
+
+> **Nota / Note:** Todos los contratos están verificados y disponibles para auditoría pública.  
 
 ---
 
@@ -64,15 +69,9 @@ Seleccione su idioma / Select your language:
 
 ## 🌐 Comunidad Oficial / Official Community
 <p align="center">
-  <a href="https://discord.gg/TCXB69cm" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&style=for-the-badge" alt="Discord"/>
-  </a>
-  <a href="https://t.me/doatokenv2" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&style=for-the-badge" alt="Telegram"/>
-  </a>
-  <a href="https://x.com/DoaV270493" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/>
-  </a>
+  <a href="https://discord.gg/TCXB69cm" target="_blank"><img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&style=for-the-badge" alt="Discord"/></a>
+  <a href="https://t.me/doatokenv2" target="_blank"><img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&style=for-the-badge" alt="Telegram"/></a>
+  <a href="https://x.com/DoaV270493" target="_blank"><img src="https://img.shields.io/badge/Twitter-X-black?logo=x&style=for-the-badge" alt="Twitter/X"/></a>
 </p>
 
 ---
@@ -81,42 +80,26 @@ Seleccione su idioma / Select your language:
 - **Fundador / Founder:** Angel R. Linares  
 - **Roles:** Arquitectura técnica, Cumplimiento, Comunidad, Operaciones / Technical architecture, Compliance, Community, Operations  
 
-<p align="center">
-  <img src="docs/assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600"/>
-</p>
-
 ---
 
 ## 📘 Documentación / Documentation
-- [Ficha técnica del token / Token technical sheet](docs/doa-ficha.md)  
+- [Ficha técnica / Technical sheet](docs/doa-ficha.md)  
 - [Tokenomics](docs/tokenomics.md)  
-- [Equipo del proyecto / Project team](docs/team.md)  
-- [Anuncio oficial / Official announcement](docs/announcement.md)  
+- [Equipo / Team](docs/team.md)  
+- [Anuncio oficial / Announcement](docs/announcement.md)  
 - [Guías de marca / Branding guidelines](docs/branding-guidelines.md)  
 - [Changelog](docs/changelog.md)  
 
 ---
 
-## 🏛 Gobernanza DAO / DAO Governance
-- [Marco de gobernanza / Governance framework](docs/governance.md)  
-- [Roles y procesos / Roles & processes](docs/governance-roles.md)  
-- [Registro de votaciones / Voting log](docs/governance-log.md)  
-- [Propuestas activas / Active proposals](docs/proposals.md)  
-- [Carta de gobernanza / Governance charter](docs/governance-charter.md)  
-- [Proceso de gobernanza / Governance process](docs/governance-process.md)  
-
----
-
 ## 🔒 Auditoría y Cumplimiento / Audit & Compliance
-- [Índice de auditoría / Audit index](docs/audit.md)  
-- [Checklist de auditoría / Audit checklist](docs/legal/audit-checklist.md)  
-- [Informe de auditoría / Audit report](docs/legal/audit-report.md)  
-- [Resumen de auditoría / Audit summary](docs/legal/audit-summary.md)  
-- [Registro de auditoría / Audit log](docs/legal/audit-log.md)  
+- [Índice / Index](docs/audit.md)  
+- [Checklist](docs/legal/audit-checklist.md)  
+- [Informe / Report](docs/legal/audit-report.md)  
+- [Resumen / Summary](docs/legal/audit-summary.md)  
+- [Registro / Log](docs/legal/audit-log.md)  
 - [Políticas AML/KYC](docs/legal/aml-kyc.md)  
 - [Certificación legal / Legal certification](docs/legal/certification.md)  
-- [Contratos y decisiones / Contracts & decisions](docs/legal/contracts-governance-decision.md)  
-- [Registro maestro de gobernanza / Governance master log](docs/legal/governance-master-log.md)  
 
 ---
 
@@ -137,29 +120,30 @@ Seleccione su idioma / Select your language:
 ---
 
 ## 📊 Resultados de Auditoría Automática
+Todos los archivos se guardan en la carpeta `logs/`:  
+All files are stored in the `logs/` folder:  
 
-Todos los archivos se guardan en la carpeta `logs/`:
-
-- **balances.csv** → datos crudos en formato tabla.  
-- **balances.json** → histórico completo de balances en formato JSON.  
-- **balances_<Cuenta>.png** → evolución detallada de cada cuenta (Owner, Admin, Reserva, Comunidad, Colaborador).  
+- **balances.csv** → datos crudos / raw data.  
+- **balances.json** → histórico completo / full history.  
+- **balances_<Cuenta>.png** → evolución detallada / detailed evolution.  
 - **balances_comparativo.png** → comparativo global Polygon vs Ethereum.  
-- **balances_comparativo_<Cuenta>.png** → comparativo Polygon vs Ethereum por cada cuenta individual.  
+- **balances_comparativo_<Cuenta>.png** → comparativo por cuenta individual.  
 
-Estos resultados se actualizan automáticamente con el script `auditoriaDiaria.js` y permiten auditar la evolución de liquidez y balances en ambas redes.
+Actualizados automáticamente con el script `auditoriaDiaria.js`.  
+Automatically updated with the `auditoriaDiaria.js` script.  
 
 ---
 
-## ⚙️ Uso de Scripts
+## ⚙️ Uso de Scripts / Scripts Usage
+
+Los scripts permiten automatizar auditorías, deploys y generación de métricas.  
+Scripts allow automation of audits, deploys, and metrics generation.  
+
+---
 
 ### 🔍 Auditoría de balances
-Consulta balances en Polygon y Ethereum y guarda resultados en `logs/`:
+Consulta balances en Polygon y Ethereum y guarda resultados en `logs/`.  
+Check balances on Polygon and Ethereum and save results in `logs/`.  
 
 ```bash
 npm run audit
-
----
-
-<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026 / January 2026</p>
-
-Contrato (Polygon): 0x692d951163df3f7D9Fe071413F92c319D9B7369E

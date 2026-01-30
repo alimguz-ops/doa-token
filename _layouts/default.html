@@ -32,13 +32,16 @@
   <!-- Google Site Verification -->
   <meta name="google-site-verification" content="vsr-7RGKnUsaJxE-EbSDbZvuCpnrA6DF0W8iB-01yyE">
 
-  <!-- Google Analytics (GA4) -->
+  <!-- Google Analytics (GA4) con múltiples IDs -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQC4R8HV2R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
+    // Configurar ambos IDs
     gtag('config', 'G-RQC4R8HV2R');
+    gtag('config', 'G-KCRHDKJFF5');
   </script>
 
   <!-- Google AdSense (Auto Ads) -->
@@ -133,6 +136,7 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-RQC4R8HV2R');
+          gtag('config', 'G-KCRHDKJFF5');
         }
       }
 
@@ -143,6 +147,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-RQC4R8HV2R');
+        gtag('config', 'G-KCRHDKJFF5');
       });
 
       rejectBtn.addEventListener("click", function() {
@@ -152,7 +157,9 @@
     });
   </script>
 
-  <!-- CSS global para marca de agua -->
+  <!-- Marca de agua -->
+  <img src="{{ "/assets/logo.png" | relative_url }}" alt="DOA Token V2 Logo" class="watermark-logo">
+
   <style>
     .watermark-logo {
       position: absolute;
@@ -169,12 +176,6 @@
       .watermark-logo {
         width: 90%;
         max-width: 500px;
-      }
-    }
-    @media (max-width: 480px) {
-      .watermark-logo {
-        width: 100%;
-        max-width: 320px;
       }
     }
   </style>

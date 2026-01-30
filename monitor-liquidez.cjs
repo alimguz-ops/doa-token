@@ -13,24 +13,22 @@ dotenv.config();
 
 // --- Compatibilidad con tu flujo original ---
 const RPC_URL = process.env.POLYGON_RPC || "https://polygon-rpc.com";
-const PAIR_ADDR = process.env.PAIR_ADDR || process.env.PAIR_ADDR_POLYGON; // respeta tu variable original
+const PAIR_ADDR = process.env.PAIR_ADDR || process.env.PAIR_ADDR_POLYGON;
 const MIN_RESERVES = Number(process.env.MIN_RESERVES || 1000);
 const LOG_FILE = process.env.LOG_FILE || "./deployments/liquidity.log";
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
-// --- Soporte opcional para Ethereum (solo si está definido) ---
+// --- Soporte opcional para Ethereum ---
 const ETH_RPC = process.env.ETH_RPC || "";
 const PAIR_ADDR_ETHEREUM = process.env.PAIR_ADDR_ETHEREUM || "";
 
 // Node >=18 trae fetch global
 const fetchFn = globalThis.fetch || undefined;
 
-// Provider principal (Polygon, como antes)
+// Providers
 const provider = new ethers.JsonRpcProvider(RPC_URL);
-
-// Provider opcional (Ethereum)
 const providerEth = ETH_RPC ? new ethers.JsonRpcProvider(ETH_RPC) : null;
 
 const pairAbi = [
@@ -39,12 +37,7 @@ const pairAbi = [
   "function token1() view returns (address)"
 ];
 
-const erc20Abi = [
-  "function symbol() view returns (string)",
-  "function decimals() view returns (uint8)"
-];
-
-// --- Log + Discord (formato original) ---
+// --- Log + Discord ---
 function logEvent(message, embedOptions = {}) {
   const timestamp = new Date().toISOString();
   const entry = `[${timestamp}] ${message}`;
@@ -59,7 +52,7 @@ function logEvent(message, embedOptions = {}) {
     const embed = {
       embeds: [
         {
-          title: "📊 Monitor de Liquidez DOA/WPOL",
+          title: embedOptions.title || "📊 Monitor de Liquidez",
           description: embedOptions.description || message,
           color: embedOptions.color || 3447003,
           fields: embedOptions.fields || [],
@@ -81,7 +74,6 @@ function logEvent(message, embedOptions = {}) {
 function isValidAddress(addr) {
   try { return !!addr && ethers.isAddress(addr); } catch { return false; }
 }
-
 function ensureHistory(file) {
   if (!fs.existsSync("./deployments")) {
     fs.mkdirSync("./deployments", { recursive: true });
@@ -91,11 +83,11 @@ function ensureHistory(file) {
   }
 }
 
-// --- Consulta de liquidez (Polygon, flujo original) ---
+// --- Consulta Polygon ---
 async function checkLiquidityPolygon() {
   try {
     if (!isValidAddress(PAIR_ADDR)) {
-      logEvent("⚠️ Dirección de par inválida o no definida en .env (Polygon)");
+      logEvent("⚠️ [Polygon] Dirección de par inválida o no definida en .env", { title: "📊 Monitor de Liquidez [Polygon]" });
       return;
     }
 
@@ -104,13 +96,12 @@ async function checkLiquidityPolygon() {
     const token0 = await pair.token0();
     const token1 = await pair.token1();
 
-    // Mantener 18 decimales como en tu script original
     const res0 = Number(ethers.formatUnits(reserve0, 18));
     const res1 = Number(ethers.formatUnits(reserve1, 18));
 
-    logEvent("Estado del pool actualizado", {
+    logEvent("📊 [Polygon] Estado del pool actualizado", {
+      title: "📊 Monitor de Liquidez [Polygon]",
       description: "📊 Liquidez actual en QuickSwap (Polygon)",
-      color: 3447003,
       fields: [
         { name: `Token0 (${token0})`, value: `${res0}`, inline: true },
         { name: `Token1 (${token1})`, value: `${res1}`, inline: true }
@@ -118,12 +109,14 @@ async function checkLiquidityPolygon() {
     });
 
     if (res1 < MIN_RESERVES) {
-      logEvent(`⚠️ ALERTA: Reservas bajas (${res1} DOA)`, {
+      logEvent(`⚠️ [Polygon] Reservas bajas (${res1} DOA)`, {
+        title: "📊 Monitor de Liquidez [Polygon]",
         description: `⚠️ Reservas de DOA por debajo del mínimo (${MIN_RESERVES})`,
         color: 15158332
       });
     } else {
-      logEvent(`✅ OK: Reservas actuales ${res1} DOA`, {
+      logEvent(`✅ [Polygon] Reservas actuales ${res1} DOA`, {
+        title: "📊 Monitor de Liquidez [Polygon]",
         description: `✅ Reservas de DOA por encima del mínimo (${MIN_RESERVES})`,
         color: 3066993
       });
@@ -137,20 +130,18 @@ async function checkLiquidityPolygon() {
     fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 
   } catch (err) {
-    logEvent(`❌ Error al consultar reservas: ${err.message}`, {
+    logEvent(`❌ [Polygon] Error al consultar reservas: ${err.message}`, {
+      title: "📊 Monitor de Liquidez [Polygon]",
       description: "❌ Fallo en la consulta de liquidez (Polygon)",
       color: 15158332
     });
   }
 }
 
-// --- Consulta de liquidez (Ethereum, opcional y no intrusiva) ---
+// --- Consulta Ethereum ---
 async function checkLiquidityEthereum() {
   try {
-    if (!providerEth || !isValidAddress(PAIR_ADDR_ETHEREUM)) {
-      // No romper: si no hay par en ETH, simplemente no se consulta
-      return;
-    }
+    if (!providerEth || !isValidAddress(PAIR_ADDR_ETHEREUM)) return;
 
     const pair = new ethers.Contract(PAIR_ADDR_ETHEREUM, pairAbi, providerEth);
     const { reserve0, reserve1 } = await pair.getReserves();
@@ -160,15 +151,28 @@ async function checkLiquidityEthereum() {
     const res0 = Number(ethers.formatUnits(reserve0, 18));
     const res1 = Number(ethers.formatUnits(reserve1, 18));
 
-    // Log separado para ETH, pero sin cambiar el formato original de Polygon
-    logEvent("Estado del pool actualizado (Ethereum)", {
+    logEvent("📊 [Ethereum] Estado del pool actualizado", {
+      title: "📊 Monitor de Liquidez [Ethereum]",
       description: "📊 Liquidez actual en Uniswap (Ethereum)",
-      color: 3447003,
       fields: [
         { name: `Token0 (${token0})`, value: `${res0}`, inline: true },
         { name: `Token1 (${token1})`, value: `${res1}`, inline: true }
       ]
     });
+
+    if (res1 < MIN_RESERVES) {
+      logEvent(`⚠️ [Ethereum] Reservas bajas (${res1} DOA)`, {
+        title: "📊 Monitor de Liquidez [Ethereum]",
+        description: `⚠️ Reservas de DOA por debajo del mínimo (${MIN_RESERVES})`,
+        color: 15158332
+      });
+    } else {
+      logEvent(`✅ [Ethereum] Reservas actuales ${res1} DOA`, {
+        title: "📊 Monitor de Liquidez [Ethereum]",
+        description: `✅ Reservas de DOA por encima del mínimo (${MIN_RESERVES})`,
+        color: 3066993
+      });
+    }
 
     const historyFile = "./deployments/liquidity-history-ethereum.json";
     ensureHistory(historyFile);
@@ -178,44 +182,32 @@ async function checkLiquidityEthereum() {
     fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 
   } catch (err) {
-    logEvent(`❌ Error al consultar reservas (Ethereum): ${err.message}`, {
+    logEvent(`❌ [Ethereum] Error al consultar reservas: ${err.message}`, {
+      title: "📊 Monitor de Liquidez [Ethereum]",
       description: "❌ Fallo en la consulta de liquidez (Ethereum)",
       color: 15158332
     });
   }
 }
 
-// --- Resumen a Telegram (mantener formato original) ---
-async function sendTelegramSummaryPolygon() {
+// --- Resumen unificado a Telegram ---
+async function sendTelegramSummaryUnified() {
   try {
-    const historyFile = "./deployments/liquidity-history-polygon.json";
-    ensureHistory(historyFile);
-    let history = JSON.parse(fs.readFileSync(historyFile));
+    // Polygon
+    const polyFile = "./deployments/liquidity-history-polygon.json";
+    ensureHistory(polyFile);
+    const polyHistory = JSON.parse(fs.readFileSync(polyFile));
+    const lastPoly = polyHistory[polyHistory.length - 1];
 
-    if (history.length === 0) {
-      // Evitar fallo cuando aún no hay datos
-      logEvent("ℹ️ No hay datos de liquidez aún (Polygon).");
-      return;
-    }
+    // Ethereum
+    const ethFile = "./deployments/liquidity-history-ethereum.json";
+    ensureHistory(ethFile);
+    const ethHistory = JSON.parse(fs.readFileSync(ethFile));
+    const lastEth = ethHistory[ethHistory.length - 1];
 
-    const labels = history.map(h => h.time);
-    const valuesDOA = history.map(h => h.reserve1);
-    const valuesWMATIC = history.map(h => h.reserve0);
-
-    const chartUrl = `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify({
-      type: 'line',
-      data: {
-        labels,
-        datasets: [
-          { label: 'Reservas DOA', data: valuesDOA, borderColor: 'green', backgroundColor: 'rgba(0,255,0,0.2)', fill: true },
-          { label: 'Reservas WMATIC/WPOL', data: valuesWMATIC, borderColor: 'blue', backgroundColor: 'rgba(0,0,255,0.2)', fill: true }
-        ]
-      },
-      options: { title: { display: true, text: '📈 Evolución de Reservas DOA/WPOL' } }
-    }))}`;
-
-    const last = history[history.length - 1];
-    const summary = `*📊 Resumen de Liquidez DOA/WPOL*\n\n*Último registro:*\n🔹 Token0 → *${last.reserve0}*\n🔹 Token1 → *${last.reserve1}*\n🕒 ${last.time}`;
+    const summary = `*📊 Resumen de Liquidez DOA*\n\n` +
+      `🔹 [Polygon] DOA/WPOL\nToken0 → *${lastPoly.reserve0}*\nToken1 → *${lastPoly.reserve1}*\n🕒 ${lastPoly.time}\n\n` +
+      `🔹 [Ethereum] DOA/WETH\nToken0 → *${lastEth.reserve0}*\nToken1 → *${lastEth.reserve1}*\n🕒 ${lastEth.time}`;
 
     if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID && fetchFn) {
       const urlMsg = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
@@ -225,38 +217,30 @@ async function sendTelegramSummaryPolygon() {
         body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: summary, parse_mode: "Markdown" })
       });
 
-      const urlPhoto = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
-      await fetchFn(urlPhoto, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, photo: chartUrl, caption: "📈 Evolución de reservas DOA y WMATIC/WPOL" })
-      });
-
-      console.log("✅ Resumen + gráfico enviado a Telegram");
+      console.log("✅ Resumen unificado enviado a Telegram (Polygon + Ethereum)");
     }
   } catch (err) {
-    console.error("❌ Error enviando a Telegram (Polygon):", err.message);
+    console.error("❌ Error enviando resumen unificado:", err.message);
   }
 }
 
-// --- Inicio (mantener tu secuencia original) ---
+// --- Inicio ---
 logEvent("🚀 Monitor de liquidez iniciado...");
 
 if (process.env.MONITOR_ENABLED === "true") {
   logEvent("🚀 Monitor de liquidez activado...");
 
-  // Polygon (como antes)
+  // Polygon
   checkLiquidityPolygon();
-  sendTelegramSummaryPolygon();
 
-  // Ethereum (solo si está configurado; no interfiere con Polygon)
+  // Ethereum (solo si está configurado)
   checkLiquidityEthereum();
 
-  setInterval(checkLiquidityPolygon, 3600000);        // cada hora
-  setInterval(sendTelegramSummaryPolygon, 43200000);  // cada 12h
+  // Enviar resumen unificado
+  sendTelegramSummaryUnified();
 
-  // Consulta ETH cada hora si está configurado
-  if (providerEth && isValidAddress(PAIR_ADDR_ETHEREUM)) {
-    setInterval(checkLiquidityEthereum, 3600000);
-  }
+  // Intervalos
+  setInterval(checkLiquidityPolygon, 3600000);        // cada hora
+  setInterval(checkLiquidityEthereum, 3600000);       // cada hora (si ETH está configurado)
+  setInterval(sendTelegramSummaryUnified, 43200000);  // cada 12h
 }
