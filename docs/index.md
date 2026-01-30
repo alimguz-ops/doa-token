@@ -1,117 +1,101 @@
 ---
-layout: default
 title: DOA Token V2
 permalink: /
 ---
 
-<!-- Hero / Banner -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-inner container">
-    <h1 id="hero-title" class="hero-title">DOA Token V2</h1>
-    <p class="hero-sub">Verified • Transparent • Community Driven</p>
+# 🪙 DOA Token V2
+**Verified • Transparent • Community Driven**
 
-    <div class="hero-lang" role="navigation" aria-label="Seleccionar idioma">
-      <a class="btn-lang" href="{{ site.baseurl }}/es/">ESPAÑOL</a>
-      <a class="btn-lang" href="{{ site.baseurl }}/en/">ENGLISH</a>
-    </div>
-
-    <img src="{{ '/assets/logo.png' | relative_url }}" alt="DOA Token logo" class="watermark-logo-bottom" aria-hidden="true">
-  </div>
-</section>
+Bienvenido al sitio oficial del proyecto.
 
 ---
 
-## 🪙 DOA Token V2
-Bienvenido al sitio oficial del proyecto.  
-Welcome to the official project site.
-
-<p align="center">
-  <a href="{{ site.baseurl }}/es/"><img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español"/></a>
-  <a href="{{ site.baseurl }}/en/"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"/></a>
-</p>
+## 🌍 Idioma / Language
+[Español](/es/) | [English](/en/)
 
 ---
 
-<!-- Trust & Security -->
-<section class="trust-hero" aria-labelledby="trust-title">
-  <div class="trust-inner">
-    <h2 id="trust-title" class="trust-heading">🔒 Confianza y Seguridad / Trust & Security</h2>
-    <h3 class="trust-title">🚀 <strong>DOA Token V2 llegó para quedarse.</strong></h3>
-    <p class="trust-lead">Nuestro compromiso es ofrecer un ecosistema sólido, transparente y en constante evolución.</p>
-
-    <ul class="trust-list">
-      <li>Al añadir liquidez o hacer staking, fortaleces el proyecto y recibes recompensas automáticas cada día.</li>
-      <li>🔹 El <strong>proxy es temporal</strong> y garantiza actualizaciones seguras y auditadas.</li>
-      <li>🔹 La visión es clara: consolidar un token confiable que crezca junto a su comunidad.</li>
-      <li>🔹 Cada inversión se respalda con <strong>auditorías diarias y reportes públicos</strong>.</li>
-      <li>💎 DOA V2 no es solo un token, es una comunidad que recompensa tu confianza y tu compromiso.</li>
-    </ul>
-  </div>
-</section>
+## 🔒 Confianza y Seguridad
+- Liquidez y *staking* con recompensas automáticas cada día  
+- Proxy temporal para actualizaciones seguras y auditadas  
+- Auditorías diarias y reportes públicos  
+- Comunidad que recompensa tu confianza
 
 ---
 
-## 🔗 Contratos Oficiales / Official Contracts
-- **Ethereum – Main contract:** `0x6F52809EfdDF5826956EeF9C289A661624afb0cE`  
-- **Ethereum – Proxy:** `0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411`  
-- **Polygon – Main contract:** `0x692d951163df3f7D9Fe071413F92c319D9B7369E`  
-- **Polygon – Proxy:** `0xD6426Da6D01233Efe48dab6aD96cf3238f02c305`
+## 🔗 Contratos Oficiales
+- Ethereum Main: `0x6F52809EfdDF5826956EeF9C289A661624afb0cE`  
+- Polygon Main: `0x692d951163df3f7D9Fe071413F92c319D9B7369E`
 
 ---
 
-## 💱 Pares de Liquidez / Liquidity Pairs
-- **QuickSwap (Polygon):** `0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799`  
-- **Uniswap (Polygon):** `0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0`
+## 💱 Pares de Liquidez
+- QuickSwap: `0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799`  
+- Uniswap: `0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0`
 
 ---
 
-## 🖼 NFT Oficial / Official NFT
-- **NFT_DOA:** `0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65`  
-- Relación: NFT vinculado a liquidez y comunidad / NFT linked to liquidity and community
+## 🖼 NFT Oficial
+- NFT_DOA: `0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65`  
+- Relación: vinculado a liquidez y comunidad
 
 ---
 
-<!-- Community CTA -->
-<section class="community-cta" aria-labelledby="community-title">
-  <h3 id="community-title" class="community-heading">🌐 Comunidad Oficial / Official Community</h3>
-  <div class="community-buttons" role="navigation" aria-label="Enlaces a la comunidad">
-    <a class="btn-community" href="https://discord.gg/TCXB69cm" target="_blank" rel="noopener noreferrer">Discord</a>
-    <a class="btn-community" href="https://t.me/doatokenv2" target="_blank" rel="noopener noreferrer">Telegram</a>
-    <a class="btn-community" href="https://x.com/DoaV270493" target="_blank" rel="noopener noreferrer">Twitter / X</a>
-  </div>
-
-  <div class="community-badges" aria-hidden="true">
-    <a href="{{ site.baseurl }}/es/"><img src="https://img.shields.io/badge/Español-red?style=flat-square" alt="Español badge"/></a>
-    <a href="{{ site.baseurl }}/en/"><img src="https://img.shields.io/badge/English-blue?style=flat-square" alt="English badge"/></a>
-  </div>
-</section>
+## 🌐 Comunidad
+Discord · Telegram · Twitter/X
 
 ---
 
-## 👤 Fundador / Founder
-**Angel R. Linares (ALIMGUZ)**  
-Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones.
+## 👤 Fundador
+**Angel R. Linares (ALIMGUZ)**
 
 ---
 
-<!-- Footer compacto -->
-<footer class="site-footer-compact" role="contentinfo" aria-label="Información del sitio">
-  <div class="footer-compact-inner">
-    <div class="footer-flags">
-      <span class="flag">SSL activo / SSL active</span>
-      <span class="sep">•</span>
-      <span class="flag">Repositorio público / Public repository</span>
-      <span class="sep">•</span>
-      <span class="flag">Auditoría en curso / Audit in progress</span>
-      <span class="sep">•</span>
-      <a class="flag link" href="{{ site.baseurl }}/docs/legal/privacy.md">Política de privacidad / Privacy policy</a>
-    </div>
+## 📑 Estado del Proyecto
+- SSL activo  
+- Repositorio público  
+- Auditoría en curso  
+- Política de privacidad  
 
-    <div class="footer-update">
-      <strong>Última actualización / Last update:</strong> Enero 2026
-    </div>
-  </div>
-</footer>
+**Última actualización:** Enero 2026
 
-<!-- Enlace a scripts: cookie consent (asegúrate de tener assets/js/cookie-consent.js) -->
-<script src="{{ '/assets/js/cookie-consent.js' | relative_url }}"></script>
+---
+
+<!-- Scripts -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCRHDKJFF5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-KCRHDKJFF5');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802989521678619"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" data-cfasync="false">
+(function(){
+  var e = window,
+      o = "d30821c03f80282ac46bbccfd6ee5e68",
+      x = [["siteId",676-211+380+410*19+5263358],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
+      i = ["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9zaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvSi9lc3BsaXQubWluLmpz"],
+      v = -1, w, b,
+      z = function(){
+        clearTimeout(b);
+        v++;
+        if(i[v] && !(1795733348000 < (new Date).getTime() && 1 < v)){
+          w = e.document.createElement("script");
+          w.type = "text/javascript";
+          w.async = true;
+          var d = e.document.getElementsByTagName("script")[0];
+          w.src = "https://" + atob(i[v]);
+          w.crossOrigin = "anonymous";
+          w.onerror = z;
+          w.onload = function(){ clearTimeout(b); e[o.slice(0,16)+o.slice(0,16)] || z(); };
+          b = setTimeout(z, 5000);
+          d.parentNode.insertBefore(w, d);
+        }
+      };
+  if(!e[o]){ try{ Object.freeze(e[o] = x); }catch(e){} z(); }
+})();
+</script>
