@@ -1,0 +1,84 @@
+I"�<h1 id="-tokenomics--doatokenv2-doa">📊 TOKENOMICS – DOATokenV2 (DOA)</h1>
+<h1 id="-tokenomics--doatokenv2-doa-1">📊 TOKENOMICS – DOATokenV2 (DOA)</h1>
+
+<hr />
+
+<h2 id="1-información-general--general-information">1. Información general / General Information</h2>
+<ul>
+  <li><strong>Nombre del token / Token name:</strong> DOATokenV2 (DOA)</li>
+  <li><strong>Tipo / Type:</strong> ERC-20 multichain (Ethereum + Polygon, chainId 1 y 137)</li>
+  <li><strong>Contratos verificados / Verified contracts:</strong>
+    <ul>
+      <li><a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE">Ethereum – DOATokenV2</a></li>
+      <li><a href="https://polygonscan.com/token/0x692d951163df3f7D9Fe071413F92c319D9B7369E">Polygon – DOATokenV2</a></li>
+    </ul>
+  </li>
+  <li><strong>Suministro máximo / Max supply:</strong> 1,800,000 DOA</li>
+  <li><strong>Precio inicial público / Initial public price:</strong> USD 0.50 per DOA</li>
+  <li><strong>Market Cap inicial (FDV):</strong> USD 900,000</li>
+</ul>
+
+<hr />
+
+<h2 id="2-distribución-inicial--initial-distribution">2. Distribución inicial / Initial Distribution</h2>
+<ul>
+  <li><strong>20% Liquidez inicial / Initial liquidity</strong><br />
+Reservado para crear los pares DOA/USDC y DOA/MATIC en QuickSwap, y DOA/WETH en Uniswap.</li>
+  <li><strong>30% Tesorería comunitaria / Community treasury</strong><br />
+Fondos para desarrollo, marketing y soporte de comunidad.</li>
+  <li><strong>25% Staking y recompensas / Staking &amp; rewards</strong><br />
+Incentivos para holders y participantes en pools de liquidez.</li>
+  <li><strong>15% Gobernanza y desarrollo / Governance &amp; development</strong><br />
+Para votaciones, mejoras técnicas y expansión del ecosistema.</li>
+  <li><strong>10% Reserva estratégica / Strategic reserve</strong><br />
+Uso futuro en alianzas, listados en CEX y expansión de integraciones DeFi.</li>
+</ul>
+
+<p align="center">
+  <img src="assets/Distribucion_DOATokenV2.png" alt="Distribución DOA Token V2 / DOA Token V2 Distribution" width="600" />
+</p>
+
+<hr />
+
+<h2 id="3-detalle-de-direcciones--address-details">3. Detalle de direcciones / Address Details</h2>
+<ul>
+  <li><strong>Owner:</strong> 1,000,000 DOA – <a href="https://polygonscan.com/address/0x6377cd174b35f3630b6d0db695f175d5f0dc5541">0x6377cd174b35f3630b6d0db695f175d5f0dc5541</a></li>
+  <li><strong>Admin:</strong> 200,000 DOA – <a href="https://polygonscan.com/address/0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5">0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5</a></li>
+  <li><strong>Reserva Binance / Binance Reserve:</strong> 250,000 DOA – <a href="https://polygonscan.com/address/0xfe7522c992ab5193ba66195ccbef65e3b0b76f95">0xfe7522c992ab5193ba66195ccbef65e3b0b76f95</a></li>
+  <li><strong>Comunidad / Community:</strong> 100,000 DOA – <a href="https://polygonscan.com/address/0xD1f7a79CE44b267Dfe51B6F84008208550a30562">0xD1f7a79CE44b267Dfe51B6F84008208550a30562</a></li>
+  <li><strong>Colaborador / Collaborator:</strong> 250,000 DOA – <a href="https://polygonscan.com/address/0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1">0xe3baefcbad73d05512deaad182ed0cf8b3a5e7b1</a></li>
+  <li><strong>Wallet Binance:</strong> <a href="https://polygonscan.com/address/0xb27df745fc43ca79f8250e52639594ae96315ef5">0xb27df745fc43ca79f8250e52639594ae96315ef5</a></li>
+</ul>
+
+<hr />
+
+<h2 id="4-objetivos--objectives">4. Objetivos / Objectives</h2>
+<ul>
+  <li>Garantizar liquidez inicial estable en Polygon y Ethereum.</li>
+  <li>Incentivar la participación comunitaria mediante staking y recompensas.</li>
+  <li>Financiar el crecimiento del ecosistema con la tesorería comunitaria.</li>
+  <li>Fortalecer la gobernanza DAO con fondos dedicados.</li>
+  <li>Reservar tokens estratégicos para alianzas y listados en CEX.</li>
+</ul>
+
+<hr />
+
+<h2 id="5-estado-actual--current-status">5. Estado actual / Current Status</h2>
+<ul>
+  <li>Contratos verificados en Ethereum y Polygon.</li>
+  <li>Liquidez en preparación para QuickSwap y Uniswap.</li>
+  <li>Scripts automatizados para auditoría, gobernanza y liquidez.</li>
+  <li>Documentación modular en proceso: TOKENOMICS.md, ROADMAP.md, TEAM.md, AUDIT.md.</li>
+</ul>
+
+<hr />
+
+<h2 id="6-próximos-pasos--next-steps">6. Próximos pasos / Next Steps</h2>
+<ul>
+  <li>Activar liquidez en QuickSwap y Uniswap.</li>
+  <li>Publicar auditoría externa.</li>
+  <li>Consolidar comunidad DAO.</li>
+  <li>Completar aplicación QuickLaunch.</li>
+  <li>Cotización en CEX y expansión DeFi.</li>
+</ul>
+:ET

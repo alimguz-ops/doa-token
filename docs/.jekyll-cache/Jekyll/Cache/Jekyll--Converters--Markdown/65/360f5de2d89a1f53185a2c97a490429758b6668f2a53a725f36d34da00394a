@@ -1,0 +1,77 @@
+I"<h1 id="️-doa-token--project-roadmap">🗺️ DOA Token – Project Roadmap</h1>
+<h1 id="️-doa-token--resumen-del-proyecto">🗺️ DOA Token – Resumen del Proyecto</h1>
+
+<p>Este documento presenta el roadmap detallado del proyecto <strong>DOA Token</strong>, con hitos técnicos, legales y de comunidad.<br />
+Su objetivo es ofrecer una visión clara y transparente del desarrollo y crecimiento del token.<br />
+This document presents the detailed roadmap of the <strong>DOA Token</strong> project, with technical, legal, and community milestones.<br />
+Its goal is to provide a clear and transparent view of the token’s development and growth.</p>
+
+<hr />
+
+<h2 id="-roadmap-general--general-roadmap">🚀 Roadmap General / General Roadmap</h2>
+
+<h3 id="q4-2025">Q4 2025</h3>
+<ul>
+  <li>✅ Deploy inicial del contrato con proxy en Polygon. / Initial deploy of contract with proxy on Polygon.</li>
+  <li>✅ Registro en <code class="language-plaintext highlighter-rouge">deployments.json</code>. / Registered in <code class="language-plaintext highlighter-rouge">deployments.json</code>.</li>
+  <li>✅ Publicación del tokenlist oficial. / Official tokenlist published.</li>
+  <li>✅ Quema inicial de 100,000 DOA. / Initial burn of 100,000 DOA.</li>
+  <li>✅ Auditoría externa inicial. / Initial external audit.</li>
+</ul>
+
+<h3 id="q1-2026">Q1 2026</h3>
+<ul>
+  <li>🔄 Primera quema trimestral (2% del balance del Owner). / First quarterly burn (2% of Owner balance).</li>
+  <li>🔄 Actualización de métricas de comunidad (<code class="language-plaintext highlighter-rouge">community-metrics.md</code>). / Community metrics update.</li>
+  <li>🔄 Auditoría de seguimiento. / Follow-up audit.</li>
+  <li>🔄 PRs aceptados en Uniswap y QuickSwap. / PRs accepted in Uniswap and QuickSwap.</li>
+</ul>
+
+<h3 id="q2-2026">Q2 2026</h3>
+<ul>
+  <li>🔄 Segunda quema trimestral (2%). / Second quarterly burn (2%).</li>
+  <li>🔄 Aplicación a CEX adicionales (<code class="language-plaintext highlighter-rouge">cex-application/application.md</code>). / Application to additional CEX.</li>
+  <li>🔄 Campaña de marketing comunitario. / Community marketing campaign.</li>
+  <li>🔄 Consolidación de documentación legal (<code class="language-plaintext highlighter-rouge">legal/</code>). / Consolidation of legal documentation.</li>
+</ul>
+
+<h3 id="q3-2026">Q3 2026</h3>
+<ul>
+  <li>🔄 Tercera quema trimestral (2%). / Third quarterly burn (2%).</li>
+  <li>🔄 Expansión de liquidez en nuevos DEX. / Liquidity expansion in new DEX.</li>
+  <li>🔄 Actualización de roadmap público. / Public roadmap update.</li>
+  <li>🔄 Informe de auditoría intermedio. / Interim audit report.</li>
+</ul>
+
+<h3 id="q4-2026">Q4 2026</h3>
+<ul>
+  <li>🔄 Cuarta quema trimestral (2%). / Fourth quarterly burn (2%).</li>
+  <li>🔄 Consolidación de listados en CEX. / Consolidation of CEX listings.</li>
+  <li>🔄 Informe anual de auditoría y legal. / Annual audit and legal report.</li>
+  <li>🔄 Publicación de roadmap 2027. / Publication of 2027 roadmap.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Los hitos deben marcarse como ✅ completados o 🔄 en curso.</li>
+  <li>
+    <p>Milestones must be marked as ✅ completed or 🔄 in progress.</p>
+  </li>
+  <li>Este documento debe actualizarse trimestralmente junto con <code class="language-plaintext highlighter-rouge">project-status.md</code>.</li>
+  <li>
+    <p>This document must be updated quarterly along with <code class="language-plaintext highlighter-rouge">project-status.md</code>.</p>
+  </li>
+  <li>La transparencia en roadmap y estado fortalece la confianza de la comunidad y exchanges.</li>
+  <li>
+    <p>Transparency in roadmap and status strengthens community and exchange trust.</p>
+  </li>
+  <li>Cada actualización debe incluir enlaces verificables (PolygonScan, auditorías, PRs en DEX).</li>
+  <li>Each update must include verifiable links (PolygonScan, audits, PRs in DEX).</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

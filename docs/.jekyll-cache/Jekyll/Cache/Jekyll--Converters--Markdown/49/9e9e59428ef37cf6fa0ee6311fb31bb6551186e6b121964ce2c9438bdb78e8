@@ -1,0 +1,66 @@
+I")<h1 id="-doa-token--audit-checklist">🔒 DOA Token – Audit Checklist</h1>
+<h1 id="-doa-token--lista-de-verificación-de-auditoría">🔒 DOA Token – Lista de Verificación de Auditoría</h1>
+
+<p>Este documento define los puntos clave que deben revisarse en cada auditoría del DOA Token.<br />
+Sirve como guía para auditores internos y externos, garantizando consistencia y transparencia.<br />
+This document defines the key points to be reviewed in each DOA Token audit.<br />
+It serves as a guide for internal and external auditors, ensuring consistency and transparency.</p>
+
+<hr />
+
+<h2 id="-checklist-técnico--technical-checklist">📋 Checklist Técnico / Technical Checklist</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Verificación del contrato inteligente en <strong>PolygonScan y Etherscan</strong>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validación de proxy y <code class="language-plaintext highlighter-rouge">deployments.json</code>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisión de funciones críticas (<code class="language-plaintext highlighter-rouge">transfer</code>, <code class="language-plaintext highlighter-rouge">burn</code>, <code class="language-plaintext highlighter-rouge">mint</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmación de supply total y balances (<code class="language-plaintext highlighter-rouge">checkTotalSupply.js</code>, <code class="language-plaintext highlighter-rouge">checkAllBalances.js</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Seguridad en scripts de monitoreo (<code class="language-plaintext highlighter-rouge">monitor-liquidez.js</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Logs claros y auditables en <code class="language-plaintext highlighter-rouge">audit-log.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-checklist-legal--legal-checklist">📋 Checklist Legal / Legal Checklist</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Certificación de no-valor (<code class="language-plaintext highlighter-rouge">legal/certification.md</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Políticas AML/KYC documentadas (<code class="language-plaintext highlighter-rouge">legal/AML-KYC.md</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Cumplimiento regulatorio en jurisdicciones clave.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Documentación legal actualizada en <code class="language-plaintext highlighter-rouge">legal/</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-checklist-operacional--operational-checklist">📋 Checklist Operacional / Operational Checklist</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Registro de auditorías en <code class="language-plaintext highlighter-rouge">audit-log.md</code>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Publicación de resultados en <code class="language-plaintext highlighter-rouge">announcement.md</code>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Actualización de métricas comunitarias (<code class="language-plaintext highlighter-rouge">community-metrics.md</code>).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validación de gobernanza (<code class="language-plaintext highlighter-rouge">governance-log.md</code>).</li>
+</ul>
+
+<hr />
+
+<h2 id="-checklist-de-seguridad--security-checklist">📋 Checklist de Seguridad / Security Checklist</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Revisión de permisos en contratos.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Validación de integridad en scripts y <code class="language-plaintext highlighter-rouge">.env</code>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirmación de uso de <code class="language-plaintext highlighter-rouge">gitignore</code> y pre-commit hooks.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pruebas de resistencia contra ataques comunes (reentrancy, overflow).</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este checklist debe completarse en cada auditoría y adjuntarse al reporte oficial (<code class="language-plaintext highlighter-rouge">audit-report.md</code>).</li>
+  <li>Forma parte del paquete de auditoría junto con <code class="language-plaintext highlighter-rouge">audit-log.md</code> y <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</li>
+  <li>La consistencia en auditorías fortalece la confianza de la comunidad y exchanges.</li>
+  <li>This checklist must be completed in each audit and attached to the official report (<code class="language-plaintext highlighter-rouge">audit-report.md</code>).</li>
+  <li>It is part of the audit package together with <code class="language-plaintext highlighter-rouge">audit-log.md</code> and <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</li>
+  <li>Consistency in audits strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

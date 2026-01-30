@@ -1,0 +1,84 @@
+I"W<h1 id="-doa-token--equivalencias-ethersjs-v5--v6">🔄 DOA Token – Equivalencias ethers.js v5 → v6</h1>
+<h1 id="-doa-token--equivalences-ethersjs-v5--v6">🔄 DOA Token – Equivalences ethers.js v5 → v6</h1>
+
+<p>Este documento resume las equivalencias entre funciones y objetos de <strong>ethers.js v5</strong> y su nueva implementación en <strong>ethers.js v6</strong>.<br />
+Su objetivo es facilitar la migración de scripts y contratos, asegurando compatibilidad y buenas prácticas.<br />
+This document summarizes the equivalences between <strong>ethers.js v5</strong> functions/objects and their new implementation in <strong>ethers.js v6</strong>.<br />
+Its purpose is to facilitate migration of scripts and contracts, ensuring compatibility and best practices.</p>
+
+<hr />
+
+<h2 id="-tabla-de-equivalencias--equivalence-table">📋 Tabla de Equivalencias / Equivalence Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Función / Objeto v5</th>
+      <th>Equivalente en v6</th>
+      <th>Nota práctica / Practical Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.providers.JsonRpcProvider</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.JsonRpcProvider</code></td>
+      <td>Se eliminó el namespace <code class="language-plaintext highlighter-rouge">providers</code>. / The <code class="language-plaintext highlighter-rouge">providers</code> namespace was removed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.formatUnits(value, d)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.formatUnits(value, d)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">utils</code> ya no existe, todo está en la raíz. / <code class="language-plaintext highlighter-rouge">utils</code> no longer exists, everything is at the root.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.parseUnits(value, d)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.parseUnits(value, d)</code></td>
+      <td>Igual que arriba. / Same as above.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.getAddress(addr)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.getAddress(addr)</code></td>
+      <td>Validación de direcciones. / Address validation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.Interface(abi)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">new ethers.Interface(abi)</code></td>
+      <td>Ahora es clase directa. / Now a direct class.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.keccak256(data)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.keccak256(data)</code></td>
+      <td>Hash directo. / Direct hash.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.toUtf8String(bytes)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.toUtf8String(bytes)</code></td>
+      <td>Conversión de strings. / String conversion.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ethers.utils.hexlify(data)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ethers.hexlify(data)</code></td>
+      <td>Hex utils siguen igual pero sin <code class="language-plaintext highlighter-rouge">utils</code>. / Hex utils remain the same but without <code class="language-plaintext highlighter-rouge">utils</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este archivo sirve como referencia rápida para migración de código entre v5 y v6.</li>
+  <li>
+    <p>This file serves as a quick reference for code migration between v5 and v6.</p>
+  </li>
+  <li>Complementa <code class="language-plaintext highlighter-rouge">technical-docs.md</code> y <code class="language-plaintext highlighter-rouge">scripts/</code>.</li>
+  <li>
+    <p>It complements <code class="language-plaintext highlighter-rouge">technical-docs.md</code> and <code class="language-plaintext highlighter-rouge">scripts/</code>.</p>
+  </li>
+  <li>La migración a v6 simplifica el uso de funciones al eliminar namespaces redundantes.</li>
+  <li>Migration to v6 simplifies function usage by removing redundant namespaces.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

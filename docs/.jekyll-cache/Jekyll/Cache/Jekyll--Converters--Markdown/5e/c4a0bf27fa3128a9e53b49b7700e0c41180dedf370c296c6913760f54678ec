@@ -1,0 +1,87 @@
+I"<h1 id="️-doa-token--governance-framework">🏛️ DOA Token – Governance Framework</h1>
+<h1 id="️-doa-token--marco-de-gobernanza">🏛️ DOA Token – Marco de Gobernanza</h1>
+
+<p>Este documento define la estructura de gobernanza del ecosistema DOA Token.<br />
+Su objetivo es garantizar transparencia, participación comunitaria y procesos claros de toma de decisiones.<br />
+This document defines the governance structure of the DOA Token ecosystem.<br />
+Its purpose is to ensure transparency, community participation, and clear decision-making processes.</p>
+
+<hr />
+
+<h2 id="-principios-de-gobernanza--governance-principles">🏛 Principios de Gobernanza / Governance Principles</h2>
+
+<ol>
+  <li><strong>Transparencia / Transparency:</strong> Todas las decisiones deben registrarse públicamente en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / All decisions must be publicly recorded in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+  <li><strong>Participación / Participation:</strong> Los holders de DOA Token tienen derecho a votar en propuestas clave. / DOA Token holders have the right to vote on key proposals.</li>
+  <li><strong>Responsabilidad / Accountability:</strong> Los resultados de votación deben implementarse y documentarse. / Voting results must be implemented and documented.</li>
+  <li><strong>Seguridad / Security:</strong> Los procesos de gobernanza deben estar protegidos contra manipulación y fraude. / Governance processes must be protected against manipulation and fraud.</li>
+</ol>
+
+<hr />
+
+<h2 id="-estructura--structure">📋 Estructura / Structure</h2>
+
+<ul>
+  <li><strong>Comunidad / Community:</strong> Holders de DOA Token con derecho a voto proporcional a su balance. / DOA Token holders with voting rights proportional to their balance.</li>
+  <li><strong>Equipo Técnico / Technical Team:</strong> Encargado de implementar cambios aprobados. / Responsible for implementing approved changes.</li>
+  <li><strong>Auditores Externos / External Auditors:</strong> Validan transparencia y cumplimiento. / Validate transparency and compliance.</li>
+  <li><strong>Asesores Legales / Legal Advisors:</strong> Supervisan cumplimiento regulatorio. / Oversee regulatory compliance.</li>
+</ul>
+
+<hr />
+
+<h2 id="-procesos-de-votación--voting-processes">🗳 Procesos de Votación / Voting Processes</h2>
+
+<ul>
+  <li><strong>Propuestas / Proposals:</strong>
+    <ul>
+      <li>Creadas por cualquier miembro de la comunidad. / Created by any community member.</li>
+      <li>Registradas en <code class="language-plaintext highlighter-rouge">proposals.md</code>. / Recorded in <code class="language-plaintext highlighter-rouge">proposals.md</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Votación / Voting:</strong>
+    <ul>
+      <li>Cada DOA Token equivale a un voto. / Each DOA Token equals one vote.</li>
+      <li>Se utiliza snapshot de balances en bloque específico. / A snapshot of balances at a specific block is used.</li>
+      <li>Duración estándar: 7 días. / Standard duration: 7 days.</li>
+    </ul>
+  </li>
+  <li><strong>Resultados / Results:</strong>
+    <ul>
+      <li>Documentados en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / Documented in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+      <li>Implementados por el equipo técnico. / Implemented by the technical team.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-tipos-de-propuestas--types-of-proposals">📑 Tipos de Propuestas / Types of Proposals</h2>
+
+<ul>
+  <li><strong>Técnicas / Technical:</strong> Cambios en contratos, scripts o infraestructura. / Changes in contracts, scripts, or infrastructure.</li>
+  <li><strong>Legales / Legal:</strong> Ajustes en políticas AML/KYC o certificación. / Adjustments in AML/KYC policies or certification.</li>
+  <li><strong>Comunitarias / Community:</strong> Campañas, marketing, adopción. / Campaigns, marketing, adoption.</li>
+  <li><strong>Financieras / Financial:</strong> Ajustes en supply, quema o liquidez. / Adjustments in supply, burn, or liquidity.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este archivo debe actualizarse con cada cambio en la estructura de gobernanza.</li>
+  <li>
+    <p>This file must be updated with each change in the governance structure.</p>
+  </li>
+  <li>Forma parte del paquete oficial junto con <code class="language-plaintext highlighter-rouge">proposals.md</code> y <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+  <li>
+    <p>It is part of the official package along with <code class="language-plaintext highlighter-rouge">proposals.md</code> and <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</p>
+  </li>
+  <li>La gobernanza descentralizada fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Decentralized governance strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

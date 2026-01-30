@@ -1,0 +1,150 @@
+I"3<h1 id="-doa-token-project--uniswap-v3-liquidity">💧 DOA Token Project – Uniswap v3 Liquidity</h1>
+<h1 id="-proyecto-doa-token--liquidez-en-uniswap-v3">💧 Proyecto DOA Token – Liquidez en Uniswap v3</h1>
+
+<h2 id="-descripción--description">📖 Descripción / Description</h2>
+<p>DOA es un token diseñado para gobernanza, liquidez y expansión de aplicaciones descentralizadas.<br />
+DOA is a token designed for governance, liquidity, and the expansion of decentralized applications.</p>
+
+<hr />
+
+<h2 id="️-características-principales--key-features">⚙️ Características principales / Key Features</h2>
+<ul>
+  <li>Contrato proxy para actualizaciones seguras. / Proxy contract for secure upgrades.</li>
+  <li>Scripts de monitoreo de liquidez. / Liquidity monitoring scripts.</li>
+  <li>Auditoría externa pendiente. / External audit pending.</li>
+  <li>Documentación legal AML/KYC en proceso. / AML/KYC legal documentation in progress.</li>
+</ul>
+
+<hr />
+
+<h2 id="-liquidez-doa-en-uniswap-v3--doa-liquidity-in-uniswap-v3">💧 Liquidez DOA en Uniswap v3 / DOA Liquidity in Uniswap v3</h2>
+<p>En Uniswap v2 / QuickSwap, los proveedores de liquidez reciben LP tokens ERC-20.<br />
+En Uniswap v3, cada posición de liquidez es única y se representa con un NFT ERC-721.<br />
+In Uniswap v2 / QuickSwap, liquidity providers receive ERC-20 LP tokens.<br />
+In Uniswap v3, each liquidity position is unique and represented by an ERC-721 NFT.</p>
+
+<h3 id="-ejemplo-nft-de-posición-doamatic--example-doamatic-position-nft">📑 Ejemplo: NFT de posición DOA/MATIC / Example: DOA/MATIC Position NFT</h3>
+<ul>
+  <li><strong>Colección / Collection:</strong> Uniswap V3 Positions NFT</li>
+  <li><strong>ID:</strong> #2811679</li>
+  <li><strong>Par / Pair:</strong> DOA/MATIC</li>
+  <li><strong>Fee tier:</strong> 0.3%</li>
+  <li><strong>Min Tick / Max Tick:</strong> -887220 a 887220</li>
+  <li><strong>Red / Network:</strong> Polygon</li>
+  <li><strong>Propietario / Owner:</strong> 0x6377…5541</li>
+</ul>
+
+<p>Este NFT es transferible, auditable y demostrable. Puede usarse como evidencia de liquidez real en Uniswap v3.<br />
+This NFT is transferable, auditable, and demonstrable. It can be used as evidence of real liquidity in Uniswap v3.</p>
+
+<p><img src="ruta/a/captura.png" alt="NFT de posición DOA/MATIC" /><br />
+<a href="https://opensea.io/assets/matic/0x.../2811679">Ver en OpenSea / View on OpenSea</a></p>
+
+<hr />
+
+<h2 id="-auditoría-de-distribución-de-doa--doa-distribution-audit">🧾 Auditoría de distribución de DOA / DOA Distribution Audit</h2>
+
+<p>El suministro total de DOA es de <strong>1.800.000 tokens</strong>, completamente distribuido entre 9 direcciones verificables.<br />
+The total supply of DOA is <strong>1,800,000 tokens</strong>, fully distributed among 9 verifiable addresses.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Dirección (abreviada) / Address (short)</th>
+      <th>Cantidad DOA / Amount DOA</th>
+      <th>% del total / % of total</th>
+      <th>Tipo de holder / Holder type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0x6377…5541</td>
+      <td>438,725</td>
+      <td>24.37%</td>
+      <td>Wallet operativa / Operational wallet</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0x79Ea…9799</td>
+      <td>432,245</td>
+      <td>24.01%</td>
+      <td>Wallet operativa / Operational wallet</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0xE3BA…7b1</td>
+      <td>250,000</td>
+      <td>13.89%</td>
+      <td>Colaborador / Contributor</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0xfe75…6f95</td>
+      <td>250,000</td>
+      <td>13.89%</td>
+      <td>Colaborador / Contributor</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0xF224…f6c5</td>
+      <td>200,000</td>
+      <td>11.11%</td>
+      <td>Admin DOA</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0x0000…dEaD (burn)</td>
+      <td>118,000</td>
+      <td>6.56%</td>
+      <td>Dirección de quema / Burn address</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0xD1f7…0562</td>
+      <td>100,000</td>
+      <td>5.56%</td>
+      <td>Wallet comunidad / Community wallet</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0x5509…3a9e0</td>
+      <td>8,307</td>
+      <td>0.46%</td>
+      <td>Wallet menor / Minor wallet</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0x541B…7271</td>
+      <td>2,721</td>
+      <td>0.15%</td>
+      <td>Wallet menor / Minor wallet</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Total distribuido / Total distributed:</strong> 1,799,998 DOA<br />
+<strong>Suministro máximo / Max supply:</strong> 1,800,000 DOA<br />
+<strong>Diferencia / Difference:</strong> 2 DOA (posiblemente en fees o rounding / possibly in fees or rounding)</p>
+
+<hr />
+
+<h3 id="-observaciones--observations">✅ Observaciones / Observations</h3>
+<ul>
+  <li>El token DOA está <strong>completamente distribuido</strong>, sin minting pendiente ni reservas ocultas.</li>
+  <li>
+    <p>DOA token is <strong>fully distributed</strong>, with no pending minting or hidden reserves.</p>
+  </li>
+  <li>La dirección de quema (<code class="language-plaintext highlighter-rouge">0x0000…dead</code>) contiene <strong>118,000 DOA</strong>, reforzando la política de supply controlado.</li>
+  <li>
+    <p>The burn address (<code class="language-plaintext highlighter-rouge">0x0000…dead</code>) holds <strong>118,000 DOA</strong>, reinforcing the controlled supply policy.</p>
+  </li>
+  <li>Las wallets operativas y comunitarias están etiquetadas para facilitar la auditoría y transparencia.</li>
+  <li>
+    <p>Operational and community wallets are labeled to facilitate audit and transparency.</p>
+  </li>
+  <li>Este desglose puede incluirse en aplicaciones a exchanges como evidencia de distribución clara y trazable.</li>
+  <li>This breakdown can be included in exchange applications as evidence of clear and traceable distribution</li>
+</ul>
+:ET

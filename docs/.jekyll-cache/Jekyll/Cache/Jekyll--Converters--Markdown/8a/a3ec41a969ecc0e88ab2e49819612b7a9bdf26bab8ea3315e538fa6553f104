@@ -1,0 +1,79 @@
+I"x<h1 id="-doa-token--releases">🚀 DOA Token – Releases</h1>
+<h1 id="-doa-token--publicaciones-de-versiones">🚀 DOA Token – Publicaciones de Versiones</h1>
+
+<p>Este documento registra cada release oficial del proyecto DOA Token.<br />
+Incluye notas de versión, cambios principales y enlaces de verificación.<br />
+This document records each official release of the DOA Token project.<br />
+It includes version notes, main changes, and verification links.</p>
+
+<hr />
+
+<h2 id="-formato-de-registro--record-format">📋 Formato de Registro / Record Format</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> YYYY-MM-DD</li>
+  <li><strong>Versión / Version:</strong> vX.Y.Z</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Tipo de release / Release type:</strong> <code class="language-plaintext highlighter-rouge">major</code></td>
+          <td><code class="language-plaintext highlighter-rouge">minor</code></td>
+          <td><code class="language-plaintext highlighter-rouge">patch</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Notas de versión / Version notes:</strong> Lista breve de cambios y mejoras / Brief list of changes and improvements</li>
+  <li><strong>Responsable / Responsible:</strong> Nombre o entidad / Name or entity</li>
+  <li><strong>Enlaces / Links:</strong> URL a PolygonScan, auditorías, documentación o repositorio / URL to PolygonScan, audits, documentation, or repository</li>
+</ul>
+
+<hr />
+
+<h2 id="-ejemplo-de-entrada--example-entry">📒 Ejemplo de Entrada / Example Entry</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> 2025-12-27</li>
+  <li><strong>Versión / Version:</strong> v1.0.0</li>
+  <li><strong>Tipo de release / Release type:</strong> major</li>
+  <li><strong>Notas de versión / Version notes:</strong>
+    <ul>
+      <li>Deploy inicial del contrato DOA Token con proxy. / Initial deploy of DOA Token contract with proxy.</li>
+      <li>Publicación de <code class="language-plaintext highlighter-rouge">tokenlist.json</code>. / Publication of <code class="language-plaintext highlighter-rouge">tokenlist.json</code>.</li>
+      <li>Inclusión de scripts de auditoría (<code class="language-plaintext highlighter-rouge">checkTotalSupply.js</code>, <code class="language-plaintext highlighter-rouge">checkAllBalances.js</code>). / Inclusion of audit scripts (<code class="language-plaintext highlighter-rouge">checkTotalSupply.js</code>, <code class="language-plaintext highlighter-rouge">checkAllBalances.js</code>).</li>
+    </ul>
+  </li>
+  <li><strong>Responsable / Responsible:</strong> Equipo Técnico DOA / DOA Technical Team</li>
+  <li><strong>Enlaces / Links:</strong>
+    <ul>
+      <li><a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E#code">Proxy en PolygonScan / Proxy on PolygonScan</a></li>
+      <li><a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305#code">Implementación en PolygonScan / Implementation on PolygonScan</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Cada release debe registrarse inmediatamente después de publicarse.</li>
+  <li>
+    <p>Each release must be recorded immediately after publication.</p>
+  </li>
+  <li>Las versiones deben seguir el esquema <strong>SemVer</strong> (ej. v1.0.0, v1.1.0, v2.0.0).</li>
+  <li>
+    <p>Versions must follow the <strong>SemVer</strong> scheme (e.g., v1.0.0, v1.1.0, v2.0.0).</p>
+  </li>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">changelog.md</code> (cambios técnicos) y <code class="language-plaintext highlighter-rouge">status-log.md</code> (estado puntual).</li>
+  <li>
+    <p>This file complements <code class="language-plaintext highlighter-rouge">changelog.md</code> (technical changes) and <code class="language-plaintext highlighter-rouge">status-log.md</code> (point-in-time status).</p>
+  </li>
+  <li>La transparencia en releases fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Transparency in releases strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

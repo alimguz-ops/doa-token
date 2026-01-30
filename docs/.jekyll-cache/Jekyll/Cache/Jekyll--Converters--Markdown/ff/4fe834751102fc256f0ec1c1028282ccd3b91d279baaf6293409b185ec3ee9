@@ -1,0 +1,86 @@
+I"6<h1 id="-doa-token--community-metrics">📊 DOA Token – Community Metrics</h1>
+<h1 id="-doa-token--métricas-de-comunidad">📊 DOA Token – Métricas de Comunidad</h1>
+
+<p>Este documento consolida las métricas de adopción, liquidez y comunidad del DOA Token.<br />
+Su objetivo es proporcionar evidencia transparente y auditable para exchanges, auditores y la comunidad.<br />
+This document consolidates adoption, liquidity, and community metrics of the DOA Token.<br />
+Its purpose is to provide transparent and auditable evidence for exchanges, auditors, and the community.</p>
+
+<hr />
+
+<h2 id="-holders">📊 Holders</h2>
+<ul>
+  <li><strong>Número total de holders / Total number of holders:</strong> [actualizar con dato de PolygonScan/Etherscan]</li>
+  <li><strong>Distribución principal / Main distribution:</strong>
+    <ul>
+      <li>Owner: 0x6377…</li>
+      <li>Admin: 0xf224…</li>
+      <li>Reserva / Reserve: 0xFE75…</li>
+      <li>Comunidad / Community: 0xD1F7…</li>
+      <li>Colaboradores / Collaborators: 0xE3BA…</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-liquidez-en-dex--liquidity-in-dex">💧 Liquidez en DEX / Liquidity in DEX</h2>
+<ul>
+  <li><strong>Par principal / Main pair:</strong> DOA/MATIC en QuickSwap</li>
+  <li><strong>Dirección del par / Pair address:</strong> [enlace a QuickSwap/PolygonScan]</li>
+  <li><strong>Liquidez inicial añadida / Initial liquidity added:</strong> [cantidad en DOA + MATIC]</li>
+  <li><strong>Liquidez actual / Current liquidity:</strong> [actualizar con dato de pool]</li>
+  <li><strong>Monitor:</strong> <code class="language-plaintext highlighter-rouge">scripts/monitor-liquidez.js</code> guarda eventos en <code class="language-plaintext highlighter-rouge">deployments/liquidity.log</code>.<br />
+<code class="language-plaintext highlighter-rouge">scripts/monitor-liquidez.js</code> stores events in <code class="language-plaintext highlighter-rouge">deployments/liquidity.log</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-volumen-y-adopción--volume-and-adoption">📈 Volumen y Adopción / Volume and Adoption</h2>
+<ul>
+  <li><strong>Volumen diario promedio / Average daily volume:</strong> [dato en USD]</li>
+  <li><strong>Volumen semanal promedio / Average weekly volume:</strong> [dato en USD]</li>
+  <li><strong>Transacciones totales / Total transactions:</strong> [dato de PolygonScan/Etherscan]</li>
+  <li><strong>Crecimiento de holders / Holder growth:</strong> [gráfico o tabla trimestral / quarterly chart or table]</li>
+</ul>
+
+<hr />
+
+<h2 id="-comunidad--community">📣 Comunidad / Community</h2>
+<ul>
+  <li><strong>Canales oficiales / Official channels:</strong>
+    <ul>
+      <li>Twitter: [URL]</li>
+      <li>Telegram: [URL]</li>
+      <li>Discord: [URL]</li>
+    </ul>
+  </li>
+  <li><strong>Número de miembros activos / Active members:</strong> [dato aproximado / approximate data]</li>
+  <li><strong>Eventos de marketing / Marketing events:</strong>
+    <ul>
+      <li>Quema trimestral documentada en README / Quarterly burn documented in README.</li>
+      <li>Comunicados oficiales en redes sociales / Official announcements on social media.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">✅ Notas / Notes</h2>
+<ul>
+  <li>Este archivo debe actualizarse cada trimestre junto con la bitácora de burns.</li>
+  <li>
+    <p>This file must be updated every quarter along with the burn log.</p>
+  </li>
+  <li>Los datos deben provenir de fuentes verificables (PolygonScan, QuickSwap, auditorías).</li>
+  <li>
+    <p>Data must come from verifiable sources (PolygonScan, QuickSwap, audits).</p>
+  </li>
+  <li>Forma parte del paquete oficial de documentación para CEX y auditorías externas.</li>
+  <li>It is part of the official documentation package for CEX and external audits.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

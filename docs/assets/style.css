@@ -1,0 +1,159 @@
+/* ===========================
+   Estilos globales DOA Token V2
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f14;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #000000;
+  border-bottom: 2px solid #FFD700;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav ul li {
+  margin: 0 15px;
+}
+.nav ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav ul li a:hover {
+  color: #e6c200;
+}
+
+/* Hero institucional */
+.hero {
+  text-align: center;
+  padding: 64px 16px;
+  background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+  color: #FFD700;
+  position: relative;
+  overflow: hidden;
+}
+.hero a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hero a:first-child {
+  background: #FFD700;
+  color: #000;
+}
+.hero a:last-child {
+  background: #333;
+  color: #FFD700;
+}
+
+/* Marca de agua del logo en esquina inferior derecha */
+.watermark-logo-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.08;
+  width: 180px;
+  max-width: 25%;
+  z-index: 0;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .watermark-logo-bottom { width: 120px; opacity: 0.1; }
+}
+@media (max-width: 480px) {
+  .watermark-logo-bottom { width: 90px; opacity: 0.12; }
+}
+
+/* Founder info */
+.founder-info {
+  margin-top: 16px;
+  font-size: 0.95em;
+  color: #000000; /* negro sobrio */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Comunidad oficial (badges) */
+.community-badges {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.community-badges a img {
+  transition: transform 0.2s ease-in-out;
+}
+.community-badges a:hover img {
+  transform: scale(1.05);
+}
+
+/* Línea inferior con sellos de confianza */
+.trust-line {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Botón especial de Telegram */
+.telegram-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0088cc;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.telegram-button:hover {
+  background-color: #0077b5;
+}
+
+/* Footer */
+.footer {
+  background: #000000;
+  color: #FFD700;
+  padding: 20px;
+  border-top: 2px solid #FFD700;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-links a, .footer-community a {
+  margin: 0 10px;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.footer-links a:hover, .footer-community a:hover {
+  color: #e6c200;
+}

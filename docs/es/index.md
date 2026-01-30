@@ -5,30 +5,15 @@ permalink: /es/
 ---
 
 <section class="hero">
-  <img src="{{ "/assets/DoaTokenV2.png" | relative_url }}" alt="DOA Token Logo" class="logo-corner">
   <div>
     <h1>Bienvenido a DOA Token V2</h1>
     <p><strong>Transparencia, seguridad y comunidad.</strong></p>
-    <p>Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>, un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.</p>
+    <p>
+      Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>, 
+      un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.
+    </p>
   </div>
 </section>
-
-<style>
-  .logo-corner {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 60px;
-    opacity: 0.7;
-    z-index: 1;
-  }
-  @media (max-width: 768px) {
-    .logo-corner {
-      width: 40px;
-      opacity: 0.6;
-    }
-  }
-</style>
 
 ---
 
@@ -76,6 +61,14 @@ permalink: /es/
 - 🔜 Listado en CEX  
 - 🔜 Expansión de la comunidad DAO  
 - 🔜 Integración con más DEX y plataformas NFT  
+
+---
+
+## ✅ Certificaciones y Transparencia / Certifications & Transparency  
+- 🔐 SSL activo / SSL active  
+- 📂 Repositorio público / Public repository  
+- 📊 Auditoría en curso / Audit in progress  
+- 📜 Política de privacidad / Privacy policy  
 
 ---
 

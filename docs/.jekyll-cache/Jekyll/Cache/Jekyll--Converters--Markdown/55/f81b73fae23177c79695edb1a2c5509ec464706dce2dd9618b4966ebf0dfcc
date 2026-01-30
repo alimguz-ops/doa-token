@@ -1,0 +1,113 @@
+I"�<h1 id="-doa-token--audit-report">🔒 DOA Token – Audit Report</h1>
+<h1 id="-doa-token--informe-de-auditoría">🔒 DOA Token – Informe de Auditoría</h1>
+
+<p>Este documento presenta el informe completo de cada auditoría realizada al contrato inteligente, scripts y documentación del DOA Token.<br />
+Incluye hallazgos, riesgos, recomendaciones y acciones correctivas.<br />
+This document presents the full report of each audit performed on the DOA Token smart contract, scripts, and documentation.<br />
+It includes findings, risks, recommendations, and corrective actions.</p>
+
+<hr />
+
+<h2 id="-formato-de-informe--report-format">📋 Formato de Informe / Report Format</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> YYYY-MM-DD</li>
+  <li><strong>Auditor:</strong> Nombre de la firma o entidad / Name of the firm or entity</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Alcance / Scope:</strong> Contrato</td>
+          <td>Scripts</td>
+          <td>Documentación</td>
+          <td>Seguridad Operacional</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Metodología / Methodology:</strong> Breve descripción del enfoque utilizado (ej. revisión manual, herramientas automáticas, pruebas de estrés) / Brief description of the approach used (manual review, automated tools, stress tests)</li>
+  <li><strong>Hallazgos / Findings:</strong>
+    <ul>
+      <li>Críticos / Critical: [lista de vulnerabilidades críticas]</li>
+      <li>Mayores / Major: [lista de vulnerabilidades mayores]</li>
+      <li>Menores / Minor: [lista de advertencias menores]</li>
+    </ul>
+  </li>
+  <li><strong>Riesgos / Risks:</strong> Evaluación de impacto potencial en seguridad, liquidez o gobernanza / Assessment of potential impact on security, liquidity, or governance</li>
+  <li><strong>Recomendaciones / Recommendations:</strong> Acciones sugeridas para mitigar riesgos / Suggested actions to mitigate risks</li>
+  <li><strong>Acciones Correctivas / Corrective Actions:</strong> Medidas implementadas por el equipo DOA / Measures implemented by the DOA team</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Estado Final / Final Status:</strong> <code class="language-plaintext highlighter-rouge">passed</code></td>
+          <td><code class="language-plaintext highlighter-rouge">issues-found</code></td>
+          <td><code class="language-plaintext highlighter-rouge">pending</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Enlaces / Links:</strong> URLs a reportes completos, repositorio o transacciones relevantes / URLs to full reports, repository, or relevant transactions</li>
+</ul>
+
+<hr />
+
+<h2 id="-ejemplo-de-informe--example-report">📒 Ejemplo de Informe / Example Report</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> 2025-12-20</li>
+  <li><strong>Auditor:</strong> CertiK</li>
+  <li><strong>Alcance / Scope:</strong> Contrato inteligente DOA Token en Polygon y Ethereum</li>
+  <li><strong>Metodología / Methodology:</strong>
+    <ul>
+      <li>Revisión manual de funciones críticas / Manual review of critical functions.</li>
+      <li>Análisis automatizado con MythX / Automated analysis with MythX.</li>
+      <li>Pruebas de resistencia contra ataques de reentrancy / Stress tests against reentrancy attacks.</li>
+    </ul>
+  </li>
+  <li><strong>Hallazgos / Findings:</strong>
+    <ul>
+      <li>Críticos / Critical: Ninguno / None.</li>
+      <li>Mayores / Major: 1 (optimización de gas en función <code class="language-plaintext highlighter-rouge">transfer</code>).</li>
+      <li>Menores / Minor: 2 (comentarios faltantes en documentación / missing documentation comments).</li>
+    </ul>
+  </li>
+  <li><strong>Riesgos / Risks:</strong> Bajo impacto financiero, riesgo moderado de eficiencia / Low financial impact, moderate efficiency risk.</li>
+  <li><strong>Recomendaciones / Recommendations:</strong>
+    <ul>
+      <li>Optimizar función <code class="language-plaintext highlighter-rouge">transfer</code> / Optimize <code class="language-plaintext highlighter-rouge">transfer</code> function.</li>
+      <li>Completar documentación técnica / Complete technical documentation.</li>
+    </ul>
+  </li>
+  <li><strong>Acciones Correctivas / Corrective Actions:</strong>
+    <ul>
+      <li>Optimización aplicada en <code class="language-plaintext highlighter-rouge">transfer</code> / Optimization applied in <code class="language-plaintext highlighter-rouge">transfer</code>.</li>
+      <li>Documentación actualizada en <code class="language-plaintext highlighter-rouge">audit/audit-report.md</code> / Documentation updated in <code class="language-plaintext highlighter-rouge">audit/audit-report.md</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Estado Final / Final Status:</strong> <code class="language-plaintext highlighter-rouge">issues-found</code></li>
+  <li><strong>Enlaces / Links:</strong>
+    <ul>
+      <li><a href="https://example.com/audit-report.pdf">Reporte completo / Full report</a></li>
+      <li><a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E#code">Contrato en PolygonScan</a></li>
+      <li><a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE#code">Contrato en Etherscan</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Cada auditoría debe documentarse en este archivo y registrarse en <code class="language-plaintext highlighter-rouge">audit-log.md</code>.</li>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">audit-checklist.md</code> y asegura trazabilidad de hallazgos y correcciones.</li>
+  <li>La transparencia en auditorías fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Each audit must be documented in this file and recorded in <code class="language-plaintext highlighter-rouge">audit-log.md</code>.</li>
+  <li>This file complements <code class="language-plaintext highlighter-rouge">audit-checklist.md</code> and ensures traceability of findings and corrections.</li>
+  <li>Transparency in audits strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

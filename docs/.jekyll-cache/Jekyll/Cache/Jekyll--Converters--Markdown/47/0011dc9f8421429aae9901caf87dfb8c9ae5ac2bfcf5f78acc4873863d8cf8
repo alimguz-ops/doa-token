@@ -1,0 +1,66 @@
+I"�<h1 id="️-doa-token--governance-process">🗳️ DOA Token – Governance Process</h1>
+<h1 id="️-doa-token--proceso-de-gobernanza">🗳️ DOA Token – Proceso de Gobernanza</h1>
+
+<p>Este documento describe paso a paso cómo se inicia, vota y ejecuta una propuesta dentro del sistema de gobernanza del DOA Token.<br />
+Su objetivo es garantizar claridad, transparencia y reproducibilidad en cada proceso de toma de decisiones.<br />
+This document describes step by step how a proposal is initiated, voted on, and executed within the DOA Token governance system.<br />
+Its purpose is to ensure clarity, transparency, and reproducibility in each decision-making process.</p>
+
+<hr />
+
+<h2 id="-paso-1--creación-de-propuesta--step-1--proposal-creation">📝 Paso 1 – Creación de Propuesta / Step 1 – Proposal Creation</h2>
+<ul>
+  <li>Cualquier miembro de la comunidad puede crear una propuesta. / Any community member can create a proposal.</li>
+  <li>La propuesta debe registrarse en <code class="language-plaintext highlighter-rouge">proposals.md</code> con un <strong>ID único</strong> (ej. P-001). / The proposal must be recorded in <code class="language-plaintext highlighter-rouge">proposals.md</code> with a <strong>unique ID</strong> (e.g., P-001).</li>
+  <li>Debe incluir: título, autor, área (Técnico, Legal, Comunidad, Financiero), contenido y motivo. / Must include: title, author, area (Technical, Legal, Community, Financial), content, and reason.</li>
+</ul>
+
+<hr />
+
+<h2 id="-paso-2--publicación--step-2--publication">📢 Paso 2 – Publicación / Step 2 – Publication</h2>
+<ul>
+  <li>La propuesta se anuncia oficialmente en <code class="language-plaintext highlighter-rouge">announcement.md</code> y canales comunitarios (Twitter, Telegram, Discord). / The proposal is officially announced in <code class="language-plaintext highlighter-rouge">announcement.md</code> and community channels (Twitter, Telegram, Discord).</li>
+  <li>Se asigna un <strong>Snapshot Block</strong> para calcular los votos según balances de DOA Token. / A <strong>Snapshot Block</strong> is assigned to calculate votes based on DOA Token balances.</li>
+</ul>
+
+<hr />
+
+<h2 id="-paso-3--votación--step-3--voting">🗳 Paso 3 – Votación / Step 3 – Voting</h2>
+<ul>
+  <li>Cada DOA Token equivale a un voto. / Each DOA Token equals one vote.</li>
+  <li>La votación se realiza en Snapshot u otra plataforma verificada. / Voting is conducted on Snapshot or another verified platform.</li>
+  <li>Duración estándar: <strong>7 días</strong>. / Standard duration: <strong>7 days</strong>.</li>
+  <li>Los resultados se registran en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / Results are recorded in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="️-paso-4--implementación--step-4--implementation">⚙️ Paso 4 – Implementación / Step 4 – Implementation</h2>
+<ul>
+  <li>Si la propuesta es <strong>aprobada</strong>, el equipo técnico/legal ejecuta los cambios. / If the proposal is <strong>approved</strong>, the technical/legal team executes the changes.</li>
+  <li>La acción tomada se documenta en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / The action taken is documented in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+  <li>Ejemplos: actualización de contratos, ajustes en supply, cambios en políticas AML/KYC. / Examples: contract updates, supply adjustments, AML/KYC policy changes.</li>
+</ul>
+
+<hr />
+
+<h2 id="-paso-5--auditoría-y-transparencia--step-5--audit--transparency">📊 Paso 5 – Auditoría y Transparencia / Step 5 – Audit &amp; Transparency</h2>
+<ul>
+  <li>Los auditores externos validan que la implementación coincide con lo aprobado. / External auditors validate that the implementation matches what was approved.</li>
+  <li>Se publica un comunicado oficial en <code class="language-plaintext highlighter-rouge">announcement.md</code>. / An official announcement is published in <code class="language-plaintext highlighter-rouge">announcement.md</code>.</li>
+  <li>Los cambios técnicos se reflejan en <code class="language-plaintext highlighter-rouge">changelog.md</code> y <code class="language-plaintext highlighter-rouge">releases.md</code>. / Technical changes are reflected in <code class="language-plaintext highlighter-rouge">changelog.md</code> and <code class="language-plaintext highlighter-rouge">releases.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">governance.md</code>, <code class="language-plaintext highlighter-rouge">proposals.md</code> y <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / This file complements <code class="language-plaintext highlighter-rouge">governance.md</code>, <code class="language-plaintext highlighter-rouge">proposals.md</code>, and <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+  <li>Cada paso debe documentarse para mantener trazabilidad y confianza. / Each step must be documented to maintain traceability and trust.</li>
+  <li>La gobernanza descentralizada fortalece la legitimidad del proyecto y su adopción en exchanges. / Decentralized governance strengthens the legitimacy of the project and its adoption in exchanges.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

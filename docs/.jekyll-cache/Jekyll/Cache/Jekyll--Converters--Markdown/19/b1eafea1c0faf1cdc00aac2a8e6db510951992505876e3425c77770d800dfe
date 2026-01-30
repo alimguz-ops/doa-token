@@ -1,0 +1,72 @@
+I"8<h1 id="-doa-token--security-policy">🔐 DOA Token – Security Policy</h1>
+<h1 id="-doa-token--política-de-seguridad">🔐 DOA Token – Política de Seguridad</h1>
+
+<p>Este documento define las políticas de seguridad técnica y operativa del proyecto DOA Token.<br />
+Su objetivo es garantizar integridad, protección de activos y confianza de la comunidad y exchanges.<br />
+This document defines the technical and operational security policies of the DOA Token project.<br />
+Its purpose is to ensure integrity, asset protection, and trust from the community and exchanges.</p>
+
+<hr />
+
+<h2 id="-principios-de-seguridad--security-principles">🔐 Principios de Seguridad / Security Principles</h2>
+
+<ol>
+  <li><strong>Integridad / Integrity:</strong> Todos los contratos y scripts deben ser verificables y auditables. / All contracts and scripts must be verifiable and auditable.</li>
+  <li><strong>Confidencialidad / Confidentiality:</strong> Las claves privadas y archivos <code class="language-plaintext highlighter-rouge">.env</code> nunca deben compartirse ni almacenarse en repositorios públicos. / Private keys and <code class="language-plaintext highlighter-rouge">.env</code> files must never be shared or stored in public repositories.</li>
+  <li><strong>Disponibilidad / Availability:</strong> Los sistemas de monitoreo y liquidez deben estar activos y redundantes. / Monitoring and liquidity systems must remain active and redundant.</li>
+  <li><strong>Transparencia / Transparency:</strong> Cada cambio debe registrarse en <code class="language-plaintext highlighter-rouge">changelog.md</code> y <code class="language-plaintext highlighter-rouge">audit-log.md</code>. / Every change must be recorded in <code class="language-plaintext highlighter-rouge">changelog.md</code> and <code class="language-plaintext highlighter-rouge">audit-log.md</code>.</li>
+</ol>
+
+<hr />
+
+<h2 id="-políticas-técnicas--technical-policies">📋 Políticas Técnicas / Technical Policies</h2>
+
+<ul>
+  <li>Uso obligatorio de <code class="language-plaintext highlighter-rouge">.env</code> para credenciales y configuraciones sensibles. / Mandatory use of <code class="language-plaintext highlighter-rouge">.env</code> for sensitive credentials and configurations.</li>
+  <li>Inclusión de <code class="language-plaintext highlighter-rouge">gitignore</code> para evitar exposición de archivos críticos. / Inclusion of <code class="language-plaintext highlighter-rouge">gitignore</code> to prevent exposure of critical files.</li>
+  <li>Implementación de <strong>pre-commit hooks</strong> para validar seguridad antes de cada push. / Implementation of <strong>pre-commit hooks</strong> to validate security before each push.</li>
+  <li>Scripts de monitoreo (<code class="language-plaintext highlighter-rouge">monitor-liquidez.js</code>) deben registrar logs claros y auditables. / Monitoring scripts (<code class="language-plaintext highlighter-rouge">monitor-liquidez.js</code>) must record clear and auditable logs.</li>
+  <li>Auditorías periódicas documentadas en <code class="language-plaintext highlighter-rouge">audit-report.md</code>. / Periodic audits documented in <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-políticas-operativas--operational-policies">📋 Políticas Operativas / Operational Policies</h2>
+
+<ul>
+  <li>Acceso a repositorios limitado por roles definidos en <code class="language-plaintext highlighter-rouge">governance-roles.md</code>. / Repository access limited by roles defined in <code class="language-plaintext highlighter-rouge">governance-roles.md</code>.</li>
+  <li>Revisión de permisos en contratos y wallets cada trimestre. / Quarterly review of permissions in contracts and wallets.</li>
+  <li>Validación de integridad en cada release (<code class="language-plaintext highlighter-rouge">releases.md</code>). / Integrity validation in each release (<code class="language-plaintext highlighter-rouge">releases.md</code>).</li>
+  <li>Publicación de incidentes de seguridad en <code class="language-plaintext highlighter-rouge">announcement.md</code>. / Publication of security incidents in <code class="language-plaintext highlighter-rouge">announcement.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-políticas-de-comunidad--community-policies">📋 Políticas de Comunidad / Community Policies</h2>
+
+<ul>
+  <li>Comunicación inmediata de incidentes en canales oficiales (Twitter, Telegram, Discord). / Immediate communication of incidents in official channels (Twitter, Telegram, Discord).</li>
+  <li>Transparencia en votaciones de gobernanza relacionadas con seguridad (<code class="language-plaintext highlighter-rouge">governance-log.md</code>). / Transparency in governance votes related to security (<code class="language-plaintext highlighter-rouge">governance-log.md</code>).</li>
+  <li>Inclusión de métricas de seguridad en <code class="language-plaintext highlighter-rouge">community-metrics.md</code>. / Inclusion of security metrics in <code class="language-plaintext highlighter-rouge">community-metrics.md</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">audit-checklist.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code> y <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</li>
+  <li>
+    <p>This file complements <code class="language-plaintext highlighter-rouge">audit-checklist.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code>, and <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</p>
+  </li>
+  <li>Debe revisarse y actualizarse cada seis meses o tras cualquier incidente relevante.</li>
+  <li>
+    <p>It must be reviewed and updated every six months or after any relevant incident.</p>
+  </li>
+  <li>La seguridad operativa fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Operational security strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

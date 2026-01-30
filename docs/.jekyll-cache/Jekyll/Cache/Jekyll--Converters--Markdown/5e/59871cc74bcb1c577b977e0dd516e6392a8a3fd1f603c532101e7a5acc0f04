@@ -1,0 +1,44 @@
+I"�<h1 id="-auditoría--doatokenv2-doa">🔒 Auditoría – DOATokenV2 (DOA)</h1>
+<h1 id="-audit--doatokenv2-doa">🔒 Audit – DOATokenV2 (DOA)</h1>
+
+<hr />
+
+<h2 id="1-objetivo--objective">1. Objetivo / Objective</h2>
+<ul>
+  <li><strong>Español:</strong> Garantizar transparencia, seguridad y cumplimiento en el ecosistema DOATokenV2.</li>
+  <li><strong>English:</strong> Ensure transparency, security, and compliance in the DOATokenV2 ecosystem.</li>
+</ul>
+
+<hr />
+
+<h2 id="2-documentos-disponibles--available-documents">2. Documentos disponibles / Available Documents</h2>
+<ul>
+  <li>📋 <strong>Checklist de auditoría / Audit checklist:</strong> <a href="audit-checklist.md">audit-checklist.md</a></li>
+  <li>📑 <strong>Informe de auditoría / Audit report:</strong> <a href="audit-report.md">audit-report.md</a></li>
+  <li>📜 <strong>Registro de auditoría / Audit log:</strong> <a href="audit-log.md">audit-log.md</a></li>
+</ul>
+
+<hr />
+
+<h2 id="3-estado-actual--current-status">3. Estado actual / Current Status</h2>
+<ul>
+  <li>Contratos verificados en Ethereum y Polygon.</li>
+  <li>Scripts automatizados para auditoría y gobernanza.</li>
+  <li>Documentación AML/KYC en proceso.</li>
+  <li>Auditoría externa preliminar (CertiK/Hacken) en preparación.</li>
+</ul>
+
+<hr />
+
+<h2 id="4-próximos-pasos--next-steps">4. Próximos pasos / Next Steps</h2>
+<ul>
+  <li>Publicar auditoría externa completa.</li>
+  <li>Consolidar certificación de compliance.</li>
+  <li>Integrar métricas de seguridad en dashboards públicos.</li>
+  <li>Expandir auditorías a módulos NFT y tesorería DAO.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

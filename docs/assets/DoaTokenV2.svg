@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="DOA Token V2">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6d365"/>
+      <stop offset="0.5" stop-color="#f4b942"/>
+      <stop offset="1" stop-color="#c78b1f"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0.6" stdDeviation="0.6" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="32" height="32" rx="4" fill="#000000"/>
+
+  <g filter="url(#shadow)" transform="translate(0,0)">
+    <text x="16" y="15.5" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="10.5" fill="url(#gold)" letter-spacing="-0.6">
+      <tspan>DOA</tspan>
+    </text>
+    <text x="16" y="24.2" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="5.2" fill="#e6c07a" letter-spacing="0.6">
+      <tspan>TOKEN</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+I"q<h1 id="️-doa-token--governance-charter">🏛️ DOA Token – Governance Charter</h1>
+<h1 id="️-doa-token--carta-de-gobernanza">🏛️ DOA Token – Carta de Gobernanza</h1>
+
+<p>Este documento actúa como la “constitución” del sistema de gobernanza del DOA Token.<br />
+Define principios, procesos, roles y responsabilidades que rigen la toma de decisiones en el ecosistema.<br />
+This document acts as the “constitution” of the DOA Token governance system.<br />
+It defines principles, processes, roles, and responsibilities that govern decision-making in the ecosystem.</p>
+
+<hr />
+
+<h2 id="-principios-fundamentales--fundamental-principles">🏛 Principios Fundamentales / Fundamental Principles</h2>
+
+<ol>
+  <li><strong>Transparencia / Transparency:</strong> Todas las decisiones deben ser públicas y registradas en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / All decisions must be public and recorded in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+  <li><strong>Participación / Participation:</strong> Los holders de DOA Token tienen derecho a proponer y votar. / DOA Token holders have the right to propose and vote.</li>
+  <li><strong>Responsabilidad / Accountability:</strong> Los resultados de votación deben implementarse y documentarse. / Voting results must be implemented and documented.</li>
+  <li><strong>Seguridad / Security:</strong> Los procesos deben estar protegidos contra manipulación y fraude. / Processes must be protected against manipulation and fraud.</li>
+  <li><strong>Descentralización / Decentralization:</strong> La gobernanza evoluciona hacia mayor autonomía comunitaria. / Governance evolves toward greater community autonomy.</li>
+</ol>
+
+<hr />
+
+<h2 id="-estructura-de-gobernanza--governance-structure">📋 Estructura de Gobernanza / Governance Structure</h2>
+
+<ul>
+  <li><strong>Comunidad / Community:</strong> Holders de DOA Token con poder de voto proporcional a su balance. / DOA Token holders with voting power proportional to their balance.</li>
+  <li><strong>Equipo Técnico / Technical Team:</strong> Implementa cambios aprobados en contratos, scripts y documentación. / Implements approved changes in contracts, scripts, and documentation.</li>
+  <li><strong>Auditores Externos / External Auditors:</strong> Validan transparencia y cumplimiento técnico/financiero. / Validate transparency and technical/financial compliance.</li>
+  <li><strong>Asesores Legales / Legal Advisors:</strong> Supervisan cumplimiento regulatorio y certificaciones AML/KYC. / Oversee regulatory compliance and AML/KYC certifications.</li>
+</ul>
+
+<hr />
+
+<h2 id="-procesos-de-gobernanza--governance-processes">🗳 Procesos de Gobernanza / Governance Processes</h2>
+
+<ol>
+  <li><strong>Creación de Propuesta / Proposal Creation:</strong>
+    <ul>
+      <li>Registrada en <code class="language-plaintext highlighter-rouge">proposals.md</code> con ID único. / Recorded in <code class="language-plaintext highlighter-rouge">proposals.md</code> with a unique ID.</li>
+      <li>Publicada en <code class="language-plaintext highlighter-rouge">announcement.md</code> y canales oficiales. / Published in <code class="language-plaintext highlighter-rouge">announcement.md</code> and official channels.</li>
+    </ul>
+  </li>
+  <li><strong>Votación / Voting:</strong>
+    <ul>
+      <li>Cada DOA Token equivale a un voto. / Each DOA Token equals one vote.</li>
+      <li>Snapshot de balances en bloque específico. / Snapshot of balances at a specific block.</li>
+      <li>Duración estándar: 7 días. / Standard duration: 7 days.</li>
+    </ul>
+  </li>
+  <li><strong>Resultados / Results:</strong>
+    <ul>
+      <li>Documentados en <code class="language-plaintext highlighter-rouge">governance-log.md</code>. / Documented in <code class="language-plaintext highlighter-rouge">governance-log.md</code>.</li>
+      <li>Estado final: <code class="language-plaintext highlighter-rouge">approved</code> o <code class="language-plaintext highlighter-rouge">rejected</code>. / Final status: <code class="language-plaintext highlighter-rouge">approved</code> or <code class="language-plaintext highlighter-rouge">rejected</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Implementación / Implementation:</strong>
+    <ul>
+      <li>Ejecutada por el equipo técnico/legal. / Executed by the technical/legal team.</li>
+      <li>Validada por auditores externos. / Validated by external auditors.</li>
+      <li>Registrada en <code class="language-plaintext highlighter-rouge">changelog.md</code> y <code class="language-plaintext highlighter-rouge">releases.md</code>. / Recorded in <code class="language-plaintext highlighter-rouge">changelog.md</code> and <code class="language-plaintext highlighter-rouge">releases.md</code>.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="-tipos-de-propuestas--types-of-proposals">📑 Tipos de Propuestas / Types of Proposals</h2>
+
+<ul>
+  <li><strong>Técnicas / Technical:</strong> Cambios en contratos, scripts o infraestructura. / Changes in contracts, scripts, or infrastructure.</li>
+  <li><strong>Legales / Legal:</strong> Ajustes en políticas AML/KYC o certificación. / Adjustments in AML/KYC policies or certification.</li>
+  <li><strong>Comunitarias / Community:</strong> Campañas, marketing, adopción. / Campaigns, marketing, adoption.</li>
+  <li><strong>Financieras / Financial:</strong> Ajustes en supply, quema o liquidez. / Adjustments in supply, burn, or liquidity.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este documento consolida y complementa <code class="language-plaintext highlighter-rouge">governance.md</code>, <code class="language-plaintext highlighter-rouge">proposals.md</code>, <code class="language-plaintext highlighter-rouge">governance-log.md</code>, <code class="language-plaintext highlighter-rouge">governance-process.md</code> y <code class="language-plaintext highlighter-rouge">governance-roles.md</code>.</li>
+  <li>
+    <p>This document consolidates and complements <code class="language-plaintext highlighter-rouge">governance.md</code>, <code class="language-plaintext highlighter-rouge">proposals.md</code>, <code class="language-plaintext highlighter-rouge">governance-log.md</code>, <code class="language-plaintext highlighter-rouge">governance-process.md</code>, and <code class="language-plaintext highlighter-rouge">governance-roles.md</code>.</p>
+  </li>
+  <li>Debe revisarse anualmente y actualizarse según evolución del proyecto.</li>
+  <li>
+    <p>It must be reviewed annually and updated according to project evolution.</p>
+  </li>
+  <li>La existencia de este charter fortalece la legitimidad del DOA Token frente a comunidad, auditores y exchanges.</li>
+  <li>The existence of this charter strengthens the legitimacy of the DOA Token before the community, auditors, and exchanges.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

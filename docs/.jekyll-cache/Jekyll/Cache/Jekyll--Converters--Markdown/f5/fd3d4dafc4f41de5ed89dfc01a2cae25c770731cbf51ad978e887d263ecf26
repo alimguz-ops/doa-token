@@ -1,0 +1,56 @@
+I"W
+<h1 id="-doa-token--technical-documentation">📚 DOA Token – Technical Documentation</h1>
+<h1 id="-doa-token--documentación-técnica">📚 DOA Token – Documentación Técnica</h1>
+
+<p>Este documento centraliza la referencia técnica de contratos, scripts, configuraciones y registros del proyecto DOA Token.<br />
+This document centralizes the technical reference of contracts, scripts, configurations, and logs for the DOA Token project.</p>
+
+<hr />
+
+<h2 id="️-contratos--contracts">⚙️ Contratos / Contracts</h2>
+<ul>
+  <li><strong>Token.sol</strong> → Contrato principal del token DOA. / Main DOA Token contract.</li>
+  <li><strong>Proxy.sol</strong> → Contrato proxy para actualizaciones seguras. / Proxy contract for secure upgrades.</li>
+</ul>
+
+<hr />
+
+<h2 id="-scripts">📜 Scripts</h2>
+<ul>
+  <li><strong>deploy.js</strong> → Script de despliegue automático. / Automatic deployment script.</li>
+  <li><strong>monitor-liquidez.js</strong> → Script de monitoreo de reservas mínimas. / Liquidity monitoring script.</li>
+</ul>
+
+<hr />
+
+<h2 id="️-configuración--configuration">🛠️ Configuración / Configuration</h2>
+<ul>
+  <li><strong>.env.example</strong> → Variables de entorno requeridas. / Required environment variables.</li>
+  <li><strong>networks.json</strong> → Configuración de redes soportadas. / Supported networks configuration.</li>
+</ul>
+
+<hr />
+
+<h2 id="-logs">📊 Logs</h2>
+<ul>
+  <li><strong>deployments.json</strong> → Registro de despliegues. / Deployment record.</li>
+  <li><strong>liquidity.log</strong> → Registro de liquidez. / Liquidity record.</li>
+  <li><strong>audit.log</strong> → Registro de auditorías. / Audit record.</li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Este archivo sirve como índice técnico y debe actualizarse cada vez que se modifique un contrato, script o configuración.</li>
+  <li>
+    <p>This file serves as a technical index and must be updated whenever a contract, script, or configuration is modified.</p>
+  </li>
+  <li>Complementa <code class="language-plaintext highlighter-rouge">contracts.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code> y <code class="language-plaintext highlighter-rouge">security-policy.md</code>.</li>
+  <li>It complements <code class="language-plaintext highlighter-rouge">contracts.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code>, and <code class="language-plaintext highlighter-rouge">security-policy.md</code>.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

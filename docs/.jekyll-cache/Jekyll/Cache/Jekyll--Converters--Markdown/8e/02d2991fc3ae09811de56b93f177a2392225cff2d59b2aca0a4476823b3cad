@@ -1,0 +1,54 @@
+I"<h1 id="-doa-token--audit-summary">📊 DOA Token – Audit Summary</h1>
+<h1 id="-doa-token--resumen-de-auditoría">📊 DOA Token – Resumen de Auditoría</h1>
+
+<hr />
+
+<h2 id="1-objetivo--objective">1. Objetivo / Objective</h2>
+<ul>
+  <li><strong>Español:</strong> Proporcionar un resumen claro y accesible de los resultados de auditoría del DOATokenV2.</li>
+  <li><strong>English:</strong> Provide a clear and accessible summary of the DOATokenV2 audit results.</li>
+</ul>
+
+<hr />
+
+<h2 id="2-estado-general--overall-status">2. Estado General / Overall Status</h2>
+<ul>
+  <li>✅ Contratos verificados en <strong>Ethereum y Polygon</strong>.</li>
+  <li>✅ Scripts de gobernanza y liquidez revisados.</li>
+  <li>⚠️ Observaciones menores de optimización de gas.</li>
+  <li>⚠️ Documentación técnica pendiente de ampliación.</li>
+  <li>🔜 Auditoría externa completa en proceso (CertiK/Hacken).</li>
+</ul>
+
+<hr />
+
+<h2 id="3-hallazgos-clave--key-findings">3. Hallazgos Clave / Key Findings</h2>
+<ul>
+  <li><strong>Críticos / Critical:</strong> Ninguno / None.</li>
+  <li><strong>Mayores / Major:</strong> Optimización de gas en función <code class="language-plaintext highlighter-rouge">transfer</code>.</li>
+  <li><strong>Menores / Minor:</strong> Comentarios faltantes en documentación técnica.</li>
+</ul>
+
+<hr />
+
+<h2 id="4-acciones-correctivas--corrective-actions">4. Acciones Correctivas / Corrective Actions</h2>
+<ul>
+  <li>Optimización aplicada en funciones críticas (<code class="language-plaintext highlighter-rouge">transfer</code>).</li>
+  <li>Documentación actualizada en <code class="language-plaintext highlighter-rouge">audit-report.md</code>.</li>
+  <li>Scripts reforzados con validaciones adicionales.</li>
+</ul>
+
+<hr />
+
+<h2 id="5-próximos-pasos--next-steps">5. Próximos Pasos / Next Steps</h2>
+<ul>
+  <li>Publicar auditoría externa completa.</li>
+  <li>Consolidar certificación AML/KYC.</li>
+  <li>Integrar métricas de seguridad en dashboards públicos.</li>
+  <li>Expandir auditorías a módulos NFT y tesorería DAO.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

@@ -1,0 +1,62 @@
+I"�<h1 id="-doa-token--changelog">📝 DOA Token – Changelog</h1>
+<h1 id="-doa-token--registro-de-cambios">📝 DOA Token – Registro de Cambios</h1>
+
+<p>Este documento registra todas las versiones y cambios técnicos realizados en el repositorio del DOA Token.<br />
+Incluye actualizaciones de contratos, scripts, documentación y configuraciones.<br />
+This document records all versions and technical changes made in the DOA Token repository.<br />
+It includes updates to contracts, scripts, documentation, and configurations.</p>
+
+<hr />
+
+<h2 id="-formato-de-registro--log-format">📋 Formato de Registro / Log Format</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> YYYY-MM-DD</li>
+  <li><strong>Versión / Version:</strong> vX.Y.Z</li>
+  <li><strong>Cambios / Changes:</strong> Lista breve de modificaciones realizadas / Brief list of modifications made</li>
+  <li><strong>Responsable / Responsible:</strong> Nombre o entidad / Name or entity</li>
+  <li><strong>Notas / Notes:</strong> Comentarios adicionales o enlaces de verificación / Additional comments or verification links</li>
+</ul>
+
+<hr />
+
+<h2 id="-ejemplo-de-entrada--example-entry">📒 Ejemplo de Entrada / Example Entry</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> 2025-12-27</li>
+  <li><strong>Versión / Version:</strong> v1.0.0</li>
+  <li><strong>Cambios / Changes:</strong>
+    <ul>
+      <li>Deploy inicial del contrato DOA Token con proxy. / Initial deploy of DOA Token contract with proxy.</li>
+      <li>Publicación de <code class="language-plaintext highlighter-rouge">tokenlist.json</code>. / Publication of <code class="language-plaintext highlighter-rouge">tokenlist.json</code>.</li>
+      <li>Inclusión de scripts de auditoría (<code class="language-plaintext highlighter-rouge">checkTotalSupply.js</code>, <code class="language-plaintext highlighter-rouge">checkAllBalances.js</code>). / Inclusion of audit scripts.</li>
+    </ul>
+  </li>
+  <li><strong>Responsable / Responsible:</strong> Equipo Técnico DOA / DOA Technical Team</li>
+  <li><strong>Notas / Notes:</strong> Confirmado en PolygonScan – <a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E#code">Proxy</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Cada cambio debe registrarse inmediatamente después de aplicarse.</li>
+  <li>
+    <p>Each change must be recorded immediately after being applied.</p>
+  </li>
+  <li>Las versiones deben seguir el esquema <strong>SemVer</strong> (ej. v1.0.0, v1.1.0, v2.0.0).</li>
+  <li>
+    <p>Versions must follow the <strong>SemVer</strong> scheme (e.g., v1.0.0, v1.1.0, v2.0.0).</p>
+  </li>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">status-log.md</code> y <code class="language-plaintext highlighter-rouge">roadmap-log.md</code>.</li>
+  <li>
+    <p>This file complements <code class="language-plaintext highlighter-rouge">status-log.md</code> and <code class="language-plaintext highlighter-rouge">roadmap-log.md</code>.</p>
+  </li>
+  <li>La transparencia en cambios técnicos fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Transparency in technical changes strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

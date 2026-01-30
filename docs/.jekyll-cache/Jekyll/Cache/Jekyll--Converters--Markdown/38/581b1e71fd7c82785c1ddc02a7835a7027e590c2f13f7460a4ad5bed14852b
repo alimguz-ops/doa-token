@@ -1,0 +1,91 @@
+I"�<h1 id="️-doa-token--contracts--governance-master">⚖️ DOA Token – Contracts &amp; Governance Master</h1>
+<h1 id="️-doa-token--maestro-de-contratos-y-gobernanza">⚖️ DOA Token – Maestro de Contratos y Gobernanza</h1>
+
+<p>Este documento consolida todas las decisiones legales y contractuales vinculadas a la gobernanza del proyecto DOA Token.<br />
+Su objetivo es ofrecer un registro único, transparente y auditable para auditores, exchanges y comunidad.<br />
+This document consolidates all legal and contractual decisions linked to the governance of the DOA Token project.<br />
+Its purpose is to provide a single, transparent, and auditable record for auditors, exchanges, and the community.</p>
+
+<hr />
+
+<h2 id="-formato-de-registro--log-format">📋 Formato de Registro / Log Format</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> YYYY-MM-DD</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Área / Area:</strong> Legal</td>
+          <td>Contratos</td>
+          <td>Gobernanza</td>
+          <td>Auditoría</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Decisión / Decision:</strong> Breve descripción de la resolución / Brief description of the resolution</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Resultado / Outcome:</strong> Approved</td>
+          <td>Rejected</td>
+          <td>Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Implementación / Implementation:</strong> Acción aplicada o documento actualizado / Action applied or document updated</li>
+  <li><strong>Enlaces / Links:</strong> URLs a contratos en Etherscan/PolygonScan, auditorías o documentación oficial / URLs to contracts on Etherscan/PolygonScan, audits, or official documentation</li>
+</ul>
+
+<hr />
+
+<h2 id="-ejemplo-de-entrada--example-entry">📒 Ejemplo de Entrada / Example Entry</h2>
+
+<ul>
+  <li><strong>Fecha / Date:</strong> 2026-01-15</li>
+  <li><strong>Área / Area:</strong> Legal</li>
+  <li><strong>Decisión / Decision:</strong> Certificación de no-valor del token DOA / Certification of DOA token as non-security</li>
+  <li><strong>Resultado / Outcome:</strong> Approved</li>
+  <li><strong>Implementación / Implementation:</strong> Documento legal añadido en <code class="language-plaintext highlighter-rouge">legal/certification.md</code> / Legal document added in <code class="language-plaintext highlighter-rouge">legal/certification.md</code></li>
+  <li><strong>Enlaces / Links:</strong> <a href="legal/certification.md">Certificación oficial</a></li>
+</ul>
+
+<hr />
+
+<ul>
+  <li><strong>Fecha / Date:</strong> 2026-02-05</li>
+  <li><strong>Área / Area:</strong> Contratos / Contracts</li>
+  <li><strong>Decisión / Decision:</strong> Registro de proxy en Ethereum y Polygon / Proxy registration on Ethereum and Polygon</li>
+  <li><strong>Resultado / Outcome:</strong> Approved</li>
+  <li><strong>Implementación / Implementation:</strong> Proxy registrado en <code class="language-plaintext highlighter-rouge">deployments.json</code> / Proxy registered in <code class="language-plaintext highlighter-rouge">deployments.json</code></li>
+  <li><strong>Enlaces / Links:</strong>
+    <ul>
+      <li><a href="https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411">Proxy en Ethereum</a></li>
+      <li><a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305">Proxy en Polygon</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-notas--notes">📌 Notas / Notes</h2>
+<ul>
+  <li>Cada decisión debe registrarse inmediatamente después de aprobarse o rechazarse.</li>
+  <li>
+    <p>Each decision must be recorded immediately after being approved or rejected.</p>
+  </li>
+  <li>Este archivo complementa <code class="language-plaintext highlighter-rouge">governance-master-log.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code> y <code class="language-plaintext highlighter-rouge">legal/</code>.</li>
+  <li>
+    <p>This file complements <code class="language-plaintext highlighter-rouge">governance-master-log.md</code>, <code class="language-plaintext highlighter-rouge">audit-log.md</code>, and <code class="language-plaintext highlighter-rouge">legal/</code>.</p>
+  </li>
+  <li>La transparencia en gobernanza legal fortalece la confianza de la comunidad y exchanges.</li>
+  <li>Transparency in legal governance strengthens community and exchange trust.</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET

@@ -1,0 +1,154 @@
+I"<<!-- Banner Institucional DOA Token V2 -->
+<div style="
+  background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+  color: #FFD700;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+">
+  <!-- Logo -->
+  <img src="assets/doatokenv2.png" alt="DOA Token Logo" width="200" style="margin-bottom: 20px;" />
+
+  <!-- Tagline -->
+  <h1 style="margin: 0; font-size: 2em; font-weight: 700;">
+    DOA Token V2
+  </h1>
+  <p style="margin: 10px 0 0; font-size: 1.2em; font-weight: 400; color: #FFD700;">
+    Verified • Transparent • Community Driven
+  </p>
+</div>
+
+<hr />
+
+<h1 id="-doa-token-v2">🪙 DOA Token V2</h1>
+<h1 id="-doa-token-v2-1">🪙 DOA Token V2</h1>
+
+<p>Bienvenido al sitio oficial del proyecto.<br />
+Seleccione su idioma / Select your language:</p>
+
+<p align="center">
+  <a href="/doa-token/es/">
+    <img src="https://img.shields.io/badge/Español-red?style=for-the-badge" alt="Español" />
+  </a>
+  <a href="/doa-token/en/">
+    <img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English" />
+  </a>
+</p>
+
+<hr />
+
+<h2 id="-contratos-oficiales--official-contracts">🔗 Contratos Oficiales / Official Contracts</h2>
+<ul>
+  <li><strong>Ethereum – Main contract:</strong> <a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE">0x6F52809EfdDF5826956EeF9C289A661624afb0cE</a></li>
+  <li><strong>Ethereum – Proxy:</strong> <a href="https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411">0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411</a></li>
+  <li><strong>Polygon – Main contract:</strong> <a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E">0x692d951163df3f7D9Fe071413F92c319D9B7369E</a></li>
+  <li><strong>Polygon – Proxy:</strong> <a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305">0xD6426Da6D01233Efe48dab6aD96cf3238f02c305</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-pares-de-liquidez--liquidity-pairs">💱 Pares de Liquidez / Liquidity Pairs</h2>
+<ul>
+  <li><strong>QuickSwap (Polygon):</strong> <a href="https://quickswap.exchange/#/swap?outputCurrency=0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799">0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799</a></li>
+  <li><strong>Uniswap (Polygon):</strong> <a href="https://app.uniswap.org/#/swap?outputCurrency=0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0">0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-nft-oficial--official-nft">🖼 NFT Oficial / Official NFT</h2>
+<ul>
+  <li><strong>NFT_DOA:</strong> <a href="https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65">0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65</a></li>
+  <li>Relación / Relation: NFT vinculado a liquidez y comunidad / NFT linked to liquidity and community</li>
+</ul>
+
+<hr />
+
+<h2 id="-comunidad-oficial--official-community">🌐 Comunidad Oficial / Official Community</h2>
+<p align="center">
+  <a href="https://discord.gg/TCXB69cm" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-Comunidad-blue?logo=discord&amp;style=for-the-badge" alt="Discord" />
+  </a>
+  <a href="https://t.me/DoaTokenV2" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-Comunidad-blue?logo=telegram&amp;style=for-the-badge" alt="Telegram" />
+  </a>
+  <a href="https://x.com/DoaV270493" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-X-black?logo=x&amp;style=for-the-badge" alt="Twitter/X" />
+  </a>
+</p>
+
+<hr />
+
+<h2 id="-gobernanza-y-organigrama--governance--organigram">🏛 Gobernanza y Organigrama / Governance &amp; Organigram</h2>
+<ul>
+  <li><strong>Fundador / Founder:</strong> Angel R. Linares</li>
+  <li><strong>Roles:</strong> Arquitectura técnica, Cumplimiento, Comunidad, Operaciones / Technical architecture, Compliance, Community, Operations</li>
+</ul>
+
+<p align="center">
+  <img src="assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2" width="600" />
+</p>
+
+<hr />
+
+<h2 id="-documentación--documentation">📘 Documentación / Documentation</h2>
+<ul>
+  <li><a href="docs/doa-ficha.md">Ficha técnica del token / Token technical sheet</a></li>
+  <li><a href="docs/tokenomics.md">Tokenomics</a></li>
+  <li><a href="docs/team.md">Equipo del proyecto / Project team</a></li>
+  <li><a href="docs/announcement.md">Anuncio oficial / Official announcement</a></li>
+  <li><a href="docs/branding-guidelines.md">Guías de marca / Branding guidelines</a></li>
+  <li><a href="docs/changelog.md">Changelog</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-gobernanza-dao--dao-governance">🏛 Gobernanza DAO / DAO Governance</h2>
+<ul>
+  <li><a href="docs/governance.md">Marco de gobernanza / Governance framework</a></li>
+  <li><a href="docs/governance-roles.md">Roles y procesos / Roles &amp; processes</a></li>
+  <li><a href="docs/governance-log.md">Registro de votaciones / Voting log</a></li>
+  <li><a href="docs/proposals.md">Propuestas activas / Active proposals</a></li>
+  <li><a href="docs/governance-charter.md">Carta de gobernanza / Governance charter</a></li>
+  <li><a href="docs/governance-process.md">Proceso de gobernanza / Governance process</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-auditoría-y-cumplimiento--audit--compliance">🔒 Auditoría y Cumplimiento / Audit &amp; Compliance</h2>
+<ul>
+  <li><a href="docs/audit.md">Índice de auditoría / Audit index</a></li>
+  <li><a href="docs/legal/audit-checklist.md">Checklist de auditoría / Audit checklist</a></li>
+  <li><a href="docs/legal/audit-report.md">Informe de auditoría / Audit report</a></li>
+  <li><a href="docs/legal/audit-summary.md">Resumen de auditoría / Audit summary</a></li>
+  <li><a href="docs/legal/audit-log.md">Registro de auditoría / Audit log</a></li>
+  <li><a href="docs/legal/aml-kyc.md">Políticas AML/KYC</a></li>
+  <li><a href="docs/legal/certification.md">Certificación legal / Legal certification</a></li>
+  <li><a href="docs/legal/contracts-governance-decision.md">Contratos y decisiones / Contracts &amp; decisions</a></li>
+  <li><a href="docs/legal/governance-master-log.md">Registro maestro de gobernanza / Governance master log</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-métricas-y-comunidad--metrics--community">📊 Métricas y Comunidad / Metrics &amp; Community</h2>
+<ul>
+  <li><a href="community-metrics.md">Métricas de adopción / Adoption metrics</a></li>
+  <li><a href="legal/contracts-governance-incidents.md">Incidentes y migraciones / Incidents &amp; migrations</a></li>
+  <li><a href="legal/contracts-governance-transparency.md">Transparencia y propiedad / Transparency &amp; ownership</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-roadmap">🗺 Roadmap</h2>
+<ul>
+  <li>✅ Deploy de contratos (Ethereum + Polygon)</li>
+  <li>✅ NFT oficial</li>
+  <li>🔜 Listado en CEX</li>
+  <li>🔜 Expansión de la comunidad DAO</li>
+  <li>🔜 Integración con más DEX y plataformas NFT</li>
+</ul>
+
+<hr />
+
+<p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+:ET
