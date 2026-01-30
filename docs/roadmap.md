@@ -1,9 +1,9 @@
 ---
 layout: default
-title: roadmap
+title: Roadmap
+permalink: /roadmap/
 ---
 
-# 🗺️ ROADMAP – DOATokenV2 (DOA)  
 # 🗺️ ROADMAP – DOATokenV2 (DOA)
 
 ---

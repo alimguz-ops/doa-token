@@ -38,8 +38,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    // Configurar ambos IDs
     gtag('config', 'G-RQC4R8HV2R');
     gtag('config', 'G-KCRHDKJFF5');
   </script>
@@ -53,19 +51,46 @@
   <link rel="icon" href="{{ "/assets/favicon.ico" | relative_url }}">
 </head>
 <body>
+
+  <!-- Header de navegación -->
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="{{ site.baseurl }}/#contratos">Contratos / Contracts</a></li>
+        <li><a href="{{ site.baseurl }}/#liquidez">Liquidez / Liquidity</a></li>
+        <li><a href="{{ site.baseurl }}/#nft">NFT Oficial</a></li>
+        <li><a href="{{ site.baseurl }}/#comunidad">Comunidad / Community</a></li>
+        <li><a href="{{ site.baseurl }}/#auditoria">Auditoría / Audit</a></li>
+        <li><a href="{{ site.baseurl }}/#roadmap">Roadmap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Institucional DOA Token V2 -->
+  <div class="banner">
+    <div class="banner-text">
+      <h1>DOA Token V2</h1>
+      <p>Verified • Transparent • Community Driven</p>
+      <a href="{{ site.baseurl }}/README.md" class="btn-readme">📘 Leer README</a>
+    </div>
+    <div class="banner-logo">
+      <img src="assets/doatokenv2.png" alt="DOA Token Logo"/>
+    </div>
+  </div>
+
   <!-- Contenido dinámico -->
   {{ content }}
 
   <!-- Bloque manual de AdSense -->
   {% include ads.html %}
 
-  <!-- PopAds SIEMPRE activo -->
+  <!-- PopAds SIEMPRE activo (inicio del script) -->
   <script type="text/javascript" data-cfasync="false">
   (function(){
     var k=window,
         m="d30821c03f80282ac46bbccfd6ee5e68",
-        v=[["siteId",5271993],["minBid",0],["popundersPerIP","0"],
-           ["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
+        v=[["siteId",5271993],["minBid",0],["popundersPerIP","1"],
+           ["delayBetween",0],["default",true],["defaultPerDay",1],["topmostLayer","auto"]],
         q=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9oaW1naXgtY29yZS1qcy5jc3M=",
            "ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvUnAvcXNwbGl0Lm1pbi5qcw=="],
         d=-1,y,c,g=function(){
@@ -86,7 +111,6 @@
     if(!k[m]){try{Object.freeze(k[m]=v)}catch(e){}g()}
   })();
   </script>
-
   <!-- Banner de consentimiento -->
   <div id="cookie-banner" class="cookie-banner">
     <p>
@@ -96,7 +120,117 @@
     </p>
   </div>
 
+  <!-- Marca de agua -->
+  <img src="{{ "/assets/logo.png" | relative_url }}" alt="DOA Token V2 Logo" class="watermark-logo">
+
+  <!-- Footer Institucional -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>© 2026 DOA Token V2 — Todos los derechos reservados</p>
+        <p>© 2026 DOA Token V2 — All rights reserved</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{ site.baseurl }}/docs/legal/aml-kyc.md">AML/KYC</a>
+        <a href="{{ site.baseurl }}/docs/legal/audit-report.md">Auditoría / Audit</a>
+        <a href="{{ site.baseurl }}/docs/legal/certification.md">Certificación / Certification</a>
+      </div>
+      <div class="footer-community">
+        <a href="https://discord.gg/TCXB69cm" target="_blank">Discord</a>
+        <a href="https://t.me/doatokenv2" target="_blank">Telegram</a>
+        <a href="https://x.com/DoaV270493" target="_blank">Twitter/X</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Estilos del header, banner, cookies, watermark y footer -->
   <style>
+    .header {
+      background: #000;
+      border-bottom: 2px solid #FFD700;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .nav ul li {
+      margin: 0 15px;
+    }
+    .nav ul li a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav ul li a:hover {
+      color: #e6c200;
+    }
+    @media (max-width: 768px) {
+      .nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav ul li {
+        margin: 8px 0;
+      }
+    }
+
+    .banner {
+      background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+      color: #FFD700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 20px;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      flex-wrap: wrap;
+    }
+    .banner-text h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 700;
+      color: #FFD700;
+    }
+    .banner-text p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      font-weight: 400;
+      color: #FFD700;
+    }
+    .btn-readme {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #FFD700;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn-readme:hover {
+      background: #e6c200;
+    }
+    .banner-logo img {
+      width: 80px;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .banner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner-logo {
+        margin-top: 15px;
+      }
+    }
+
     .cookie-banner {
       position: fixed;
       bottom: 20px;
@@ -121,8 +255,64 @@
     }
     .btn-accept { background: #4CAF50; color: #fff; }
     .btn-reject { background: #f44336; color: #fff; }
+
+    .watermark-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.05;
+      width: 70%;
+      max-width: 900px;
+      z-index: 0;
+      pointer-events: none;
+    }
+    @media (max-width: 768px) {
+      .watermark-logo {
+        width: 90%;
+        max-width: 500px;
+      }
+    }
+
+    .footer {
+      background: #111;
+      color: #FFD700;
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      border-top: 2px solid #FFD700;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer-left p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+    .footer-links a, .footer-community a {
+      margin: 0 10px;
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover, .footer-community a:hover {
+      color: #e6c200;
+    }
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-links, .footer-community {
+        margin-top: 10px;
+      }
+    }
   </style>
 
+  <!-- Script de consentimiento de cookies -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const banner = document.getElementById("cookie-banner");
@@ -157,27 +347,5 @@
     });
   </script>
 
-  <!-- Marca de agua -->
-  <img src="{{ "/assets/logo.png" | relative_url }}" alt="DOA Token V2 Logo" class="watermark-logo">
-
-  <style>
-    .watermark-logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.05;
-      width: 70%;
-      max-width: 900px;
-      z-index: 0;
-      pointer-events: none;
-    }
-    @media (max-width: 768px) {
-      .watermark-logo {
-        width: 90%;
-        max-width: 500px;
-      }
-    }
-  </style>
 </body>
 </html>

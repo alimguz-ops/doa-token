@@ -1,6 +1,7 @@
 ---
 layout: default
-title: team
+title: Equipo
+permalink: /team/
 ---
 
 # 👥 Equipo / Team – DOATokenV2 (DOA)
@@ -29,7 +30,8 @@ Sole founder, responsible for technical architecture, compliance, community, and
 ## 2. Organigrama actual / Current Organigram
 
 <p align="center">
-  <img src="assets/Organigrama_DOATokenV2.png" alt="Organigrama DOA Token V2 / DOA Token V2 Organigram" width="600"/>
+  <img src="{{ "/assets/Organigrama_DOATokenV2.png" | relative_url }}" 
+       alt="Organigrama DOA Token V2 / DOA Token V2 Organigram" width="600"/>
 </p>
 
 ---

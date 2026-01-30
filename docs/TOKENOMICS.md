@@ -1,9 +1,9 @@
 ---
 layout: default
 title: TOKENOMICS
+permalink: /tokenomics/
 ---
 
-# 📊 TOKENOMICS – DOATokenV2 (DOA)  
 # 📊 TOKENOMICS – DOATokenV2 (DOA)
 
 ---
@@ -33,7 +33,8 @@ title: TOKENOMICS
   Uso futuro en alianzas, listados en CEX y expansión de integraciones DeFi.  
 
 <p align="center">
-  <img src="assets/Distribucion_DOATokenV2.png" alt="Distribución DOA Token V2 / DOA Token V2 Distribution" width="600"/>
+  <img src="{{ "/assets/Distribucion_DOATokenV2.png" | relative_url }}" 
+       alt="Distribución DOA Token V2 / DOA Token V2 Distribution" width="600"/>
 </p>
 
 ---
@@ -71,3 +72,7 @@ title: TOKENOMICS
 - Consolidar comunidad DAO.  
 - Completar aplicación QuickLaunch.  
 - Cotización en CEX y expansión DeFi.  
+
+---
+
+<p align="center"><strong>Última actualización:</strong> Enero 2026</p>
