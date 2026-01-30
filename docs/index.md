@@ -11,7 +11,10 @@ Bienvenido al sitio oficial del proyecto.
 ---
 
 ## 🌍 Idioma / Language
-[Español](/es/) | [English](/en/)
+<div style="display:flex; gap:10px; margin:10px 0;">
+  <a href="/es/" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Español</a>
+  <a href="/en/" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">English</a>
+</div>
 
 ---
 
@@ -24,39 +27,48 @@ Bienvenido al sitio oficial del proyecto.
 ---
 
 ## 🔗 Contratos Oficiales
-- Ethereum Main: `0x6F52809EfdDF5826956EeF9C289A661624afb0cE`  
-- Polygon Main: `0x692d951163df3f7D9Fe071413F92c319D9B7369E`
+<div style="display:flex; flex-direction:column; gap:8px; margin:10px 0;">
+  <a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">Ethereum Main</a>
+  <a href="https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">Ethereum Proxy</a>
+  <a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">Polygon Main</a>
+  <a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">Polygon Proxy</a>
+</div>
 
 ---
 
 ## 💱 Pares de Liquidez
-- QuickSwap: `0x79Ea824CCC9D3CB6fdc735305e44f7Bb0Ef69799`  
-- Uniswap: `0x5509FdcB0B430534F3aF090aEC504b5cccB3a9e0`
+<div style="display:flex; flex-direction:column; gap:8px; margin:10px 0;">
+  <a href="https://quickswap.exchange/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">QuickSwap (Polygon)</a>
+  <a href="https://app.uniswap.org/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">Uniswap (Polygon)</a>
+</div>
 
 ---
 
 ## 🖼 NFT Oficial
-- NFT_DOA: `0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65`  
-- Relación: vinculado a liquidez y comunidad
+<div style="display:flex; flex-direction:column; gap:8px; margin:10px 0;">
+  <a href="https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65" style="background:#000; color:#FFD700; padding:8px 14px; border-radius:6px; text-decoration:none;">NFT_DOA</a>
+</div>
+Relación: vinculado a liquidez y comunidad
 
 ---
 
 ## 🌐 Comunidad
-Discord · Telegram · Twitter/X
+<div style="display:flex; flex-wrap:wrap; gap:10px; margin:10px 0;">
+  <a href="https://discord.gg/TCXB69cm" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Discord</a>
+  <a href="https://x.com/DoaV270493" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Twitter/X</a>
+  <a href="https://t.me/DoaTokenV2" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Telegram</a>
+  <a href="https://github.com/alimguz-ops/doa-token" style="background:#000; color:#FFD700; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">GitHub</a>
+</div>
 
 ---
 
 ## 👤 Fundador
-**Angel R. Linares (ALIMGUZ)**
+**Angel R. Linares (ALIMGUZ)**  
+Responsable único de arquitectura técnica, cumplimiento, comunidad y operaciones.
 
 ---
 
-## 📑 Estado del Proyecto
-- SSL activo  
-- Repositorio público  
-- Auditoría en curso  
-- Política de privacidad  
-
+**SSL activo / Repositorio público / Auditoría en curso / Política de privacidad**  
 **Última actualización:** Enero 2026
 
 ---
