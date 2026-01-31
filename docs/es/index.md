@@ -27,7 +27,7 @@ permalink: /en/
 
 ## 📘 Documentation
 - [Token technical sheet]({{ site.baseurl }}/docs/DOA-FICHA.html)
-- [Tokenomics]({{ site.baseurl }}/docs/TOKENOMICS.md)
+- [TOKENOMICS]({{ site.baseurl }}/docs/TOKENOMICS.md)
 - [Project team]({{ site.baseurl }}/docs/TEAM.md)
 - [Official announcement]({{ site.baseurl }}/docs/announcement.html)
 - [Branding guidelines]({{ site.baseurl }}/docs/branding-guidelines.html)
