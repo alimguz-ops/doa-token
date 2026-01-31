@@ -10,23 +10,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout del repo
       - name: Checkout
         uses: actions/checkout@v3
 
+      # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
 
+      # 3. Instalar dependencias
       - name: Install dependencies
         run: npm install
 
+      # 4. Exportar direcciones de contrato desde secrets
+      - name: Set contract addresses
+        run: |
+          echo "ETH_CONTRACT=${{ secrets.ETH_CONTRACT }}" >> $GITHUB_ENV
+          echo "POLYGON_CONTRACT=${{ secrets.POLYGON_CONTRACT }}" >> $GITHUB_ENV
+
+      # 5. Ejecutar deploy en Polygon Amoy
       - name: Run deploy script
         run: npx hardhat run --network polygonAmoy scripts/deployTokenWithLiquidity.cjs
 
+      # 6. Actualizar archivos con direcciones
+      - name: Update addresses
+        run: node scripts/update-address.js
+
+      # 7. Generar reporte completo
       - name: Generate full report
         run: npx hardhat run scripts/deploymentsFullReport.cjs
 
+      # 8. Commit automático de reportes
       - name: Commit reports
         run: |
           git config --global user.name "github-actions"
@@ -35,7 +51,7 @@ jobs:
           git commit -m "Auto-report $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
           git push
 
-                # 7. Notificación en Slack
+      # 9. Notificación en Slack
       - name: Notify Slack
         uses: slackapi/slack-github-action@v1.23.0
         with:
