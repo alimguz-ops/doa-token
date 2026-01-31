@@ -9,7 +9,7 @@ permalink: /es/
     <h1>Bienvenido a DOA Token V2</h1>
     <p><strong>Transparencia, seguridad y comunidad.</strong></p>
     <p>
-      Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>, 
+      Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>,
       un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.
     </p>
   </div>
@@ -19,8 +19,8 @@ permalink: /es/
 
 ### 🌍 Idioma / Language
 <div style="text-align:center; margin:8px 0;">
-  <a href="/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
-  <a href="/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
+  <a href="{{ site.baseurl }}/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
+  <a href="{{ site.baseurl }}/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
 </div>
 
 ---
@@ -48,7 +48,7 @@ permalink: /es/
 ## 🔒 Auditoría y Cumplimiento
 - [Checklist de auditoría]({{ site.baseurl }}/audit-checklist.html)
 - [Informe de auditoría]({{ site.baseurl }}/legal/audit-report.html)
-- [Políticas AML/KYC]({{ site.baseurl }}/legal/aml-kyc.html)
+- [Políticas AML KYC]({{ site.baseurl }}/legal/aml-kyc.html)
 - [Certificación legal]({{ site.baseurl }}/legal/certification.html)
 - [Contratos y decisiones]({{ site.baseurl }}/legal/contracts-governance-decision.html)
 - [Registro maestro de gobernanza]({{ site.baseurl }}/legal/governance-master-log.html)
@@ -66,6 +66,7 @@ permalink: /es/
 ## 🗺 Roadmap
 - ✅ Deploy de contratos (Ethereum + Polygon)  
 - ✅ NFT oficial  
+- 🔜 [Roadmap completo]({{ site.baseurl }}/roadmap.html)  
 - 🔜 Listado en CEX  
 - 🔜 Expansión de la comunidad DAO  
 - 🔜 Integración con más DEX y plataformas NFT  
@@ -73,10 +74,7 @@ permalink: /es/
 ---
 
 ## ✅ Certificaciones y Transparencia  
-- 🔐 SSL activo  
-- 📂 Repositorio público  
-- 📊 Auditoría en curso  
-- 📜 Política de privacidad  
+🔐 SSL activo / 📂 Repositorio público / 📊 Auditoría en curso / 📜 Política de privacidad: [Ver política]({{ site.baseurl }}/legal/privacy.html)
 
 ---
 
