@@ -1,66 +1,66 @@
----
+--
 layout: default
-title: Inicio en Español
-permalink: /es/
+title: English Home
+permalink: /en/
 ---
 
 <section class="hero">
   <div>
-    <h1>Bienvenido a DOA Token V2</h1>
-    <p><strong>Transparencia, seguridad y comunidad.</strong></p>
+    <h1>Welcome to DOA Token V2</h1>
+    <p><strong>Transparency, security, and community.</strong></p>
     <p>
-      Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>,
-      un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.
+      This is the official site of the <strong>DOA Token V2</strong> ecosystem, 
+      a decentralized project with DAO governance, public audit, and automatic rewards.
     </p>
   </div>
 </section>
 
 ---
 
-### 🌍 Idioma / Language
+### 🌍 Language / Idioma
 <div style="text-align:center; margin:8px 0;">
-  <a href="{{ site.baseurl }}/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
-  <a href="{{ site.baseurl }}/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
+  <a href="/docs/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">English</a>
+  <a href="/docs/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">Español</a>
 </div>
 
 ---
 
-## 📘 Documentación
-- [Ficha técnica del token]({{ site.baseurl }}/doa-ficha.html)
-- [Tokenomics]({{ site.baseurl }}/tokenomics.html)
-- [Equipo del proyecto]({{ site.baseurl }}/team.html)
-- [Anuncio oficial]({{ site.baseurl }}/announcement.html)
-- [Guías de marca]({{ site.baseurl }}/branding-guidelines.html)
-- [Políticas AML/KYC]({{ site.baseurl }}/legal/aml-kyc.html)
-- [Changelog]({{ site.baseurl }}/changelog.html)
+## 📘 Documentation
+- [Token technical sheet]({{ site.baseurl }}/docs/DOA-FICHA.html)
+- [Tokenomics]({{ site.baseurl }}/docs/TOKENOMICS.md)
+- [Project team]({{ site.baseurl }}/docs/TEAM.md)
+- [Official announcement]({{ site.baseurl }}/docs/announcement.html)
+- [Branding guidelines]({{ site.baseurl }}/docs/branding-guidelines.html)
+- [Changelog]({{ site.baseurl }}/docs/changelog.html)
 
 ---
 
-## 🏛 Gobernanza DAO
-- [Marco de gobernanza]({{ site.baseurl }}/governance-framework.html)
-- [Roles y procesos]({{ site.baseurl }}/governance-roles.html)
-- [Registro de votaciones]({{ site.baseurl }}/governance-log.html)
-- [Propuestas activas]({{ site.baseurl }}/proposals.html)
-- [Carta de gobernanza]({{ site.baseurl }}/governance-charter.html)
-- [Proceso de gobernanza]({{ site.baseurl }}/governance-process.html)
+## 🏛 DAO Governance
+- [Governance framework]({{ site.baseurl }}/docs/governance-framework.html)
+- [Roles and processes]({{ site.baseurl }}/docs/governance-roles.html)
+- [Voting log]({{ site.baseurl }}/docs/governance-log.html)
+- [Active proposals]({{ site.baseurl }}/docs/proposals.html)
+- [Governance charter]({{ site.baseurl }}/docs/governance-charter.html)
+- [Governance process]({{ site.baseurl }}/docs/governance-process.html)
 
 ---
 
-## 🔒 Auditoría y Cumplimiento
-- [Checklist de auditoría]({{ site.baseurl }}/audit-checklist.html)
-- [Informe de auditoría]({{ site.baseurl }}/legal/audit-report.html)
-- [Certificación legal]({{ site.baseurl }}/legal/certification.html)
-- [Contratos y decisiones]({{ site.baseurl }}/legal/contracts-governance-decision.html)
-- [Registro maestro de gobernanza]({{ site.baseurl }}/legal/governance-master-log.html)
+## 🔒 Audit & Compliance
+- [Audit checklist]({{ site.baseurl }}/docs/audit-checklist.html)
+- [Audit report]({{ site.baseurl }}/docs/legal/audit-report.html)
+- [AML/KYC policies]({{ site.baseurl }}/docs/legal/aml-kyc.html)
+- [Legal certification]({{ site.baseurl }}/docs/legal/certification.html)
+- [Contracts and governance decisions]({{ site.baseurl }}/docs/legal/contracts-governance-decision.html)
+- [Governance master log]({{ site.baseurl }}/docs/legal/governance-master-log.html)
 
 ---
 
-## 📊 Métricas y Comunidad
-- [Métricas de adopción]({{ site.baseurl }}/community-metrics.html)
-- [Registro de auditoría]({{ site.baseurl }}/audit-log.html)
-- [Incidentes y migraciones]({{ site.baseurl }}/legal/contracts-governance-incidents.html)
-- [Transparencia y propiedad]({{ site.baseurl }}/legal/contracts-governance-transparency.html)
+## 📊 Metrics & Community
+- [Adoption metrics]({{ site.baseurl }}/docs/community-metrics.html)
+- [Audit log]({{ site.baseurl }}/docs/audit-log.html)
+- [Incidents and migrations]({{ site.baseurl }}/docs/legal/contracts-governance-incidents.html)
+- [Transparency and ownership]({{ site.baseurl }}/docs/legal/contracts-governance-transparency.html)
 
 ---
 
-<p align="center"><strong>Última actualización:</strong> Enero 2026</p>
+<p align="center"><strong>Last update:</strong> January 2026</p>
