@@ -49,6 +49,7 @@ permalink: /en/
 ## 🔒 Audit & Compliance
 - [Audit checklist]({{ site.baseurl }}/audit-checklist.html)
 - [Audit report]({{ site.baseurl }}/legal/audit-report.html)
+- [AML/KYC policies]({{ site.baseurl }}/legal/aml-kyc.html)
 - [Legal certification]({{ site.baseurl }}/legal/certification.html)
 - [Contracts and governance decisions]({{ site.baseurl }}/legal/contracts-governance-decision.html)
 - [Governance master log]({{ site.baseurl }}/legal/governance-master-log.html)
