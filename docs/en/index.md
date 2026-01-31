@@ -63,4 +63,11 @@ permalink: /en/
 
 ---
 
-<p align="center"><strong>Last update:</strong> January 2026</p>
+
+<div style="text-align:center; font-size:13px; font-weight:bold; margin:8px 0;">
+SSL activo · Repositorio público · Auditoría en curso · Política de privacidad
+</div>
+<div style="text-align:center; font-size:15px; font-weight:bold; margin:8px 0;">
+Last update: January 2026
+</div>
+
