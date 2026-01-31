@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tokenomics
-permalink: /tokenomics/
+permalink: /tokenomics.html
 ---
 
 # 📊 TOKENOMICS – DOATokenV2 (DOA)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Equipo del proyecto
-permalink: /team/
+permalink: /team.html
 ---
 
 # 👥 Equipo / Team – DOATokenV2 (DOA)
