@@ -1,6 +1,6 @@
 {
   "address": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
-  "updatedAt": "2026-01-28T22:47:47.053Z",
+  "updatedAt": "2026-01-31T07:12:48.437Z",
   "DOA_V2": {
     "proxy": "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305",
     "implementation": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
@@ -22,5 +22,7 @@
     "proxyFlag": false,
     "network": "polygon",
     "timestamp": "2026-01-27T04:11:00.375Z"
-  }
+  },
+  "ethereum": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
+  "polygon": "0x692d951163df3f7D9Fe071413F92c319D9B7369E"
 }

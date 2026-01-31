@@ -129,7 +129,8 @@ Relación: vinculado a liquidez y comunidad
 
 ## 👤 Fundador
 **Angel R. Linares (ALIMGUZ)**  
-Responsable único de arquitectura técnica, cumplimiento, comunidad y operaciones.
+– Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones
+– Sole founder, responsible for technical architecture, compliance, community, and operations.
 
 ---
 

@@ -63,3 +63,7 @@ Welcome to the official repository of **DOA Token V2**.
 ---
 
 <p align="center"><strong>Última actualización / Last update:</strong> Enero 2026</p>
+
+Contrato (Polygon): 0x692d951163df3f7D9Fe071413F92c319D9B7369E
+
+Contrato (Ethereum): 0x6F52809EfdDF5826956EeF9C289A661624afb0cE
