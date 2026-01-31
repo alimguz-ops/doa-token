@@ -31,7 +31,6 @@ permalink: /en/
 - [Project team]({{ site.baseurl }}/team.html)
 - [Official announcement]({{ site.baseurl }}/announcement.html)
 - [Branding guidelines]({{ site.baseurl }}/branding-guidelines.html)
-- [AML/KYC policies]({{ site.baseurl }}/legal/aml-kyc.html)
 - [Changelog]({{ site.baseurl }}/changelog.html)
 
 ---

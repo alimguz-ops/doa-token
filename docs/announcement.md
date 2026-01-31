@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Announcements
-permalink: /announcement/
+title: announcements
 ---
 
 # 📢 DOA Token – Official Announcements  
