@@ -64,11 +64,11 @@ permalink: /es/
 
 ---
 
-## ✅ Certificaciones y Transparencia / Certifications & Transparency  
-- 🔐 SSL activo / SSL active  
-- 📂 Repositorio público / Public repository  
-- 📊 Auditoría en curso / Audit in progress  
-- 📜 Política de privacidad / Privacy policy  
+## ✅ Certificaciones y Transparencia  
+- 🔐 SSL activo  
+- 📂 Repositorio público  
+- 📊 Auditoría en curso  
+- 📜 Política de privacidad  
 
 ---
 

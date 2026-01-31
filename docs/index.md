@@ -12,8 +12,8 @@ Bienvenido al sitio oficial del proyecto.
 
 ### 🌍 Idioma / Language
 <div style="text-align:center; margin:8px 0;">
-  <a href="/es/" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
-  <a href="/en/" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
+  <a href="/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
+  <a href="/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
 </div>
 
 ---
