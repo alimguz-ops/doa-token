@@ -1,84 +1,107 @@
 ---
 layout: default
-title: English Home
-permalink: /en/
+title: Vision and Transparency
+permalink: /vision-en/
 ---
 
-<section class="hero">
-  <div>
-    <h1>Welcome to DOA Token V2</h1>
-    <p><strong>Transparency, security, and community.</strong></p>
-    <p>
-      This is the official site of the <strong>DOA Token V2</strong> ecosystem, 
-      a decentralized project with DAO governance, public audit, and automatic rewards.
-    </p>
-  </div>
-</section>
-
----
-
-### 🌍 Language / Idioma
-<div style="text-align:center; margin:8px 0;">
-  <a href="{{ site.baseurl }}/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">English</a>
-  <a href="{{ site.baseurl }}/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">Español</a>
-</div>
-
----
-
-## 📘 Documentation
-- [Token technical sheet]({{ site.baseurl }}/DOA-FICHA.html)
-- [Tokenomics]({{ site.baseurl }}/TOKENOMICS.html)
-- [Project team]({{ site.baseurl }}/TEAM.html)
-- [Official announcement]({{ site.baseurl }}/announcement.html)
-- [Branding guidelines]({{ site.baseurl }}/branding-guidelines.html)
-- [Changelog]({{ site.baseurl }}/changelog.html)
-
----
-
-## 🏛 DAO Governance
-- [Governance framework]({{ site.baseurl }}/governance-framework.html)
-- [Roles and processes]({{ site.baseurl }}/governance-roles.html)
-- [Voting log]({{ site.baseurl }}/governance-log.html)
-- [Active proposals]({{ site.baseurl }}/proposals.html)
-- [Governance charter]({{ site.baseurl }}/governance-charter.html)
-- [Governance process]({{ site.baseurl }}/governance-process.html)
-
----
-
-## 🔒 Audit & Compliance
-- [Audit checklist]({{ site.baseurl }}/audit-checklist.html)
-- [Audit report]({{ site.baseurl }}/legal/audit-report.html)
-- [AML/KYC policies]({{ site.baseurl }}/legal/aml-kyc.html)
-- [Legal certification]({{ site.baseurl }}/legal/certification.html)
-- [Contracts and governance decisions]({{ site.baseurl }}/legal/contracts-governance-decision.html)
-- [Governance master log]({{ site.baseurl }}/legal/governance-master-log.html)
-
----
-
-## 📊 Metrics & Community
-- [Adoption metrics]({{ site.baseurl }}/community-metrics.html)
-- [Audit log]({{ site.baseurl }}/audit-log.html)
-- [Incidents and migrations]({{ site.baseurl }}/legal/contracts-governance-incidents.html)
-- [Transparency and ownership]({{ site.baseurl }}/legal/contracts-governance-transparency.html)
-
----
-
-## 🗺 Roadmap
-- ✅ Deploy of contracts (Ethereum + Polygon)  
-- ✅ Official NFT  
-- 🔜 [Full Roadmap]({{ site.baseurl }}/roadmap.html)  
-- 🔜 Listing on CEX  
-- 🔜 DAO community expansion  
-- 🔜 Integration with more DEX and NFT platforms  
-
----
-
-## ✅ Certifications and Transparency  
-- 🔐 SSL active  
-- 📂 Public repository  
-- 📊 Audit in progress  
-- 📜 Privacy policy: [View policy]({{ site.baseurl }}/legal/privacy.html)
-
----
-
-<p align="center"><strong>Last update:</strong> January 2026</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOA Token V2 – Vision and Transparency</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #222222;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #111111;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666666;
+            border-top: 1px solid #dddddd;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOA Token V2 – Vision and Transparency</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About the vision of DOA Token V2</h2>
+            <p>
+                DOA Token V2 is not a passing experiment nor a token destined to get lost in speculative play.
+                Our design with Proxy and active ownership responds to a conscious strategy: ensuring that the project
+                can grow, improve, and adapt to the demands of the market and the community.
+            </p>
+            <p>
+                The trust we seek is not static but dynamic: we want holders and exchanges to know that
+                DOA Token V2 is prepared to evolve into the future, with continuous improvements and security mechanisms
+                that guarantee its sustainability.
+            </p>
+            <p>
+                Our commitment is that this token will not disappear in market volatility, but will consolidate as
+                an asset with purpose, governance, and transparency. Every update, every improvement, and every step towards DOA Token V3
+                is aimed at strengthening trust and demonstrating that growth is real, sustainable, and verifiable.
+            </p>
+            <p><strong>In summary:</strong></p>
+            <ul>
+                <li>We do not aim to be just another token.</li>
+                <li>We aim to build trust in future growth.</li>
+                <li>We want the community to know that DOA Token V2 is here to stay, improve, and lead.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Related links:</p>
+        <ul style="list-style:none; padding:0;">
+            <li><a href="{{ site.baseurl }}/doa-ficha.html">Token technical sheet</a></li>
+            <li><a href="{{ site.baseurl }}/tokenomics.html">Tokenomics</a></li>
+            <li><a href="{{ site.baseurl }}/team.html">Project team</a></li>
+            <li><a href="{{ site.baseurl }}/announcement.html">Official announcement</a></li>
+            <li><a href="{{ site.baseurl }}/branding-guidelines.html">Branding guidelines</a></li>
+            <li><a href="{{ site.baseurl }}/legal/aml-kyc.html">AML/KYC policies</a></li>
+        </ul>
+        <p>Visit our official site: 
+            <a href="https://doatoken.org" target="_blank">https://doatoken.org</a>
+        </p>
+    </footer>
+</body>
+</html>
