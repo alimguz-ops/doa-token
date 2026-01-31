@@ -11,9 +11,9 @@ Bienvenido al sitio oficial del proyecto.
 ---
 
 ### 🌍 Idioma / Language
-<div style="text-align:center; margin:10px 0;">
-  <a href="/es/" style="background:#000; color:#DAA520; padding:6px 12px; border-radius:5px; text-decoration:none; font-size:13px;">Español</a>
-  <a href="/en/" style="background:#000; color:#DAA520; padding:6px 12px; border-radius:5px; text-decoration:none; font-size:13px;">English</a>
+<div style="text-align:center; margin:8px 0;">
+  <a href="/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
+  <a href="/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
 </div>
 
 ---
@@ -21,52 +21,70 @@ Bienvenido al sitio oficial del proyecto.
 ## 🔒 Confianza y Seguridad
 - Liquidez y *staking* con recompensas automáticas cada día  
 - Proxy temporal para actualizaciones seguras y auditadas  
-- Auditorías diarias y reportes públicos  
+- Auditorías periódicas y reportes públicos  
 - Comunidad que recompensa tu confianza
 
 ---
 
 ## 🔗 Contratos Oficiales
-<div style="display:flex; flex-direction:column; gap:10px; margin:10px 0; font-weight:bold;">
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">Ethereum Main</div>
-  <a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE" style="color:#DAA520; text-decoration:none; margin-left:10px;">0x6F52809EfdDF5826956EeF9C289A661624afb0cE</a>
+<div style="display:flex; flex-direction:column; gap:8px; margin:8px 0; font-weight:bold;">
 
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">Ethereum Proxy</div>
-  <a href="https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411" style="color:#DAA520; text-decoration:none; margin-left:10px;">0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411</a>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">Ethereum Main</div>
+    <a href="https://etherscan.io/address/0x6F52809EfdDF5826956EeF9C289A661624afb0cE" style="color:#DAA520; text-decoration:none; font-family:monospace; font-size:12px;">0x6F52809EfdDF5826956EeF9C289A661624afb0cE</a>
+  </div>
 
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">Polygon Main</div>
-  <a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; margin-left:10px;">0x692d951163df3f7D9Fe071413F92c319D9B7369E</a>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">Ethereum Proxy</div>
+    <a href="https://etherscan.io/address/0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411" style="color:#DAA520; text-decoration:none; font-family:monospace; font-size:12px;">0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411</a>
+  </div>
 
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">Polygon Proxy</div>
-  <a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305" style="color:#DAA520; text-decoration:none; margin-left:10px;">0xD6426Da6D01233Efe48dab6aD96cf3238f02c305</a>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">Polygon Main</div>
+    <a href="https://polygonscan.com/address/0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; font-family:monospace; font-size:12px;">0x692d951163df3f7D9Fe071413F92c319D9B7369E</a>
+  </div>
+
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">Polygon Proxy</div>
+    <a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305" style="color:#DAA520; text-decoration:none; font-family:monospace; font-size:12px;">0xD6426Da6D01233Efe48dab6aD96cf3238f02c305</a>
+  </div>
+
 </div>
 
 ---
 
 ## 💱 Pares de Liquidez
-<div style="display:flex; flex-direction:column; gap:10px; margin:10px 0; font-weight:bold;">
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">QuickSwap (Polygon)</div>
-  <a href="https://quickswap.exchange/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; margin-left:10px;">Ver par</a>
+<div style="display:flex; flex-direction:column; gap:8px; margin:8px 0; font-weight:bold;">
 
-  <div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">Uniswap (Polygon)</div>
-  <a href="https://app.uniswap.org/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; margin-left:10px;">Ver par</a>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">QuickSwap (Polygon)</div>
+    <a href="https://quickswap.exchange/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; font-size:12px;">Ver par</a>
+  </div>
+
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">Uniswap (Polygon)</div>
+    <a href="https://app.uniswap.org/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" style="color:#DAA520; text-decoration:none; font-size:12px;">Ver par</a>
+  </div>
+
 </div>
 
 ---
 
 ## 🖼 NFT Oficial
-<div style="background:#000; color:#DAA520; padding:6px 10px; border-radius:5px; display:inline-block;">NFT_DOA</div>
-<a href="https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65" style="color:#DAA520; text-decoration:none; margin-left:10px;">0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65</a>  
+<div style="display:flex; align-items:center; gap:10px; margin:8px 0;">
+  <div style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; display:inline-block; font-size:12px;">NFT_DOA</div>
+  <a href="https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65" style="color:#DAA520; text-decoration:none; font-family:monospace; font-size:12px;">0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65</a>
+</div>
 Relación: vinculado a liquidez y comunidad
 
 ---
 
 ## 🌐 Comunidad
-<div style="text-align:center; margin:15px 0;">
-  <a href="https://discord.gg/TCXB69cm" style="background:#000; color:#DAA520; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Discord</a>
-  <a href="https://x.com/DoaV270493" style="background:#000; color:#DAA520; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Twitter/X</a>
-  <a href="https://t.me/DoaTokenV2" style="background:#000; color:#DAA520; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">Telegram</a>
-  <a href="https://github.com/alimguz-ops/doa-token" style="background:#000; color:#DAA520; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold;">GitHub</a>
+<div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:6px;">
+  <a href="https://discord.gg/TCXB69cm" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px; display:inline-block;">Discord</a>
+  <a href="https://x.com/DoaV270493" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px; display:inline-block;">Twitter/X</a>
+  <a href="https://t.me/DoaTokenV2" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px; display:inline-block;">Telegram</a>
+  <a href="https://github.com/alimguz-ops/doa-token" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px; display:inline-block;">GitHub</a>
 </div>
 
 ---
@@ -77,11 +95,11 @@ Responsable único de arquitectura técnica, cumplimiento, comunidad y operacion
 
 ---
 
-<div style="text-align:center; font-size:14px; font-weight:bold; margin:10px 0;">
+<div style="text-align:center; font-size:13px; font-weight:bold; margin:8px 0;">
 SSL activo · Repositorio público · Auditoría en curso · Política de privacidad
 </div>
 
-<div style="text-align:center; font-size:16px; font-weight:bold; margin:10px 0;">
+<div style="text-align:center; font-size:15px; font-weight:bold; margin:8px 0;">
 Última actualización: Enero 2026
 </div>
 
