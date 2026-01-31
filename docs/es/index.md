@@ -1,36 +1,36 @@
 ---
 layout: default
-title: English Home
-permalink: /en/
+title: Inicio en Español
+permalink: /es/
 ---
 
 <section class="hero">
   <div>
-    <h1>Welcome to DOA Token V2</h1>
-    <p><strong>Transparency, security, and community.</strong></p>
+    <h1>Bienvenido a DOA Token V2</h1>
+    <p><strong>Transparencia, seguridad y comunidad.</strong></p>
     <p>
-      This is the official site of the <strong>DOA Token V2</strong> ecosystem, 
-      a decentralized project with DAO governance, public audit, and automatic rewards.
+      Este es el sitio oficial del ecosistema <strong>DOA Token V2</strong>,
+      un proyecto descentralizado con gobernanza DAO, auditoría pública y recompensas automáticas.
     </p>
   </div>
 </section>
 
 ---
 
-### 🌍 Language / Idioma
+### 🌍 Idioma / Language
 <div style="text-align:center; margin:8px 0;">
-  <a href="{{ site.baseurl }}/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">English</a>
-  <a href="{{ site.baseurl }}/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">Español</a>
+  <a href="{{ site.baseurl }}/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block;">Español</a>
+  <a href="{{ site.baseurl }}/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; display:inline-block; margin-left:8px;">English</a>
 </div>
 
 ---
 
-## 📘 Documentation
-- [Token technical sheet]({{ site.baseurl }}/doa-ficha.html)
+## 📘 Documentación
+- [Ficha técnica del token]({{ site.baseurl }}/doa-ficha.html)
 - [Tokenomics]({{ site.baseurl }}/tokenomics.html)
-- [Project team]({{ site.baseurl }}/team.html)
-- [Official announcement]({{ site.baseurl }}/announcement.html)
-- [Branding guidelines]({{ site.baseurl }}/branding-guidelines.html)
+- [Equipo del proyecto]({{ site.baseurl }}/team.html)
+- [Anuncio oficial]({{ site.baseurl }}/announcement.html)
+- [Guías de marca]({{ site.baseurl }}/branding-guidelines.html)
 - [Changelog]({{ site.baseurl }}/changelog.html)
 
 ---
@@ -48,7 +48,7 @@ permalink: /en/
 ## 🔒 Audit & Compliance
 - [Audit checklist]({{ site.baseurl }}/audit-checklist.html)
 - [Audit report]({{ site.baseurl }}/legal/audit-report.html)
-- [AML/KYC policies]({{ site.baseurl }}/legal/aml-kyc.html)
+- [Políticas AML/KYC]({{ site.baseurl }}/legal/aml-kyc.html)
 - [Legal certification]({{ site.baseurl }}/legal/certification.html)
 - [Contracts and governance decisions]({{ site.baseurl }}/legal/contracts-governance-decision.html)
 - [Governance master log]({{ site.baseurl }}/legal/governance-master-log.html)

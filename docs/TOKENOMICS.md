@@ -1,6 +1,6 @@
 ---
 layout: default
-title: TOKENOMICS
+title: Tokenomics
 permalink: /tokenomics/
 ---
 
