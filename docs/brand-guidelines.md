@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Brand Guidelines – DOA Token V2
+title: Guías de marca
+permalink: /branding-guidelines/
 ---
 
 # 🎨 Brand Guidelines – DOA Token V2  

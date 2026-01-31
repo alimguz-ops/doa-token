@@ -75,4 +75,5 @@ permalink: /tokenomics/
 
 ---
 
-<p align="center"><strong>Última actualización:</strong> Enero 2026</p>
+<p align="center"><strong>Última actualización:</strong> Enero /2026</p>
+

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Ficha técnica del token
-permalink: /es/DOA-FICHA/
+permalink: /doa-ficha/
 ---
 
 # 🧾 Ficha técnica oficial – DOATokenV2 (DOA)  

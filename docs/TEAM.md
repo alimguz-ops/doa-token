@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Equipo
+title: Equipo del proyecto
 permalink: /team/
 ---
 

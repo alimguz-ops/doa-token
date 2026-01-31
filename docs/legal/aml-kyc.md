@@ -1,7 +1,7 @@
 ﻿---
 layout: default
 title: AML/KYC
-permalink: /legal/aml-kyc/
+permalink: /legal/aml-kyc.html
 ---
 
 # ⚖️ DOA Token – AML/KYC Policy / Política AML/KYC
