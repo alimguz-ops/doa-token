@@ -18,40 +18,40 @@ permalink: /en/
 ---
 
 ## 📘 Documentation
-- [Token technical sheet]({{ site.baseurl }}/DOA-FICHA/)
-- [Tokenomics]({{ site.baseurl }}/tokenomics/)
-- [Project team]({{ site.baseurl }}/team/)
-- [Official announcement]({{ site.baseurl }}/announcement/)
-- [Branding guidelines]({{ site.baseurl }}/branding-guidelines/)
-- [Changelog]({{ site.baseurl }}/changelog/)
+- [Token technical sheet]({{ site.baseurl }}/DOA-FICHA.md)
+- [Tokenomics]({{ site.baseurl }}/TOKENOMICS.md)
+- [Project team]({{ site.baseurl }}/TEAM.md)
+- [Official announcement]({{ site.baseurl }}/announcement.md)
+- [Branding guidelines]({{ site.baseurl }}/branding-guidelines.md)
+- [Changelog]({{ site.baseurl }}/changelog.md)
 
 ---
 
 ## 🏛 DAO Governance
-- [Governance framework]({{ site.baseurl }}/governance/)
-- [Roles and processes]({{ site.baseurl }}/governance-roles/)
-- [Voting log]({{ site.baseurl }}/governance-log/)
-- [Active proposals]({{ site.baseurl }}/proposals/)
-- [Governance charter]({{ site.baseurl }}/governance-charter/)
-- [Governance process]({{ site.baseurl }}/governance-process/)
+- [Governance framework]({{ site.baseurl }}/governance-framework.md)
+- [Roles and processes]({{ site.baseurl }}/governance-roles.md)
+- [Voting log]({{ site.baseurl }}/governance-log.md)
+- [Active proposals]({{ site.baseurl }}/proposals.md)
+- [Governance charter]({{ site.baseurl }}/governance-charter.md)
+- [Governance process]({{ site.baseurl }}/governance-process.md)
 
 ---
 
 ## 🔒 Audit & Compliance
-- [Audit checklist]({{ site.baseurl }}/audit-checklist/)
-- [Audit report]({{ site.baseurl }}/audit-report/)
-- [AML/KYC policies]({{ site.baseurl }}/legal/AML-KYC/)
-- [Legal certification]({{ site.baseurl }}/legal/certification/)
-- [Contracts and governance decisions]({{ site.baseurl }}/legal/contracts-governance-decision/)
-- [Governance master log]({{ site.baseurl }}/legal/governance-master-log/)
+- [Audit checklist]({{ site.baseurl }}/audit-checklist.md)
+- [Audit report]({{ site.baseurl }}/legal/audit-report.md)
+- [AML/KYC policies]({{ site.baseurl }}/legal/aml-kyc.md)
+- [Legal certification]({{ site.baseurl }}/legal/certification.md)
+- [Contracts and governance decisions]({{ site.baseurl }}/legal/contracts-governance-decision.md)
+- [Governance master log]({{ site.baseurl }}/legal/governance-master-log.md)
 
 ---
 
 ## 📊 Metrics & Community
-- [Adoption metrics]({{ site.baseurl }}/community-metrics/)
-- [Audit log]({{ site.baseurl }}/audit-log/)
-- [Incidents and migrations]({{ site.baseurl }}/legal/contracts-governance-incidents/)
-- [Transparency and ownership]({{ site.baseurl }}/legal/contracts-governance-transparency/)
+- [Adoption metrics]({{ site.baseurl }}/community-metrics.md)
+- [Audit log]({{ site.baseurl }}/audit-log.md)
+- [Incidents and migrations]({{ site.baseurl }}/legal/contracts-governance-incidents.md)
+- [Transparency and ownership]({{ site.baseurl }}/legal/contracts-governance-transparency.md)
 
 ---
 
