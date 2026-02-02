@@ -17,6 +17,9 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802989521678619"
           crossorigin="anonymous"></script>
+
+  <!-- Ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
 </head>
 <body style="background:#111; color:#fff; font-family:Arial, sans-serif;">
 
@@ -81,53 +84,115 @@
   <p>Relación: vinculado a liquidez y comunidad</p>
 
   <!-- 🌐 Comunidad -->
-<h2>🌐 Comunidad</h2>
-<div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:6px; flex-wrap:wrap;">
-  <a href="https://discord.gg/TCXB69cm" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px;">Discord ↗</a>
-  <a href="https://x.com/DoaV270493" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px;">Twitter/X ↗</a>
-  <a href="https://t.me/DoaTokenV2" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px;">Telegram ↗</a>
-  <a href="https://github.com/alimguz-ops/doa-token" target="_blank" rel="noopener noreferrer" style="background:#000; color:#DAA520; padding:4px 10px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:12px;">GitHub ↗</a>
-</div>
+  <h2>🌐 Comunidad</h2>
+  <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:6px; flex-wrap:wrap;">
+    <a href="https://discord.gg/TCXB69cm" target="_blank">Discord ↗</a>
+    <a href="https://x.com/DoaV270493" target="_blank">Twitter/X ↗</a>
+    <a href="https://t.me/DoaTokenV2" target="_blank">Telegram ↗</a>
+    <a href="https://github.com/alimguz-ops/doa-token" target="_blank">GitHub ↗</a>
+  </div
 
----
+  <!-- 👤 Fundador -->
+  <h2>👤 Fundador</h2>
+  <p><strong>Angel R. Linares (ALIMGUZ)</strong><br>
+  – Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
+  – Sole founder, responsible for technical architecture, compliance, community, and operations.</p>
 
-<!-- 👤 Fundador -->
-<h2>👤 Fundador</h2>
-<p><strong>Angel R. Linares (ALIMGUZ)</strong><br>
-– Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
-– Sole founder, responsible for technical architecture, compliance, community, and operations.</p>
-
----
-
-<!-- Scripts adicionales -->
-<script type="text/javascript" data-cfasync="false">
-(function(){
-  var e = window,
-      o = "d30821c03f80282ac46bbccfd6ee5e68",
-      x = [["siteId",676-211+380+410*19+5263358],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
-      i = ["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9zaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvSi9lc3BsaXQubWluLmpz"],
-      v = -1, w, b;
-  var z = function(){
-    clearTimeout(b);
-    v++;
-    if(i[v] && !(1795733348000 < (new Date).getTime() && 1 < v)){
-      w = e.document.createElement("script");
-      w.type = "text/javascript";
-      w.async = true;
-      var d = e.document.getElementsByTagName("script")[0];
-      w.src = "https://" + atob(i[v]);
-      w.crossOrigin = "anonymous";
-      w.onerror = z;
-      w.onload = function(){ clearTimeout(b); if(!e[o.slice(0,16)+o.slice(0,16)]) z(); };
-      b = setTimeout(z, 5000);
-      d.parentNode.insertBefore(w, d);
+  <!-- Scripts adicionales (PopAds) -->
+  <script type="text/javascript" data-cfasync="false">
+  (function(){
+    var e = window,
+        o = "d30821c03f80282ac46bbccfd6ee5e68",
+        x = [["siteId",676-211+380+410*19+5263358],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
+        i = ["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9zaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvSi9lc3BsaXQubWluLmpz"],
+        v = -1, w, b;
+    var z = function(){
+      clearTimeout(b);
+      v++;
+      if(i[v] && !(1795733348000 < (new Date).getTime() && 1 < v)){
+        w = e.document.createElement("script");
+        w.type = "text/javascript";
+        w.async = true;
+        var d = e.document.getElementsByTagName("script")[0];
+        w.src = "https://" + atob(i[v]);
+        w.crossOrigin = "anonymous";
+        w.onerror = z;
+        w.onload = function(){ clearTimeout(b); if(!e[o.slice(0,16)+o.slice(0,16)]) z(); };
+        b = setTimeout(z, 5000);
+        d.parentNode.insertBefore(w, d);
+      }
+    };
+    if(!e[o]){
+      try{ Object.freeze(e[o] = x); }catch(err){}
+      z();
     }
-  };
-  if(!e[o]){
-    try{ Object.freeze(e[o] = x); }catch(err){}
-    z();
-  }
-})();
-</script>
+  })();
+  </script>
+
+  <!-- Script de conexión con contrato DOA + NFT -->
+  <script type="text/javascript">
+    const ADDRESSES = {
+      polygon: {
+        registro: "0x692d951163df3f7D9Fe071413F92c319D9B7369E", // Contrato DOA en Polygon
+        proxy:    "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305", // Proxy en Polygon
+        nft:      "0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65"  // NFT oficial en Polygon
+      },
+      ethereum: {
+        registro: "0x6F52809EfdDF5826956EeF9C289A661624afb0cE", // Contrato DOA en Ethereum
+        proxy:    "0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411"  // Proxy en Ethereum
+      }
+    };
+
+    const registroAbi = [
+      "function registrar()",
+      "function totalUsuarios() view returns (uint256)",
+      "function tienePrivilegios(address) view returns (bool)"
+    ];
+
+    const nftAbi = [
+      "function balanceOf(address owner) view returns (uint256)"
+    ];
+
+    async function connectWallet() {
+      try {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        await provider.send("eth_requestAccounts", []);
+        const signer = provider.getSigner();
+        const address = await signer.getAddress();
+
+        const network = await provider.getNetwork();
+        let registroAddress, nftAddress;
+        if (network.chainId === 137) { // Polygon Mainnet
+          registroAddress = ADDRESSES.polygon.registro;
+          nftAddress = ADDRESSES.polygon.nft;
+        } else if (network.chainId === 1) { // Ethereum Mainnet
+          registroAddress = ADDRESSES.ethereum.registro;
+          nftAddress = null;
+        } else {
+          alert("Red no soportada. Conéctate a Polygon o Ethereum.");
+          return;
+        }
+
+        const registro = new ethers.Contract(registroAddress, registroAbi, signer);
+        await registro.registrar();
+
+        const total = await registro.totalUsuarios();
+        document.getElementById("userCount").innerText = total.toString();
+
+        if (nftAddress) {
+          const nft = new ethers.Contract(nftAddress, nftAbi, signer);
+          const balance = await nft.balanceOf(address);
+          document.getElementById("nftStatus").innerText = balance > 0
+            ? "✅ Posees NFT de gobernanza: privilegios de votación activados."
+            : "⚠️ No posees NFT de gobernanza. Conéctate para obtener uno y participar.";
+        } else {
+          document.getElementById("nftStatus").innerText = "ℹ️ NFT de gobernanza disponible solo en Polygon.";
+        }
+      } catch (err) {
+        console.error("Error al conectar wallet:", err);
+        alert("Hubo un error al conectar la wallet. Revisa la consola.");
+      }
+    }
+  </script>
 </body>
 </html>
