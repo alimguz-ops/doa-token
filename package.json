@@ -32,9 +32,10 @@
     "monitor:eth": "MONITOR_ENABLED=true node monitor-liquidez.cjs",
     "audit": "node scripts/auditoriaDiaria.js",
     "plots": "node scripts/plotAllBalances.js",
-    "audit:plots": "node scripts/auditAndPlots.js",   
+    "audit:plots": "node scripts/auditAndPlots.js",
     "clean:logs": "node scripts/cleanLogs.js",
-    "verify:logs": "node scripts/verifyLogs.js"
+    "verify:logs": "node scripts/verifyLogs.js",
+    "upload:metadata": "node scripts/upload.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
@@ -75,6 +76,7 @@
     "ajv": "^8.17.1",
     "chart.js": "^4.5.1",
     "chartjs-node-canvas": "^5.0.0",
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "nft.storage": "^7.2.0"
   }
 }

@@ -41,15 +41,6 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY_OWNER, process.env.PRIVATE_KEY_ADMIN].filter(Boolean)
     },
 
-    // Polygon Amoy testnet
-    amoy: {
-      url: process.env.AMOY_RPC,
-      accounts: [
-        process.env.PRIVATE_KEY_OWNER,
-        process.env.PRIVATE_KEY_ADMIN,
-        process.env.AMOY_PRIVATE_KEY
-      ].filter(Boolean)
-    }
   },
 
   etherscan: {
@@ -79,14 +70,7 @@ module.exports = {
           browserURL: "https://polygonscan.com"
         }
       },
-      {
-        network: "amoy",
-        chainId: 80002,
-        urls: {
-          apiURL: "https://api-amoy.polygonscan.com/api",
-          browserURL: "https://amoy.polygonscan.com"
-        }
-      }
+      
     ]
   },
 
