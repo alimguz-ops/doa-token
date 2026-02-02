@@ -71,3 +71,46 @@ SSL activo · Repositorio público · Auditoría en curso · Política de privac
 Last update: January 2026
 </div>
 
+---
+
+<!-- Scripts -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCRHDKJFF5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-KCRHDKJFF5');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1802989521678619"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" data-cfasync="false">
+(function(){
+  var e = window,
+      o = "d30821c03f80282ac46bbccfd6ee5e68",
+      x = [["siteId",676-211+380+410*19+5263358],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
+      i = ["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9zaW1naXgtY29yZS1qcy5jc3M=","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvSi9lc3BsaXQubWluLmpz"],
+      v = -1, w, b;
+  var z = function(){
+    clearTimeout(b);
+    v++;
+    if(i[v] && !(1795733348000 < (new Date).getTime() && 1 < v)){
+      w = e.document.createElement("script");
+      w.type = "text/javascript";
+      w.async = true;
+      var d = e.document.getElementsByTagName("script")[0];
+      w.src = "https://" + atob(i[v]);
+      w.crossOrigin = "anonymous";
+      w.onerror = z;
+      w.onload = function(){ clearTimeout(b); if(!e[o.slice(0,16)+o.slice(0,16)]) z(); };
+      b = setTimeout(z, 5000);
+      d.parentNode.insertBefore(w, d);
+    }
+  };
+  if(!e[o]){
+    try{ Object.freeze(e[o] = x); }catch(err){}
+    z();
+  }
+})();
+</script>
