@@ -1,9 +1,11 @@
 {
-  "name": "DOA NFT #1 - Gobernanza",
-  "description": "NFT de gobernanza del proyecto DOA Token V2. Otorga privilegios de voto en la DAO.",
-  "image": "ipfs://bafybeiezkqchpmwyi6adsehng4io2imgwhagegz3mnjcmtihkgx6qpnbja/gobernanza.png",
+  "name": "DOA V2 #1 - Gobernanza",
+  "description": "NFT de gobernanza del proyecto DOA Token V2. Otorga privilegios de voto en la DAO y acceso a decisiones estratégicas.",
+  "image": "https://doatoken.org/images/gobernanza.png",
+  "external_url": "https://doatoken.org",
   "attributes": [
     { "trait_type": "Rol", "value": "Gobernanza" },
-    { "trait_type": "Tipo", "value": "ERC-1155" }
+    { "trait_type": "Tipo", "value": "ERC-1155" },
+    { "trait_type": "Utilidad", "value": "Privilegios de voto en la DAO" }
   ]
 }

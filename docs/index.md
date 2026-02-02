@@ -80,8 +80,35 @@
 
   <!-- NFT -->
   <h2>🖼 NFT Oficial</h2>
-  <p>NFT_DOA → <a href="https://polygonscan.com/address/0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65" target="_blank">0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65 ↗</a></p>
+  <p>
+    NFT_DOA → 
+    <a href="https://polygonscan.com/address/0xc497377bDFA6e651A4f9E5C44531c9D034a13523" target="_blank">
+      0xc497377bDFA6e651A4f9E5C44531c9D034a13523 ↗
+    </a>
+  </p>
   <p>Relación: vinculado a liquidez y comunidad</p>
+
+  <!-- Botón de acceso a documentación NFT -->
+  <div style="text-align:center; margin:12px 0;">
+    <a href="{{ site.baseurl }}/docs/nft_gob_recp_memb.md" 
+      style="background:#000; color:#DAA520; padding:6px 12px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:bold;">
+      📄 Ver ficha técnica NFT ↗
+    </a>
+  </div>
+
+  <!-- Botón para conectar la wallet -->
+  <div style="text-align:center; margin:20px 0;">
+    <a href="javascript:void(0);" onclick="connectWallet()" 
+      style="background:#DAA520; color:#000; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:700; display:inline-block;">
+      🔗 Conectar Wallet
+    </a>
+  </div>
+
+  <!-- Estado del usuario -->
+  <p style="text-align:center; margin-top:10px;">
+    Usuarios registrados: <span id="userCount">0</span><br>
+    Estado NFT: <span id="nftStatus">No conectado</span>
+  </p>
 
   <!-- 🌐 Comunidad -->
   <h2>🌐 Comunidad</h2>
