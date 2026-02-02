@@ -1,0 +1,9 @@
+{
+  "name": "DOA NFT #2 - Membresía",
+  "description": "NFT de membresía del proyecto DOA Token V2. Representa acceso exclusivo a beneficios de la comunidad.",
+  "image": "ipfs://bafybeiezkqchpmwyi6adsehng4io2imgwhagegz3mnjcmtihkgx6qpnbja/membresia.png",
+  "attributes": [
+    { "trait_type": "Rol", "value": "Membresía" },
+    { "trait_type": "Tipo", "value": "ERC-1155" }
+  ]
+}

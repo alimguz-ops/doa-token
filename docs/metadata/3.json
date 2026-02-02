@@ -1,0 +1,9 @@
+{
+  "name": "DOA NFT #3 - Recompensas",
+  "description": "NFT de recompensas del proyecto DOA Token V2. Distribuye beneficios automáticos a los participantes.",
+  "image": "ipfs://bafybeiezkqchpmwyi6adsehng4io2imgwhagegz3mnjcmtihkgx6qpnbja/recompensas.png",
+  "attributes": [
+    { "trait_type": "Rol", "value": "Recompensas" },
+    { "trait_type": "Tipo", "value": "ERC-1155" }
+  ]
+}
