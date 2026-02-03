@@ -1,7 +1,7 @@
 {
   "name": "DOA V2 #3 - Membresía",
   "description": "NFT de membresía del proyecto DOA Token V2. Acredita pertenencia y acceso exclusivo a la comunidad.",
-  "image": "https://doatoken.org/images/membresia.png",
+  "image": "https://doatoken.org/docs/images/membresia.png",
   "external_url": "https://doatoken.org",
   "attributes": [
     { "trait_type": "Rol", "value": "Membresía" },

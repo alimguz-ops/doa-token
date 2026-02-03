@@ -1,7 +1,7 @@
 {
   "name": "DOA V2 #1 - Gobernanza",
   "description": "NFT de gobernanza del proyecto DOA Token V2. Otorga privilegios de voto en la DAO y acceso a decisiones estratégicas.",
-  "image": "https://doatoken.org/images/gobernanza.png",
+  "image": "https://doatoken.org/docs/images/gobernanza.png",
   "external_url": "https://doatoken.org",
   "attributes": [
     { "trait_type": "Rol", "value": "Gobernanza" },

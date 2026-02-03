@@ -1,7 +1,7 @@
 {
   "name": "DOA V2 #2 - Recompensas",
   "description": "NFT de recompensas del proyecto DOA Token V2. Representa beneficios e incentivos automáticos para la comunidad.",
-  "image": "https://doatoken.org/images/recompensas.png",
+  "image": "https://doatoken.org/docs/images/recompensas.png",
   "external_url": "https://doatoken.org",
   "attributes": [
     { "trait_type": "Rol", "value": "Recompensas" },

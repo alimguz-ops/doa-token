@@ -14,10 +14,10 @@ Relación: vinculados a liquidez, comunidad y gobernanza DAO.
 ---
 
 ## 🗳 NFT #1 - Gobernanza
-- **Metadata JSON:** [https://doatoken.org/metadata/1.json ↗](https://doatoken.org/metadata/1.json)  
-- **Imagen:** [https://doatoken.org/images/gobernanza.png ↗](https://doatoken.org/images/gobernanza.png)  
+- **Metadata JSON:** [https://doatoken.org/docs/metadata/1.json ↗](https://doatoken.org/docs/metadata/1.json)  
+- **Imagen:** [https://doatoken.org/docs/images/gobernanza.png ↗](https://doatoken.org/docs/images/gobernanza.png)  
 - **Vista previa:**  
-  ![NFT Gobernanza](https://doatoken.org/images/gobernanza.png)
+  ![NFT Gobernanza](https://doatoken.org/docs/images/gobernanza.png)
 
 **Atributos:**
 - Rol: Gobernanza  
@@ -27,10 +27,10 @@ Relación: vinculados a liquidez, comunidad y gobernanza DAO.
 ---
 
 ## 🎁 NFT #2 - Recompensas
-- **Metadata JSON:** [https://doatoken.org/metadata/2.json ↗](https://doatoken.org/metadata/2.json)  
-- **Imagen:** [https://doatoken.org/images/recompensas.png ↗](https://doatoken.org/images/recompensas.png)  
+- **Metadata JSON:** [https://doatoken.org/docs/metadata/2.json ↗](https://doatoken.org/docs/metadata/2.json)  
+- **Imagen:** [https://doatoken.org/docs/images/recompensas.png ↗](https://doatoken.org/docs/images/recompensas.png)  
 - **Vista previa:**  
-  ![NFT Recompensas](https://doatoken.org/images/recompensas.png)
+  ![NFT Recompensas](https://doatoken.org/docs/images/recompensas.png)
 
 **Atributos:**
 - Rol: Recompensas  
@@ -40,10 +40,10 @@ Relación: vinculados a liquidez, comunidad y gobernanza DAO.
 ---
 
 ## 🎫 NFT #3 - Membresía
-- **Metadata JSON:** [https://doatoken.org/metadata/3.json ↗](https://doatoken.org/metadata/3.json)  
-- **Imagen:** [https://doatoken.org/images/membresia.png ↗](https://doatoken.org/images/membresia.png)  
+- **Metadata JSON:** [https://doatoken.org/docs/metadata/3.json ↗](https://doatoken.org/docs/metadata/3.json)  
+- **Imagen:** [https://doatoken.org/docs/images/membresia.png ↗](https://doatoken.org/docs/images/membresia.png)  
 - **Vista previa:**  
-  ![NFT Membresía](https://doatoken.org/images/membresia.png)
+  ![NFT Membresía](https://doatoken.org/docs/images/membresia.png)
 
 **Atributos:**
 - Rol: Membresía  
