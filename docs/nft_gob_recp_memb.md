@@ -4,52 +4,86 @@ title: NFTs DOA V2
 permalink: /nft_gob_recp_memb.html
 ---
 
-# 🖼 NFTs Oficiales DOA Token V2
+<h1>🖼 NFTs Oficiales DOA Token V2</h1>
 
-Contrato ERC-1155 en Polygon →  
-[0xc497377bDFA6e651A4f9E5C44531c9D034a13523 ↗](https://polygonscan.com/address/0xc497377bDFA6e651A4f9E5C44531c9D034a13523)
+<p>
+Contrato ERC‑1155 en Polygon →  
+<a href="https://polygonscan.com/address/0xb6E66163e31a27eb92f67ff9AED8f6a5CCf1E074#code" target="_blank">
+0xb6E66163e31a27eb92f67ff9AED8f6a5CCf1E074 ↗
+</a>
+</p>
 
-Relación: vinculados a liquidez, comunidad y gobernanza DAO.
+<p>Relación: vinculados a liquidez, comunidad y gobernanza DAO.</p>
 
----
+<hr/>
 
-## 🗳 NFT #1 - Gobernanza
-- **Metadata JSON:** [https://doatoken.org/docs/metadata/1.json ↗](https://doatoken.org/docs/metadata/1.json)  
-- **Imagen:** [https://doatoken.org/docs/images/gobernanza.png ↗](https://doatoken.org/docs/images/gobernanza.png)  
-- **Vista previa:**  
-  ![NFT Gobernanza](https://doatoken.org/docs/images/gobernanza.png)
+<!-- Botones de acción -->
+<div style="display:flex; gap:20px; margin:20px 0;">
+  <button id="btnGob" 
+    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
+    Añadir liquidez → Mint Gobernanza
+  </button>
 
-**Atributos:**
-- Rol: Gobernanza  
-- Tipo: ERC-1155  
-- Utilidad: Privilegios de voto en la DAO  
+  <button id="btnRec" 
+    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
+    Reclamar → Mint Recompensas
+  </button>
 
----
+  <button id="btnMem" 
+    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
+    Unirse → Mint Membresía
+  </button>
+</div>
 
-## 🎁 NFT #2 - Recompensas
-- **Metadata JSON:** [https://doatoken.org/docs/metadata/2.json ↗](https://doatoken.org/docs/metadata/2.json)  
-- **Imagen:** [https://doatoken.org/docs/images/recompensas.png ↗](https://doatoken.org/docs/images/recompensas.png)  
-- **Vista previa:**  
-  ![NFT Recompensas](https://doatoken.org/docs/images/recompensas.png)
+<hr/>
 
-**Atributos:**
-- Rol: Recompensas  
-- Tipo: ERC-1155  
-- Utilidad: Acceso a beneficios y distribución de recompensas  
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.min.js"></script>
+<script>
+const CONTRACT_ADDRESS = "0xb6E66163e31a27eb92f67ff9AED8f6a5CCf1E074";
+const ABI = [
+  "function mintGobernanza(address to) external",
+  "function mintRecompensas(address to, uint256 cantidad) external",
+  "function mintMembresia(address to) external"
+];
 
----
+async function connectWallet() {
+  if (!window.ethereum) {
+    alert("Necesitas MetaMask u otra wallet Web3 instalada.");
+    return null;
+  }
+  const provider = new ethers.BrowserProvider(window.ethereum);
+  await provider.send("eth_requestAccounts", []);
+  return provider.getSigner();
+}
 
-## 🎫 NFT #3 - Membresía
-- **Metadata JSON:** [https://doatoken.org/docs/metadata/3.json ↗](https://doatoken.org/docs/metadata/3.json)  
-- **Imagen:** [https://doatoken.org/docs/images/membresia.png ↗](https://doatoken.org/docs/images/membresia.png)  
-- **Vista previa:**  
-  ![NFT Membresía](https://doatoken.org/docs/images/membresia.png)
+async function mintGobernanza() {
+  const signer = await connectWallet();
+  if (!signer) return;
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mintGobernanza(await signer.getAddress());
+  await tx.wait();
+  alert("✅ NFT Gobernanza acuñado con éxito");
+}
 
-**Atributos:**
-- Rol: Membresía  
-- Tipo: ERC-1155  
-- Utilidad: Acceso exclusivo y beneficios de membresía  
+async function mintRecompensas() {
+  const signer = await connectWallet();
+  if (!signer) return;
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mintRecompensas(await signer.getAddress(), 1);
+  await tx.wait();
+  alert("✅ NFT Recompensas acuñado con éxito");
+}
 
----
+async function mintMembresia() {
+  const signer = await connectWallet();
+  if (!signer) return;
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mintMembresia(await signer.getAddress());
+  await tx.wait();
+  alert("✅ NFT Membresía acuñado con éxito");
+}
 
-**Última actualización:** Febrero 2026
+document.getElementById("btnGob").onclick = mintGobernanza;
+document.getElementById("btnRec").onclick = mintRecompensas;
+document.getElementById("btnMem").onclick = mintMembresia;
+</script>

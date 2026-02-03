@@ -6,13 +6,25 @@ dotenvConfig();
 
 module.exports = {
   solidity: {
-    version: "0.8.29",
-    settings: {
-      optimizer: { enabled: true, runs: 200 },
-      evmVersion: "paris",
-      metadata: { bytecodeHash: "none" }
+  compilers: [
+    {
+      version: "0.8.22",
+      settings: {
+        optimizer: { enabled: true, runs: 200 },
+        evmVersion: "paris",
+        metadata: { bytecodeHash: "none" }
+      }
+    },
+    {
+      version: "0.8.29",
+      settings: {
+        optimizer: { enabled: true, runs: 200 },
+        evmVersion: "paris",
+        metadata: { bytecodeHash: "none" }
+      }
     }
-  },
+  ]
+},
 
   networks: {
     hardhat: { chainId: 1337 },
