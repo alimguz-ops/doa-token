@@ -75,7 +75,7 @@
 
   <!-- Botón de acceso a documentación NFT -->
   <div style="text-align:center; margin:12px 0;">
-    <a href="/docs/nft_gob_recp_memb.md" 
+    <a href="/nft_gob_recp_memb.md" 
       style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:13px; font-weight:bold;">
       📄 Ver ficha técnica NFT ↗
     </a>
@@ -111,7 +111,7 @@
   <!-- 👤 Fundador -->
   <h2>👤 Fundador</h2>
   <p style="text-align:center;">
-    <strong>Angel R. Linares (ALIMGUZ)</strong><br>
+    <strong>Angel R. Linares </strong><br>
     – Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
     – Sole founder, responsible for technical architecture, compliance, community, and operations.
   </p>
