@@ -17,23 +17,44 @@ Contrato ERC‑1155 en Polygon →
 
 <hr/>
 
-<!-- Botones de acción -->
-<div style="display:flex; gap:20px; margin:20px 0;">
-  <button id="btnGob" 
+<!-- NFT Gobernanza -->
+<div style="margin-bottom:40px;">
+  <h2>🗳 NFT #1 – Gobernanza</h2>
+  <img src="https://ipfs.io/ipfs/bafybeiglq3q2yaafdwpszrxp4ahhmtzhdwkyhsu2f7fviqvlddrjwql3ii" alt="NFT Gobernanza" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/1.json" target="_blank">1.json ↗</a></p>
+  <p>Privilegios de voto en la DAO</p>
+  <button id="btnGob"
     style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
     Añadir liquidez → Mint Gobernanza
   </button>
+</div>
 
-  <button id="btnRec" 
+<!-- NFT Recompensas -->
+<div style="margin-bottom:40px;">
+  <h2>🎁 NFT #2 – Recompensas</h2>
+  <img src="https://ipfs.io/ipfs/bafybeiawzgpzdrgp4fglskpoblgf2ull4ymidtgda4safn5gx2dmnp2oti" alt="NFT Recompensas" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/2.json" target="_blank">2.json ↗</a></p>
+  <p>Acceso a beneficios y distribución de recompensas</p>
+  <button id="btnRec"
     style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
     Reclamar → Mint Recompensas
   </button>
+</div>
 
-  <button id="btnMem" 
+<!-- NFT Membresía -->
+<div style="margin-bottom:40px;">
+  <h2>🎫 NFT #3 – Membresía</h2>
+  <img src="https://ipfs.io/ipfs/bafybeiao74vnq343aqrh56ku2vjjkpy5ddbidijvhhi2u66tkdinsnm6wymenbresia.png" alt="NFT Membresía" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/3.json" target="_blank">3.json ↗</a></p>
+  <p>Acceso exclusivo y beneficios de membresía</p>
+  <button id="btnMem"
     style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
     Unirse → Mint Membresía
   </button>
 </div>
+
+<!-- Toast container -->
+<div id="toast" style="position:fixed; top:20px; right:20px; background:#DAA520; color:#000; padding:15px 25px; border-radius:8px; font-weight:700; display:none; box-shadow:0 4px 8px rgba(0,0,0,0.3); z-index:9999;"></div>
 
 <hr/>
 
@@ -46,9 +67,16 @@ const ABI = [
   "function mintMembresia(address to) external"
 ];
 
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.style.display = "block";
+  setTimeout(() => { toast.style.display = "none"; }, 4000);
+}
+
 async function connectWallet() {
   if (!window.ethereum) {
-    alert("Necesitas MetaMask u otra wallet Web3 instalada.");
+    showToast("❌ Necesitas MetaMask u otra wallet Web3 instalada.");
     return null;
   }
   const provider = new ethers.BrowserProvider(window.ethereum);
@@ -57,30 +85,45 @@ async function connectWallet() {
 }
 
 async function mintGobernanza() {
-  const signer = await connectWallet();
-  if (!signer) return;
-  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-  const tx = await contract.mintGobernanza(await signer.getAddress());
-  await tx.wait();
-  alert("✅ NFT Gobernanza acuñado con éxito");
+  try {
+    const signer = await connectWallet();
+    if (!signer) return;
+    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+    showToast("⏳ Procesando transacción de Gobernanza...");
+    const tx = await contract.mintGobernanza(await signer.getAddress());
+    await tx.wait();
+    showToast("✅ NFT Gobernanza acuñado con éxito");
+  } catch (err) {
+    showToast("❌ Error al acuñar Gobernanza");
+  }
 }
 
 async function mintRecompensas() {
-  const signer = await connectWallet();
-  if (!signer) return;
-  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-  const tx = await contract.mintRecompensas(await signer.getAddress(), 1);
-  await tx.wait();
-  alert("✅ NFT Recompensas acuñado con éxito");
+  try {
+    const signer = await connectWallet();
+    if (!signer) return;
+    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+    showToast("⏳ Procesando transacción de Recompensas...");
+    const tx = await contract.mintRecompensas(await signer.getAddress(), 1);
+    await tx.wait();
+    showToast("✅ NFT Recompensas acuñado con éxito");
+  } catch (err) {
+    showToast("❌ Error al acuñar Recompensas");
+  }
 }
 
 async function mintMembresia() {
-  const signer = await connectWallet();
-  if (!signer) return;
-  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-  const tx = await contract.mintMembresia(await signer.getAddress());
-  await tx.wait();
-  alert("✅ NFT Membresía acuñado con éxito");
+  try {
+    const signer = await connectWallet();
+    if (!signer) return;
+    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+    showToast("⏳ Procesando transacción de Membresía...");
+    const tx = await contract.mintMembresia(await signer.getAddress());
+    await tx.wait();
+    showToast("✅ NFT Membresía acuñado con éxito");
+  } catch (err) {
+    showToast("❌ Error al acuñar Membresía");
+  }
 }
 
 document.getElementById("btnGob").onclick = mintGobernanza;
