@@ -44,7 +44,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT Membresía -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #3 – Membresía</h2>
-  <img src="https://ipfs.io/ipfs/bafybeiao74vnq343aqrh56ku2vjjkpy5ddbidijvhhi2u66tkdinsnm6wymenbresia.png" alt="NFT Membresía" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="https://ipfs.io/ipfs/bafybeiao74vnq343aqrh56ku2vjjkpy5ddbidijvhhi2u66tkdinsnm6wy" menbresia.png alt="NFT Membresía" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/3.json" target="_blank">3.json ↗</a></p>
   <p>Acceso exclusivo y beneficios de membresía</p>
   <button id="btnMem"
@@ -85,45 +85,49 @@ async function connectWallet() {
 }
 
 async function mintGobernanza() {
-  try {
-    const signer = await connectWallet();
-    if (!signer) return;
-    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-    showToast("⏳ Procesando transacción de Gobernanza...");
-    const tx = await contract.mintGobernanza(await signer.getAddress());
-    await tx.wait();
-    showToast("✅ NFT Gobernanza acuñado con éxito");
-  } catch (err) {
-    showToast("❌ Error al acuñar Gobernanza");
-  }
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 1, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Gobernanza acuñado con éxito");
 }
 
 async function mintRecompensas() {
-  try {
-    const signer = await connectWallet();
-    if (!signer) return;
-    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-    showToast("⏳ Procesando transacción de Recompensas...");
-    const tx = await contract.mintRecompensas(await signer.getAddress(), 1);
-    await tx.wait();
-    showToast("✅ NFT Recompensas acuñado con éxito");
-  } catch (err) {
-    showToast("❌ Error al acuñar Recompensas");
-  }
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 2, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Recompensas acuñado con éxito");
 }
 
 async function mintMembresia() {
-  try {
-    const signer = await connectWallet();
-    if (!signer) return;
-    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
-    showToast("⏳ Procesando transacción de Membresía...");
-    const tx = await contract.mintMembresia(await signer.getAddress());
-    await tx.wait();
-    showToast("✅ NFT Membresía acuñado con éxito");
-  } catch (err) {
-    showToast("❌ Error al acuñar Membresía");
-  }
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 3, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Membresía acuñado con éxito");
+}
+async function mintGobernanza() {
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 1, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Gobernanza acuñado con éxito");
+}
+async function mintRecompensas() {
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 2, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Recompensas acuñado con éxito");
+}
+
+async function mintMembresia() {
+  const signer = await connectWallet();
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+  const tx = await contract.mint(await signer.getAddress(), 3, 1, "0x");
+  await tx.wait();
+  showToast("✅ NFT Membresía acuñado con éxito");
 }
 
 document.getElementById("btnGob").onclick = mintGobernanza;
