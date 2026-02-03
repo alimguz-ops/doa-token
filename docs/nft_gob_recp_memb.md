@@ -1,7 +1,7 @@
 ---
 layout: default
 title: NFTs DOA V2
-permalink: /docs/nft_gob_recp_memb.md
+permalink: /docs/nft_gob_recp_memb.html
 ---
 
 # 🖼 NFTs Oficiales DOA Token V2
