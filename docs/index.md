@@ -116,16 +116,46 @@
   </p>
 
   <!-- Pie de página institucional -->
-  <footer style="margin-top:30px; padding:20px; background:#000; text-align:center; border-top:2px solid #DAA520;">
-    <div style="font-size:13px; font-weight:bold; margin:8px 0;">
-      SSL activo · Repositorio público · Auditoría en curso · Política de privacidad
+<footer style="margin-top:40px; padding:25px; background:#111; text-align:center; border-top:2px solid #DAA520; color:#eee; font-family:'Segoe UI', Arial, sans-serif;">
+  
+  <!-- Línea de certificaciones -->
+  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px; margin-bottom:20px;">
+    <div style="text-align:center;">
+      <img src="/assets/icons/ssl.png" alt="SSL" style="height:26px; margin-bottom:6px;"/>
+      <div style="font-size:13px; font-weight:600;">Certificado SSL</div>
+      <div style="font-size:12px; color:#DAA520;">Activo y verificado</div>
     </div>
-    <div style="font-size:15px; font-weight:bold; margin:8px 0; color:#DAA520;">
-      Última actualización: Enero 2026
+    <div style="text-align:center;">
+      <img src="/assets/icons/github.png" alt="Repositorio" style="height:26px; margin-bottom:6px;"/>
+      <div style="font-size:13px; font-weight:600;">Repositorio Público</div>
+      <a href="https://github.com/doatoken" target="_blank" style="font-size:12px; color:#DAA520; text-decoration:none;">GitHub ↗</a>
     </div>
-  </footer>
+    <div style="text-align:center;">
+      <img src="/assets/icons/audit.png" alt="Auditoría" style="height:26px; margin-bottom:6px;"/>
+      <div style="font-size:13px; font-weight:600;">Auditoría</div>
+      <div style="font-size:12px; color:#DAA520;">En curso con firma externa</div>
+    </div>
+    <div style="text-align:center;">
+      <img src="/assets/icons/privacy.png" alt="Privacidad" style="height:26px; margin-bottom:6px;"/>
+      <div style="font-size:13px; font-weight:600;">Política de Privacidad</div>
+      <a href="/privacidad.html" style="font-size:12px; color:#DAA520; text-decoration:none;">Ver documento ↗</a>
+    </div>
+  </div>
+
+  <!-- Línea de actualización -->
+  <div style="font-size:13px; font-weight:600; margin-top:10px; color:#DAA520;">
+    Última actualización: Febrero 2026
+  </div>
+
+  <!-- Correo institucional -->
+  <div style="font-size:13px; margin-top:15px;">
+    📧 Contacto institucional: 
+    <a href="mailto:info@doatoken.org" style="color:#DAA520; text-decoration:none;">info@doatoken.org</a>
+  </div>
+</footer>
 
   <!-- Scripts adicionales (PopAds) -->
+se puede saber es la cantida 
   <!-- ⚠️ Este bloque es opcional. Si no quieres anuncios emergentes, elimínalo -->
   <script type="text/javascript" data-cfasync="false">
   (function(){
