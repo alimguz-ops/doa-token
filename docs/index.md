@@ -21,25 +21,17 @@
   <!-- Ethers.js -->
   <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
 </head>
-<body style="background:#111; color:#fff; font-family:Arial, sans-serif;">
-
-  <!-- Encabezado institucional -->
-  <div style="text-align:center; font-size:13px; font-weight:bold; margin:8px 0;">
-    SSL activo · Repositorio público · Auditoría en curso · Política de privacidad
-  </div>
-  <div style="text-align:center; font-size:15px; font-weight:bold; margin:8px 0;">
-    Última actualización: Enero 2026
-  </div>
+<body style="background:#111; color:#fff; font-family:Arial, sans-serif; margin:0;">
 
   <!-- Título -->
-  <h1 style="text-align:center;">🪙 DOA Token V2</h1>
+  <h1 style="text-align:center; margin-top:20px;">🪙 DOA Token V2</h1>
   <p style="text-align:center; font-weight:bold;">Verified • Transparent • Community Driven</p>
   <p style="text-align:center;">Bienvenido al sitio oficial del proyecto.</p>
 
   <!-- Idiomas -->
-  <div style="text-align:center; margin:8px 0;">
-    <a href="/es/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px;">Español</a>
-    <a href="/en/" style="background:#000; color:#DAA520; padding:2px 6px; border-radius:4px; text-decoration:none; font-size:12px; margin-left:8px;">English</a>
+  <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <a href="/es/" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:bold;">Español</a>
+    <a href="/en/" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:bold;">English</a>
   </div>
 
   <!-- Bloque de confianza -->
@@ -71,13 +63,6 @@
     <li>Polygon Proxy → <a href="https://polygonscan.com/address/0xD6426Da6D01233Efe48dab6aD96cf3238f02c305" target="_blank">0xD6426Da6D01233Efe48dab6aD96cf3238f02c305</a></li>
   </ul>
 
-  <!-- Liquidez -->
-  <h2>💱 Pares de Liquidez</h2>
-  <ul>
-    <li>QuickSwap (Polygon) → <a href="https://quickswap.exchange/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" target="_blank">Ver par ↗</a></li>
-    <li>Uniswap (Polygon) → <a href="https://app.uniswap.org/#/swap?inputCurrency=0x692d951163df3f7D9Fe071413F92c319D9B7369E" target="_blank">Ver par ↗</a></li>
-  </ul>
-
   <!-- NFT -->
   <h2>🖼 NFT Oficial</h2>
   <p>
@@ -90,8 +75,8 @@
 
   <!-- Botón de acceso a documentación NFT -->
   <div style="text-align:center; margin:12px 0;">
-    <a href="{{ site.baseurl }}/docs/nft_gob_recp_memb.md" 
-      style="background:#000; color:#DAA520; padding:6px 12px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:bold;">
+    <a href="/docs/nft_gob_recp_memb.md" 
+      style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:13px; font-weight:bold;">
       📄 Ver ficha técnica NFT ↗
     </a>
   </div>
@@ -112,20 +97,40 @@
 
   <!-- 🌐 Comunidad -->
   <h2>🌐 Comunidad</h2>
-  <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:6px; flex-wrap:wrap;">
-    <a href="https://discord.gg/TCXB69cm" target="_blank">Discord ↗</a>
-    <a href="https://x.com/DoaV270493" target="_blank">Twitter/X ↗</a>
-    <a href="https://t.me/DoaTokenV2" target="_blank">Telegram ↗</a>
-    <a href="https://github.com/alimguz-ops/doa-token" target="_blank">GitHub ↗</a>
-  </div
+  <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <a href="https://discord.gg/TCXB69cm" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">💬 Discord</a>
+    <a href="https://x.com/DoaV270493" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">🐦 Twitter/X</a>
+    <a href="https://
+
+  <!-- 🌐 Comunidad -->
+  <h2>🌐 Comunidad</h2>
+  <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <a href="https://discord.gg/TCXB69cm" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">💬 Discord</a>
+    <a href="https://x.com/DoaV270493" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">🐦 Twitter/X</a>
+    <a href="https://t.me/DoaTokenV2" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">📱 Telegram</a>
+    <a href="https://github.com/alimguz-ops/doa-token" target="_blank" style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:bold;">💻 GitHub</a>
+  </div>
 
   <!-- 👤 Fundador -->
   <h2>👤 Fundador</h2>
-  <p><strong>Angel R. Linares (ALIMGUZ)</strong><br>
-  – Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
-  – Sole founder, responsible for technical architecture, compliance, community, and operations.</p>
+  <p style="text-align:center;">
+    <strong>Angel R. Linares (ALIMGUZ)</strong><br>
+    – Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
+    – Sole founder, responsible for technical architecture, compliance, community, and operations.
+  </p>
+
+  <!-- Pie de página institucional -->
+  <footer style="margin-top:30px; padding:20px; background:#000; text-align:center; border-top:2px solid #DAA520;">
+    <div style="font-size:13px; font-weight:bold; margin:8px 0;">
+      SSL activo · Repositorio público · Auditoría en curso · Política de privacidad
+    </div>
+    <div style="font-size:15px; font-weight:bold; margin:8px 0; color:#DAA520;">
+      Última actualización: Enero 2026
+    </div>
+  </footer>
 
   <!-- Scripts adicionales (PopAds) -->
+  <!-- ⚠️ Este bloque es opcional. Si no quieres anuncios emergentes, elimínalo -->
   <script type="text/javascript" data-cfasync="false">
   (function(){
     var e = window,
@@ -162,7 +167,7 @@
       polygon: {
         registro: "0x692d951163df3f7D9Fe071413F92c319D9B7369E", // Contrato DOA en Polygon
         proxy:    "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305", // Proxy en Polygon
-        nft:      "0x93f8256de602703Af0b7Ecc3f0C2Dd4cbAe57B65"  // NFT oficial en Polygon
+        nft:      "0xc497377bDFA6e651A4f9E5C44531c9D034a13523"  // NFT oficial en Polygon
       },
       ethereum: {
         registro: "0x6F52809EfdDF5826956EeF9C289A661624afb0cE", // Contrato DOA en Ethereum
@@ -182,6 +187,11 @@
 
     async function connectWallet() {
       try {
+        if (!window.ethereum) {
+          alert("Necesitas MetaMask u otra wallet Web3 instalada.");
+          return;
+        }
+
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         await provider.send("eth_requestAccounts", []);
         const signer = provider.getSigner();
