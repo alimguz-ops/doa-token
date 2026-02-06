@@ -35,7 +35,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #1 Gobernanza -->
 <div style="margin-bottom:40px;">
   <h2>🗳 NFT #1 – Gobernanza</h2>
-  <img src="/images/gobernanza.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/gobernanza.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/1.json" target="_blank">1.json ↗</a></p>
   <p>Condición: Stake ≥ 1000 DOA por ≥ 180 días</p>
   <button id="btnGob" class="btn-doa">Reclamar NFT Gobernanza</button>
@@ -45,7 +45,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #2 Recompensas -->
 <div style="margin-bottom:40px;">
   <h2>🎁 NFT #2 – Recompensas</h2>
-  <img src="https://ipfs.io/ipfs/bafybeif245g6nz4bkmvae5w23pvuxpu5mq6b3qse53v3gu64samvco47nu/2.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/recompensas.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/2.json" target="_blank">2.json ↗</a></p>
   <p>Condición: Reclamar recompensas de fidelidad o staking</p>
   <button id="btnRec" class="btn-doa">Reclamar NFT Recompensas</button>
@@ -55,7 +55,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #3 Membresía Básica -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #3 – Membresía Básica</h2>
-  <img src="https://ipfs.io/ipfs/bafybeiab6ita7y6csmznctirqevezgorwd5qzv3gedlty5nltgplgpz5nu/3.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/membership.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/3.json" target="_blank">3.json ↗</a></p>
   <p>Condición: Stake ≥ 10 DOA por ≥ 30 días</p>
   <button id="btnMemBas" class="btn-doa">Reclamar Membresía Básica</button>
@@ -65,7 +65,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #4 Membresía Avanzada -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #4 – Membresía Avanzada</h2>
-  <img src="https://ipfs.io/ipfs/bafybeibtqchjrptpoj57bsivwjuq55mslyfy7xjyq5zgrkiamx3vhtla7m/4.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/avanzada_membership.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/4.json" target="_blank">4.json ↗</a></p>
   <p>Condición: Stake ≥ 100 DOA por ≥ 90 días</p>
   <button id="btnMemAdv" class="btn-doa">Reclamar Membresía Avanzada</button>
@@ -75,7 +75,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #5 Membresía Premium -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #5 – Membresía Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeifaxdwrstd7z6kih5iu3scbsdbsekdts7gi2zr6qpbhw4opeimqqe/5.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/premium membership.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/5.json" target="_blank">5.json ↗</a></p>
   <p>Condición: Stake ≥ 500 DOA por ≥ 180 días</p>
   <button id="btnMemPrem" class="btn-doa">Reclamar Membresía Premium</button>
@@ -85,7 +85,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #6 Gobernanza Premium -->
 <div style="margin-bottom:40px;">
   <h2>🗳 NFT #6 – Gobernanza Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeigh4uzi37o44i63aa336wxphc6pmx5rnvr32nt4zz42bomvfl3jyu/6.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/docs/images/governance_premium1.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/6.json" target="_blank">6.json ↗</a></p>
   <p>Condición: Stake ≥ 1000 DOA por ≥ 180 días + privilegios avanzados</p>
   <button id="btnGobPrem" class="btn-doa">Reclamar Gobernanza Premium</button>
@@ -95,7 +95,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #7 Membresía Premium Extra -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #7 – Membresía Premium Extra</h2>
-  <img src="https://ipfs.io/ipfs/bafybeiginxqgiz32cxua3cmug6a5nz5g6uus65mzm7kduicrh3ihix474y/7.png" 
+  <img src="/docs/images/premium membership.png" 
        alt="NFT Membresía Premium Extra" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -109,7 +109,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #8 Holder -->
 <div style="margin-bottom:40px;">
   <h2>🛡 NFT #8 – Holder</h2>
-  <img src="https://ipfs.io/ipfs/bafybeifiwmu3q5ye4dkuez37s3cwq47ovhekhqflv6buniqddcj6cpfwii/8.png" 
+  <img src="/docs/images/horlder.png" 
        alt="NFT Holder" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -123,7 +123,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #9 Trader Básico -->
 <div style="margin-bottom:40px;">
   <h2>📈 NFT #9 – Trader Básico</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicyn4ra37zwbapokxmstw5mkf72zclmv65px7uds4af2uzc4vdcxa/9.png" 
+  <img src="/docs/images/trader_basic.png" 
        alt="NFT Trader Básico" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -137,7 +137,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #10 Trader Avanzado -->
 <div style="margin-bottom:40px;">
   <h2>📈 NFT #10 – Trader Avanzado</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicvoh5zmb25tiz5j7ge6z34pjd5prd2snd2b5xkk53lens5hadwze/10.png" 
+  <img src="/docs/images/trader_avanzado.png" 
        alt="NFT Trader Avanzado" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -151,7 +151,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #11 Trader Premium -->
 <div style="margin-bottom:40px;">
   <h2>📈 NFT #11 – Trader Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeihjdxumjher2qlwmarocacvuc4kc55ew5xvb3amlc3cspxy66s3ji/11.png" 
+  <img src="/docs/images/trader_premium.png" 
        alt="NFT Trader Premium" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -165,7 +165,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #12 Trader Élite -->
 <div style="margin-bottom:40px;">
   <h2>📈 NFT #12 – Trader Élite</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicddbmmrlj5p6jsvgo7sewjuweebov7tafalprsxzdamwzilgzvb4/12.png" 
+  <img src="/docs/images/trader_elite1.png" 
        alt="NFT Trader Élite" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
@@ -179,7 +179,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #13 Influencer -->
 <div style="margin-bottom:40px;">
   <h2>📢 NFT #13 – Influencer</h2>
-  <img src="https://ipfs.io/ipfs/bafybeieuzthi3l5pa2x24nxueluotawirb77ouav5tvc63k53zqdfq5wdu/13.png" 
+  <img src="/docs/images/influencer.png" 
        alt="NFT Influencer" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
