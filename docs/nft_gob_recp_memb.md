@@ -45,7 +45,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #2 Recompensas -->
 <div style="margin-bottom:40px;">
   <h2>🎁 NFT #2 – Recompensas</h2>
-  <img src="/images/recompensas.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/images/rewards2.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/2.json" target="_blank">2.json ↗</a></p>
   <p>Condición: Reclamar recompensas de fidelidad o staking</p>
   <button id="btnRec" class="btn-doa">Reclamar NFT Recompensas</button>
@@ -75,7 +75,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #5 Membresía Premium -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #5 – Membresía Premium</h2>
-  <img src="/images/premium membership.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/images/membership premium.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/5.json" target="_blank">5.json ↗</a></p>
   <p>Condición: Stake ≥ 500 DOA por ≥ 180 días</p>
   <button id="btnMemPrem" class="btn-doa">Reclamar Membresía Premium</button>
@@ -95,7 +95,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #7 Membresía Premium Extra -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #7 – Membresía Premium Extra</h2>
-  <img src="/images/premium membership.png" 
+  <img src="/images/premium membership extra.png" 
        alt="NFT Membresía Premium Extra" width="250" 
        style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> 
