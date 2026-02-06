@@ -1,28 +1,28 @@
 {
-  "address": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
-  "updatedAt": "2026-01-31T09:02:59.637Z",
-  "DOA_V2": {
-    "proxy": "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305",
-    "implementation": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+  "DOA_V3_POLYGON": {
+    "proxy": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+    "implementation": "0xNEW_IMPL_POLYGON",
+    "admin": "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5",
+    "owner": "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
+    "network": "polygon",
+    "timestamp": "2026-02-06T00:20:00Z"
+  },
+  "DOA_V3_MAINNET": {
+    "proxy": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
+    "implementation": "0xNEW_IMPL_MAINNET",
     "admin": "0xf224bc9a97e0e605c0546f9ced88aaf2228cf6c5",
     "owner": "0x6377cd174b35f3630b6d0db695f175d5f0dc5541",
     "network": "mainnet",
-    "timestamp": "2026-01-24T02:54:56.855Z"
+    "timestamp": "2026-02-06T00:20:00Z"
   },
-  "DOA_V2_ETH": {
-    "proxy": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
-    "implementation": "0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411",
-    "proxyFlag": false,
-    "network": "mainnet",
-    "timestamp": "2026-01-27T04:11:00.140Z"
-  },
-  "DOA_V2_POLYGON": {
-    "proxy": "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305",
-    "implementation": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
-    "proxyFlag": false,
+  "NFT_DOAV2_POLYGON": {
+    "address": "0x5a875473573296a19dA49Bf9fB1B73845c80c2f8",
     "network": "polygon",
-    "timestamp": "2026-01-27T04:11:00.375Z"
+    "timestamp": "2026-02-06T04:31:15.287Z"
   },
-  "ethereum": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
-  "polygon": "0x692d951163df3f7D9Fe071413F92c319D9B7369E"
+  "AUTODISTRIBUTOR_POLYGON": {
+    "address": "0x71091e13F1b08c2380285bD0F341F198644f4480",
+    "network": "polygon",
+    "timestamp": "2026-02-06T04:43:41.168Z"
+  }
 }

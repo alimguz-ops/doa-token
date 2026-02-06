@@ -65,9 +65,9 @@
   <!-- NFT -->
   <h2>🖼 NFT Oficial</h2>
   <p>
-    NFT_DOA → 
-    <a href="https://polygonscan.com/address/0xc497377bDFA6e651A4f9E5C44531c9D034a13523" target="_blank">
-      0xc497377bDFA6e651A4f9E5C44531c9D034a13523 ↗
+    NFT_DOAV2 → 
+    <a href="https://polygonscan.com/address/0x5a875473573296a19dA49Bf9fB1B73845c80c2f8" target="_blank">
+      0x5a875473573296a19dA49Bf9fB1B73845c80c2f8 ↗
     </a>
   </p>
   <p>Relación: vinculado a liquidez y comunidad</p>

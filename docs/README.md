@@ -1,4 +1,3 @@
-
 # 🪙 DOA Token V2
 
 **ES:** Documentación oficial, contratos verificados y comunidad del proyecto **DOA Token V2**.  
@@ -50,6 +49,39 @@ Includes:
 
 > 🚀 **ES:** La comunidad recibe **recompensas automáticas** por añadir liquidez y participar en votaciones.  
 > 🚀 **EN:** The community receives **automatic rewards** for adding liquidity and participating in voting.  
+
+---
+
+## 🎨 NFTs Oficiales / Official NFTs
+
+**ES:** El ecosistema DOA Token V2 incluye un catálogo completo de **NFTs ERC‑1155 en Polygon**, vinculados a liquidez, comunidad y gobernanza DAO.  
+Cada NFT tiene condiciones específicas para ser reclamado automáticamente mediante el contrato **AutoDistributor**.  
+
+**EN:** The DOA Token V2 ecosystem includes a full catalog of **ERC‑1155 NFTs on Polygon**, linked to liquidity, community, and DAO governance.  
+Each NFT has specific conditions to be claimed automatically through the **AutoDistributor** contract.  
+
+👉 Página oficial de NFTs:  
+[https://alimguz-ops.github.io/doa-token/nft_gob_recp_memb.html](https://alimguz-ops.github.io/doa-token/nft_gob_recp_memb.html)  
+
+---
+
+## 📊 Catálogo de NFTs DOA V2
+
+| ID | NFT | Condición / Condition | Metadata URI |
+|----|-----|-----------------------|--------------|
+| 1  | 🗳 Gobernanza | Stake ≥ 1000 DOA por ≥ 180 días | [1.json](https://doatoken.org/docs/metadata/1.json) |
+| 2  | 🎁 Recompensas | Reclamar recompensas de fidelidad o staking | [2.json](https://doatoken.org/docs/metadata/2.json) |
+| 3  | 🎫 Membresía Básica | Stake ≥ 10 DOA por ≥ 30 días | [3.json](https://doatoken.org/docs/metadata/3.json) |
+| 4  | 🎫 Membresía Avanzada | Stake ≥ 100 DOA por ≥ 90 días | [4.json](https://doatoken.org/docs/metadata/4.json) |
+| 5  | 🎫 Membresía Premium | Stake ≥ 500 DOA por ≥ 180 días | [5.json](https://doatoken.org/docs/metadata/5.json) |
+| 6  | 🗳 Gobernanza Premium | Stake ≥ 1000 DOA por ≥ 180 días + privilegios avanzados | [6.json](https://doatoken.org/docs/metadata/6.json) |
+| 7  | 🎫 Membresía Premium Extra | Stake prolongado con beneficios adicionales | [7.json](https://doatoken.org/docs/metadata/7.json) |
+| 8  | 🛡 Holder | Poseer ≥ 5 DOA y registrarse como Holder | [8.json](https://doatoken.org/docs/metadata/8.json) |
+| 9  | 📈 Trader Básico | Volumen de trading ≥ 100 DOA | [9.json](https://doatoken.org/docs/metadata/9.json) |
+| 10 | 📢 Influencer | Poseer ≥ 5 DOA y registrarse como Influencer | [10.json](https://doatoken.org/docs/metadata/10.json) |
+| 11 | 📈 Trader Avanzado | Volumen de trading ≥ 1000 DOA | [11.json](https://doatoken.org/docs/metadata/11.json) |
+| 12 | 📈 Trader Premium | Volumen de trading ≥ 10,000 DOA | [12.json](https://doatoken.org/docs/metadata/12.json) |
+| 13 | 📈 Trader Élite | Volumen de trading ≥ 50,000 DOA | [13.json](https://doatoken.org/docs/metadata/13.json) |
 
 ---
 
