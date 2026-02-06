@@ -55,7 +55,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #3 Membresía Básica -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #3 – Membresía Básica</h2>
-  <img src="/images/membership.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/images/membresia basica.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/3.json" target="_blank">3.json ↗</a></p>
   <p>Condición: Stake ≥ 10 DOA por ≥ 30 días</p>
   <button id="btnMemBas" class="btn-doa">Reclamar Membresía Básica</button>
