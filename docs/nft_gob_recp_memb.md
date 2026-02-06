@@ -35,7 +35,7 @@ Contrato ERC‑1155 en Polygon →
 <!-- NFT #1 Gobernanza -->
 <div style="margin-bottom:40px;">
   <h2>🗳 NFT #1 – Gobernanza</h2>
-  <img src="https://ipfs.io/ipfs/bafybeiglq3q2yaafdwpszrxp4ahhmtzhdwkyhsu2f7fviqvlddrjwql3ii/1.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <img src="/images/gobernanza.png" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
   <p><strong>Metadata:</strong> <a href="https://ipfs.io/ipfs/bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/1.json" target="_blank">1.json ↗</a></p>
   <p>Condición: Stake ≥ 1000 DOA por ≥ 180 días</p>
   <button id="btnGob" class="btn-doa">Reclamar NFT Gobernanza</button>
