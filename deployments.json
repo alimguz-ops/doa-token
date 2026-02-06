@@ -16,13 +16,13 @@
     "timestamp": "2026-02-06T00:20:00Z"
   },
   "NFT_DOAV2_POLYGON": {
-    "address": "0x5a875473573296a19dA49Bf9fB1B73845c80c2f8",
+    "address": "0x9D8f14B92B980e05d347a02c9597d7D653d84687",
     "network": "polygon",
-    "timestamp": "2026-02-06T04:31:15.287Z"
+    "timestamp": "2026-02-06T09:18:33.707Z"
   },
   "AUTODISTRIBUTOR_POLYGON": {
-    "address": "0x71091e13F1b08c2380285bD0F341F198644f4480",
+    "address": "0x2EB7Fe8451Abeeaa9C05e0C5676282Abaf0a9419",
     "network": "polygon",
-    "timestamp": "2026-02-06T04:43:41.168Z"
+    "timestamp": "2026-02-06T09:23:28.754Z"
   }
 }
