@@ -1,15 +1,15 @@
 ---
 layout: default
-title: NFTs DOA V2
-permalink: /nft_doa_v2.html
+title: Ver ficha técnica NFT
+permalink: /nft_gob_recp_memb.html
 ---
 
 <h1>🖼 NFTs Oficiales DOA Token V2</h1>
 
 <p>
 Contrato ERC‑1155 en Polygon →  
-<a href="https://polygonscan.com/address/0xb6E66163e31a27eb92f67ff9AED8f6a5CCf1E074#code" target="_blank">
-0xb6E66163e31a27eb92f67ff9AED8f6a5CCf1E074 ↗
+<a href="https://polygonscan.com/address/0x9D8f14B92B980e05d347a02c9597d7D653d84687#code" target="_blank">
+0x9D8f14B92B980e05d347a02c9597d7D653d84687 ↗
 </a>
 </p>
 
