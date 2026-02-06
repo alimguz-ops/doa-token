@@ -17,270 +17,147 @@ Contrato ERC‑1155 en Polygon →
 
 <hr/>
 
-<!-- NFT Gobernanza -->
+<!-- NFT #1 Gobernanza -->
 <div style="margin-bottom:40px;">
   <h2>🗳 NFT #1 – Gobernanza</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/1.png" 
+  <img src="https://ipfs.io/ipfs/bafybeiglq3q2yaafdwpszrxp4ahhmtzhdwkyhsu2f7fviqvlddrjwql3ii/1.png" 
        alt="NFT Gobernanza" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/1.json" target="_blank">1.json ↗</a></p>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/1.json" target="_blank">1.json ↗</a>
+  </p>
   <p>Condición: Stake ≥ 1000 DOA por ≥ 180 días</p>
-  <button id="btnGob"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Añadir liquidez → Mint Gobernanza
-  </button>
-  <p>Balance: <span id="balGob">-</span> / 1</p>
 </div>
 
-<!-- NFT Gobernanza Premium -->
+<!-- NFT #2 Recompensas -->
+<div style="margin-bottom:40px;">
+  <h2>🎁 NFT #2 – Recompensas</h2>
+  <img src="https://ipfs.io/ipfs/bafybeif245g6nz4bkmvae5w23pvuxpu5mq6b3qse53v3gu64samvco47nu/2.png" 
+       alt="NFT Recompensas" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/2.json" target="_blank">2.json ↗</a>
+  </p>
+  <p>Condición: Reclamar recompensas de fidelidad o staking</p>
+</div>
+
+<!-- NFT #3 Membresía Básica -->
+<div style="margin-bottom:40px;">
+  <h2>🎫 NFT #3 – Membresía Básica</h2>
+  <img src="https://ipfs.io/ipfs/bafybeiab6ita7y6csmznctirqevezgorwd5qzv3gedlty5nltgplgpz5nu/3.png" 
+       alt="NFT Membresía Básica" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/3.json" target="_blank">3.json ↗</a>
+  </p>
+  <p>Condición: Stake ≥ 10 DOA por ≥ 30 días</p>
+</div>
+
+<!-- NFT #4 Membresía Avanzada -->
+<div style="margin-bottom:40px;">
+  <h2>🎫 NFT #4 – Membresía Avanzada</h2>
+  <img src="https://ipfs.io/ipfs/bafybeibtqchjrptpoj57bsivwjuq55mslyfy7xjyq5zgrkiamx3vhtla7m/4.png" 
+       alt="NFT Membresía Avanzada" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/4.json" target="_blank">4.json ↗</a>
+  </p>
+  <p>Condición: Stake ≥ 100 DOA por ≥ 90 días</p>
+</div>
+
+<!-- NFT #5 Membresía Premium -->
+<div style="margin-bottom:40px;">
+  <h2>🎫 NFT #5 – Membresía Premium</h2>
+  <img src="https://ipfs.io/ipfs/bafybeifaxdwrstd7z6kih5iu3scbsdbsekdts7gi2zr6qpbhw4opeimqqe/5.png" 
+       alt="NFT Membresía Premium" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/5.json" target="_blank">5.json ↗</a>
+  </p>
+  <p>Condición: Stake ≥ 500 DOA por ≥ 180 días</p>
+</div>
+
+<!-- NFT #6 Gobernanza Premium -->
 <div style="margin-bottom:40px;">
   <h2>🗳 NFT #6 – Gobernanza Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/6.png" 
+  <img src="https://ipfs.io/ipfs/bafybeigh4uzi37o44i63aa336wxphc6pmx5rnvr32nt4zz42bomvfl3jyu/6.png" 
        alt="NFT Gobernanza Premium" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/6.json" target="_blank">6.json ↗</a></p>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/6.json" target="_blank">6.json ↗</a>
+  </p>
   <p>Condición: Stake ≥ 1000 DOA por ≥ 180 días + privilegios avanzados</p>
-  <button id="btnGobPrem"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:260px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Gobernanza Premium
-  </button>
-  <p>Balance: <span id="balGobPrem">-</span> / 1</p>
 </div>
 
-<!-- NFT Recompensas -->
-<div style="margin-bottom:40px;">
-  <h2>🎁 NFT #2 – Recompensas</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/2.png" 
-       alt="NFT Recompensas" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/2.json" target="_blank">2.json ↗</a></p>
-  <p>Condición: Reclamar recompensas de fidelidad o staking</p>
-  <button id="btnRec"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Recompensas
-  </button>
-  <p>Balance: <span id="balRec">-</span></p>
-</div>
-
-<!-- NFT Holder -->
-<div style="margin-bottom:40px;">
-  <h2>🛡 NFT #8 – Holder</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/8.png" 
-       alt="NFT Holder" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/8.json" target="_blank">8.json ↗</a></p>
-  <p>Condición: Poseer ≥ 5 DOA y registrarse como Holder</p>
-  <button id="btnHolder"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Registrar → Mint Holder
-  </button>
-  <p>Balance: <span id="balHolder">-</span> / 1</p>
-</div>
-
-<!-- NFT Recompensas -->
-<div style="margin-bottom:40px;">
-  <h2>🎁 NFT #2 – Recompensas</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/2.png" 
-       alt="NFT Recompensas" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/2.json" target="_blank">2.json ↗</a></p>
-  <p>Condición: Reclamar recompensas de fidelidad o staking</p>
-  <button id="btnRec"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Recompensas
-  </button>
-  <p>Balance: <span id="balRec">-</span></p>
-</div>
-
-<!-- NFT Holder -->
-<div style="margin-bottom:40px;">
-  <h2>🛡 NFT #8 – Holder</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/8.png" 
-       alt="NFT Holder" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/8.json" target="_blank">8.json ↗</a></p>
-  <p>Condición: Poseer ≥ 5 DOA y registrarse como Holder</p>
-  <button id="btnHolder"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Registrar → Mint Holder
-  </button>
-  <p>Balance: <span id="balHolder">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Básica -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #3 – Membresía Básica</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/3.png" 
-       alt="NFT Membresía Básica" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/3.json" target="_blank">3.json ↗</a></p>
-  <p>Condición: Stake ≥ 10 DOA por ≥ 30 días</p>
-  <button id="btnMemBas"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Unirse → Mint Membresía Básica
-  </button>
-  <p>Balance: <span id="balMemBas">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Avanzada -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #4 – Membresía Avanzada</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/4.png" 
-       alt="NFT Membresía Avanzada" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/4.json" target="_blank">4.json ↗</a></p>
-  <p>Condición: Stake ≥ 100 DOA por ≥ 90 días</p>
-  <button id="btnMemAdv"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Avanzada
-  </button>
-  <p>Balance: <span id="balMemAdv">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Premium -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #5 – Membresía Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/5.png" 
-       alt="NFT Membresía Premium" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/5.json" target="_blank">5.json ↗</a></p>
-  <p>Condición: Stake ≥ 500 DOA por ≥ 180 días</p>
-  <button id="btnMemPrem"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Premium
-  </button>
-  <p>Balance: <span id="balMemPrem">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Premium Extra -->
+<!-- NFT #7 Membresía Premium Extra -->
 <div style="margin-bottom:40px;">
   <h2>🎫 NFT #7 – Membresía Premium Extra</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/7.png" 
+  <img src="https://ipfs.io/ipfs/bafybeiginxqgiz32cxua3cmug6a5nz5g6uus65mzm7kduicrh3ihix474y/7.png" 
        alt="NFT Membresía Premium Extra" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/7.json" target="_blank">7.json ↗</a></p>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/7.json" target="_blank">7.json ↗</a>
+  </p>
   <p>Condición: Stake prolongado con beneficios adicionales</p>
-  <button id="btnMemExtra"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:260px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Extra
-  </button>
-  <p>Balance: <span id="balMemExtra">-</span> / 1</p>
 </div>
 
-<!-- NFT Membresía Básica -->
+<!-- NFT #8 Holder -->
 <div style="margin-bottom:40px;">
-  <h2>🎫 NFT #3 – Membresía Básica</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/3.png" 
-       alt="NFT Membresía Básica" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/3.json" target="_blank">3.json ↗</a></p>
-  <p>Condición: Stake ≥ 10 DOA por ≥ 30 días</p>
-  <button id="btnMemBas"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Unirse → Mint Membresía Básica
-  </button>
-  <p>Balance: <span id="balMemBas">-</span> / 1</p>
+  <h2>🛡 NFT #8 – Holder</h2>
+  <img src="https://ipfs.io/ipfs/bafybeifiwmu3q5ye4dkuez37s3cwq47ovhekhqflv6buniqddcj6cpfwii/8.png" 
+       alt="NFT Holder" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/8.json" target="_blank">8.json ↗</a>
+  </p>
+  <p>Condición: Poseer ≥ 5 DOA y registrarse como Holder</p>
 </div>
 
-<!-- NFT Membresía Avanzada -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #4 – Membresía Avanzada</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/4.png" 
-       alt="NFT Membresía Avanzada" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/4.json" target="_blank">4.json ↗</a></p>
-  <p>Condición: Stake ≥ 100 DOA por ≥ 90 días</p>
-  <button id="btnMemAdv"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Avanzada
-  </button>
-  <p>Balance: <span id="balMemAdv">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Premium -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #5 – Membresía Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/5.png" 
-       alt="NFT Membresía Premium" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/5.json" target="_blank">5.json ↗</a></p>
-  <p>Condición: Stake ≥ 500 DOA por ≥ 180 días</p>
-  <button id="btnMemPrem"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Premium
-  </button>
-  <p>Balance: <span id="balMemPrem">-</span> / 1</p>
-</div>
-
-<!-- NFT Membresía Premium Extra -->
-<div style="margin-bottom:40px;">
-  <h2>🎫 NFT #7 – Membresía Premium Extra</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/7.png" 
-       alt="NFT Membresía Premium Extra" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/7.json" target="_blank">7.json ↗</a></p>
-  <p>Condición: Stake prolongado con beneficios adicionales</p>
-  <button id="btnMemExtra"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:260px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Membresía Extra
-  </button>
-  <p>Balance: <span id="balMemExtra">-</span> / 1</p>
-</div>
-
-<!-- NFT Trader Básico -->
+<!-- NFT #9 Trader Básico -->
 <div style="margin-bottom:40px;">
   <h2>📈 NFT #9 – Trader Básico</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/9.png" 
+  <img src="https://ipfs.io/ipfs/bafybeicyn4ra37zwbapokxmstw5mkf72zclmv65px7uds4af2uzc4vdcxa/9.png" 
        alt="NFT Trader Básico" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/9.json" target="_blank">9.json ↗</a></p>
+  <p><strong>Metadata:</strong> 
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/9.json" target="_blank">9.json ↗</a>
+  </p>
   <p>Condición: Volumen de trading ≥ 100 DOA</p>
-  <button id="btnTraderBas"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Trader Básico
-  </button>
-  <p>Balance: <span id="balTraderBas">-</span> / 1</p>
 </div>
 
-<!-- NFT Trader Avanzado -->
+<!-- NFT #10 Trader Avanzado -->
 <div style="margin-bottom:40px;">
-  <h2>📈 NFT #11 – Trader Avanzado</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/11.png" 
+  <h2>📈 NFT #10 – Trader Avanzado</h2>
+  <img src="https://ipfs.io/ipfs/bafybeicvoh5zmb25tiz5j7ge6z34pjd5prd2snd2b5xkk53lens5hadwze/10.png" 
        alt="NFT Trader Avanzado" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/11.json" target="_blank">11.json ↗</a></p>
+  <p><strong>Metadata:</strong>
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/10.json" target="_blank">10.json ↗</a>
+  </p>
   <p>Condición: Volumen de trading ≥ 1000 DOA</p>
-  <button id="btnTraderAdv"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Trader Avanzado
-  </button>
-  <p>Balance: <span id="balTraderAdv">-</span> / 1</p>
 </div>
 
-<!-- NFT Trader Premium -->
+<!-- NFT #11 Trader Premium -->
 <div style="margin-bottom:40px;">
-  <h2>📈 NFT #12 – Trader Premium</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/12.png" 
+  <h2>📈 NFT #11 – Trader Premium</h2>
+  <img src="https://ipfs.io/ipfs/bafybeihjdxumjher2qlwmarocacvuc4kc55ew5xvb3amlc3cspxy66s3ji/11.png" 
        alt="NFT Trader Premium" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/12.json" target="_blank">12.json ↗</a></p>
+  <p><strong>Metadata:</strong>
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/11.json" target="_blank">11.json ↗</a>
+  </p>
   <p>Condición: Volumen de trading ≥ 10,000 DOA</p>
-  <button id="btnTraderPrem"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Trader Premium
-  </button>
-  <p>Balance: <span id="balTraderPrem">-</span> / 1</p>
 </div>
 
-<!-- NFT Trader Élite -->
+<!-- NFT #12 Trader Élite -->
 <div style="margin-bottom:40px;">
-  <h2>📈 NFT #13 – Trader Élite</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/13.png" 
+  <h2>📈 NFT #12 – Trader Élite</h2>
+  <img src="https://ipfs.io/ipfs/bafybeicddbmmrlj5p6jsvgo7sewjuweebov7tafalprsxzdamwzilgzvb4/12.png" 
        alt="NFT Trader Élite" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/13.json" target="_blank">13.json ↗</a></p>
+  <p><strong>Metadata:</strong>
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/12.json" target="_blank">12.json ↗</a>
+  </p>
   <p>Condición: Volumen de trading ≥ 50,000 DOA</p>
-  <button id="btnTraderElite"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:240px; height:60px; border:none; cursor:pointer;">
-    Reclamar → Mint Trader Élite
-  </button>
-  <p>Balance: <span id="balTraderElite">-</span> / 1</p>
 </div>
 
-<!-- NFT Influencer -->
+<!-- NFT #13 Influencer -->
 <div style="margin-bottom:40px;">
-  <h2>📢 NFT #10 – Influencer</h2>
-  <img src="https://ipfs.io/ipfs/bafybeicebcsammtb4lookxhzkkozctkzz7bq3fq657jp2cgc4cuuksyajy/10.png" 
+  <h2>📢 NFT #13 – Influencer</h2>
+  <img src="https://ipfs.io/ipfs/bafybeieuzthi3l5pa2x24nxueluotawirb77ouav5tvc63k53zqdfq5wdu/13.png" 
        alt="NFT Influencer" width="250" style="border:2px solid #DAA520; border-radius:8px;"/>
-  <p><strong>Metadata:</strong> <a href="https://doatoken.org/docs/metadata/10.json" target="_blank">10.json ↗</a></p>
+  <p><strong>Metadata:</strong>
+     <a href="ipfs://bafybeicaikipsbmqceez7n2dgi4gjogpz4hjdfbjwauuthmw33q7vd5zui/13.json" target="_blank">13.json ↗</a>
+  </p>
   <p>Condición: Poseer ≥ 5 DOA y registrarse como Influencer</p>
-  <button id="btnInf"
-    style="background:#000; color:#DAA520; padding:12px 24px; border-radius:8px; font-weight:700; width:220px; height:60px; border:none; cursor:pointer;">
-    Registrar → Mint Influencer
-  </button>
-  <p>Balance: <span id="balInf">-</span> / 1</p>
 </div>
 
 <!-- Toast container -->
