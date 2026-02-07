@@ -72,6 +72,7 @@
   </p>
   <p>Relación: vinculado a liquidez y comunidad</p>
 
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>DOA Token V2</title>
@@ -90,7 +91,7 @@
   </p>
   <p style="text-align:center;">Relación: vinculado a liquidez y comunidad</p>
 
-  <!-- Botón de acceso a documentación NFT -->
+<  <!-- Botón de acceso a documentación NFT -->
   <div style="text-align:center; margin:12px 0;">
     <a href="/nft_gob_recp_memb.html" 
       style="background:#DAA520; color:#000; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:13px; font-weight:bold;">
@@ -215,8 +216,7 @@
         await provider.send("eth_requestAccounts", []);
         const signer = provider.getSigner();
         const address = await signer.getAddress();
-
-                const network = await provider.getNetwork();
+        const network = await provider.getNetwork();
         let nftAddress, registroAddress, distributorAddress;
 
         if (network.chainId === 137) { // Polygon Mainnet
@@ -266,3 +266,4 @@
   </script>
 </body>
 </html>
+
