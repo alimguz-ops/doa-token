@@ -1,4 +1,7 @@
-﻿param(
+﻿# scripts/publicar.ps1
+# Publica mensajes del calendario y ejecuta recompensas en AutoDistributor
+
+param(
     [string]$JsonPath = (Join-Path $PSScriptRoot '..\automation\calendario.json'),
     [string]$LogOut   = (Join-Path $PSScriptRoot '..\logs\publicaciones.jsonl')
 )
@@ -22,7 +25,7 @@ Get-Content $envPath | ForEach-Object {
 
 # --- Actualizar deployments antes de publicar ---
 try {
-    node (Join-Path $PSScriptRoot '..\scripts\updateDeployment.js')
+    node (Join-Path $PSScriptRoot '..\scripts\updateDeployment.cjs')
     Write-Host 'deployments.json actualizado correctamente' -ForegroundColor Green
 } catch {
     Write-Host ('Error al actualizar deployments.json: ' + $_.Exception.Message) -ForegroundColor Yellow
@@ -83,21 +86,16 @@ function Publicar-Discord($mensaje) {
         return 'OK'
     } catch { return ('ERROR: ' + $_.Exception.Message) }
 }
-
-function Distribuir-Recompensas($dia, $categoria, $mensaje) {
+function Distribuir-Recompensas($accion) {
     try {
         $scriptPath = (Join-Path $PSScriptRoot 'recompensas.ps1')
-        $res = & $scriptPath
-        if ($res -is [PSCustomObject] -and $res.txHash) { 
-            return $res.txHash 
-        } else { 
-            return 'ERROR: salida inválida de recompensas.ps1' 
-        }
+        $res = & $scriptPath -Accion $accion
+        return $res
     } catch { return ('ERROR: ' + $_.Exception.Message) }
 }
 
 # --- Ejecutar publicaciones del día ---
-$hoy = (Get-Date).DayOfYear
+$hoy = (Get-Date).Day
 foreach ($t in $tareas) {
     if (-not $t.PSObject.Properties['Dia'] -or -not $t.PSObject.Properties['Mensaje']) {
         Write-Host ('Entrada inválida en calendario: ' + ($t | ConvertTo-Json -Compress)) -ForegroundColor Yellow
@@ -109,7 +107,8 @@ foreach ($t in $tareas) {
             $twId = Publicar-Twitter $t.Mensaje
             $tgId = Publicar-Telegram $t.Mensaje
             $dcId = Publicar-Discord $t.Mensaje
-            $txId = Distribuir-Recompensas $t.Dia $t.Categoria $t.Mensaje
+            $txId = $null
+            if ($t.accion) { $txId = Distribuir-Recompensas $t.accion }
 
             $logEntry = [PSCustomObject]@{
                 fecha     = (Get-Date).ToString('s');
@@ -122,7 +121,7 @@ foreach ($t in $tareas) {
                 discord_id   = $dcId;
                 txHash       = $txId;
                 publicado    = $true;
-                recompensa_distribuida = ($txId -notlike 'ERROR*');
+                recompensa_distribuida = ($txId -and $txId -notlike 'ERROR*');
             } | ConvertTo-Json -Compress
 
             Add-Content -Path $LogOut -Value $logEntry

@@ -21,10 +21,10 @@ try {
     }
 
     # Guardar salida en log
-    $logPath = Join-Path $PSScriptRoot "logs\ejecutar-campania.log"
+    $logPath = Join-Path $PSScriptRoot "..\logs\ejecutar-campania.log"
     $output | Out-File -FilePath $logPath -Append
 
-    Write-Host "✅ Campaña completada. Revisa logs/publicaciones.json y $logPath para auditoría." -ForegroundColor Green
+    Write-Host "✅ Campaña completada. Revisa logs/publicaciones.jsonl y $logPath para auditoría." -ForegroundColor Green
 }
 catch {
     Write-Host "❌ Error al ejecutar publicar.ps1" -ForegroundColor Red

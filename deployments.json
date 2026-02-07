@@ -24,5 +24,19 @@
     "address": "0x2EB7Fe8451Abeeaa9C05e0C5676282Abaf0a9419",
     "network": "polygon",
     "timestamp": "2026-02-06T09:23:28.754Z"
+  },
+  "DOA_V2_ETH": {
+    "proxy": "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
+    "implementation": "0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411",
+    "proxyFlag": false,
+    "network": "mainnet",
+    "timestamp": "2026-02-07T07:18:04.054Z"
+  },
+  "DOA_V2_POLYGON": {
+    "proxy": "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305",
+    "implementation": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+    "proxyFlag": false,
+    "network": "polygon",
+    "timestamp": "2026-02-07T07:18:04.291Z"
   }
 }

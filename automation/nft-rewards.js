@@ -1,70 +1,68 @@
 import { ethers } from "ethers";
-import { ADDRESSES } from "../ADDRESSES.js";
 import { writeFileSync } from "fs";
+import dotenv from "dotenv";
 
-// Configuración RPC
-const provider = new ethers.providers.JsonRpcProvider("https://polygon-rpc.com");
+dotenv.config();
 
-// Dirección del contrato NFT_DOA desplegado
-const NFT_DOA_CONTRACT = "0xNFT_CONTRACT_ADDRESS"; // reemplazar con la real
-
-// ABI mínima para interactuar con NFT_DOA
-const nftABI = [
-  "function mint(address to, string memory tipo) public returns (uint256)",
-  "event NFTMinted(address indexed to, uint256 tokenId, string tipo)"
-];
-
-// Inicializar contrato
+const provider = new ethers.providers.JsonRpcProvider(process.env.POLYGON_RPC_URL);
 const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
-const nftContract = new ethers.Contract(NFT_DOA_CONTRACT, nftABI, signer);
 
-// Simulación de eventos externos (staking y gobernanza)
-const stakingEvents = [
-  { wallet: "0x123...", amount: 500 }, // ejemplo: wallet con 500 DOA en stake
-  { wallet: "0x456...", amount: 200 }
+// ✅ Dirección oficial del AutoDistributor
+const AUTODISTRIBUTOR_CONTRACT = "0x2EB7Fe8451Abeeaa9C05e0C5676282Abaf0a9419";
+
+const distributorABI = [
+  "function claimMembership() external",
+  "function claimFidelityReward() external",
+  "function registerInfluencer() external",
+  "function registerTrader() external",
+  "function registerHolder() external",
+  "event NFTClaimed(address indexed user, uint256 nftId, string category)",
+  "event FidelityRewardClaimed(address indexed user, uint256 reward)"
 ];
 
-const governanceVotes = [
-  { wallet: "0x789...", proposalId: 1 },
-  { wallet: "0xabc...", proposalId: 2 }
-];
+const distributor = new ethers.Contract(AUTODISTRIBUTOR_CONTRACT, distributorABI, signer);
 
 async function procesar() {
   const log = [];
 
-  // Incentivos por staking
-  for (const stake of stakingEvents) {
-    if (stake.amount >= 300) { // umbral mínimo
-      const tx = await nftContract.mint(stake.wallet, "Stake Reward");
-      const receipt = await tx.wait();
-      const tokenId = receipt.events[0].args.tokenId.toString();
-
+  // Reclamar membresía por staking
+  try {
+    const tx = await distributor.claimMembership();
+    const receipt = await tx.wait();
+    const claimedEvent = receipt.events.find(e => e.event === "NFTClaimed");
+    if (claimedEvent) {
       log.push({
         fecha: new Date().toISOString(),
-        wallet: stake.wallet,
-        tipo: "Stake Reward",
-        tokenId
+        wallet: claimedEvent.args.user,
+        tipo: claimedEvent.args.category,
+        nftId: claimedEvent.args.nftId.toString(),
+        txHash: receipt.transactionHash
       });
+      console.log(`Membership NFT emitido a ${claimedEvent.args.user}`);
     }
+  } catch (err) {
+    console.error("Error en claimMembership:", err);
   }
 
-  // Incentivos por gobernanza
-  for (const vote of governanceVotes) {
-    const tx = await nftContract.mint(vote.wallet, "Governance Reward");
+  // Reclamar recompensa de fidelidad
+  try {
+    const tx = await distributor.claimFidelityReward();
     const receipt = await tx.wait();
-    const tokenId = receipt.events[0].args.tokenId.toString();
-
-    log.push({
-      fecha: new Date().toISOString(),
-      wallet: vote.wallet,
-      tipo: "Governance Reward",
-      tokenId,
-      proposalId: vote.proposalId
-    });
+    const fidelityEvent = receipt.events.find(e => e.event === "FidelityRewardClaimed");
+    if (fidelityEvent) {
+      log.push({
+        fecha: new Date().toISOString(),
+        wallet: fidelityEvent.args.user,
+        reward: fidelityEvent.args.reward.toString(),
+        txHash: receipt.transactionHash
+      });
+      console.log(`Recompensa de fidelidad emitida a ${fidelityEvent.args.user}`);
+    }
+  } catch (err) {
+    console.error("Error en claimFidelityReward:", err);
   }
 
-  // Guardar log
-  writeFileSync("logs/nft-distribution.json", JSON.stringify(log, null, 2));
+  writeFileSync("logs/autodistributor-actions.json", JSON.stringify(log, null, 2));
 }
 
 procesar().catch(console.error);
