@@ -81,16 +81,6 @@
 </head>
 <body style="font-family:'Segoe UI', Arial, sans-serif; background:#000; color:#eee;">
 
-  <!-- NFT -->
-  <h2 style="color:#DAA520; text-align:center;">🖼 NFT Oficial</h2>
-  <p style="text-align:center;">
-    NFT_DOAV2 → 
-    <a href="https://polygonscan.com/address/0x9D8f14B92B980e05d347a02c9597d7D653d84687" target="_blank" style="color:#DAA520;">
-      0x9D8f14B92B980e05d347a02c9597d7D653d84687 ↗
-    </a>
-  </p>
-  <p style="text-align:center;">Relación: vinculado a liquidez y comunidad</p>
-
 <  <!-- Botón de acceso a documentación NFT -->
   <div style="text-align:center; margin:12px 0;">
     <a href="/nft_gob_recp_memb.html" 
