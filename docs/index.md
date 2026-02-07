@@ -72,6 +72,24 @@
   </p>
   <p>Relación: vinculado a liquidez y comunidad</p>
 
+<head>
+  <meta charset="UTF-8">
+  <title>DOA Token V2</title>
+  <!-- Librería ethers -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+</head>
+<body style="font-family:'Segoe UI', Arial, sans-serif; background:#000; color:#eee;">
+
+  <!-- NFT -->
+  <h2 style="color:#DAA520; text-align:center;">🖼 NFT Oficial</h2>
+  <p style="text-align:center;">
+    NFT_DOAV2 → 
+    <a href="https://polygonscan.com/address/0x9D8f14B92B980e05d347a02c9597d7D653d84687" target="_blank" style="color:#DAA520;">
+      0x9D8f14B92B980e05d347a02c9597d7D653d84687 ↗
+    </a>
+  </p>
+  <p style="text-align:center;">Relación: vinculado a liquidez y comunidad</p>
+
   <!-- Botón de acceso a documentación NFT -->
   <div style="text-align:center; margin:12px 0;">
     <a href="/nft_gob_recp_memb.html" 
@@ -91,24 +109,25 @@
   <!-- Estado del usuario -->
   <p style="text-align:center; margin-top:10px;">
     Usuarios registrados: <span id="userCount">0</span><br>
-    Estado NFT: <span id="nftStatus">No conectado</span>
+    Estado NFT: <span id="nftStatus">No conectado</span><br>
+    Estado AutoDistributor: <span id="distStatus">No conectado</span>
   </p>
 
   <!-- 🌐 Comunidad -->
-  <h2>🌐 Comunidad</h2>
+  <h2 style="color:#DAA520; text-align:center;">🌐 Comunidad</h2>
   <div style="text-align:center; margin:12px 0; display:flex; justify-content:center; gap:6px; flex-wrap:wrap;">
-  <a href="https://discord.gg/TCXB69cm" target="_blank" 
-     style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">💬 Discord</a>
-  <a href="https://x.com/DoaV270493" target="_blank" 
-     style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">🐦 Twitter/X</a>
-  <a href="https://t.me/DoaTokenV2" target="_blank" 
-     style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">📱 Telegram</a>
-  <a href="https://github.com/alimguz-ops/doa-token" target="_blank" 
-     style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">💻 GitHub</a>
-</div>
+    <a href="https://discord.gg/TCXB69cm" target="_blank" 
+       style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">💬 Discord</a>
+    <a href="https://x.com/DoaV270493" target="_blank" 
+       style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">🐦 Twitter/X</a>
+    <a href="https://t.me/DoaTokenV2" target="_blank" 
+       style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">📱 Telegram</a>
+    <a href="https://github.com/alimguz-ops/doa-token" target="_blank" 
+       style="background:#DAA520; color:#000; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:bold;">💻 GitHub</a>
+  </div>
 
   <!-- 👤 Fundador -->
-  <h2>👤 Fundador</h2>
+  <h2 style="color:#DAA520; text-align:center;">👤 Fundador</h2>
   <p style="text-align:center;">
     <strong>Angel R. Linares </strong><br>
     – Fundador único, responsable de arquitectura técnica, cumplimiento, comunidad y operaciones<br>
@@ -116,26 +135,19 @@
   </p>
 
   <!-- Pie de página institucional -->
-<footer style="margin-top:30px; padding:15px; background:#111; text-align:center; border-top:2px solid #DAA520; color:#eee; font-family:'Segoe UI', Arial, sans-serif;">
-  
-  <!-- Línea de certificaciones en una sola fila -->
-  <div style="font-size:13px; font-weight:600; margin-bottom:6px; color:#ccc;">
-    🔒 SSL activo / 📂 Repositorio público / ✅ Auditoría en curso / 📜 Política de privacidad
-  </div>
-
-  <!-- Fecha de actualización -->
-  <div style="font-size:13px; font-weight:600; color:#DAA520; margin-bottom:6px;">
-    Última actualización: Febrero 2026
-  </div>
-
-  <!-- Correo institucional -->
-  <div style="font-size:13px; color:#ccc;">
-    📧 Contacto: <a href="mailto:info@doatoken.org" style="color:#DAA520; text-decoration:none;">info@doatoken.org</a>
-  </div>
-</footer>
+  <footer style="margin-top:30px; padding:15px; background:#111; text-align:center; border-top:2px solid #DAA520; color:#eee;">
+    <div style="font-size:13px; font-weight:600; margin-bottom:6px; color:#ccc;">
+      🔒 SSL activo / 📂 Repositorio público / ✅ Auditoría en curso / 📜 Política de privacidad
+    </div>
+    <div style="font-size:13px; font-weight:600; color:#DAA520; margin-bottom:6px;">
+      Última actualización: Febrero 2026
+    </div>
+    <div style="font-size:13px; color:#ccc;">
+      📧 Contacto: <a href="mailto:info@doatoken.org" style="color:#DAA520; text-decoration:none;">info@doatoken.org</a>
+    </div>
+  </footer>
 
   <!-- Scripts adicionales (PopAds) -->
-  <!-- ⚠️ Este bloque es opcional. Si no quieres anuncios emergentes, elimínalo -->
   <script type="text/javascript" data-cfasync="false">
   (function(){
     var e = window,
@@ -166,22 +178,30 @@
   })();
   </script>
 
-  <!-- Script de conexión con contrato DOA + NFT -->
+  <!-- Script de conexión con contrato DOA + NFT + AutoDistributor -->
   <script type="text/javascript">
     const ADDRESSES = {
       polygon: {
-        registro: "0x692d951163df3f7D9Fe071413F92c319D9B7369E", // Contrato DOA en Polygon
-        proxy:    "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305", // Proxy en Polygon
-        nft:      "0xc497377bDFA6e651A4f9E5C44531c9D034a13523"  // NFT oficial en Polygon
+        registro: "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+        proxy:    "0xD6426Da6D01233Efe48dab6aD96cf3238f02c305",
+        nft:      "0xc497377bDFA6e651A4f9E5C44531c9D034a13523",
+        autoDistributor: "0x2EB7Fe8451Abeeaa9C05e0C5676282Abaf0a9419"
       },
       ethereum: {
-        registro: "0x6F52809EfdDF5826956EeF9C289A661624afb0cE", // Contrato DOA en Ethereum
-        proxy:    "0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411"  // Proxy en Ethereum
+        registro: "0x6F52809EfdDF5826956EeF9C289A661624afb0cE",
+        proxy:    "0x55f76fBa9df3AcE5a54Ba655f76aC9c76dc10411"
       }
     };
 
     const nftAbi = [
       "function balanceOf(address owner) view returns (uint256)"
+    ];
+    const registroAbi = [
+      "function totalUsuarios() view returns (uint256)"
+    ];
+    const distributorAbi = [
+      "function totalDistributed() view returns (uint256)",
+      "function pendingRewards(address account) view returns (uint256)"
     ];
 
     async function connectWallet() {
@@ -196,21 +216,28 @@
         const signer = provider.getSigner();
         const address = await signer.getAddress();
 
-        const network = await provider.getNetwork();
-        let nftAddress;
+                const network = await provider.getNetwork();
+        let nftAddress, registroAddress, distributorAddress;
 
         if (network.chainId === 137) { // Polygon Mainnet
           nftAddress = ADDRESSES.polygon.nft;
+          registroAddress = ADDRESSES.polygon.registro;
+          distributorAddress = ADDRESSES.polygon.autoDistributor;
         } else if (network.chainId === 1) { // Ethereum Mainnet
-          nftAddress = null;
+          registroAddress = ADDRESSES.ethereum.registro;
         } else {
           alert("Red no soportada. Conéctate a Polygon o Ethereum.");
           return;
         }
 
-        // Actualiza contador de usuarios (demo: 1 conectado)
-        document.getElementById("userCount").innerText = "1";
+        // Consultar usuarios registrados
+        if (registroAddress) {
+          const registro = new ethers.Contract(registroAddress, registroAbi, provider);
+          const total = await registro.totalUsuarios();
+          document.getElementById("userCount").innerText = total.toString();
+        }
 
+        // Consultar balance NFT
         if (nftAddress) {
           const nft = new ethers.Contract(nftAddress, nftAbi, signer);
           const balance = await nft.balanceOf(address);
@@ -220,6 +247,17 @@
         } else {
           document.getElementById("nftStatus").innerText = "ℹ️ NFT de gobernanza disponible solo en Polygon.";
         }
+
+        // Consultar estado AutoDistributor
+        if (distributorAddress) {
+          const distributor = new ethers.Contract(distributorAddress, distributorAbi, provider);
+          const totalDist = await distributor.totalDistributed();
+          const pending = await distributor.pendingRewards(address);
+
+          document.getElementById("distStatus").innerText =
+            `Recompensas distribuidas: ${ethers.utils.formatUnits(totalDist, 18)} DOA | Pendientes para ti: ${ethers.utils.formatUnits(pending, 18)} DOA`;
+        }
+
       } catch (err) {
         console.error("Error al conectar wallet:", err);
         alert("No se pudo conectar la wallet. Verifica MetaMask y la red.");
