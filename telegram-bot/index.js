@@ -48,7 +48,8 @@ Usa los botones para acceder a la información:
         [{ text: "📊 Info del Token", callback_data: "info" }],
         [{ text: "🔗 Enlaces Oficiales", callback_data: "links" }],
         [{ text: "📢 Publicidad Oficial", callback_data: "publicidad" }],
-        [{ text: "📈 Estado de Liquidez", callback_data: "liquidez" }]
+        [{ text: "📈 Estado de Liquidez", callback_data: "liquidez" }],
+        [{ text: "📜 Contratos", callback_data: "contratos" }]
       ]
     }
   });
@@ -61,16 +62,24 @@ bot.onText(/^\/info$/, (msg) => {
   const text = `📊 ${info.tokenName} (${info.symbol})
 • Supply: ${info.supply}
 • Decimals: ${info.decimals}
-• Contract: ${info.contractAddress}
-• Explorer: ${info.explorerUrl}`;
+
+🔗 Contratos:
+• Ethereum: ${info.contracts?.ethereum?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.ethereum?.explorerUrl || "No definido"}
+
+• Polygon: ${info.contracts?.polygon?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.polygon?.explorerUrl || "No definido"}
+
+• NFT: ${info.contracts?.nft?.join(", ") || "No definido"}
+`;
   bot.sendMessage(msg.chat.id, text);
 });
 
 // --- Comando /links ---
 bot.onText(/^\/links$/, (msg) => {
-  const links = Object.entries(info.links)
-    .map(([k, v]) => `• ${k}: ${v}`)
-    .join('\n');
+  const links = info.links
+    ? Object.entries(info.links).map(([k, v]) => `• ${k}: ${v}`).join('\n')
+    : "No hay enlaces configurados.";
   bot.sendMessage(msg.chat.id, `🔗 Enlaces oficiales:\n${links}`);
 });
 
@@ -87,7 +96,11 @@ bot.onText(/^\/announce (.+)$/, (msg, match) => {
 
   bot.sendMessage(CHANNEL_ID, `📢 Anuncio oficial:\n${announcement}`)
     .then((sentMessage) => {
-      bot.pinChatMessage(CHANNEL_ID, sentMessage.message_id);
+      try {
+        bot.pinChatMessage(CHANNEL_ID, sentMessage.message_id);
+      } catch (err) {
+        console.error("⚠️ No se pudo fijar el mensaje:", err.message);
+      }
     });
 });
 
@@ -96,11 +109,11 @@ bot.onText(/^\/liquidez$/, (msg) => {
   const text = `
 💧 Estado de Liquidez de ${info.tokenName}:
 
-• QuickSwap (DOA/USDC): ${info.links.dexQuickSwap_DOA_USDC || "No definido"}
-• Uniswap (DOA/USDC): ${info.links.dexUniswap_DOA_USDC || "No definido"}
+• QuickSwap (DOA/USDC): ${info.links?.dexQuickSwap_DOA_USDC || "No definido"}
+• Uniswap (DOA/USDC): ${info.links?.dexUniswap_DOA_USDC || "No definido"}
 
-• QuickSwap (DOA/WMATIC): ${info.links.dexQuickSwap_DOA_WMATIC || "No definido"}
-• Uniswap (DOA/WMATIC): ${info.links.dexUniswap_DOA_WMATIC || "No definido"}
+• QuickSwap (DOA/WMATIC): ${info.links?.dexQuickSwap_DOA_WMATIC || "No definido"}
+• Uniswap (DOA/WMATIC): ${info.links?.dexUniswap_DOA_WMATIC || "No definido"}
 
 📊 Reservas mínimas configuradas: 50,000 USDC
 🔔 Alertas activas si baja de ese umbral
@@ -116,15 +129,23 @@ bot.on("callback_query", (query) => {
     const text = `📊 ${info.tokenName} (${info.symbol})
 • Supply: ${info.supply}
 • Decimals: ${info.decimals}
-• Contract: ${info.contractAddress}
-• Explorer: ${info.explorerUrl}`;
+
+🔗 Contratos:
+• Ethereum: ${info.contracts?.ethereum?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.ethereum?.explorerUrl || "No definido"}
+
+• Polygon: ${info.contracts?.polygon?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.polygon?.explorerUrl || "No definido"}
+
+• NFT: ${info.contracts?.nft?.join(", ") || "No definido"}
+`;
     bot.sendMessage(chatId, text);
   }
 
   if (query.data === "links") {
-    const links = Object.entries(info.links)
-      .map(([k, v]) => `• ${k}: ${v}`)
-      .join("\n");
+    const links = info.links
+      ? Object.entries(info.links).map(([k, v]) => `• ${k}: ${v}`).join("\n")
+      : "No hay enlaces configurados.";
     bot.sendMessage(chatId, `🔗 Enlaces oficiales:\n${links}`);
   }
 
@@ -140,16 +161,31 @@ bot.on("callback_query", (query) => {
     const text = `
 💧 Estado de Liquidez de ${info.tokenName}:
 
-• QuickSwap (DOA/USDC): ${info.links.dexQuickSwap_DOA_USDC || "No definido"}
-• Uniswap (DOA/USDC): ${info.links.dexUniswap_DOA_USDC || "No definido"}
+• QuickSwap (DOA/USDC): ${info.links?.dexQuickSwap_DOA_USDC || "No definido"}
+• Uniswap (DOA/USDC): ${info.links?.dexUniswap_DOA_USDC || "No definido"}
 
-• QuickSwap (DOA/WMATIC): ${info.links.dexQuickSwap_DOA_WMATIC || "No definido"}
-• Uniswap (DOA/WMATIC): ${info.links.dexUniswap_DOA_WMATIC || "No definido"}
+• QuickSwap (DOA/WMATIC): ${info.links?.dexQuickSwap_DOA_WMATIC || "No definido"}
+• Uniswap (DOA/WMATIC): ${info.links?.dexUniswap_DOA_WMATIC || "No definido"}
 
 📊 Reservas mínimas configuradas: 50,000 USDC
 🔔 Alertas activas si baja de ese umbral
 `;
     bot.sendMessage(chatId, text);
+  }
+
+  if (query.data === "contratos") {
+    const contratos = `
+📜 Contratos oficiales de ${info.tokenName}:
+
+• Ethereum: ${info.contracts?.ethereum?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.ethereum?.explorerUrl || "No definido"}
+
+• Polygon: ${info.contracts?.polygon?.doaTokenV2 || "No definido"}
+  Explorer: ${info.contracts?.polygon?.explorerUrl || "No definido"}
+
+• NFT: ${info.contracts?.nft?.join(", ") || "No definido"}
+`;
+    bot.sendMessage(chatId, contratos);
   }
 
   bot.answerCallbackQuery(query.id, { text: "✅ Acción recibida" });
@@ -205,6 +241,6 @@ async function pruebaPublicacion() {
   }
 }
 
-// Llamadas iniciales al arrancar el bot
+// --- Llamadas iniciales al arrancar el bot ---
 verificarPermisos(CHANNEL_ID);
 pruebaPublicacion();
