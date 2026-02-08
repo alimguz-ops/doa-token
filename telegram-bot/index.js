@@ -25,7 +25,17 @@ try {
   console.warn('⚠️ No se pudo cargar basic-info.json, se continuará sin esa info.');
 }
 
-const bot = new TelegramBot(token, { polling: true });
+// --- Inicialización del bot con polling robusto ---
+const bot = new TelegramBot(token, {
+  polling: {
+    interval: 2000,       // tiempo entre intentos de reconexión
+    autoStart: true,     // arranca automáticamente
+    params: {
+      timeout: 60        // timeout de long polling en segundos
+    }
+  }
+});
+
 console.log('🚀 Bot DOATokenV2 iniciado...');
 
 // --- Comando /start ---
