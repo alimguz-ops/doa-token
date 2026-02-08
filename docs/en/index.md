@@ -114,3 +114,4 @@ Last update: January 2026
   }
 })();
 </script>
+<script src="https://pl28673815.effectivegatecpm.com/0b/40/b0/0b40b0d5eecfca15d7eeabf652280b85.js"></script>
