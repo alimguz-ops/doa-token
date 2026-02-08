@@ -351,5 +351,52 @@ window.onload = updateBalances;
     }
   })();
   </script>
-  </body>
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gobernanza DOA V2</title>
+  <link rel="stylesheet" href="styles.css"> <!-- tu CSS -->
+</head>
+<body>
+  <div class="container-lg px-3 my-5 markdown-body">
+    <div class="mb-5">
+      <button id="btnGob" class="btn-doa">Conectar Wallet</button>
+    </div>
+  </div>
+
+  <!-- Importar ethers.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  <script>
+    async function connectWallet() {
+      if (typeof window.ethereum !== "undefined") {
+        try {
+          const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+          const account = accounts[0];
+          console.log("Wallet conectada:", account);
+
+          const provider = new ethers.BrowserProvider(window.ethereum);
+          const signer = await provider.getSigner();
+
+          const message = "Confirmo mi participación en la gobernanza DOA V2";
+          const signature = await signer.signMessage(message);
+
+          console.log("Firma generada:", signature);
+
+          const btn = document.getElementById("btnGob");
+          btn.textContent = "Wallet conectada ✅";
+          btn.disabled = true;
+        } catch (err) {
+          console.error("Error al conectar o firmar:", err);
+          alert("No se pudo conectar la wallet. Revisa MetaMask.");
+        }
+      } else {
+        alert("Necesitas instalar MetaMask u otra wallet compatible.");
+      }
+    }
+
+    document.getElementById("btnGob").addEventListener("click", connectWallet);
+  </script>
+</body>
 </html>
